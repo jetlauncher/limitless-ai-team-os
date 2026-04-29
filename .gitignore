@@ -1,0 +1,17 @@
+.DS_Store
+.env
+*.env
+*.log
+logs/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.sqlite
+*.db
+sessions/
+auth.json
+credentials.json
+*_token.json
+*_state.json

@@ -1,0 +1,47 @@
+{
+  "repo": "limitless-ai-team-os",
+  "owner": "jetlauncher",
+  "agents": [
+    {
+      "name": "Hermes",
+      "profile": "default",
+      "workspace": "agents/Hermes/"
+    },
+    {
+      "name": "Blaze",
+      "profile": "blaze",
+      "workspace": "agents/Blaze/"
+    },
+    {
+      "name": "Bolt",
+      "profile": "bolt",
+      "workspace": "agents/Bolt/"
+    },
+    {
+      "name": "Kaijeaw",
+      "profile": "kaijeaw",
+      "workspace": "agents/Kaijeaw/"
+    },
+    {
+      "name": "Protocol",
+      "profile": "protocol",
+      "workspace": "agents/Protocol/"
+    },
+    {
+      "name": "Qwen",
+      "profile": "qwen",
+      "workspace": "agents/Qwen/"
+    },
+    {
+      "name": "Signal",
+      "profile": "signal",
+      "workspace": "agents/Signal/"
+    },
+    {
+      "name": "Zegna",
+      "profile": "zegna",
+      "workspace": "agents/Zegna/"
+    }
+  ],
+  "generated_note": "Sanitized mirror. No secrets intentionally stored."
+}

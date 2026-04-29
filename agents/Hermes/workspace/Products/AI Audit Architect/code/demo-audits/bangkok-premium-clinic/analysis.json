@@ -1,0 +1,123 @@
+{
+  "client_name": "Bangkok Premium Clinic",
+  "language": "English",
+  "summary": "This audit identifies founder/team bottlenecks and prioritizes AI workflows that can return time quickly.",
+  "opportunities": [
+    {
+      "name": "Booking and Calendar Automation",
+      "pain": "Scheduling creates back-and-forth messages and missed confirmations.",
+      "current_workflow": "Staff manually coordinates appointment slots and reminders.",
+      "future_workflow": "Booking link, reminders, and reschedule flows run automatically.",
+      "tools": [
+        "Calendly",
+        "Google Calendar",
+        "Zapier or Make",
+        "LINE/Email reminders"
+      ],
+      "hours_saved_per_week": 4,
+      "difficulty": "easy",
+      "monthly_tool_cost": 30,
+      "implementation_steps": [
+        "Define appointment types",
+        "Set availability rules",
+        "Create reminder workflow",
+        "Add no-show follow-up"
+      ],
+      "priority_score": 42.5
+    },
+    {
+      "name": "Automated Lead Follow-up",
+      "pain": "Leads and customer messages wait for manual replies.",
+      "current_workflow": "Owner/team manually checks inboxes and writes repetitive replies.",
+      "future_workflow": "AI drafts replies, routes hot leads, and triggers follow-up reminders.",
+      "tools": [
+        "ChatGPT/Claude",
+        "Zapier or Make",
+        "Gmail/LINE OA/CRM"
+      ],
+      "hours_saved_per_week": 5,
+      "difficulty": "easy",
+      "monthly_tool_cost": 40,
+      "implementation_steps": [
+        "Map lead sources",
+        "Create reply templates",
+        "Connect inbox to automation",
+        "Test escalation rules"
+      ],
+      "priority_score": 19.0
+    },
+    {
+      "name": "AI Content Production System",
+      "pain": "Marketing content depends on founder energy and inconsistent manual creation.",
+      "current_workflow": "Founder creates posts from scratch and approvals happen ad hoc.",
+      "future_workflow": "Ideas, drafts, carousels, and approval queues run from one repeatable content engine.",
+      "tools": [
+        "Claude/ChatGPT",
+        "Gamma",
+        "Notion",
+        "Blotato or Buffer"
+      ],
+      "hours_saved_per_week": 6,
+      "difficulty": "medium",
+      "monthly_tool_cost": 80,
+      "implementation_steps": [
+        "Define pillars",
+        "Create prompt library",
+        "Build weekly calendar",
+        "Add approval/posting workflow"
+      ],
+      "priority_score": 13.6
+    },
+    {
+      "name": "Automated Weekly KPI Reporting",
+      "pain": "Reporting requires repetitive copy-paste and delays decisions.",
+      "current_workflow": "Team manually gathers numbers into spreadsheets or slides.",
+      "future_workflow": "Data is pulled into a dashboard and summarized by AI weekly.",
+      "tools": [
+        "Google Sheets",
+        "Looker Studio",
+        "ChatGPT/Claude",
+        "Zapier or Make"
+      ],
+      "hours_saved_per_week": 3,
+      "difficulty": "medium",
+      "monthly_tool_cost": 50,
+      "implementation_steps": [
+        "List KPI sources",
+        "Standardize sheet format",
+        "Create dashboard",
+        "Generate weekly AI summary"
+      ],
+      "priority_score": 11.2
+    },
+    {
+      "name": "Team Knowledge Assistant",
+      "pain": "The owner is interrupted by repeat questions and undocumented know-how.",
+      "current_workflow": "Team asks the owner directly or searches scattered docs.",
+      "future_workflow": "A searchable AI knowledge base answers repeat questions from SOPs and recordings.",
+      "tools": [
+        "Notion",
+        "Google Drive",
+        "Custom GPT/Claude Project",
+        "Chatbase or similar"
+      ],
+      "hours_saved_per_week": 4,
+      "difficulty": "medium",
+      "monthly_tool_cost": 60,
+      "implementation_steps": [
+        "Collect SOPs",
+        "Organize knowledge base",
+        "Create assistant",
+        "Test answer quality"
+      ],
+      "priority_score": 10.0
+    }
+  ],
+  "roi": {
+    "weekly_hours_saved": 15,
+    "monthly_hours_saved": 60,
+    "founder_hourly_value": 100,
+    "annual_value": 78000,
+    "monthly_tool_cost": 150
+  }
+}
