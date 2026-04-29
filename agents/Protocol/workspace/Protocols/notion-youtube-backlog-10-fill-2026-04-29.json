@@ -1,0 +1,64 @@
+{
+  "created_at": "2026-04-29T18:28:34+07:00",
+  "database_id": "351d076c-9ad3-8153-9225-f668ebdf7c79",
+  "database_url": "https://app.notion.com/p/351d076c9ad381539225f668ebdf7c79",
+  "total_after": 27,
+  "created_count": 10,
+  "missing_count": 0,
+  "created": [
+    {
+      "issue": "AI ไม่ใช่อนาคตอีกต่อไป: งานที่ยังไม่มีเจ้าของจะถูก AI แย่งก่อน",
+      "page_id": "351d076c-9ad3-812f-8c34-d97e8ad0ed73",
+      "url": "https://app.notion.com/p/AI-AI-351d076c9ad3812f8c34d97e8ad0ed73"
+    },
+    {
+      "issue": "เมื่อ AI ทำคอนเทนต์แทนเราได้: เจ้าของธุรกิจต้องคุมสิทธิ์และภาพลักษณ์",
+      "page_id": "351d076c-9ad3-8137-bdbb-c6d0996457f0",
+      "url": "https://app.notion.com/p/AI-351d076c9ad38137bdbbc6d0996457f0"
+    },
+    {
+      "issue": "Local Model ไม่ใช่ของเล่นเนิร์ด: เมื่อข้อมูลบริษัทไม่ควรออกนอกบ้าน",
+      "page_id": "351d076c-9ad3-8164-b77c-fe53076643fb",
+      "url": "https://app.notion.com/p/Local-Model-351d076c9ad38164b77cfe53076643fb"
+    },
+    {
+      "issue": "เมื่อภาพและเพลงถูกผลิตได้ใน 10 นาที: ทีมคอนเทนต์ต้องมี Brief OS",
+      "page_id": "351d076c-9ad3-816d-9588-d6e3f00c1eed",
+      "url": "https://app.notion.com/p/10-Brief-OS-351d076c9ad3816d9588d6e3f00c1eed"
+    },
+    {
+      "issue": "อย่าใช้ AI เพื่อทำงานเร็วขึ้นอย่างเดียว ให้ใช้มันเป็นระบบยกระดับคน",
+      "page_id": "351d076c-9ad3-8176-8a3a-d094f7cba6d9",
+      "url": "https://app.notion.com/p/AI-351d076c9ad381768a3ad094f7cba6d9"
+    },
+    {
+      "issue": "เริ่มใช้ Claude Cowork แบบเจ้าของกิจการ: อย่าเริ่มจาก Prompt ให้เริ่มจากงานประจำ",
+      "page_id": "351d076c-9ad3-81c1-a210-fb96937692c6",
+      "url": "https://app.notion.com/p/Claude-Cowork-Prompt-351d076c9ad381c1a210fb96937692c6"
+    },
+    {
+      "issue": "ก่อนซื้อ Computer-Use Agent: ให้ถามว่าเราจะให้มันแตะระบบอะไร",
+      "page_id": "351d076c-9ad3-81c2-a5b2-d80fd824236e",
+      "url": "https://app.notion.com/p/Computer-Use-Agent-351d076c9ad381c2a5b2d80fd824236e"
+    },
+    {
+      "issue": "อย่าเลือกโมเดลจากคะแนน ให้เลือกจากงานที่ต้องชนะ",
+      "page_id": "351d076c-9ad3-81c4-ab8e-eba107dcb5a6",
+      "url": "https://app.notion.com/p/351d076c9ad381c4ab8eeba107dcb5a6"
+    },
+    {
+      "issue": "Claude Cowork ทำอะไรได้: วิธีเปลี่ยนผู้ช่วย AI เป็นระบบงาน",
+      "page_id": "351d076c-9ad3-81d6-bb82-ee03fa9ef493",
+      "url": "https://app.notion.com/p/Claude-Cowork-AI-351d076c9ad381d6bb82ee03fa9ef493"
+    },
+    {
+      "issue": "Claude Cowork ไม่ใช่พนักงาน 5 คน ถ้าบริษัทยังไม่มี SOP",
+      "page_id": "351d076c-9ad3-81da-9039-d4889040343d",
+      "url": "https://app.notion.com/p/Claude-Cowork-5-SOP-351d076c9ad381da9039d4889040343d"
+    }
+  ],
+  "missing": [],
+  "source_cards": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Protocol/Research Intake/2026-04-29-youtube-backlog-10-newsletter-cards.md",
+  "manifest": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Protocol/Research Intake/2026-04-29-youtube-backlog-10-transcript-manifest.json",
+  "note": "Initial insertion script timed out after Notion pages were created; verification query confirmed these 10 backlog cards exist."
+}

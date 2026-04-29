@@ -308,10 +308,11 @@ approvals:
   timeout: 60
   cron_mode: deny
 command_allowlist:
-- delete in root path
-- script execution via -e/-c flag
 - hermes update (restarts gateway, kills running agents)
 - recursive delete
+- delete in root path
+- script execution via -e/-c flag
+- shell command via -c/-lc flag
 - stop/restart hermes gateway (kills running agents)
 quick_commands: {}
 hooks: {}

@@ -1,0 +1,91 @@
+{
+  "created_at": "2026-04-29",
+  "action": "replaced_10_thai_beehiiv_backlog_drafts_with_english",
+  "updated_count": 10,
+  "errors": [],
+  "beehiiv_verify": "/tmp/beehiiv_backlog_english_verify_rest.json",
+  "replace_results": "/tmp/beehiiv_backlog_english_replace_results.json",
+  "payload_manifest": "/tmp/beehiiv_backlog_english_updates.json",
+  "updated": [
+    {
+      "page_id": "351d076c-9ad3-8164-b77c-fe53076643fb",
+      "post_id": "post_c31989ac-1dd4-458a-a595-b3a5cdf7fa6c",
+      "old_title": "Local Model ไม่ใช่ของเล่นเนิร์ด: เมื่อข้อมูลบริษัทไม่ควรออกนอกบ้าน",
+      "english_title": "Local Models Are Not a Nerd Toy: When Company Data Should Stay Inside the House",
+      "beehiiv_url": "https://jeditrinupab.beehiiv.com/p/new-post-a9a9",
+      "notion_url": "https://app.notion.com/p/Local-Model-351d076c9ad38164b77cfe53076643fb"
+    },
+    {
+      "page_id": "351d076c-9ad3-8176-8a3a-d094f7cba6d9",
+      "post_id": "post_0d72816f-f826-4393-addf-97323c66a8b5",
+      "old_title": "อย่าใช้ AI เพื่อทำงานเร็วขึ้นอย่างเดียว ให้ใช้มันเป็นระบบยกระดับคน",
+      "english_title": "Do Not Use AI Only to Work Faster. Use It to Raise the Standard of the Team.",
+      "beehiiv_url": "https://jeditrinupab.beehiiv.com/p/new-post-dfd3",
+      "notion_url": "https://app.notion.com/p/AI-351d076c9ad381768a3ad094f7cba6d9"
+    },
+    {
+      "page_id": "351d076c-9ad3-81c1-a210-fb96937692c6",
+      "post_id": "post_fb1852bb-3c78-4108-ab1f-841b3e955119",
+      "old_title": "เริ่มใช้ Claude Cowork แบบเจ้าของกิจการ: อย่าเริ่มจาก Prompt ให้เริ่มจากงานประจำ",
+      "english_title": "How to Start With Claude Cowork as a Business Owner: Do Not Start With Prompts, Start With Recurring Work",
+      "beehiiv_url": "https://jeditrinupab.beehiiv.com/p/new-post-7642",
+      "notion_url": "https://app.notion.com/p/Claude-Cowork-Prompt-351d076c9ad381c1a210fb96937692c6"
+    },
+    {
+      "page_id": "351d076c-9ad3-81c2-a5b2-d80fd824236e",
+      "post_id": "post_2ce79e22-6525-42fd-b76b-b485bc51f4c4",
+      "old_title": "ก่อนซื้อ Computer-Use Agent: ให้ถามว่าเราจะให้มันแตะระบบอะไร",
+      "english_title": "Before Buying a Computer-Use Agent, Ask What You Will Let It Touch",
+      "beehiiv_url": "https://jeditrinupab.beehiiv.com/p/new-post-8f78",
+      "notion_url": "https://app.notion.com/p/Computer-Use-Agent-351d076c9ad381c2a5b2d80fd824236e"
+    },
+    {
+      "page_id": "351d076c-9ad3-816d-9588-d6e3f00c1eed",
+      "post_id": "post_89e71f02-147f-453b-862f-a93ccf7e1cd7",
+      "old_title": "เมื่อภาพและเพลงถูกผลิตได้ใน 10 นาที: ทีมคอนเทนต์ต้องมี Brief OS",
+      "english_title": "When Images and Music Can Be Made in 10 Minutes, the Content Team Needs a Brief OS",
+      "beehiiv_url": "https://jeditrinupab.beehiiv.com/p/new-post-64c8",
+      "notion_url": "https://app.notion.com/p/10-Brief-OS-351d076c9ad3816d9588d6e3f00c1eed"
+    },
+    {
+      "page_id": "351d076c-9ad3-81da-9039-d4889040343d",
+      "post_id": "post_0a866b02-eb8c-457d-85bc-c370dd484619",
+      "old_title": "Claude Cowork ไม่ใช่พนักงาน 5 คน ถ้าบริษัทยังไม่มี SOP",
+      "english_title": "Claude Cowork Is Not Five Great Employees If Your Company Has No SOP",
+      "beehiiv_url": "https://jeditrinupab.beehiiv.com/p/new-post-ae17",
+      "notion_url": "https://app.notion.com/p/Claude-Cowork-5-SOP-351d076c9ad381da9039d4889040343d"
+    },
+    {
+      "page_id": "351d076c-9ad3-812f-8c34-d97e8ad0ed73",
+      "post_id": "post_a487d9ae-8b6d-49c8-adb7-5cbb55918a11",
+      "old_title": "AI ไม่ใช่อนาคตอีกต่อไป: งานที่ยังไม่มีเจ้าของจะถูก AI แย่งก่อน",
+      "english_title": "AI Is No Longer the Future: The Work With No Owner Will Be Automated First",
+      "beehiiv_url": "https://jeditrinupab.beehiiv.com/p/new-post-23b7",
+      "notion_url": "https://app.notion.com/p/AI-AI-351d076c9ad3812f8c34d97e8ad0ed73"
+    },
+    {
+      "page_id": "351d076c-9ad3-8137-bdbb-c6d0996457f0",
+      "post_id": "post_f2e89f47-35c7-48ab-95dd-19a77d0100da",
+      "old_title": "เมื่อ AI ทำคอนเทนต์แทนเราได้: เจ้าของธุรกิจต้องคุมสิทธิ์และภาพลักษณ์",
+      "english_title": "When AI Can Create Content With Your Face, the Owner Must Control Rights and Reputation",
+      "beehiiv_url": "https://jeditrinupab.beehiiv.com/p/new-post-62c4",
+      "notion_url": "https://app.notion.com/p/AI-351d076c9ad38137bdbbc6d0996457f0"
+    },
+    {
+      "page_id": "351d076c-9ad3-81c4-ab8e-eba107dcb5a6",
+      "post_id": "post_b0ab5b87-5ceb-4fcf-a410-528af982af7d",
+      "old_title": "อย่าเลือกโมเดลจากคะแนน ให้เลือกจากงานที่ต้องชนะ",
+      "english_title": "Do Not Choose Models by Benchmark Scores. Choose by the Work You Need to Win.",
+      "beehiiv_url": "https://jeditrinupab.beehiiv.com/p/new-post-9656",
+      "notion_url": "https://app.notion.com/p/351d076c9ad381c4ab8eeba107dcb5a6"
+    },
+    {
+      "page_id": "351d076c-9ad3-81d6-bb82-ee03fa9ef493",
+      "post_id": "post_07ef9e82-fda6-4734-9b3c-faa898e94359",
+      "old_title": "Claude Cowork ทำอะไรได้: วิธีเปลี่ยนผู้ช่วย AI เป็นระบบงาน",
+      "english_title": "What Claude Cowork Can Do: Turn an AI Assistant Into a Real Operating Workflow",
+      "beehiiv_url": "https://jeditrinupab.beehiiv.com/p/new-post-95aa",
+      "notion_url": "https://app.notion.com/p/Claude-Cowork-AI-351d076c9ad381d6bb82ee03fa9ef493"
+    }
+  ]
+}
