@@ -1,0 +1,39 @@
+{
+  "brand": "The Quiet Founder",
+  "created_at": "2026-05-01T00:01:18.862782",
+  "model": "gpt-image-2",
+  "size": "1024x1536",
+  "quality": "high",
+  "outputs": [
+    {
+      "title": "Profile Hero",
+      "file": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Hermes/Creative/The Quiet Founder/quiet-founder-avatar-set-2026-04-30/01_profile_hero.png",
+      "prompt": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Hermes/Creative/The Quiet Founder/quiet-founder-avatar-set-2026-04-30/01_profile_hero.prompt.txt",
+      "status": "existing"
+    },
+    {
+      "title": "Office Dawn Founder",
+      "file": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Hermes/Creative/The Quiet Founder/quiet-founder-avatar-set-2026-04-30/02_office_dawn_founder.png",
+      "prompt": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Hermes/Creative/The Quiet Founder/quiet-founder-avatar-set-2026-04-30/02_office_dawn_founder.prompt.txt",
+      "status": "existing"
+    },
+    {
+      "title": "Founder Father Breakfast",
+      "file": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Hermes/Creative/The Quiet Founder/quiet-founder-avatar-set-2026-04-30/03_founder_father_breakfast.png",
+      "prompt": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Hermes/Creative/The Quiet Founder/quiet-founder-avatar-set-2026-04-30/03_founder_father_breakfast.prompt.txt",
+      "status": "generated"
+    },
+    {
+      "title": "Chapel Light Faith",
+      "file": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Hermes/Creative/The Quiet Founder/quiet-founder-avatar-set-2026-04-30/04_chapel_light_faith.png",
+      "prompt": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Hermes/Creative/The Quiet Founder/quiet-founder-avatar-set-2026-04-30/04_chapel_light_faith.prompt.txt",
+      "status": "generated"
+    },
+    {
+      "title": "AI Leverage Operator",
+      "file": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Hermes/Creative/The Quiet Founder/quiet-founder-avatar-set-2026-04-30/05_ai_leverage_operator.png",
+      "prompt": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Hermes/Creative/The Quiet Founder/quiet-founder-avatar-set-2026-04-30/05_ai_leverage_operator.prompt.txt",
+      "status": "generated"
+    }
+  ]
+}

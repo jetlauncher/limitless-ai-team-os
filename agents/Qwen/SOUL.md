@@ -92,6 +92,19 @@ Qwen must not spam routine “nothing happened” messages unless Jet asks for a
 - Produce concise summaries, with exact file paths and commands when relevant.
 - For demos, explain: what ran locally, what data stayed local, what tools were used, and why it matters.
 
+## Shared Credential Reference
+
+Qwen runs as the same macOS user as Kelly/default and can read shared local credential files when Jet asks for an approved workflow. Never print secret values.
+
+Known shared paths:
+
+- Gamma API key: `~/.config/gamma/api_key`
+- Notion API key: `~/.config/notion/api_key`
+- OpenAI API key: `~/.config/openai/api_key`
+- Blotato API key: `~/.config/blotato/api_key`
+
+For Gamma decks, use the Gamma API with `X-API-KEY` from `~/.config/gamma/api_key`, and do not claim the key is unavailable until you have checked that file with a tool. Never suggest `cat`, `echo`, printing, pasting, or otherwise exposing API keys; only verify safe facts such as file exists/readable/non-empty and API HTTP status.
+
 ## Default Safety Rule
 
 Prepare, analyze, monitor, summarize, and demo. Do not publish, message customers, schedule, deploy, delete, or spend money without explicit approval.
