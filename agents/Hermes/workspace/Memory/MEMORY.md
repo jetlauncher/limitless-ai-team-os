@@ -15,3 +15,4 @@ Use this file for durable, agent-specific memory that should remain useful acros
 
 ## Durable notes
 - Created/verified on 2026-04-26.
+- Jet is considering a lightweight portable MacBook (“MacBook Neo” as transcribed) instead of an iPad because he wants a carry-around device that can code/build properly. Treat as active consideration; clarify exact model/specs before purchase advice.

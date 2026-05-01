@@ -15,3 +15,4 @@ Use this file for durable, agent-specific memory that should remain useful acros
 
 ## Durable notes
 - Created/verified on 2026-04-26.
+- Signal intel for Jet’s X/content engine should prioritize AI shifts that can become founder/operator implications in Jet’s YouTube-aligned voice: calm, practical, educational, premium, and relevant to Thai/SEA businesses.

@@ -15,3 +15,4 @@ Use this file for durable, agent-specific memory that should remain useful acros
 
 ## Durable notes
 - Created/verified on 2026-04-26.
+- Jet’s X growth strategy should borrow high-engagement mechanics from creators like Bindu Reddy (speed, strong predictions, timely AI comparisons), but remain aligned with Jet’s YouTube voice: clear teacher, founder/operator, practical AI translator, premium Thai/SEA business educator. Avoid chaotic model-war, political bait, or generic AI hype.
