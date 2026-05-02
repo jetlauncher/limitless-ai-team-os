@@ -54,3 +54,168 @@
 
 ### Primary link
 - https://aws.amazon.com/blogs/machine-learning/aws-transform-now-automates-bi-migration-to-amazon-quick-in-days/
+
+<!-- Re-verified 2026-05-02 05:42:40 +07 source: https://aws.amazon.com/blogs/machine-learning/aws-transform-now-automates-bi-migration-to-amazon-quick-in-days/ -->
+
+
+---
+
+## 2026-05-02 08:09:14 +07 — Claude Security public beta signal
+
+**Source links**
+- Official Anthropic background: https://www.anthropic.com/news/claude-code-security
+- Credible current reporting: https://siliconangle.com/2026/04/30/anthropic-announces-claude-security-public-beta-find-fix-software-vulnerabilities/
+- Credible current reporting: https://the-decoder.com/anthropic-launches-claude-security-to-give-defenders-the-same-ai-edge-attackers-already-have/
+- Google News corroboration surfaced multiple May 1 reports from SC Media, SiliconANGLE, The Decoder, Infosecurity, SecurityWeek, CRN, Pulse 2.0.
+
+**What changed**
+- Current credible reporting says Anthropic moved Claude Security from the earlier Claude Code Security limited research preview into public beta for Claude Enterprise customers.
+- The official Anthropic page confirms the underlying capability: Claude Code Security scans codebases for vulnerabilities, reasons across components/data flows, assigns severity/confidence, suggests targeted patches, and requires human approval before fixes are applied.
+- Reporting adds that the beta includes scheduled scans, CSV export, Slack/Jira integrations, and partner security-product integrations around Claude Opus 4.7.
+
+**Why it matters**
+- This is a concrete enterprise workflow shift: frontier models are moving into recurring security review and patch triage, not just code generation.
+- For operators, this suggests AI security review is becoming a standard enterprise buying category alongside SAST/DAST, issue trackers, and SOC tooling.
+- For founders, it raises the bar for shipping: customers will increasingly expect evidence of AI-assisted vulnerability scanning, patch review, audit trails, and human approval gates.
+
+**Who should care**
+- Technical founders, CTOs, security leads, agency/software teams maintaining client code, and anyone selling into enterprise procurement.
+
+**Recommended Jet angle/action**
+- Add “AI-assisted security review loop” to the operator playbook: scheduled code scans → severity/confidence triage → Jira/Slack handoff → human-approved patches → audit trail.
+- For Limitless Club, make this a founder-facing lesson: “Your AI coding stack needs an AI security stack.”
+- Benchmark Claude Security/Claude Code Security against GitHub Advanced Security, Cursor Security Review, Semgrep, Snyk, and manual code review for one internal repo before recommending it broadly.
+
+
+---
+## 2026-05-02 10:30 ICT — Pentagon classified-network AI agreements verified via DoD republication mirror
+
+**Status:** Non-silent high-signal alert candidate.  
+**Source quality:** Official DoD/War Department release found through Google News RSS but direct `defense.gov` / `war.gov` page returned 403 from this environment; content verified through Mirage News republication labeled **U.S. Department of Defense** plus Google News official-source listing.
+
+### What changed
+- A U.S. Department of Defense / War Department release titled **“Classified Networks AI Agreements”** says the department entered agreements with **seven frontier AI companies**: **SpaceX, OpenAI, Google, NVIDIA, Reflection, Microsoft, and Amazon Web Services**.
+- The stated purpose is to deploy advanced AI capabilities on the Department’s **classified networks** for lawful operational use.
+- The release says the agreements support an **“AI-first fighting force”** and specifically references secure deployment into **Impact Level 6 (IL6)** and **Impact Level 7 (IL7)** network environments.
+- Claimed operational uses include data synthesis, situational understanding, and warfighter decision-making in complex operational environments.
+
+### Why it matters for founders/operators
+- Frontier AI is crossing from enterprise pilots into classified national-security infrastructure; procurement, security posture, auditability, and deployment environment become strategic differentiators.
+- The listed vendors map the emerging defense AI stack: model/application layers (OpenAI, Google/xAI-adjacent SpaceX, Reflection), infra/accelerators (NVIDIA), and cloud/control planes (Microsoft, AWS).
+- Operators serving regulated or government-adjacent markets should expect customers to ask about classified/sovereign deployment patterns, audit controls, evals, model provenance, and data-boundary guarantees.
+
+### Who should care
+- Founders building enterprise AI, security/governance tooling, data infra, agent platforms, or public-sector/defense GTM.
+- Limitless Club operators teaching AI adoption: this is a concrete example of AI moving from “chatbot productivity” into mission-critical institutions.
+
+### Recommended action / angle for Jet
+- Track this as a **“AI adoption is becoming institutional infrastructure”** proof point, not as a consumer-model story.
+- Suggested operator angle: **build your AI deployment checklist around regulated buyers now** — permissions, observability, data residency, eval logs, procurement evidence, and safe-use policy are becoming table stakes.
+
+### Source links
+- Official-source listing surfaced by Google News: `Classified Networks AI Agreements — U.S. Department of War (.gov)` / direct page attempted: `https://www.defense.gov/News/Releases/Release/Article/4170076/classified-networks-ai-agreements/` (403 from Signal environment).
+- DoD release republication with extractable body text: https://www.miragenews.com/classified-networks-ai-agreements-1666064/
+- Credible corroboration surfaced by Google News: Reuters, Federal News Network, The Guardian, WSJ headlines on Pentagon/classified AI agreements.
+
+
+---
+
+## 2026-05-02 12:45:25 +07 — OpenAI GPT-5.5 + Codex now natively available on Databricks
+
+**Source links**
+- Databricks official: https://www.databricks.com/blog/openai-gpt-55-now-available-databricks-fully-governed-through-unity-ai-gateway
+- Earlier Databricks partnership context: https://www.databricks.com/blog/databricks-partners-openai-gpt-55
+
+**What changed**
+- Databricks says **GPT-5.5 is natively available on Databricks**.
+- Databricks says customers can use GPT-5.5 to power **agent building**, **Codex/coding-agent workflows**, enterprise-data-grounded agents, document pipelines, and natural-language business questions via Genie.
+- Databricks says **Unity AI Gateway governs both GPT-5.5 and Codex** with permissions, rate limits/cost controls, guardrails, MCP/tool-call governance, automatic failover, and observability/logging from day one.
+
+**Why it matters**
+- This is a concrete example of frontier models/agents moving into governed enterprise control planes, not just standalone chatbot/API access.
+- For operators, the practical buying criterion is shifting toward: can the platform govern model calls, coding-agent work, enterprise data access, MCP/tool calls, cost, and auditability in one place?
+- For founders building B2B AI, this raises the baseline: enterprise customers will increasingly expect gateway-level controls, traceability, and policy enforcement around agent workflows.
+
+**Who should care**
+- B2B AI founders selling into enterprises with Databricks/lakehouse footprints.
+- Operators using Codex/coding agents around internal data, notebooks, pipelines, or document-heavy workflows.
+- Limitless/education: useful case study for explaining why “agent governance” is becoming as important as model choice.
+
+**Recommended Jet action / angle**
+- Track this as a teaching/business angle: **“Frontier agents are moving behind enterprise gateways.”**
+- For a practical test, compare Codex/GPT-5.5 through Databricks Unity AI Gateway vs direct OpenAI/AWS/Azure routes on: permissions, logging, PII/prompt-injection controls, cost caps, MCP/tool-call traces, and rollback/failover.
+
+**Status**
+- Alert-worthy: official Databricks source verified after prior scans had only surfaced Google News metadata.
+
+
+---
+
+## 2026-05-02 19:25:42 UTC+07:00+0700 — xAI Custom Voices / voice cloning docs verification
+
+**Alert decision:** Non-silent. This is a source-rich follow-up to the xAI Custom Voices launch: official docs now confirm concrete API surfaces and operator constraints, beyond the earlier social/news signal.
+
+### Source links
+- Official xAI Custom Voices docs: https://docs.x.ai/developers/model-capabilities/audio/custom-voices
+- xAI docs corpus / LLM-readable source: https://docs.x.ai/llms.txt
+- Official xAI launch page attempted but Cloudflare-blocked from Signal: https://x.ai/news/grok-custom-voices
+
+### What changed / verified
+- xAI docs confirm **Custom Voices**: clone a voice from a short reference clip and use it anywhere a built-in voice works.
+- Custom voices can be used across **`POST /v1/tts`**, **`wss://api.x.ai/v1/tts`**, and **`wss://api.x.ai/v1/realtime`**.
+- Custom voices are returned via **`GET /v1/custom-voices`** and are **team-scoped**; they do not appear in the built-in voice list.
+- API creation via **`POST /v1/custom-voices`** is **Enterprise-gated**; console creation supports up to **30 custom voices for free**.
+- Reference clips can be up to **120 seconds**; docs recommend 90–120 seconds and warn that background noise/delivery style are cloned.
+- Availability is **United States only, except Illinois**.
+- Error docs indicate `403` when custom voices are not enabled for a team or the create endpoint is called without an Enterprise contract.
+
+### Why it matters for founders/operators
+- Voice-agent stacks are moving from generic voices to branded/persona-specific voices usable in realtime agents, TTS, support, education, game/NPC, audiobook, and creator workflows.
+- The Enterprise gate means builders should treat API voice cloning as a procurement/compliance feature, not a casual self-serve developer API yet.
+- Team scoping + regional limits are important for client work: do not promise global availability or unrestricted cloning.
+
+### Who should care
+- Founders testing voice sales/support agents.
+- Operators building multilingual customer support or training assistants.
+- Educators/Limitless Club teams exploring branded coach/narrator voices.
+- Agencies building AI voice products for clients.
+
+### Recommended action / angle
+- Run a small test plan: create one consent-cleared narrator/support voice in the xAI console, then test the same `voice_id` through TTS and realtime voice-agent flows.
+- For Jet/Limitless: frame this as **“voice agents now get brand/persona memory, but compliance and consent become the product spec.”**
+
+
+---
+
+## 2026-05-02 21:49:17 UTC+07:00 — Google DeepMind Gemini 3 Flash model page exposes pricing + agent benchmarks
+
+**Source links**
+- Official Google DeepMind model page: https://deepmind.google/models/gemini/flash/
+- Related official model pages checked: https://deepmind.google/models/gemini/pro/ ; https://deepmind.google/models/gemini/deep-think/ ; https://deepmind.google/models/gemini/flash-lite/
+
+**What changed**
+- Official Google DeepMind model pages are live for Gemini 3/3.1 variants. The Gemini 3 Flash page now exposes a detailed comparison table for **Gemini 3 Flash Thinking** vs Gemini 3 Pro Thinking, Gemini 2.5 variants, Claude Sonnet 4.5 Thinking, GPT-5.2 Extra High, and Grok 4.1 Fast Reasoning.
+- The table includes practical pricing and agent-task benchmarks. Key extracted facts from the official page:
+  - Gemini 3 Flash Thinking input/output pricing: **$0.50 / $3.00 per 1M tokens**.
+  - Gemini 3 Pro Thinking input/output pricing: **$2.00 / $12.00 per 1M tokens**.
+  - Agentic coding SWE-bench Verified single-attempt: **Gemini 3 Flash 78.0%**, Gemini 3 Pro 76.2%, Claude Sonnet 4.5 77.2%, GPT-5.2 Extra High 80.0%.
+  - Agentic tool use τ2-bench: **Gemini 3 Flash 90.2%**, Gemini 3 Pro 90.7%.
+  - Multi-step workflows using MCP / MCP Atlas: **Gemini 3 Flash 57.4%**, Gemini 3 Pro 54.1%, Claude Sonnet 4.5 43.8%, GPT-5.2 Extra High 60.6%.
+- Customer/operator snippets on the page include Warp reporting an **8% lift in fix accuracy** and Geotab reporting a **10% baseline improvement on agentic coding tasks** without specific optimization.
+
+**Why it matters for founders/operators**
+- This is not just a model-name page: Google is publishing model economics and agent-workflow benchmarks in the exact categories operators care about — coding agents, tool use, MCP workflows, long-horizon tasks, and cost per million tokens.
+- Gemini 3 Flash looks positioned as the low-cost/high-throughput agent model: materially cheaper than Pro while competitive on SWE-bench, tool use, and MCP workflows.
+- For teams building internal agents, support automations, coding workflows, or MCP-based toolchains, this gives a concrete reason to benchmark Gemini 3 Flash against current Claude/GPT/Grok defaults rather than assuming Flash means “cheap but weak.”
+
+**Who should care**
+- Founders/operators choosing default models for AI employees, coding agents, workflow agents, and high-volume back-office automations.
+- Educators/Limitless Club members teaching model selection: this is a clean case study in price/performance tradeoffs and benchmark skepticism.
+- Builders using MCP/tool-heavy agents.
+
+**Recommended action / angle**
+- Run a small A/B benchmark: same 10 internal agent tasks on Gemini 3 Flash Thinking vs current default GPT/Claude model, tracking task success, retries, latency, and total cost.
+- Content/research angle: **“The new model war is price-performance on agent workflows, not just leaderboard IQ.”**
+
+**Deduplication note**
+- Prior sessions had verified Gemini 3.1 Pro/Deep Think page titles, but no prior session matched `Gemini 3 Flash`, `Gemini 3 Flash Thinking`, or `MCP Atlas`; this note captures the more actionable pricing/benchmark details.
