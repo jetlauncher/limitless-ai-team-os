@@ -576,3 +576,90 @@ That difference compounds.
 
 ---
 
+
+## Kelly scheduled queue update — 2026-05-06 07:03:53
+Status: ready_for_review. Nothing published. Approval required before publishing.
+
+## The Quiet Founder twitter draft D8 — 2026-05-08T08:10:00
+Platform: twitter
+Status: ready_for_review
+
+A founder’s calendar will tell you what he truly trusts.
+
+If every important thing requires panic to move, the system is not finished yet.
+
+---
+
+## The Quiet Founder linkedin draft D8 — 2026-05-08T10:20:00
+Platform: linkedin
+Status: ready_for_review
+
+There is a version of building that looks impressive from the outside and empty from the inside.
+
+The Quiet Founder refuses that trade.
+
+He still wants excellence. He still wants growth. He still uses every honest advantage available — including AI, automation, and sharper systems.
+
+But the aim is not to squeeze one more task into every hour.
+
+The aim is to build a company that can carry responsibility without requiring constant inner noise.
+
+That means designing rhythms for:
+
+• deep work before reaction
+• decisions before meetings
+• family before leftover time
+• values before velocity
+• leverage before complexity
+
+Quiet leadership is not soft.
+
+It is what happens when ambition submits to order.
+
+---
+
+## The Quiet Founder threads draft D8 — 2026-05-08T12:30:00
+Platform: threads
+Status: ready_for_review
+
+Do not confuse calm with lack of ambition.
+
+Sometimes calm is the proof that a man has finally put his ambition in the right order.
+
+---
+
+## The Quiet Founder twitter draft D8 — 2026-05-08T17:20:00
+Platform: twitter
+Status: ready_for_review
+
+AI becomes powerful when it protects the founder’s attention instead of consuming it.
+
+The best system is not the flashiest one.
+It is the one that quietly keeps promises.
+
+---
+
+## The Quiet Founder threads draft D8 — 2026-05-08T19:10:00
+Platform: threads
+Status: ready_for_review
+
+A father-founder does not only ask, “Will this scale?”
+
+He also asks, “What will this require from the people I am called to love?”
+
+---
+
+## The Quiet Founder twitter draft D8 — 2026-05-08T21:10:00
+Platform: twitter
+Status: ready_for_review
+
+Deep work is not a productivity trend.
+
+It is a form of stewardship.
+
+Of attention.
+Of calling.
+Of the few hours that can actually move the mission.
+
+---
+
