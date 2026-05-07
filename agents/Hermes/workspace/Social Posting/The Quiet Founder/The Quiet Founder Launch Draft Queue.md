@@ -663,3 +663,95 @@ Of the few hours that can actually move the mission.
 
 ---
 
+
+## Kelly scheduled queue update — 2026-05-07 07:02:40
+Status: ready_for_review. Nothing published. Approval required before publishing.
+
+## The Quiet Founder twitter draft D9 — 2026-05-09T08:10:00
+Platform: twitter
+Status: ready_for_review
+
+The founder who checks everything himself has not built leverage.
+
+He has built a fragile throne.
+
+A calm system lets the right things surface without requiring constant vigilance.
+
+---
+
+## The Quiet Founder linkedin draft D9 — 2026-05-09T10:20:00
+Platform: linkedin
+Status: ready_for_review
+
+A quiet founder is not trying to remove pressure from leadership.
+
+He is trying to stop confusing pressure with chaos.
+
+There will always be hard decisions. There will always be urgent moments. There will always be seasons that require more from a man than he expected.
+
+But not every hard thing needs to become a loud thing.
+
+The work is to build a company rhythm where responsibility has a place to land:
+
+• decisions are captured
+• priorities are visible
+• AI handles repeatable noise
+• deep work is protected
+• family is not treated as the remainder
+• values are remembered before the calendar fills
+
+That kind of order does not make a founder less ambitious.
+
+It makes his ambition safer to carry.
+
+---
+
+## The Quiet Founder threads draft D9 — 2026-05-09T12:30:00
+Platform: threads
+Status: ready_for_review
+
+The point of AI is not to make a founder feel futuristic.
+
+The point is to help him be more faithful with attention, time, promises, and decisions.
+
+---
+
+## The Quiet Founder twitter draft D9 — 2026-05-09T17:20:00
+Platform: twitter
+Status: ready_for_review
+
+Quiet leverage looks boring from the outside.
+
+A clean queue.
+A trusted summary.
+A daily rhythm.
+One fewer repeated decision.
+
+Then one day the company is moving faster without the founder becoming louder.
+
+---
+
+## The Quiet Founder threads draft D9 — 2026-05-09T19:10:00
+Platform: threads
+Status: ready_for_review
+
+Build systems your family can feel.
+
+Not dashboards they can see.
+Not automations they can name.
+
+Just a calmer man walking back through the door.
+
+---
+
+## The Quiet Founder twitter draft D9 — 2026-05-09T21:10:00
+Platform: twitter
+Status: ready_for_review
+
+The founder’s first system is not software.
+
+It is order:
+
+what matters, what waits, what gets delegated, what gets protected, and what never goes on the altar.
+
+---
