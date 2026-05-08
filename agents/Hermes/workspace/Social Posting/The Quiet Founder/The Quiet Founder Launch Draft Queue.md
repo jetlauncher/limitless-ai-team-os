@@ -755,3 +755,87 @@ It is order:
 what matters, what waits, what gets delegated, what gets protected, and what never goes on the altar.
 
 ---
+
+
+## Kelly scheduled queue update — 2026-05-08 07:02:28
+Status: ready_for_review. Nothing published. Approval required before publishing.
+
+## The Quiet Founder twitter draft D10 — 2026-05-10T08:10:00
+Platform: twitter
+Status: ready_for_review
+
+A founder does not need to hear every signal.
+
+He needs a system wise enough to surface the few that deserve his attention.
+
+---
+
+## The Quiet Founder linkedin draft D10 — 2026-05-10T10:20:00
+Platform: linkedin
+Status: ready_for_review
+
+The quiet founder builds with a different measure of progress.
+
+Not merely: Did more get done?
+
+But also:
+
+• Did the right work get protected?
+• Did decisions become clearer?
+• Did family receive more than leftovers?
+• Did the company become less dependent on panic?
+• Did AI reduce noise instead of multiplying it?
+
+This is the mature use of leverage.
+
+Not speed for its own sake.
+
+Order in service of responsibility.
+
+A calmer founder is not escaping ambition.
+
+He is becoming strong enough to carry it without letting it rule the house.
+
+---
+
+## The Quiet Founder threads draft D10 — 2026-05-10T12:30:00
+Platform: threads
+Status: ready_for_review
+
+The best operating system is not the one with the most dashboards.
+
+It is the one that helps a founder keep his word.
+
+---
+
+## The Quiet Founder twitter draft D10 — 2026-05-10T17:20:00
+Platform: twitter
+Status: ready_for_review
+
+Quiet leadership starts before the meeting.
+
+It starts when the founder protects enough silence to know what he actually believes.
+
+---
+
+## The Quiet Founder threads draft D10 — 2026-05-10T19:10:00
+Platform: threads
+Status: ready_for_review
+
+If AI only helps you move faster, it is incomplete.
+
+If it helps you move with more peace, clarity, and integrity, it is becoming leverage.
+
+---
+
+## The Quiet Founder twitter draft D10 — 2026-05-10T21:10:00
+Platform: twitter
+Status: ready_for_review
+
+A man can scale a company and still shrink his life.
+
+The quiet founder refuses that bargain.
+
+Growth must be ordered, or it will become another appetite.
+
+---

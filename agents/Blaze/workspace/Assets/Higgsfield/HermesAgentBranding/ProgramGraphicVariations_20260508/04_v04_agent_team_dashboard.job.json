@@ -1,0 +1,22 @@
+[
+  {
+    "id": "540f08d6-c44e-4747-9549-f71ccfa359d5",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260508_150920_540f08d6-c44e-4747-9549-f71ccfa359d5.png",
+    "created_at": 1778252960.418966,
+    "params": {
+      "width": 1856,
+      "height": 2304,
+      "aspect_ratio": "4:5",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Create a premium 4:5 Instagram PROGRAM GRAPHIC for Limitless Club. Concept: AI Agent Team Dashboard. Course title: HERMES AGENT. Subtitle: Multi-Agent AI Masterclass. Dark Midnight Luxe Editorial design, black/graphite/silver typography with electric blue UI glow. Show three elegant agent dashboard cards as the hero visual: Chief of Staff Agent, Content Agent, Vibe Coding Agent, connected by thin glowing lines. Required text: LIMITLESS CLUB; HERMES AGENT; Multi-Agent AI Masterclass; Build the team that never sleeps.; คอร์สที่จะเปลี่ยน AI ให้เป็น “ทีมงาน” ของคุณ; สร้างทีม AI Agent ที่ทำงาน 24/7; By Jedi Trinupab · @jeditrinupab. Avoid humanoid robot dominating the poster; make it feel like a premium business operating system. Clean hierarchy, mobile readable, safe margins, no extra logos, no misspelled or duplicate text."
+    }
+  }
+]

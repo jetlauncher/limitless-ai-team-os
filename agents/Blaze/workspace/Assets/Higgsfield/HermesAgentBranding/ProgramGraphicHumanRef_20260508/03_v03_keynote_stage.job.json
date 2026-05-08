@@ -1,0 +1,28 @@
+[
+  {
+    "id": "9b444606-172b-4d92-b216-db72f2678ec7",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260508_154527_9b444606-172b-4d92-b216-db72f2678ec7.png",
+    "created_at": 1778255127.013591,
+    "params": {
+      "width": 1856,
+      "height": 2304,
+      "aspect_ratio": "4:5",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "ea4e701a-5905-4c84-8d73-135b96fb289a",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/ea4e701a-5905-4c84-8d73-135b96fb289a.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Use the attached reference photo as the real speaker/founder reference. Create a premium 4:5 PROGRAM GRAPHIC for Limitless Club that feels like a high-end AI masterclass keynote poster. The founder should look human, confident, approachable, wearing a light gray blazer and black shirt like the reference, standing on a dark cinematic stage with subtle blue AI holograms behind him. Text: LIMITLESS CLUB; HERMES AGENT; Multi-Agent AI Masterclass; Build the team that never sleeps.; คอร์สที่จะเปลี่ยน AI ให้เป็น “ทีมงาน” ของคุณ; Chief of Staff Agent; Content Agent; Vibe Coding Agent; สร้างทีม AI Agent ที่ทำงาน 24/7; By Jedi Trinupab · @jeditrinupab. Black graphite silver palette, elegant serif headline, clean sans body, premium not hypey. Large readable title, safe margins, no clutter, no extra logos, no duplicate text."
+    }
+  }
+]

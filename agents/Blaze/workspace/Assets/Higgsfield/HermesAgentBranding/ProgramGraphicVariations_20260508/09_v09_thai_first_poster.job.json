@@ -1,0 +1,22 @@
+[
+  {
+    "id": "f457963f-21b6-43cd-967a-28f4d6028ffe",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260508_151329_f457963f-21b6-43cd-967a-28f4d6028ffe.png",
+    "created_at": 1778253209.4129,
+    "params": {
+      "width": 1856,
+      "height": 2304,
+      "aspect_ratio": "4:5",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Create a premium 4:5 Instagram PROGRAM GRAPHIC for Limitless Club with stronger Thai-first selling message. Dark Midnight Luxe Editorial style: black/charcoal/graphite, silver-white typography, electric blue accents, premium course poster. Required layout text: LIMITLESS CLUB top; HERMES AGENT title; Multi-Agent AI Masterclass subtitle; large Thai hero line: คอร์สที่จะเปลี่ยน AI ให้เป็น “ทีมงาน” ของคุณ; quote card: Build the team that never sleeps.; three agent chips: Chief of Staff Agent, Content Agent, Vibe Coding Agent; bottom CTA: สร้างทีม AI Agent ที่ทำงาน 24/7; footer: By Jedi Trinupab · @jeditrinupab. Visual: elegant AI agent command interface, subtle holographic assistant, clean mobile-readable hierarchy, no extra logos, no clutter, no duplicate text, no spelling errors."
+    }
+  }
+]

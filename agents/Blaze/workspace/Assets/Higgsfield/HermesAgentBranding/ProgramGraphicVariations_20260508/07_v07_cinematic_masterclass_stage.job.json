@@ -1,0 +1,22 @@
+[
+  {
+    "id": "b1a60b67-6e3d-404f-8c3d-c1f57f07f480",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260508_151144_b1a60b67-6e3d-404f-8c3d-c1f57f07f480.png",
+    "created_at": 1778253104.500326,
+    "params": {
+      "width": 1856,
+      "height": 2304,
+      "aspect_ratio": "4:5",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Create a premium 4:5 Instagram PROGRAM GRAPHIC for Limitless Club. Concept: cinematic AI masterclass stage. Dark luxury black stage, glowing blue holographic agent interfaces floating around an empty executive podium, chrome/silver accents, editorial serif title. Required text: LIMITLESS CLUB; HERMES AGENT; Multi-Agent AI Masterclass; Build the team that never sleeps.; คอร์สที่จะเปลี่ยน AI ให้เป็น “ทีมงาน” ของคุณ; Chief of Staff Agent; Content Agent; Vibe Coding Agent; สร้างทีม AI Agent ที่ทำงาน 24/7; By Jedi Trinupab · @jeditrinupab. Composition must be clean with large readable title and very controlled decorative details. 4:5, premium, no extra logos, no misspelled duplicate text, safe margins."
+    }
+  }
+]
