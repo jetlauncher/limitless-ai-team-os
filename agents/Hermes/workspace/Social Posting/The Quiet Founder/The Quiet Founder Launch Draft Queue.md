@@ -839,3 +839,84 @@ The quiet founder refuses that bargain.
 Growth must be ordered, or it will become another appetite.
 
 ---
+
+## Kelly scheduled queue update — 2026-05-09 07:00:29 +07
+Status: ready_for_review. Nothing published. Approval required before publishing.
+
+## The Quiet Founder twitter draft D11 — 2026-05-11T08:10:00
+Platform: twitter
+Status: ready_for_review
+
+The founder who can sit quietly with reality will make better moves than the founder who needs constant motion to feel safe.
+
+Stillness is not delay.
+It is where clear leadership begins.
+
+---
+
+## The Quiet Founder linkedin draft D11 — 2026-05-11T10:20:00
+Platform: linkedin
+Status: ready_for_review
+
+A quiet founder does not use AI to escape responsibility.
+
+He uses it to carry responsibility with more order.
+
+That distinction matters.
+
+The goal is not to automate conscience, outsource judgment, or let the tools become the operating principle of the company.
+
+The goal is to remove the noise that keeps a man from doing the work only he can do:
+
+• make clear decisions
+• protect deep work
+• notice what is drifting
+• keep promises visible
+• lead without constant reaction
+• return home with enough presence to love well
+
+AI is useful when it makes the founder more faithful, not just more efficient.
+
+Quiet leverage is technology submitted to values.
+
+---
+
+## The Quiet Founder threads draft D11 — 2026-05-11T12:30:00
+Platform: threads
+Status: ready_for_review
+
+A calm founder still feels pressure.
+
+He has simply built enough order that pressure does not get to become the leader.
+
+---
+
+## The Quiet Founder twitter draft D11 — 2026-05-11T17:20:00
+Platform: twitter
+Status: ready_for_review
+
+The best systems do not make the founder look busy.
+
+They make the important work harder to forget and the unimportant noise easier to ignore.
+
+---
+
+## The Quiet Founder threads draft D11 — 2026-05-11T19:10:00
+Platform: threads
+Status: ready_for_review
+
+Fatherhood is a useful test for leverage.
+
+If the system only scales the company but leaves less patience, less presence, and less peace, it is not finished.
+
+---
+
+## The Quiet Founder twitter draft D11 — 2026-05-11T21:10:00
+Platform: twitter
+Status: ready_for_review
+
+Quiet AI leverage is not about replacing the founder.
+
+It is about giving him enough margin to lead from conviction instead of exhaustion.
+
+---
