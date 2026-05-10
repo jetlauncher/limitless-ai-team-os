@@ -1,0 +1,740 @@
+{
+  "run_id": "2026-05-10_112702",
+  "generated_at": "2026-05-10T11:27:02",
+  "site": "https://jeditrinupab.com",
+  "notes": [
+    "No GSC export/API scope provided; used strategic seed set from saved AI OS brief."
+  ],
+  "opportunities": [
+    {
+      "row": {
+        "query": "คอร์ส AI สำหรับผู้บริหาร",
+        "page": "/programs/ai-expert",
+        "position": 7.8,
+        "impressions": 510,
+        "clicks": 18,
+        "ctr": 0.035,
+        "source": "strategic_seed_from_brief"
+      },
+      "score": 69.97,
+      "recommendation": {
+        "intent": "Thai commercial training intent",
+        "title": "คอร์ส AI สำหรับผู้บริหาร | AI for Business Thailand — Limitless Club",
+        "meta": "เรียน AI สำหรับผู้บริหารและเจ้าของธุรกิจ: ChatGPT, AI agents, automation, marketing, workflows, and AI OS implementation with Jedi Trinupab.",
+        "h1": "คอร์ส AI สำหรับผู้บริหาร: Build Your Practical AI OS",
+        "schema": [
+          "Course",
+          "FAQPage",
+          "Organization"
+        ],
+        "outline": [
+          "เรียน AI เพื่อใช้จริงในธุรกิจ",
+          "What you will build",
+          "AI OS for executives",
+          "Curriculum",
+          "Results",
+          "FAQ"
+        ]
+      },
+      "serp": {
+        "provider": "duckduckgo_html_best_effort",
+        "results": [
+          {
+            "title": "เปิดรับสมัคร! หลักสูตร AI For Business สำหรับผู้บริหาร",
+            "url": "https://aigencorp.com/aigen-ai-for-business-course/"
+          },
+          {
+            "title": "Agentic AI, AI course, AI for leader,คอร์ส AI,หลักสูตร AI สำหรับ ...",
+            "url": "https://www.truedigitalacademy.com/course/tdai"
+          },
+          {
+            "title": "คอร์ส Ai ครบทุกระดับ อบรม Ai สำหรับองค์กรและผู้บริหาร",
+            "url": "https://www.piracademy.com/course"
+          },
+          {
+            "title": "Generative AI Mastery for Executives | Workshop | Skooldio",
+            "url": "https://www.skooldio.com/workshops/generative-ai-mastery-for-executives"
+          },
+          {
+            "title": "ERT เปิดอบรมหลักสูตร Generative AI for Executives คอร์สเรียนที่ผู้นำ ...",
+            "url": "https://www.ert.co.th/generative-ai-for-executives/"
+          }
+        ]
+      }
+    },
+    {
+      "row": {
+        "query": "AI agents for business",
+        "page": "/blog/ai-agents-for-business",
+        "position": 8.7,
+        "impressions": 420,
+        "clicks": 9,
+        "ctr": 0.021,
+        "source": "strategic_seed_from_brief"
+      },
+      "score": 68.38,
+      "recommendation": {
+        "intent": "Business use-case guide for AI agents",
+        "title": "AI Agents for Business: Practical Use Cases, Workflows & Examples",
+        "meta": "Learn how AI agents help businesses automate research, content, sales, operations, reporting, and customer workflows — with practical examples for Thai teams.",
+        "h1": "AI Agents for Business: How to Use Agents in Real Workflows",
+        "schema": [
+          "Article",
+          "FAQPage"
+        ],
+        "outline": [
+          "What are AI agents?",
+          "Agents vs chatbots",
+          "10 business use cases",
+          "SEO Gap Loop Agent",
+          "Design your first agent",
+          "CTA"
+        ]
+      },
+      "serp": {
+        "provider": "duckduckgo_html_best_effort",
+        "results": [
+          {
+            "title": "10 Best AI Agents for Business Automation (2026) - Unite.AI",
+            "url": "https://www.unite.ai/best-ai-agents-for-business-automation/"
+          },
+          {
+            "title": "AI agents for business: Agentic AI insights and trends",
+            "url": "https://www.deloitte.com/us/en/what-we-do/capabilities/applied-artificial-intelligence/articles/agentic-ai-insights.html"
+          },
+          {
+            "title": "10 AI Agent Platforms Every Business Leader Needs To Know - Forbes",
+            "url": "https://www.forbes.com/sites/bernardmarr/2025/12/29/10-ai-agent-platforms-every-business-leader-needs-to-know/"
+          },
+          {
+            "title": "22 AI Agent Examples: Types, Use Cases, Tips for Work",
+            "url": "https://www.domo.com/learn/article/ai-agent-examples"
+          },
+          {
+            "title": "AI Agents: What They Are and Their Business Impact | BCG",
+            "url": "https://www.bcg.com/capabilities/artificial-intelligence/ai-agents"
+          }
+        ]
+      }
+    },
+    {
+      "row": {
+        "query": "CEO OS",
+        "page": "/programs/ceo-os",
+        "position": 6.7,
+        "impressions": 390,
+        "clicks": 20,
+        "ctr": 0.051,
+        "source": "strategic_seed_from_brief"
+      },
+      "score": 65.72,
+      "recommendation": {
+        "intent": "Founder/operator operating system comparison and program fit",
+        "title": "CEO OS | AI-Powered Operating System for Founders & Executives",
+        "meta": "CEO OS helps founders install a practical operating system for strategy, execution, dashboards, AI agents, and weekly decision-making with Limitless Club.",
+        "h1": "CEO OS: The AI-Powered Operating System for Modern Founders",
+        "schema": [
+          "Course",
+          "FAQPage"
+        ],
+        "outline": [
+          "Why CEOs need an OS",
+          "The CEO OS stack",
+          "How AI changes executive work",
+          "Member outcomes",
+          "Apply"
+        ]
+      },
+      "serp": {
+        "provider": "duckduckgo_html_best_effort",
+        "results": [
+          {
+            "title": "The First CEO Platform | CEO-S Software",
+            "url": "https://www.ceosoftware.co/"
+          },
+          {
+            "title": "CEO-S - A System Forged Through Real CEO Experience",
+            "url": "https://ceosys.co/"
+          },
+          {
+            "title": "Executive-OS™ - The AI Operating System for High-Performing CEOs",
+            "url": "https://executive-operatingsystem.com/"
+          },
+          {
+            "title": "CXO-OS Operating System for Founders & CXOs | CXO-OS",
+            "url": "https://cxo-os.com/"
+          },
+          {
+            "title": "The CEO's Operating System - aligntoday.com",
+            "url": "https://aligntoday.com/ceos-operating-system"
+          }
+        ]
+      }
+    },
+    {
+      "row": {
+        "query": "AI automation for business",
+        "page": "/blog/ai-automation-for-business",
+        "position": 9.9,
+        "impressions": 380,
+        "clicks": 7,
+        "ctr": 0.018,
+        "source": "strategic_seed_from_brief"
+      },
+      "score": 61.68,
+      "recommendation": {
+        "intent": "Business workflow automation guide",
+        "title": "AI Automation for Business: Examples, Tools & Workflows for 2026",
+        "meta": "A practical guide to AI automation for business owners: workflows, agents, dashboards, content, sales, operations, and implementation roadmap.",
+        "h1": "AI Automation for Business: How to Automate Work with AI",
+        "schema": [
+          "Article",
+          "FAQPage"
+        ],
+        "outline": [
+          "Meaning",
+          "Best areas to automate first",
+          "Examples by department",
+          "Tools vs agents",
+          "Measure ROI",
+          "Build your AI OS"
+        ]
+      },
+      "serp": {
+        "provider": "duckduckgo_html_best_effort",
+        "results": [
+          {
+            "title": "50 Best AI Tools for Business: 2026 (w/ Pros & Cons) - HostAdvice",
+            "url": "https://hostadvice.com/blog/how-to-manage-a-business/best-ai-tools-for-business/"
+          },
+          {
+            "title": "9 Best AI Tools for Business",
+            "url": "https://fitsmallbusiness.com/best-ai-tools-for-business/"
+          },
+          {
+            "title": "12 Best AI Tools for Business Automation in 2026 - ekipa.ai",
+            "url": "https://www.ekipa.ai/ekipa-labs/ai-tools-for-business-automation"
+          },
+          {
+            "title": "20+ Best AI Tools for Business to Automate and Scale",
+            "url": "https://www.salesforce.com/artificial-intelligence/business/best-ai-tools-for-business/"
+          },
+          {
+            "title": "The Best AI Tools for Business to Know | Built In",
+            "url": "https://builtin.com/artificial-intelligence/artificial-intelligence-in-business"
+          }
+        ]
+      }
+    },
+    {
+      "row": {
+        "query": "Generative AI marketing",
+        "page": "/blog/generative-ai-marketing",
+        "position": 9.4,
+        "impressions": 330,
+        "clicks": 11,
+        "ctr": 0.026,
+        "source": "strategic_seed_from_brief"
+      },
+      "score": 60.24,
+      "recommendation": {
+        "intent": "Practical educational guide with workflows and examples",
+        "title": "Generative AI Marketing: Strategy, Examples & Workflows for Business",
+        "meta": "Learn how to use generative AI for marketing strategy, content, campaigns, customer research, sales enablement, and automation — with practical workflows.",
+        "h1": "Generative AI Marketing: From Content to Complete Marketing Workflows",
+        "schema": [
+          "Article",
+          "FAQPage"
+        ],
+        "outline": [
+          "Strategy",
+          "Customer research",
+          "Content workflows",
+          "Campaign automation",
+          "Marketing AI OS",
+          "CTA"
+        ]
+      },
+      "serp": {
+        "provider": "duckduckgo_html_best_effort",
+        "results": [
+          {
+            "title": "Generative AI in marketing | Deloitte Digital",
+            "url": "https://www.deloittedigital.com/us/en/hub/generative-ai-marketing.html"
+          },
+          {
+            "title": "Generative AI in marketing - IBM",
+            "url": "https://www.ibm.com/think/topics/generative-ai-marketing"
+          },
+          {
+            "title": "The power of generative AI for marketing | McKinsey",
+            "url": "https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/how-generative-ai-can-boost-consumer-marketing"
+          },
+          {
+            "title": "Generative AI in Marketing | Databricks Blog",
+            "url": "https://www.databricks.com/blog/generative-ai-marketing"
+          },
+          {
+            "title": "Generative AI Takes Off with Marketers - American Marketing Association",
+            "url": "https://www.ama.org/marketing-news/generative-ai-takes-off-with-marketers/"
+          }
+        ]
+      }
+    },
+    {
+      "row": {
+        "query": "CEO operating system",
+        "page": "/programs/ceo-os",
+        "position": 10.1,
+        "impressions": 260,
+        "clicks": 6,
+        "ctr": 0.023,
+        "source": "strategic_seed_from_brief"
+      },
+      "score": 55.19,
+      "recommendation": {
+        "intent": "Founder/operator operating system comparison and program fit",
+        "title": "CEO OS | AI-Powered Operating System for Founders & Executives",
+        "meta": "CEO OS helps founders install a practical operating system for strategy, execution, dashboards, AI agents, and weekly decision-making with Limitless Club.",
+        "h1": "CEO OS: The AI-Powered Operating System for Modern Founders",
+        "schema": [
+          "Course",
+          "FAQPage"
+        ],
+        "outline": [
+          "Why CEOs need an OS",
+          "The CEO OS stack",
+          "How AI changes executive work",
+          "Member outcomes",
+          "Apply"
+        ]
+      },
+      "serp": {
+        "provider": "duckduckgo_html_best_effort",
+        "results": [
+          {
+            "title": "CEO-S - A System Forged Through Real CEO Experience",
+            "url": "https://ceosys.co/"
+          },
+          {
+            "title": "Executive-OS™ - The AI Operating System for High-Performing CEOs",
+            "url": "https://executive-operatingsystem.com/"
+          },
+          {
+            "title": "The First CEO Platform | CEO-S Software",
+            "url": "https://www.ceosoftware.co/"
+          },
+          {
+            "title": "The CEO's Operating System - aligntoday.com",
+            "url": "https://aligntoday.com/ceos-operating-system"
+          },
+          {
+            "title": "The Chief Executive Operating System: The Essential Playbook for ...",
+            "url": "https://www.amazon.com/Chief-Executive-Operating-System-Essential-ebook/dp/B0C5ZLPSW2"
+          }
+        ]
+      }
+    },
+    {
+      "row": {
+        "query": "AI operating system for business",
+        "page": "/ai-os",
+        "position": 10.8,
+        "impressions": 180,
+        "clicks": 2,
+        "ctr": 0.015,
+        "source": "strategic_seed_from_brief"
+      },
+      "score": 50.37,
+      "recommendation": {
+        "intent": "Category education + conversion",
+        "title": "AI OS for Business Thailand | Limitless Club by Jedi Trinupab",
+        "meta": "Build an AI Operating System for your business: AI workflows, agents, automation, prompts, dashboards, and team adoption. Learn the Limitless AI OS with Jedi Trinupab.",
+        "h1": "AI OS: The Operating System for Running Your Business with AI",
+        "schema": [
+          "Service",
+          "FAQPage",
+          "Organization"
+        ],
+        "outline": [
+          "What is an AI OS?",
+          "Why businesses need an operating system, not random tools",
+          "6 layers",
+          "Examples",
+          "AI OS vs tools vs agents",
+          "Install your AI OS"
+        ]
+      },
+      "serp": {
+        "provider": "duckduckgo_html_best_effort",
+        "results": [
+          {
+            "title": "AI Operating System for Business: Build One That Runs Without You",
+            "url": "https://octavius.ai/ai-operating-system-for-business/"
+          },
+          {
+            "title": "OS for Business: An AI-Native OS Rewiring Industry Value Chains",
+            "url": "https://www.tcs.com/what-we-do/industries/high-tech/white-paper/ai-native-operating-system-rewiring-industry-enterprise-value-chains"
+          },
+          {
+            "title": "The Emergence Of AI Operating Systems - Forbes",
+            "url": "https://www.forbes.com/councils/forbestechcouncil/2025/03/24/the-emergence-of-ai-operating-systems/"
+          },
+          {
+            "title": "Best AI Operating Systems: A Comprehensive Overview",
+            "url": "https://www.walturn.com/insights/best-ai-operating-systems-a-comprehensive-overview"
+          },
+          {
+            "title": "AI Operating Systems & Agentic OS Explained: The Next Layer of ...",
+            "url": "https://www.fluid.ai/blog/ai-operating-systems-agentic-os-explained"
+          }
+        ]
+      }
+    },
+    {
+      "row": {
+        "query": "AI for business Thailand",
+        "page": "/programs/ai-expert",
+        "position": 11.5,
+        "impressions": 210,
+        "clicks": 4,
+        "ctr": 0.019,
+        "source": "strategic_seed_from_brief"
+      },
+      "score": 47.28,
+      "recommendation": {
+        "intent": "Category education + conversion",
+        "title": "AI OS for Business Thailand | Limitless Club by Jedi Trinupab",
+        "meta": "Build an AI Operating System for your business: AI workflows, agents, automation, prompts, dashboards, and team adoption. Learn the Limitless AI OS with Jedi Trinupab.",
+        "h1": "AI OS: The Operating System for Running Your Business with AI",
+        "schema": [
+          "Service",
+          "FAQPage",
+          "Organization"
+        ],
+        "outline": [
+          "What is an AI OS?",
+          "Why businesses need an operating system, not random tools",
+          "6 layers",
+          "Examples",
+          "AI OS vs tools vs agents",
+          "Install your AI OS"
+        ]
+      },
+      "serp": {
+        "provider": "synthetic_competitor_archetypes",
+        "results": [
+          {
+            "title": "Definitive guide / category explainer for AI for business Thailand",
+            "url": "competitor-archetype://guide"
+          },
+          {
+            "title": "Tool/listicle page targeting AI for business Thailand",
+            "url": "competitor-archetype://tools-list"
+          },
+          {
+            "title": "Consulting/training landing page for AI for business Thailand",
+            "url": "competitor-archetype://service-page"
+          }
+        ]
+      }
+    },
+    {
+      "row": {
+        "query": "AI OS",
+        "page": "/ai-os",
+        "position": 12.4,
+        "impressions": 260,
+        "clicks": 3,
+        "ctr": 0.018,
+        "source": "strategic_seed_from_brief"
+      },
+      "score": 44.74,
+      "recommendation": {
+        "intent": "Category education + conversion",
+        "title": "AI OS for Business Thailand | Limitless Club by Jedi Trinupab",
+        "meta": "Build an AI Operating System for your business: AI workflows, agents, automation, prompts, dashboards, and team adoption. Learn the Limitless AI OS with Jedi Trinupab.",
+        "h1": "AI OS: The Operating System for Running Your Business with AI",
+        "schema": [
+          "Service",
+          "FAQPage",
+          "Organization"
+        ],
+        "outline": [
+          "What is an AI OS?",
+          "Why businesses need an operating system, not random tools",
+          "6 layers",
+          "Examples",
+          "AI OS vs tools vs agents",
+          "Install your AI OS"
+        ]
+      },
+      "serp": {
+        "provider": "synthetic_competitor_archetypes",
+        "results": [
+          {
+            "title": "Definitive guide / category explainer for AI OS",
+            "url": "competitor-archetype://guide"
+          },
+          {
+            "title": "Tool/listicle page targeting AI OS",
+            "url": "competitor-archetype://tools-list"
+          },
+          {
+            "title": "Consulting/training landing page for AI OS",
+            "url": "competitor-archetype://service-page"
+          }
+        ]
+      }
+    },
+    {
+      "row": {
+        "query": "อบรม AI องค์กร",
+        "page": "/programs/ai-expert",
+        "position": 13.1,
+        "impressions": 280,
+        "clicks": 5,
+        "ctr": 0.018,
+        "source": "strategic_seed_from_brief"
+      },
+      "score": 41.65,
+      "recommendation": {
+        "intent": "Thai commercial training intent",
+        "title": "คอร์ส AI สำหรับผู้บริหาร | AI for Business Thailand — Limitless Club",
+        "meta": "เรียน AI สำหรับผู้บริหารและเจ้าของธุรกิจ: ChatGPT, AI agents, automation, marketing, workflows, and AI OS implementation with Jedi Trinupab.",
+        "h1": "คอร์ส AI สำหรับผู้บริหาร: Build Your Practical AI OS",
+        "schema": [
+          "Course",
+          "FAQPage",
+          "Organization"
+        ],
+        "outline": [
+          "เรียน AI เพื่อใช้จริงในธุรกิจ",
+          "What you will build",
+          "AI OS for executives",
+          "Curriculum",
+          "Results",
+          "FAQ"
+        ]
+      },
+      "serp": {
+        "provider": "synthetic_competitor_archetypes",
+        "results": [
+          {
+            "title": "Definitive guide / category explainer for อบรม AI องค์กร",
+            "url": "competitor-archetype://guide"
+          },
+          {
+            "title": "Tool/listicle page targeting อบรม AI องค์กร",
+            "url": "competitor-archetype://tools-list"
+          },
+          {
+            "title": "Consulting/training landing page for อบรม AI องค์กร",
+            "url": "competitor-archetype://service-page"
+          }
+        ]
+      }
+    }
+  ],
+  "page_audit": [
+    {
+      "url": "https://jeditrinupab.com/",
+      "title": "Limitless Club | คอร์สสอน AI สำหรับผู้บริหาร — Jedi Trinupab (เจได ไตรนุภาพ)",
+      "description": "1,000+ Thai executives trained. Learn from Jedi Trinupab (เจได ไตรนุภาพ), Thailand's #1 AI Business Coach. Deploy AI across your business in one day. AI Expert, CEO OS, Creative AI programs.",
+      "h1": "Limitless Club - Thailand's #1 AI Business Coach",
+      "canonical": "",
+      "status": 200,
+      "word_count": 9,
+      "schema_types": [
+        "Country",
+        "Course",
+        "EducationalOrganization",
+        "Offer",
+        "Person",
+        "WebSite"
+      ]
+    },
+    {
+      "url": "https://jeditrinupab.com/ai-os",
+      "title": "Limitless Club | คอร์สสอน AI สำหรับผู้บริหาร — Jedi Trinupab (เจได ไตรนุภาพ)",
+      "description": "1,000+ Thai executives trained. Learn from Jedi Trinupab (เจได ไตรนุภาพ), Thailand's #1 AI Business Coach. Deploy AI across your business in one day. AI Expert, CEO OS, Creative AI programs.",
+      "h1": "Limitless Club - Thailand's #1 AI Business Coach",
+      "canonical": "",
+      "status": 200,
+      "word_count": 9,
+      "schema_types": [
+        "Country",
+        "Course",
+        "EducationalOrganization",
+        "Offer",
+        "Person",
+        "WebSite"
+      ]
+    },
+    {
+      "url": "https://jeditrinupab.com/blog",
+      "title": "Limitless Club | คอร์สสอน AI สำหรับผู้บริหาร — Jedi Trinupab (เจได ไตรนุภาพ)",
+      "description": "1,000+ Thai executives trained. Learn from Jedi Trinupab (เจได ไตรนุภาพ), Thailand's #1 AI Business Coach. Deploy AI across your business in one day. AI Expert, CEO OS, Creative AI programs.",
+      "h1": "Limitless Club - Thailand's #1 AI Business Coach",
+      "canonical": "",
+      "status": 200,
+      "word_count": 9,
+      "schema_types": [
+        "Country",
+        "Course",
+        "EducationalOrganization",
+        "Offer",
+        "Person",
+        "WebSite"
+      ]
+    },
+    {
+      "url": "https://jeditrinupab.com/blog/ai-agents-for-business",
+      "title": "Limitless Club | คอร์สสอน AI สำหรับผู้บริหาร — Jedi Trinupab (เจได ไตรนุภาพ)",
+      "description": "1,000+ Thai executives trained. Learn from Jedi Trinupab (เจได ไตรนุภาพ), Thailand's #1 AI Business Coach. Deploy AI across your business in one day. AI Expert, CEO OS, Creative AI programs.",
+      "h1": "Limitless Club - Thailand's #1 AI Business Coach",
+      "canonical": "",
+      "status": 200,
+      "word_count": 9,
+      "schema_types": [
+        "Country",
+        "Course",
+        "EducationalOrganization",
+        "Offer",
+        "Person",
+        "WebSite"
+      ]
+    },
+    {
+      "url": "https://jeditrinupab.com/blog/ai-automation-for-business",
+      "title": "Limitless Club | คอร์สสอน AI สำหรับผู้บริหาร — Jedi Trinupab (เจได ไตรนุภาพ)",
+      "description": "1,000+ Thai executives trained. Learn from Jedi Trinupab (เจได ไตรนุภาพ), Thailand's #1 AI Business Coach. Deploy AI across your business in one day. AI Expert, CEO OS, Creative AI programs.",
+      "h1": "Limitless Club - Thailand's #1 AI Business Coach",
+      "canonical": "",
+      "status": 200,
+      "word_count": 9,
+      "schema_types": [
+        "Country",
+        "Course",
+        "EducationalOrganization",
+        "Offer",
+        "Person",
+        "WebSite"
+      ]
+    },
+    {
+      "url": "https://jeditrinupab.com/blog/generative-ai-marketing",
+      "title": "Limitless Club | คอร์สสอน AI สำหรับผู้บริหาร — Jedi Trinupab (เจได ไตรนุภาพ)",
+      "description": "1,000+ Thai executives trained. Learn from Jedi Trinupab (เจได ไตรนุภาพ), Thailand's #1 AI Business Coach. Deploy AI across your business in one day. AI Expert, CEO OS, Creative AI programs.",
+      "h1": "Limitless Club - Thailand's #1 AI Business Coach",
+      "canonical": "",
+      "status": 200,
+      "word_count": 9,
+      "schema_types": [
+        "Country",
+        "Course",
+        "EducationalOrganization",
+        "Offer",
+        "Person",
+        "WebSite"
+      ]
+    },
+    {
+      "url": "https://jeditrinupab.com/programs/ai-expert",
+      "title": "Limitless Club | คอร์สสอน AI สำหรับผู้บริหาร — Jedi Trinupab (เจได ไตรนุภาพ)",
+      "description": "1,000+ Thai executives trained. Learn from Jedi Trinupab (เจได ไตรนุภาพ), Thailand's #1 AI Business Coach. Deploy AI across your business in one day. AI Expert, CEO OS, Creative AI programs.",
+      "h1": "Limitless Club - Thailand's #1 AI Business Coach",
+      "canonical": "",
+      "status": 200,
+      "word_count": 9,
+      "schema_types": [
+        "Country",
+        "Course",
+        "EducationalOrganization",
+        "Offer",
+        "Person",
+        "WebSite"
+      ]
+    },
+    {
+      "url": "https://jeditrinupab.com/programs/ceo-os",
+      "title": "Limitless Club | คอร์สสอน AI สำหรับผู้บริหาร — Jedi Trinupab (เจได ไตรนุภาพ)",
+      "description": "1,000+ Thai executives trained. Learn from Jedi Trinupab (เจได ไตรนุภาพ), Thailand's #1 AI Business Coach. Deploy AI across your business in one day. AI Expert, CEO OS, Creative AI programs.",
+      "h1": "Limitless Club - Thailand's #1 AI Business Coach",
+      "canonical": "",
+      "status": 200,
+      "word_count": 9,
+      "schema_types": [
+        "Country",
+        "Course",
+        "EducationalOrganization",
+        "Offer",
+        "Person",
+        "WebSite"
+      ]
+    }
+  ],
+  "briefs": [
+    {
+      "page": "/programs/ai-expert",
+      "primary_query": "คอร์ส AI สำหรับผู้บริหาร",
+      "intent": "Thai commercial training intent",
+      "title": "คอร์ส AI สำหรับผู้บริหาร | AI for Business Thailand — Limitless Club",
+      "meta": "เรียน AI สำหรับผู้บริหารและเจ้าของธุรกิจ: ChatGPT, AI agents, automation, marketing, workflows, and AI OS implementation with Jedi Trinupab.",
+      "h1": "คอร์ส AI สำหรับผู้บริหาร: Build Your Practical AI OS",
+      "schema": [
+        "Course",
+        "FAQPage",
+        "Organization"
+      ],
+      "outline": [
+        "เรียน AI เพื่อใช้จริงในธุรกิจ",
+        "What you will build",
+        "AI OS for executives",
+        "Curriculum",
+        "Results",
+        "FAQ"
+      ]
+    },
+    {
+      "page": "/blog/ai-agents-for-business",
+      "primary_query": "AI agents for business",
+      "intent": "Business use-case guide for AI agents",
+      "title": "AI Agents for Business: Practical Use Cases, Workflows & Examples",
+      "meta": "Learn how AI agents help businesses automate research, content, sales, operations, reporting, and customer workflows — with practical examples for Thai teams.",
+      "h1": "AI Agents for Business: How to Use Agents in Real Workflows",
+      "schema": [
+        "Article",
+        "FAQPage"
+      ],
+      "outline": [
+        "What are AI agents?",
+        "Agents vs chatbots",
+        "10 business use cases",
+        "SEO Gap Loop Agent",
+        "Design your first agent",
+        "CTA"
+      ]
+    },
+    {
+      "page": "/programs/ceo-os",
+      "primary_query": "CEO OS",
+      "intent": "Founder/operator operating system comparison and program fit",
+      "title": "CEO OS | AI-Powered Operating System for Founders & Executives",
+      "meta": "CEO OS helps founders install a practical operating system for strategy, execution, dashboards, AI agents, and weekly decision-making with Limitless Club.",
+      "h1": "CEO OS: The AI-Powered Operating System for Modern Founders",
+      "schema": [
+        "Course",
+        "FAQPage"
+      ],
+      "outline": [
+        "Why CEOs need an OS",
+        "The CEO OS stack",
+        "How AI changes executive work",
+        "Member outcomes",
+        "Apply"
+      ]
+    }
+  ],
+  "movement": []
+}

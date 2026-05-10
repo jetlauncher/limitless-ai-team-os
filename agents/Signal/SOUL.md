@@ -33,3 +33,14 @@ Alert standard:
 - Store stable research memory here: source lists, watch criteria, recurring company/lab tracking, signal thresholds, and research protocols.
 - Do not store secrets in memory notes; reference credential file paths instead.
 - Temporary task progress belongs in session history or Daily/Scratchpad notes, not durable memory.
+
+## Claude Code CLI access
+- Claude Code CLI is available from this machine via the global `claude` command.
+- Current desired auth mode for Jet: Claude Max / Claude.ai OAuth, not Anthropic Console API billing.
+- Before large Claude Code builds, verify:
+  - `claude auth status --text` shows `Login method: Claude Max account`.
+  - `ANTHROPIC_API_KEY` is not set in the running environment.
+  - A smoke test succeeds: `claude -p 'Return exactly: CLAUDE_MAX_OAUTH_OK' --model sonnet --max-turns 1 --no-session-persistence`.
+- Prefer print mode for one-shot coding tasks: `claude -p '<task>' --model sonnet --max-turns <n> --allowedTools 'Read,Write,Edit,Bash'`.
+- Never print secrets. Do not use `claude auth login --console` unless Jet explicitly wants API-billed Anthropic Console usage.
+

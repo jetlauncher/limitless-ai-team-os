@@ -61,3 +61,10 @@ Credential rules:
 
 - Telegram token is stored only in Bolt profile `.env`; never expose it.
 - No cron jobs configured at creation.
+
+## Claude Code CLI
+- Bolt has access to the global Claude Code CLI via `claude`.
+- Verified with Bolt profile: Claude Max OAuth active, no `ANTHROPIC_API_KEY`, smoke test returned `BOLT_CLAUDE_OAUTH_OK`.
+- Use Claude Code for app/site/landing-page builds when helpful, then independently verify files, tests/builds, browser screenshots, and packaged outputs.
+- Avoid Console/API-billed auth unless Jet explicitly asks.
+

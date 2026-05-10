@@ -16,3 +16,6 @@ Use this file for durable, agent-specific memory that should remain useful acros
 ## Durable notes
 - Created/verified on 2026-04-26.
 - Jet’s X growth strategy should borrow high-engagement mechanics from creators like Bindu Reddy (speed, strong predictions, timely AI comparisons), but remain aligned with Jet’s YouTube voice: clear teacher, founder/operator, practical AI translator, premium Thai/SEA business educator. Avoid chaotic model-war, political bait, or generic AI hype.
+- Canonical Jet voice/persona layer for Blaze drafting lives at `/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Memory/JET_VOICE_DNA.md`; review it before writing Jet/Limitless content.
+- Latest mirrored @jeditrinupab Thai/AI YouTube transcript library for Blaze lives at `/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/YouTube Transcripts/` and can be used as source material for content queues.
+- Limitless content approval queue path is `/Users/ultrafriday/.hermes/limitless/content_approval_queue.json`; Blaze may draft/update queue items, but should not post or submit externally without explicit instruction.

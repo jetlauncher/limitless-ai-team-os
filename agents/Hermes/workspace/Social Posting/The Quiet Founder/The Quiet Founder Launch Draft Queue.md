@@ -920,3 +920,90 @@ Quiet AI leverage is not about replacing the founder.
 It is about giving him enough margin to lead from conviction instead of exhaustion.
 
 ---
+
+## Kelly scheduled queue update — 2026-05-10 07:01:19 +07
+Status: ready_for_review. Nothing published. Approval required before publishing.
+
+## The Quiet Founder twitter draft D12 — 2026-05-12T08:10:00
+Platform: twitter
+Status: ready_for_review
+
+A founder’s nervous system eventually becomes part of the company culture.
+
+If he leads from noise, the team learns noise.
+If he leads from order, the team learns order.
+
+---
+
+## The Quiet Founder linkedin draft D12 — 2026-05-12T10:20:00
+Platform: linkedin
+Status: ready_for_review
+
+Quiet leadership is not the absence of pressure.
+
+It is the decision to stop letting pressure set the tone.
+
+A founder still has to make hard calls. He still has to carry risk, make payroll, protect the mission, and move when the path is not perfectly clear.
+
+But he does not have to build a company where every important thing travels through panic.
+
+The quiet founder designs for steadiness:
+
+• fewer hidden decisions
+• clearer weekly priorities
+• protected blocks for deep work
+• AI summaries that reduce repeated context-switching
+• family rhythms that are not treated as optional
+• values that are remembered before urgency gets a vote
+
+This is not slower building.
+
+It is cleaner building.
+
+A calm system gives ambition a stronger frame to live inside.
+
+---
+
+## The Quiet Founder threads draft D12 — 2026-05-12T12:30:00
+Platform: threads
+Status: ready_for_review
+
+The best AI layer is the one you stop noticing.
+
+It catches the loose threads, prepares the next decision, and lets the founder return to the work only he can do.
+
+---
+
+## The Quiet Founder twitter draft D12 — 2026-05-12T17:20:00
+Platform: twitter
+Status: ready_for_review
+
+Do not build a company that only works when you are overextended.
+
+That is not leadership.
+That is a dependency wearing the costume of commitment.
+
+---
+
+## The Quiet Founder threads draft D12 — 2026-05-12T19:10:00
+Platform: threads
+Status: ready_for_review
+
+A quiet founder measures the day differently.
+
+Not just by what moved.
+
+By what stayed protected: attention, family, prayer, conviction, and the work that actually mattered.
+
+---
+
+## The Quiet Founder twitter draft D12 — 2026-05-12T21:10:00
+Platform: twitter
+Status: ready_for_review
+
+AI should help a founder become less reactive, not merely more responsive.
+
+The difference is subtle.
+It is also where most of the leverage lives.
+
+---

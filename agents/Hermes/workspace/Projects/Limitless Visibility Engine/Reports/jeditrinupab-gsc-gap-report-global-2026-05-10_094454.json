@@ -1,0 +1,260 @@
+{
+  "site_url": "sc-domain:jeditrinupab.com",
+  "start_date": "2026-02-06",
+  "end_date": "2026-05-07",
+  "country": null,
+  "total_rows": 46,
+  "gap_count": 25,
+  "top_gaps": [
+    {
+      "query": "ai13900",
+      "page": "https://jeditrinupab.com/blog",
+      "clicks": 0,
+      "impressions": 136,
+      "ctr": 0.0,
+      "position": 8.492647058823529,
+      "intent": "ai/topic",
+      "score": 165.73
+    },
+    {
+      "query": "ceo intensive membership program",
+      "page": "https://jeditrinupab.com/programs/ceo-os",
+      "clicks": 0,
+      "impressions": 15,
+      "ctr": 0.0,
+      "position": 5.0,
+      "intent": "other",
+      "score": 159.52
+    },
+    {
+      "query": "limitless club",
+      "page": "https://jeditrinupab.com/",
+      "clicks": 2,
+      "impressions": 22,
+      "ctr": 0.09090909090909091,
+      "position": 5.181818181818182,
+      "intent": "other",
+      "score": 153.39
+    },
+    {
+      "query": "limitless club",
+      "page": "https://jeditrinupab.com/programs/ai-expert",
+      "clicks": 6,
+      "impressions": 44,
+      "ctr": 0.13636363636363635,
+      "position": 6.2272727272727275,
+      "intent": "other",
+      "score": 151.05
+    },
+    {
+      "query": "jedi trinupab",
+      "page": "https://jeditrinupab.com/press",
+      "clicks": 0,
+      "impressions": 13,
+      "ctr": 0.0,
+      "position": 6.615384615384615,
+      "intent": "other",
+      "score": 145.36
+    },
+    {
+      "query": "เจได ai",
+      "page": "https://www.jeditrinupab.com/home",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0.0,
+      "position": 7.6,
+      "intent": "ai/topic",
+      "score": 144.18
+    },
+    {
+      "query": "limitless ai",
+      "page": "https://jeditrinupab.com/programs/ai-expert",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0.0,
+      "position": 7.333333333333333,
+      "intent": "ai/topic",
+      "score": 141.88
+    },
+    {
+      "query": "jedi trinupab",
+      "page": "https://jeditrinupab.com/about",
+      "clicks": 1,
+      "impressions": 35,
+      "ctr": 0.02857142857142857,
+      "position": 8.0,
+      "intent": "other",
+      "score": 140.02
+    },
+    {
+      "query": "limitlessclub",
+      "page": "https://jeditrinupab.com/",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 5.0,
+      "intent": "other",
+      "score": 136.0
+    },
+    {
+      "query": "เจได ai",
+      "page": "https://jeditrinupab.com/jedi-7014",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0.0,
+      "position": 8.833333333333332,
+      "intent": "ai/topic",
+      "score": 135.9
+    },
+    {
+      "query": "jedi trinupab",
+      "page": "https://jeditrinupab.com/resources",
+      "clicks": 0,
+      "impressions": 9,
+      "ctr": 0.0,
+      "position": 8.11111111111111,
+      "intent": "other",
+      "score": 130.2
+    },
+    {
+      "query": "jedi ai",
+      "page": "https://jeditrinupab.com/ai-made-easy-program",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 8.0,
+      "intent": "ai/topic",
+      "score": 127.0
+    },
+    {
+      "query": "jeditrinupab",
+      "page": "https://jeditrinupab.com/about",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0.0,
+      "position": 7.75,
+      "intent": "other",
+      "score": 126.04
+    },
+    {
+      "query": "jedi trinupab",
+      "page": "https://www.jeditrinupab.com/home",
+      "clicks": 0,
+      "impressions": 10,
+      "ctr": 0.0,
+      "position": 8.8,
+      "intent": "other",
+      "score": 125.6
+    },
+    {
+      "query": "ai finance club prompting handbook",
+      "page": "https://jeditrinupab.com/resources",
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0.0,
+      "position": 10.0,
+      "intent": "ai/topic",
+      "score": 123.04
+    },
+    {
+      "query": "อาจารย์เจได",
+      "page": "https://jeditrinupab.com/",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0.0,
+      "position": 8.4,
+      "intent": "other",
+      "score": 122.78
+    },
+    {
+      "query": "limitlessclub",
+      "page": "https://jeditrinupab.com/blog/generative-ai-marketing",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 7.0,
+      "intent": "other",
+      "score": 120.0
+    },
+    {
+      "query": "limitless club",
+      "page": "https://jeditrinupab.com/blog/generative-ai-marketing",
+      "clicks": 0,
+      "impressions": 6,
+      "ctr": 0.0,
+      "position": 9.0,
+      "intent": "other",
+      "score": 119.56
+    },
+    {
+      "query": "เจได ai",
+      "page": "https://jeditrinupab.com/programs/ai-expert",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 9.0,
+      "intent": "ai/topic",
+      "score": 119.0
+    },
+    {
+      "query": "jedi trinupab",
+      "page": "https://jeditrinupab.com/jedi-7014",
+      "clicks": 0,
+      "impressions": 5,
+      "ctr": 0.0,
+      "position": 9.2,
+      "intent": "other",
+      "score": 116.38
+    },
+    {
+      "query": "ceo intensive",
+      "page": "https://jeditrinupab.com/programs/ceo-os",
+      "clicks": 0,
+      "impressions": 30,
+      "ctr": 0.0,
+      "position": 11.366666666666667,
+      "intent": "other",
+      "score": 114.61
+    },
+    {
+      "query": "jedi trinupab",
+      "page": "https://jeditrinupab.com/blog/generative-ai-marketing",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0.0,
+      "position": 9.0,
+      "intent": "other",
+      "score": 113.54
+    },
+    {
+      "query": "limitless club",
+      "page": "https://jeditrinupab.com/about",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 8.0,
+      "intent": "other",
+      "score": 112.0
+    },
+    {
+      "query": "limitless course",
+      "page": "https://jeditrinupab.com/programs/ai-expert",
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0.0,
+      "position": 13.666666666666666,
+      "intent": "commercial",
+      "score": 101.21
+    },
+    {
+      "query": "jedi trinupab",
+      "page": "https://jeditrinupab.com/blog/ai-skills-gap-thai-executives",
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 10.0,
+      "intent": "other",
+      "score": 96.0
+    }
+  ]
+}

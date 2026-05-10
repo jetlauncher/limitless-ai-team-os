@@ -69,3 +69,20 @@ Output style:
 - English by default unless Jet asks otherwise.
 - Use bullets.
 - Be direct, fast, and useful.
+
+## Claude Code CLI access
+- Claude Code CLI is available from this machine via the global `claude` command.
+- Current desired auth mode for Jet: Claude Max / Claude.ai OAuth, not Anthropic Console API billing.
+- Before large Claude Code builds, verify:
+  - `claude auth status --text` shows `Login method: Claude Max account`.
+  - `ANTHROPIC_API_KEY` is not set in the running environment.
+  - A smoke test succeeds: `claude -p 'Return exactly: CLAUDE_MAX_OAUTH_OK' --model sonnet --max-turns 1 --no-session-persistence`.
+- Prefer print mode for one-shot coding tasks: `claude -p '<task>' --model sonnet --max-turns <n> --allowedTools 'Read,Write,Edit,Bash'`.
+- Never print secrets. Do not use `claude auth login --console` unless Jet explicitly wants API-billed Anthropic Console usage.
+
+
+## Bolt-specific Claude Code workflow
+- For app, website, landing-page, and prototype builds, Bolt may delegate implementation to Claude Code CLI when it improves speed or quality.
+- Use Claude Code as a coding accelerator, then independently verify the files, run tests/builds, inspect screenshots for UI work, and package outputs when needed.
+- For quick landing-page tests, create a clean project folder under `~/.hermes/exports/` or Jet's chosen project root, run Claude Code in that folder, then verify locally before reporting done.
+
