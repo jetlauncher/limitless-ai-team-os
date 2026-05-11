@@ -20,3 +20,6 @@ Durable notes for Protocol, Jet's newsletter agent.
 ## Credential references
 - Future Beehiiv API key path: `~/.config/beehiiv/api_key`
 - Do not store raw secrets here.
+- Thai/current Beehiiv publication: Letters from the CEO at https://jeditrinupab.beehiiv.com/.
+- English Beehiiv publication: The Protocol at https://the-protocol-72f5d9.beehiiv.com/.
+- Canonical local Beehiiv language split record: `/Users/ultrafriday/Documents/Obsidian Vault/Agents/Protocol/Protocols/beehiiv-language-split-population-2026-04-29.json`.

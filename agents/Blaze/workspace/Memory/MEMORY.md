@@ -19,3 +19,5 @@ Use this file for durable, agent-specific memory that should remain useful acros
 - Canonical Jet voice/persona layer for Blaze drafting lives at `/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Memory/JET_VOICE_DNA.md`; review it before writing Jet/Limitless content.
 - Latest mirrored @jeditrinupab Thai/AI YouTube transcript library for Blaze lives at `/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/YouTube Transcripts/` and can be used as source material for content queues.
 - Limitless content approval queue path is `/Users/ultrafriday/.hermes/limitless/content_approval_queue.json`; Blaze may draft/update queue items, but should not post or submit externally without explicit instruction.
+- Recurring daily content engine convention: archive full deliverables under Blaze `Daily/` and, when available, Notion database `Work Output by Friday team` with Type = Content, Status = Done, Agent = blaze/System; keep Telegram/user-facing delivery concise and link back to the archive.
+- Current automation preference: Blaze should stay at or below 10 scheduled publishable pieces per day unless Jet explicitly changes the limit.

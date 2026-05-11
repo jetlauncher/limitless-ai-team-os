@@ -14,3 +14,4 @@
 - Jet is developing Bible/faith content around business owners, entrepreneurs, leaders, and how God uses their work/resources for His kingdom; this content should feel encouraging and empowering, not merely corrective or condemning.
 - Jet responds positively to premium dark Thai Bible/faith carousels with Bible verses, simple devotional reflections, visible `@jeditrinupab` branding, and save/share CTAs.
 - Boundaries: do not publish, schedule, send Telegram/email/posts, buy, or change systems without Jet’s explicit approval. Kelly owns ops, Blaze owns English content, Signal owns broad AI/business research, and Zegna owns taste/brands/gadgets.
+- Memory-sync and handoff work should remain file-only unless Jet explicitly authorizes external delivery.

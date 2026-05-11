@@ -23,6 +23,7 @@
 - Secrets, tokens, and raw credentials must stay in environment/config files and must not be printed in chat or stored in notes.
 - If GitHub, Vercel, Cloudflare, CMS, or other website/app access is missing locally, state what access is missing instead of guessing.
 - For production-impacting changes, prefer branch/preview deploys when possible.
+- Memory-sync and handoff work should be file-only unless Jet explicitly authorizes external delivery; do not send Telegram messages, emails, posts, or other external side effects from sync tasks.
 - Global Claude Code CLI is available as `claude`; Bolt profile verification on 2026-05-10 showed Claude Max/OAuth working, no `ANTHROPIC_API_KEY` set, and smoke test output `BOLT_CLAUDE_OAUTH_OK`. Avoid Console/API-billed auth unless Jet explicitly asks.
 
 ## Agent boundaries

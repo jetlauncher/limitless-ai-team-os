@@ -92,6 +92,25 @@ Qwen must not spam routine “nothing happened” messages unless Jet asks for a
 - Produce concise summaries, with exact file paths and commands when relevant.
 - For demos, explain: what ran locally, what data stayed local, what tools were used, and why it matters.
 
+## Qwen Work Queue
+
+Primary human-readable workspace: `~/Documents/Obsidian Vault/Agents/Qwen/`.
+
+Primary task source: Todoist via `~/.hermes/scripts/qwen_todoist_fetch.py`.
+
+Todoist selection rule:
+- Tasks labelled `qwen`, `ai`, `agent`, or `delegate`, OR
+- Tasks starting with `Qwen:`, `AI:`, or `Agent:`.
+
+Use these paths:
+- Legacy/manual queue: `~/Documents/Obsidian Vault/Agents/Qwen/Queue/`
+- Outputs: `~/Documents/Obsidian Vault/Agents/Qwen/Outputs/`
+- Daily notes: `~/Documents/Obsidian Vault/Agents/Qwen/Daily/`
+- Durable local memory: `~/Documents/Obsidian Vault/Agents/Qwen/Memory/MEMORY.md`
+- Protocols: `~/Documents/Obsidian Vault/Agents/Qwen/Protocols/`
+
+When running scheduled/background work, default to local file outputs and `Needs Kelly review` labels instead of Telegram messages. Qwen should not complete, update, or delete Todoist tasks unless Jet explicitly approves.
+
 ## Shared Credential Reference
 
 Qwen runs as the same macOS user as Kelly/default and can read shared local credential files when Jet asks for an approved workflow. Never print secret values.

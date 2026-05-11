@@ -1007,3 +1007,84 @@ The difference is subtle.
 It is also where most of the leverage lives.
 
 ---
+
+## Kelly scheduled queue update — 2026-05-11 07:01:26 +07 +0700
+Status: ready_for_review. Nothing published. Approval required before publishing.
+
+## The Quiet Founder twitter draft D13 — 2026-05-13T08:10:00
+Platform: twitter
+Status: ready_for_review
+
+The founder who never creates margin eventually starts mistaking exhaustion for wisdom.
+
+Quiet leadership protects enough space to tell the difference.
+
+---
+
+## The Quiet Founder linkedin draft D13 — 2026-05-13T10:20:00
+Platform: linkedin
+Status: ready_for_review
+
+There is a kind of leverage that makes a founder faster and a kind that makes him steadier.
+
+The quiet founder is after the second one first.
+
+Speed matters. Execution matters. Growth matters. But if every gain requires more inner noise, the system is still immature.
+
+The better question is not only, “How do we move faster?”
+
+It is:
+
+• What can be decided once and trusted?
+• What can AI summarize before it becomes a distraction?
+• What can be delegated without losing judgment?
+• What rhythms protect deep work before reaction begins?
+• What boundaries keep family and faith from becoming leftovers?
+
+Quiet leverage does not remove responsibility.
+
+It gives responsibility a calmer structure to live inside.
+
+That is where a founder becomes dangerous in the best way: clear, grounded, present, and hard to pull off mission.
+
+---
+
+## The Quiet Founder threads draft D13 — 2026-05-13T12:30:00
+Platform: threads
+Status: ready_for_review
+
+A founder’s pace should be governed by calling, not by every signal that learns how to interrupt him.
+
+---
+
+## The Quiet Founder twitter draft D13 — 2026-05-13T17:20:00
+Platform: twitter
+Status: ready_for_review
+
+AI is not mature because it can answer quickly.
+
+It is mature when it helps the founder ask better questions before the day starts moving.
+
+---
+
+## The Quiet Founder threads draft D13 — 2026-05-13T19:10:00
+Platform: threads
+Status: ready_for_review
+
+Build the system until your family can feel the difference.
+
+Less hurry in your voice.
+More presence at the table.
+A calmer man carrying serious work.
+
+---
+
+## The Quiet Founder twitter draft D13 — 2026-05-13T21:10:00
+Platform: twitter
+Status: ready_for_review
+
+A quiet founder does not need the room to feel his urgency.
+
+He needs the company to feel his order.
+
+---

@@ -167,6 +167,7 @@ As of generation time, I see **13 scheduled jobs**, with the important active on
   - Delivery: Telegram / origin
   - Script: `limitless_x_daily_report.py`
   - Purpose: daily X signal radar report
+  - Reporting requirement: always include source links for every top item mentioned; if missing, explicitly note `Source: not found in note`.
 
 ### Notion / Obsidian sync
 
@@ -175,6 +176,15 @@ As of generation time, I see **13 scheduled jobs**, with the important active on
   - Delivery: local
   - Script: `sync_notion_to_obsidian.py`
   - Purpose: clone recent Notion content/research outputs into Obsidian
+
+### Email / customer visibility
+
+- **`limitlessclub-email-alerts`**
+  - Runs 4x daily (every 6 hours)
+  - Delivery: Telegram / origin
+  - Script: `limitlessclub_email_alerts.py`
+  - Purpose: surface new Gmail messages matching Limitless Club / limitlessclubbyjedi@gmail.com across Jet's work and personal Gmail tokens
+  - Behavior: no-agent silent watchdog; sends only when new matching emails are found; dedupes via `~/.hermes/limitlessclub_email_alert_state.json`
 
 ### Chief-of-staff rhythm
 

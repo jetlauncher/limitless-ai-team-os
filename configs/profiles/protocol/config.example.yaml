@@ -1,6 +1,6 @@
 model:
-  default: gpt-5.5
-  provider: openai-codex
+  default: claude-sonnet-4-6
+  provider: anthropic
   base_url: https://chatgpt.com/backend-api/codex
 providers: {}
 fallback_providers: []
@@ -378,3 +378,14 @@ mcp_servers:
       Authorization: Bearer [REDACTED]
     timeout: 180
     connect_timeout: 60
+custom_providers:
+- name: Local Qwen3.6 (Ollama)
+  base_url: http://127.0.0.1:11434/v1
+  api_key: [REDACTED]
+  api_mode: chat_completions
+  model: qwen3.6:35b
+  default_model: qwen3.6:35b
+  context_length: 131072
+  models:
+    qwen3.6:35b:
+      context_length: 131072
