@@ -11,6 +11,8 @@
 - Blaze: `Agents/Blaze/`
 - Signal: `Agents/Signal/`
 - OpenClaw: `Agents/OpenClaw/`
+- Codex: `Agents/Codex/`
+- Cowork: `Agents/Cowork/`
 
 ## Decision rule
 - Agent-specific durable fact → that agent's `Memory/MEMORY.md` and/or profile memory.

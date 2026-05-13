@@ -6,6 +6,8 @@ Use this rule set to keep the Obsidian system simple.
 - `Agents/Hermes/` = Hermes local workspace
 - `Agents/OpenClaw/memory.md` = stable shared context across agents
 - `Agents/Shared Memory/Daily/YYYY-MM-DD.md` = daily cross-agent coordination
+- `Agents/Codex/` = ChatGPT Codex local workspace and session memory
+- `Agents/Cowork/` = Claude Cowork desktop workspace and session memory
 
 ## What belongs where
 ### OpenClaw Memory

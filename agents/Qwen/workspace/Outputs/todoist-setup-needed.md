@@ -1,31 +1,35 @@
-# Todoist Integration Setup Needed
+# Qwen Todoist Integration — Setup Needed
 
-**Date created:** 2026-05-12  
-**Script:** `~/.hermes/scripts/qwen_todoist_fetch.py`  
-**Status:** `TODOIST_NOT_CONFIGURED`
+**Last checked:** 2026-05-14 03:22 +0700
 
-## What's missing
-The Qwen Todoist fetcher needs an API token to query tasks.
+## Status
+Todoist API is **not configured**. The cron job cannot fetch tasks because no API token is present.
 
-## How to fix
-Set the Todoist API token in one of these locations:
+## What to do
 
-1. **Config file (recommended):**  
-   Write the token to: `~/.config/todoist/api_key`
+1. **Add your Todoist API token:[REDACTED]
+   ```bash
+   mkdir -p ~/.config/todoist
+   # Paste your token (create one at https://todoist.com/app/settings/integrations/api)
+   echo 'YOUR_TODOIST_API_TOKEN_HERE' > ~/.config/todoist/api_key
+   ```
+   Or set `TODOIST_API_TOKEN` in the cron environment.
 
-2. **Environment variable:**  
-   Set: `export TODOIST_API_TOKEN=[REDACTED]
-
-3. **Verify it works:**  
+2. **Verify** the fetch script works:
    ```bash
    python3 ~/.hermes/scripts/qwen_todoist_fetch.py
    ```
 
-## Selection rule
-- Tasks with labels: `qwen`, `ai`, `agent`, or `delegate`
-- Tasks starting with: `Qwen:`, `AI:`, or `Agent:`
-- To also scan Inbox candidates: set `TODOIST_QWEN_INCLUDE_INBOX=1`
+3. **Select your workspace** (if you haven't already):
+   - Kelly/ops inbox → your default agent queue
+   - Separate workspace for Jet's personal/agent tasks
+
+## Selection rule (once configured)
+Tasks are selected when they:
+- Have **label** `qwen`, `ai`, `agent`, or `delegate`, OR
+- Start with `Qwen:`, `AI:`, or `Agent:`
+- Set `TODOIST_QWEN_INCLUDE_INBOX=1` to also scan Inbox candidates
 
 ## Notes
-- Qwen does **not** complete, modify, or delete Todoist tasks — only reads them.
-- The fetcher script itself exists and runs correctly at `~/.hermes/scripts/qwen_todoist_fetch.py`.
+- No token value is ever printed or logged.
+- Task completion/modification requires explicit user approval — Qwen marks outputs instead.
