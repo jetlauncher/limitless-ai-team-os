@@ -1,35 +1,50 @@
-# Qwen Todoist Integration — Setup Needed
+# Todoist Setup Needed for Qwen Agent
 
-**Last checked:** 2026-05-14 03:22 +0700
+**Last checked:** 2026-05-15  
+**Status:** `TODOIST_NOT_CONFIGURED`
 
-## Status
-Todoist API is **not configured**. The cron job cannot fetch tasks because no API token is present.
+Qwen's automated Todoist scan is not configured. The agent cannot fetch or process tasks until API access is set up.
 
-## What to do
+## What's needed
 
-1. **Add your Todoist API token:[REDACTED]
-   ```bash
-   mkdir -p ~/.config/todoist
-   # Paste your token (create one at https://todoist.com/app/settings/integrations/api)
-   echo 'YOUR_TODOIST_API_TOKEN_HERE' > ~/.config/todoist/api_key
-   ```
-   Or set `TODOIST_API_TOKEN` in the cron environment.
+Store your Todoist API token at one of:
 
-2. **Verify** the fetch script works:
-   ```bash
-   python3 ~/.hermes/scripts/qwen_todoist_fetch.py
-   ```
+```
+~/.config/todoist/api_key
+```
 
-3. **Select your workspace** (if you haven't already):
-   - Kelly/ops inbox → your default agent queue
-   - Separate workspace for Jet's personal/agent tasks
+or export the environment variable:
 
-## Selection rule (once configured)
-Tasks are selected when they:
-- Have **label** `qwen`, `ai`, `agent`, or `delegate`, OR
-- Start with `Qwen:`, `AI:`, or `Agent:`
-- Set `TODOIST_QWEN_INCLUDE_INBOX=1` to also scan Inbox candidates
+```
+export TODOIST_API_TOKEN=[REDACTED]
+```
 
-## Notes
-- No token value is ever printed or logged.
-- Task completion/modification requires explicit user approval — Qwen marks outputs instead.
+## How to get a Todoist API token
+
+1. Go to https://todoist.com/prefs/integrations
+2. Scroll to **API** section
+3. Copy the **API token** (appears as `xxxxxxxxxx.xxxxxxxxxxxxxxx`)
+4. Save it: `echo '<token>' > ~/.config/todoist/api_key`
+
+## After setup
+
+Qwen will automatically:
+
+- Fetch tasks labelled `qwen`, `ai`, `agent`, or `delegate`
+- Fetch tasks starting with `Qwen:`, `AI:`, or `Agent:`
+- Process safe local/draft/summarization work
+- Write outputs under `Agents/Qwen/Outputs/Todoist/`
+- Append daily status notes under `Agents/Qwen/Daily/`
+
+## Optional: scan Inbox too
+
+If you want Qwen to also consider Inbox items as candidates, set:
+
+```
+export TODOIST_QWEN_INCLUDE_INBOX=1
+```
+
+## Reference
+
+- Todoist API docs: https://developer.todoist.com/
+- Token should never be committed to git or shared publicly.

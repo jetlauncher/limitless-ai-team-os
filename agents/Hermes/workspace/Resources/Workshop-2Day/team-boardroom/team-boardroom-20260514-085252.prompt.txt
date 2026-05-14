@@ -1,0 +1,74 @@
+A premium 16:9 cinematic concept graphic for "Limitless AI Team OS" — a Thai founder's AI team. Mood: luxury executive boardroom at night, dark glass conference table reflecting warm city lights through a panoramic window in the background. Color palette: deep obsidian black (#050505), warm champagne gold (#C8A24A, #D6B25E), soft ivory text (#E6DED0), with subtle multi-color holographic accents per agent.
+
+CENTER:
+A stylized human silhouette in a tailored dark suit, viewed from behind/three-quarter, standing at the head of the oval glass table. Label above: "คุณ / YOU — เจ้าของธุรกิจ / Founder". A small glowing gold orb floats in front of this figure showing the single goal: "เป้าหมายเดียวจากคุณ" / "One goal from you" inside a softly glowing gold ring.
+
+SEVEN HOLOGRAPHIC AGENT FIGURES seated around the oval glass table, each rendered as a translucent neon wire-frame holographic person (like a heads-up display projection), each in a different signature color glow, each working on a faintly visible holographic laptop or floating UI panel. Arrange three on the left side of the table, three on the right side, one at the far end opposite the founder. Each figure has a small floating label card above them with the agent name in elegant gold serif and the role in clean small sans below — bilingual Thai + English.
+
+THE SEVEN AGENTS (left to right around the table):
+
+1. KELLY — Chief of Staff / หัวหน้าทีม
+   Color: warm champagne gold hologram
+   Job: บริหารงาน · ประสานทีม · ดูแลปฏิบัติการ
+   English subtitle: "Operations & coordination"
+
+2. SIGNAL — Research & Intelligence / นักวิจัย
+   Color: cyan-blue hologram
+   Job: ค้นคว้า · วิเคราะห์ข้อมูล · ติดตามข่าว AI
+   English subtitle: "Deep research & news"
+
+3. BLAZE — Content & Writing / นักเขียน
+   Color: amber-orange hologram
+   Job: เขียนคอนเทนต์ · โพสต์ · แคมเปญ
+   English subtitle: "Content & copy"
+
+4. ZEGNA — Taste & Aesthetics / ดีไซเนอร์
+   Color: rose-gold / pink hologram
+   Job: ออกแบบภาพ · คุมโทน · งานกราฟิก
+   English subtitle: "Design & visual taste"
+
+5. KAIJEAW — Thai Operations / ผู้ช่วยภาษาไทย
+   Color: emerald-green hologram
+   Job: ทำงานภาษาไทย · บทความ · ลูกค้าไทย
+   English subtitle: "Thai-language ops"
+
+6. BOLT — Apps & Sites / นักสร้างระบบ
+   Color: electric violet hologram
+   Job: สร้างเว็บ · แอป · ระบบหลังบ้าน
+   English subtitle: "Apps, sites & systems"
+
+7. PROTOCOL — Newsletter / บรรณาธิการ
+   Color: warm white-gold hologram
+   Job: คัดข่าว · เขียนนิวส์เลตเตอร์ · ส่งทุกสัปดาห์
+   English subtitle: "Weekly newsletter"
+
+HEADER (top center, large): "Limitless AI Team OS"
+SUBHEADER directly below in smaller gold script: "ทีม AI ของคุณ · ทำงานพร้อมกันรอบโต๊ะเดียว"
+English tagline under that, small ivory: "One founder. Seven specialists. One operating system."
+
+LOWER PANEL across the bottom (slim dark glass strip with thin gold borders): five small deliverable cards in a row, each with a tiny gold icon and short Thai + English label:
+- 📊 รายงานและอินไซต์ / Research reports
+- ✍️ คอนเทนต์รายวัน / Daily content
+- 🎨 งานออกแบบและภาพ / Design & visuals
+- ⚙️ เว็บแอปและระบบ / Apps & systems
+- 📨 นิวส์เลตเตอร์ / Weekly newsletter
+
+BOTTOM CENTER tiny gold tag: "@jeditrinupab · limitlessclub.co"
+
+STYLE NOTES:
+- Cinematic depth of field, soft bokeh city lights through the window.
+- Each holographic agent figure should look elegant, professional, dressed in tailored modern attire (suits, blazers, smart casual) rendered in neon wireframe — not childish or cartoonish.
+- Thin gold filaments connect all agent figures' laptops to the central goal orb, showing they all serve the founder's single goal.
+- Treat as a luxury keynote or magazine cover — Apple keynote × Wall Street executive briefing × premium AI brand.
+- No Buddha, Zen, monk, temple, lotus, or Eastern religious imagery. No childish robot mascots, no glowing brain icons, no generic startup clip-art.
+- All Thai text must render crisply and correctly — no garbled glyphs, no missing vowels or tone marks. All English text must be spelled exactly as written above.
+
+Render at premium quality, 16:9, photographic + UI hybrid feel, with strong negative space and quiet executive authority.
+
+
+---
+Model: gpt-image-2
+Size: 1536x1024
+Quality: high
+Generated: 2026-05-14 08:52
+Output: team-boardroom-20260514-085252.png
