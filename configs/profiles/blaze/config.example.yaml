@@ -1,6 +1,6 @@
 model:
-  default: gpt-5.5
-  provider: openai-codex
+  default: claude-opus-4-7
+  provider: anthropic
   base_url: ''
 providers: {}
 fallback_providers: []
@@ -479,3 +479,11 @@ custom_providers:
   model: qwen/qwen3.6-plus
   default_model: qwen/qwen3.6-plus
   context_length: 262144
+mcp_servers:
+  context7:
+    command: npx
+    args:
+    - -y
+    - '@upstash/context7-mcp'
+    timeout: 120
+    connect_timeout: 60

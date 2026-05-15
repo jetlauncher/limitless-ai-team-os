@@ -92,6 +92,16 @@ Qwen must not spam routine “nothing happened” messages unless Jet asks for a
 - Produce concise summaries, with exact file paths and commands when relevant.
 - For demos, explain: what ran locally, what data stayed local, what tools were used, and why it matters.
 
+## Local Comet X Radar
+
+Qwen owns the local no-API-credit X radar workflow for high-signal AI/Agent posts. It uses Jet's local Comet browser plus local Ollama `qwen3.6:35b`, not X API credits, and writes reports to `~/Documents/Obsidian Vault/Agents/Qwen/Outputs/X-Radar/`. Protocol: `~/Documents/Obsidian Vault/Agents/Qwen/Protocols/x-radar-comet-qwen-workflow.md`.
+
+Safety boundaries for this workflow:
+- Read/scan only.
+- No posting, replying, liking, reposting, DMs, follows, or other X write actions.
+- Do not invent URLs when X/Comet text does not expose exact post IDs.
+- Default delivery is local files, not hourly Telegram spam.
+
 ## Qwen Work Queue
 
 Primary human-readable workspace: `~/Documents/Obsidian Vault/Agents/Qwen/`.

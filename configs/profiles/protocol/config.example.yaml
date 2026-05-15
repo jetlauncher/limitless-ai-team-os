@@ -375,6 +375,13 @@ mcp_servers:
       Authorization: Bearer [REDACTED]
     timeout: 180
     connect_timeout: 60
+  context7:
+    command: npx
+    args:
+    - -y
+    - '@upstash/context7-mcp'
+    timeout: 120
+    connect_timeout: 60
 custom_providers:
 - name: Local Qwen3.6 (Ollama)
   base_url: http://127.0.0.1:11434/v1

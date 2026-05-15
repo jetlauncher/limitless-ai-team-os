@@ -1,0 +1,798 @@
+# date
+Fri May 15 20:01:49 +07 2026
+# profile list
+
+ Profile          Model                        Gateway      Alias
+ ───────────────    ───────────────────────────    ───────────    ────────────
+ ◆default         gpt-5.5                      running      —
+  blaze           claude-opus-4-7              running      blaze
+  bolt            gpt-5.5                      running      bolt
+  kaijeaw         claude-opus-4-7              running      kaijeaw
+  pixel           gpt-5.5                      running      pixel
+  protocol        gpt-5.5                      running      protocol
+  qwen            qwen3.6:35b                  running      qwen
+  signal          gpt-5.5                      running      signal
+  zegna           gpt-5.5                      running      zegna
+
+# mcp list
+===== default =====
+
+  MCP Servers:
+
+  Name             Transport                      Tools        Status    
+  ──────────────── ────────────────────────────── ──────────── ──────────
+  higgsfield       https://mcp.higgsfield.ai...   all          ✓ enabled
+  context7         npx -y @upstash/context7-mcp   all          ✓ enabled
+
+===== blaze =====
+
+  MCP Servers:
+
+  Name             Transport                      Tools        Status    
+  ──────────────── ────────────────────────────── ──────────── ──────────
+  context7         npx -y @upstash/context7-mcp   all          ✓ enabled
+
+===== bolt =====
+
+  MCP Servers:
+
+  Name             Transport                      Tools        Status    
+  ──────────────── ────────────────────────────── ──────────── ──────────
+  context7         npx -y @upstash/context7-mcp   all          ✓ enabled
+
+===== kaijeaw =====
+
+  MCP Servers:
+
+  Name             Transport                      Tools        Status    
+  ──────────────── ────────────────────────────── ──────────── ──────────
+  context7         npx -y @upstash/context7-mcp   all          ✓ enabled
+
+===== pixel =====
+
+  MCP Servers:
+
+  Name             Transport                      Tools        Status    
+  ──────────────── ────────────────────────────── ──────────── ──────────
+  higgsfield       https://mcp.higgsfield.ai...   all          ✓ enabled
+  context7         npx -y @upstash/context7-mcp   all          ✓ enabled
+
+===== protocol =====
+
+  MCP Servers:
+
+  Name             Transport                      Tools        Status    
+  ──────────────── ────────────────────────────── ──────────── ──────────
+  higgsfield       https://mcp.higgsfield.ai...   all          ✓ enabled
+  context7         npx -y @upstash/context7-mcp   all          ✓ enabled
+
+===== qwen =====
+
+  MCP Servers:
+
+  Name             Transport                      Tools        Status    
+  ──────────────── ────────────────────────────── ──────────── ──────────
+  context7         npx -y @upstash/context7-mcp   all          ✓ enabled
+
+===== signal =====
+
+  MCP Servers:
+
+  Name             Transport                      Tools        Status    
+  ──────────────── ────────────────────────────── ──────────── ──────────
+  context7         npx -y @upstash/context7-mcp   all          ✓ enabled
+
+===== zegna =====
+
+  MCP Servers:
+
+  Name             Transport                      Tools        Status    
+  ──────────────── ────────────────────────────── ──────────── ──────────
+  context7         npx -y @upstash/context7-mcp   all          ✓ enabled
+
+# gateway status
+===== default =====
+Launchd plist: /Users/ultrafriday/Library/LaunchAgents/ai.hermes.gateway.plist
+✓ Service definition matches the current Hermes install
+✓ Gateway service is loaded
+{
+	"StandardOutPath" = "/Users/ultrafriday/.hermes/logs/gateway.log";
+	"LimitLoadToSessionType" = "Aqua";
+	"StandardErrorPath" = "/Users/ultrafriday/.hermes/logs/gateway.error.log";
+	"Label" = "ai.hermes.gateway";
+	"OnDemand" = true;
+	"LastExitStatus" = 19200;
+	"PID" = 85879;
+	"Program" = "/Users/ultrafriday/.hermes/hermes-agent/venv/bin/python";
+	"ProgramArguments" = (
+		"/Users/ultrafriday/.hermes/hermes-agent/venv/bin/python";
+		"-m";
+		"hermes_cli.main";
+		"gateway";
+		"run";
+		"--replace";
+	);
+};
+
+
+Other profiles:
+  ✓ blaze            — PID 85651
+  ✓ bolt             — PID 85705
+  ✓ kaijeaw          — PID 85759
+  ✓ pixel            — PID 85815
+  ✓ protocol         — PID 86622
+  ✓ qwen             — PID 86651
+  ✓ signal           — PID 86720
+  ✓ zegna            — PID 86765
+===== blaze =====
+Launchd plist: /Users/ultrafriday/Library/LaunchAgents/ai.hermes.gateway-blaze.plist
+✓ Service definition matches the current Hermes install
+✓ Gateway service is loaded
+{
+	"StandardOutPath" = "/Users/ultrafriday/.hermes/profiles/blaze/logs/gateway.log";
+	"LimitLoadToSessionType" = "Aqua";
+	"StandardErrorPath" = "/Users/ultrafriday/.hermes/profiles/blaze/logs/gateway.error.log";
+	"Label" = "ai.hermes.gateway-blaze";
+	"OnDemand" = true;
+	"LastExitStatus" = 15;
+	"PID" = 85651;
+	"Program" = "/Users/ultrafriday/.hermes/hermes-agent/venv/bin/python";
+	"ProgramArguments" = (
+		"/Users/ultrafriday/.hermes/hermes-agent/venv/bin/python";
+		"-m";
+		"hermes_cli.main";
+		"--profile";
+		"blaze";
+		"gateway";
+		"run";
+		"--replace";
+	);
+};
+
+
+Other profiles:
+  ✓ default          — PID 85879
+  ✓ bolt             — PID 85705
+  ✓ kaijeaw          — PID 85759
+  ✓ pixel            — PID 85815
+  ✓ protocol         — PID 86622
+  ✓ qwen             — PID 86651
+  ✓ signal           — PID 86720
+  ✓ zegna            — PID 86765
+===== bolt =====
+Launchd plist: /Users/ultrafriday/Library/LaunchAgents/ai.hermes.gateway-bolt.plist
+✓ Service definition matches the current Hermes install
+✓ Gateway service is loaded
+{
+	"StandardOutPath" = "/Users/ultrafriday/.hermes/profiles/bolt/logs/gateway.log";
+	"LimitLoadToSessionType" = "Aqua";
+	"StandardErrorPath" = "/Users/ultrafriday/.hermes/profiles/bolt/logs/gateway.error.log";
+	"Label" = "ai.hermes.gateway-bolt";
+	"OnDemand" = true;
+	"LastExitStatus" = 15;
+	"PID" = 85705;
+	"Program" = "/Users/ultrafriday/.hermes/hermes-agent/venv/bin/python";
+	"ProgramArguments" = (
+		"/Users/ultrafriday/.hermes/hermes-agent/venv/bin/python";
+		"-m";
+		"hermes_cli.main";
+		"--profile";
+		"bolt";
+		"gateway";
+		"run";
+		"--replace";
+	);
+};
+
+
+Other profiles:
+  ✓ default          — PID 85879
+  ✓ blaze            — PID 85651
+  ✓ kaijeaw          — PID 85759
+  ✓ pixel            — PID 85815
+  ✓ protocol         — PID 86622
+  ✓ qwen             — PID 86651
+  ✓ signal           — PID 86720
+  ✓ zegna            — PID 86765
+===== kaijeaw =====
+Launchd plist: /Users/ultrafriday/Library/LaunchAgents/ai.hermes.gateway-kaijeaw.plist
+✓ Service definition matches the current Hermes install
+✓ Gateway service is loaded
+{
+	"StandardOutPath" = "/Users/ultrafriday/.hermes/profiles/kaijeaw/logs/gateway.log";
+	"LimitLoadToSessionType" = "Aqua";
+	"StandardErrorPath" = "/Users/ultrafriday/.hermes/profiles/kaijeaw/logs/gateway.error.log";
+	"Label" = "ai.hermes.gateway-kaijeaw";
+	"OnDemand" = true;
+	"LastExitStatus" = 15;
+	"PID" = 85759;
+	"Program" = "/Users/ultrafriday/.hermes/hermes-agent/venv/bin/python";
+	"ProgramArguments" = (
+		"/Users/ultrafriday/.hermes/hermes-agent/venv/bin/python";
+		"-m";
+		"hermes_cli.main";
+		"--profile";
+		"kaijeaw";
+		"gateway";
+		"run";
+		"--replace";
+	);
+};
+
+
+Other profiles:
+  ✓ default          — PID 85879
+  ✓ blaze            — PID 85651
+  ✓ bolt             — PID 85705
+  ✓ pixel            — PID 85815
+  ✓ protocol         — PID 86622
+  ✓ qwen             — PID 86651
+  ✓ signal           — PID 86720
+  ✓ zegna            — PID 86765
+===== pixel =====
+Launchd plist: /Users/ultrafriday/Library/LaunchAgents/ai.hermes.gateway-pixel.plist
+✓ Service definition matches the current Hermes install
+✓ Gateway service is loaded
+{
+	"StandardOutPath" = "/Users/ultrafriday/.hermes/profiles/pixel/logs/gateway.log";
+	"LimitLoadToSessionType" = "Aqua";
+	"StandardErrorPath" = "/Users/ultrafriday/.hermes/profiles/pixel/logs/gateway.error.log";
+	"Label" = "ai.hermes.gateway-pixel";
+	"OnDemand" = true;
+	"LastExitStatus" = 15;
+	"PID" = 85815;
+	"Program" = "/Users/ultrafriday/.hermes/hermes-agent/venv/bin/python";
+	"ProgramArguments" = (
+		"/Users/ultrafriday/.hermes/hermes-agent/venv/bin/python";
+		"-m";
+		"hermes_cli.main";
+		"--profile";
+		"pixel";
+		"gateway";
+		"run";
+		"--replace";
+	);
+};
+
+
+Other profiles:
+  ✓ default          — PID 85879
+  ✓ blaze            — PID 85651
+  ✓ bolt             — PID 85705
+  ✓ kaijeaw          — PID 85759
+  ✓ protocol         — PID 86622
+  ✓ qwen             — PID 86651
+  ✓ signal           — PID 86720
+  ✓ zegna            — PID 86765
+===== protocol =====
+Launchd plist: /Users/ultrafriday/Library/LaunchAgents/ai.hermes.gateway-protocol.plist
+✓ Service definition matches the current Hermes install
+✓ Gateway service is loaded
+{
+	"StandardOutPath" = "/Users/ultrafriday/.hermes/profiles/protocol/logs/gateway.log";
+	"LimitLoadToSessionType" = "Aqua";
+	"StandardErrorPath" = "/Users/ultrafriday/.hermes/profiles/protocol/logs/gateway.error.log";
+	"Label" = "ai.hermes.gateway-protocol";
+	"OnDemand" = true;
+	"LastExitStatus" = 256;
+	"PID" = 86622;
+	"Program" = "/Users/ultrafriday/.hermes/hermes-agent/venv/bin/python";
+	"ProgramArguments" = (
+		"/Users/ultrafriday/.hermes/hermes-agent/venv/bin/python";
+		"-m";
+		"hermes_cli.main";
+		"--profile";
+		"protocol";
+		"gateway";
+		"run";
+		"--replace";
+	);
+};
+
+
+Other profiles:
+  ✓ default          — PID 85879
+  ✓ blaze            — PID 85651
+  ✓ bolt             — PID 85705
+  ✓ kaijeaw          — PID 85759
+  ✓ pixel            — PID 85815
+  ✓ qwen             — PID 86651
+  ✓ signal           — PID 86720
+  ✓ zegna            — PID 86765
+===== qwen =====
+Launchd plist: /Users/ultrafriday/Library/LaunchAgents/ai.hermes.gateway-qwen.plist
+✓ Service definition matches the current Hermes install
+✓ Gateway service is loaded
+{
+	"StandardOutPath" = "/Users/ultrafriday/.hermes/profiles/qwen/logs/gateway.log";
+	"LimitLoadToSessionType" = "Aqua";
+	"StandardErrorPath" = "/Users/ultrafriday/.hermes/profiles/qwen/logs/gateway.error.log";
+	"Label" = "ai.hermes.gateway-qwen";
+	"OnDemand" = true;
+	"LastExitStatus" = 15;
+	"PID" = 86651;
+	"Program" = "/Users/ultrafriday/.hermes/hermes-agent/venv/bin/python";
+	"ProgramArguments" = (
+		"/Users/ultrafriday/.hermes/hermes-agent/venv/bin/python";
+		"-m";
+		"hermes_cli.main";
+		"--profile";
+		"qwen";
+		"gateway";
+		"run";
+		"--replace";
+	);
+};
+
+
+Other profiles:
+  ✓ default          — PID 85879
+  ✓ blaze            — PID 85651
+  ✓ bolt             — PID 85705
+  ✓ kaijeaw          — PID 85759
+  ✓ pixel            — PID 85815
+  ✓ protocol         — PID 86622
+  ✓ signal           — PID 86720
+  ✓ zegna            — PID 86765
+===== signal =====
+Launchd plist: /Users/ultrafriday/Library/LaunchAgents/ai.hermes.gateway-signal.plist
+✓ Service definition matches the current Hermes install
+✓ Gateway service is loaded
+{
+	"StandardOutPath" = "/Users/ultrafriday/.hermes/profiles/signal/logs/gateway.log";
+	"LimitLoadToSessionType" = "Aqua";
+	"StandardErrorPath" = "/Users/ultrafriday/.hermes/profiles/signal/logs/gateway.error.log";
+	"Label" = "ai.hermes.gateway-signal";
+	"OnDemand" = true;
+	"LastExitStatus" = 15;
+	"PID" = 86720;
+	"Program" = "/Users/ultrafriday/.hermes/hermes-agent/venv/bin/python";
+	"ProgramArguments" = (
+		"/Users/ultrafriday/.hermes/hermes-agent/venv/bin/python";
+		"-m";
+		"hermes_cli.main";
+		"--profile";
+		"signal";
+		"gateway";
+		"run";
+		"--replace";
+	);
+};
+
+
+Other profiles:
+  ✓ default          — PID 85879
+  ✓ blaze            — PID 85651
+  ✓ bolt             — PID 85705
+  ✓ kaijeaw          — PID 85759
+  ✓ pixel            — PID 85815
+  ✓ protocol         — PID 86622
+  ✓ qwen             — PID 86651
+  ✓ zegna            — PID 86765
+===== zegna =====
+Launchd plist: /Users/ultrafriday/Library/LaunchAgents/ai.hermes.gateway-zegna.plist
+✓ Service definition matches the current Hermes install
+✓ Gateway service is loaded
+{
+	"StandardOutPath" = "/Users/ultrafriday/.hermes/profiles/zegna/logs/gateway.log";
+	"LimitLoadToSessionType" = "Aqua";
+	"StandardErrorPath" = "/Users/ultrafriday/.hermes/profiles/zegna/logs/gateway.error.log";
+	"Label" = "ai.hermes.gateway-zegna";
+	"OnDemand" = true;
+	"LastExitStatus" = 15;
+	"PID" = 86765;
+	"Program" = "/Users/ultrafriday/.hermes/hermes-agent/venv/bin/python";
+	"ProgramArguments" = (
+		"/Users/ultrafriday/.hermes/hermes-agent/venv/bin/python";
+		"-m";
+		"hermes_cli.main";
+		"--profile";
+		"zegna";
+		"gateway";
+		"run";
+		"--replace";
+	);
+};
+
+
+Other profiles:
+  ✓ default          — PID 85879
+  ✓ blaze            — PID 85651
+  ✓ bolt             — PID 85705
+  ✓ kaijeaw          — PID 85759
+  ✓ pixel            — PID 85815
+  ✓ protocol         — PID 86622
+  ✓ qwen             — PID 86651
+  ✓ signal           — PID 86720
+# cron list
+===== default =====
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         Scheduled Jobs                                  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+  b22b3ce9203e [active]
+    Name:      limitless-hourly-airtable-snapshot
+    Schedule:  every 60m
+    Repeat:    ∞
+    Next run:  2026-05-15T20:18:15.413023+07:00
+    Deliver:   local
+    Script:    limitless_hourly_snapshot.py
+    Last run:  2026-05-15T19:18:15.413023+07:00  ok
+
+  11673b81389e [active]
+    Name:      limitless-daily-revenue-report
+    Schedule:  0 9 * * *
+    Repeat:    ∞
+    Next run:  2026-05-16T09:00:00+07:00
+    Deliver:   origin
+    Script:    limitless_daily_revenue.py
+    Last run:  2026-05-15T09:02:20.355391+07:00  ok
+
+  65fb15e38d9c [active]
+    Name:      limitless-payment-alerts
+    Schedule:  every 15m
+    Repeat:    ∞
+    Next run:  2026-05-15T20:02:43.355743+07:00
+    Deliver:   origin
+    Script:    limitless_payment_alerts.py
+    Mode:      no-agent (script stdout delivered directly)
+    Last run:  2026-05-15T19:47:43.355743+07:00  ok
+
+  9a5c42413ac6 [active]
+    Name:      limitless-x-to-obsidian-hourly
+    Schedule:  every 60m
+    Repeat:    ∞
+    Next run:  2026-05-15T20:09:33.245321+07:00
+    Deliver:   local
+    Script:    limitless_x_to_obsidian.py
+    Last run:  2026-05-15T19:09:33.245321+07:00  ok
+
+  3e00a7f3524f [active]
+    Name:      limitless-x-daily-report
+    Schedule:  0 18 * * *
+    Repeat:    ∞
+    Next run:  2026-05-16T18:00:00+07:00
+    Deliver:   origin
+    Script:    limitless_x_daily_report.py
+    Last run:  2026-05-15T18:03:06.610295+07:00  error: Blocked: prompt contains invisible unicode U+200D (possible injection).
+
+  a976825b5df3 [paused]
+    Name:      daily-content-engine-best-pick
+    Schedule:  0 9 * * *
+    Repeat:    ∞
+    Next run:  2026-04-26T09:00:00+07:00
+    Deliver:   origin
+    Last run:  2026-04-25T09:07:11.142598+07:00  ok
+
+  0801370d3a15 [paused]
+    Name:      all-day-content-research-momentum
+    Schedule:  0 */2 * * *
+    Repeat:    ∞
+    Next run:  2026-04-26T06:00:00+07:00
+    Deliver:   origin
+    Last run:  2026-04-26T04:04:50.376781+07:00  ok
+
+  3086ea058f49 [paused]
+    Name:      midday-content-burst
+    Schedule:  0 13 * * *
+    Repeat:    ∞
+    Next run:  2026-04-26T13:00:00+07:00
+    Deliver:   origin
+    Last run:  2026-04-25T13:09:33.098165+07:00  ok
+
+  78a81cf1ad32 [active]
+    Name:      notion-to-obsidian-content-clone
+    Schedule:  every 15m
+    Repeat:    ∞
+    Next run:  2026-05-15T20:16:49.664505+07:00
+    Deliver:   local
+    Script:    sync_notion_to_obsidian.py
+    Last run:  2026-05-15T19:46:32.348688+07:00  ok
+
+  83f630e1147b [active]
+    Name:      daily-good-morning-briefing
+    Schedule:  0 8 * * *
+    Repeat:    ∞
+    Next run:  2026-05-16T08:00:00+07:00
+    Deliver:   origin
+    Skills:    google-workspace, limitless-sales-monitoring
+    Last run:  2026-05-15T08:03:03.190436+07:00  ok
+
+  1cb288572dbf [active]
+    Name:      important-email-alert-filter
+    Schedule:  every 30m
+    Repeat:    ∞
+    Next run:  2026-05-15T20:14:54.848576+07:00
+    Deliver:   local
+    Skills:    google-workspace
+    Last run:  2026-05-15T19:44:54.848576+07:00  ok
+
+  2bc4f618a2c1 [active]
+    Name:      daily-evening-shutdown-briefing
+    Schedule:  30 21 * * *
+    Repeat:    ∞
+    Next run:  2026-05-15T21:30:00+07:00
+    Deliver:   origin
+    Skills:    google-workspace, limitless-sales-monitoring
+    Last run:  2026-05-14T21:33:20.903360+07:00  ok
+
+  73d4312bcf3f [active]
+    Name:      weekly-ceo-review
+    Schedule:  0 20 * * 0
+    Repeat:    ∞
+    Next run:  2026-05-17T20:00:00+07:00
+    Deliver:   origin
+    Skills:    google-workspace, limitless-sales-monitoring
+    Last run:  2026-05-10T20:05:22.891286+07:00  ok
+
+  b54b00ce6f12 [active]
+    Name:      daily-limitless-ai-team-os-repo-refresh
+    Schedule:  30 3 * * *
+    Repeat:    16/365
+    Next run:  2026-05-16T03:30:00+07:00
+    Deliver:   origin
+    Workdir:   /Users/ultrafriday/Projects/limitless-ai-team-os
+    Last run:  2026-05-15T03:31:22.078974+07:00  ok
+
+  d66045021441 [paused]
+    Name:      quiet-founder-social-daily-draft-engine
+    Schedule:  0 7 * * *
+    Repeat:    ∞
+    Next run:  2026-05-12T07:00:00+07:00
+    Deliver:   origin
+    Last run:  2026-05-11T07:01:39.707728+07:00  ok
+
+  d1e3eedb44c2 [active]
+    Name:      two-account-gmail-inbox-zero
+    Schedule:  0 */2 * * *
+    Repeat:    ∞
+    Next run:  2026-05-15T22:00:00+07:00
+    Deliver:   origin
+    Script:    two_account_gmail_inbox_zero.py
+    Mode:      no-agent (script stdout delivered directly)
+    Last run:  2026-05-15T20:00:49.583059+07:00  ok
+
+  6a2606b41e59 [active]
+    Name:      limitless-visibility-weekly-gsc-gap-report
+    Schedule:  0 9 * * 1
+    Repeat:    ∞
+    Next run:  2026-05-18T09:00:00+07:00
+    Deliver:   origin
+    Script:    limitless_visibility_weekly.py
+    Mode:      no-agent (script stdout delivered directly)
+    Last run:  2026-05-11T09:00:59.781813+07:00  ok
+
+  38db0587503d [active]
+    Name:      limitlessclub-email-alerts
+    Schedule:  0 */6 * * *
+    Repeat:    ∞
+    Next run:  2026-05-16T00:00:00+07:00
+    Deliver:   origin
+    Script:    limitlessclub_email_alerts.py
+    Mode:      no-agent (script stdout delivered directly)
+    Last run:  2026-05-15T18:03:12.409910+07:00  ok
+
+  d8d5ab24f525 [active]
+    Name:      youtube-transcript-to-md
+    Schedule:  every 30m
+    Repeat:    ∞
+    Next run:  2026-05-15T20:17:32.440710+07:00
+    Deliver:   local
+    Script:    youtube_transcript_to_md.py
+    Mode:      no-agent (script stdout delivered directly)
+    Last run:  2026-05-15T19:47:32.440710+07:00  ok
+
+===== blaze =====
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         Scheduled Jobs                                  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+  c20a2a2db954 [active]
+    Name:      daily-scheduled-content-platform-update
+    Schedule:  0 10 * * *
+    Repeat:    10/365
+    Next run:  2026-05-16T10:00:00+07:00
+    Deliver:   local
+    Script:    daily_scheduled_content_update.py
+    Mode:      no-agent (script stdout delivered directly)
+    Last run:  2026-05-15T10:00:49.894632+07:00  ok
+
+  255e748b82b1 [active]
+    Name:      Jedi AI Creative Director Daily Pipeline
+    Schedule:  0 8 * * *
+    Repeat:    ∞
+    Next run:  2026-05-16T08:00:00+07:00
+    Deliver:   origin
+    Skills:    jet-ai-creative-director-sop, notion
+    Last run:  2026-05-15T08:18:39.269040+07:00  ok
+
+  929b8a33a119 [active]
+    Name:      Daily LinkedIn + X Scheduled Draft Queue
+    Schedule:  15 8 * * *
+    Repeat:    ∞
+    Next run:  2026-05-16T08:15:00+07:00
+    Deliver:   origin
+    Skills:    blotato-approval-posting, jet-daily-content-engine, jet-ai-creative-director-sop
+    Workdir:   /Users/ultrafriday
+    Last run:  2026-05-15T08:23:39.081897+07:00  ok
+
+===== bolt =====
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         Scheduled Jobs                                  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+  2aae2b04d926 [active]
+    Name:      Daily YouTube to Blog Check
+    Schedule:  0 8 * * *
+    Repeat:    ∞
+    Next run:  2026-05-16T08:00:00+07:00
+    Deliver:   origin
+    Last run:  2026-05-15T08:00:56.113229+07:00  ok
+
+===== kaijeaw =====
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         Scheduled Jobs                                  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+  a8b932969f00 [active]
+    Name:      kaijeaw-daily-thai-threads-post
+    Schedule:  30 8 * * *
+    Repeat:    ∞
+    Next run:  2026-05-16T08:30:00+07:00
+    Deliver:   origin
+    Skills:    blotato-approval-posting
+    Last run:  2026-05-15T08:32:30.575904+07:00  ok
+
+===== pixel =====
+No scheduled jobs.
+Create one with 'hermes cron create ...' or the /cron command in chat.
+===== protocol =====
+No scheduled jobs.
+Create one with 'hermes cron create ...' or the /cron command in chat.
+===== qwen =====
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         Scheduled Jobs                                  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+  2ecf236f6cca [active]
+    Name:      qwen-morning-prep-for-kelly
+    Schedule:  15 7 * * *
+    Repeat:    ∞
+    Next run:  2026-05-16T07:15:00+07:00
+    Deliver:   local
+    Skills:    obsidian-agent-memory-workspace
+    Last run:  2026-05-15T07:21:53.548506+07:00  ok
+
+  b160922c0931 [active]
+    Name:      qwen-nightly-obsidian-hygiene
+    Schedule:  30 23 * * *
+    Repeat:    ∞
+    Next run:  2026-05-15T23:30:00+07:00
+    Deliver:   local
+    Skills:    obsidian-agent-memory-workspace
+    Last run:  2026-05-14T23:32:49.340353+07:00  ok
+
+  1213c21e5430 [active]
+    Name:      qwen-todoist-worker
+    Schedule:  every 120m
+    Repeat:    ∞
+    Next run:  2026-05-15T20:17:27.715316+07:00
+    Deliver:   local
+    Skills:    obsidian-agent-memory-workspace
+    Script:    qwen_todoist_fetch.py
+    Last run:  2026-05-15T18:17:27.715316+07:00  ok
+
+  d4c72d86b21f [active]
+    Name:      AI Digest Monitor
+    Schedule:  every 120m
+    Repeat:    ∞
+    Next run:  2026-05-15T20:15:41.008112+07:00
+    Deliver:   origin
+    Last run:  2026-05-15T18:15:41.008112+07:00  ok
+
+===== signal =====
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         Scheduled Jobs                                  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+  d194c1c29c42 [active]
+    Name:      signal-ai-morning-brief
+    Schedule:  30 8 * * *
+    Repeat:    ∞
+    Next run:  2026-05-16T08:30:00+07:00
+    Deliver:   origin
+    Skills:    notion, blogwatcher, low-noise-ai-watch-alerts, signal-daily-ai-intel-report
+    Last run:  2026-05-15T08:35:40.730783+07:00  ok
+
+  52bea60a6907 [paused]
+    Name:      signal-ai-evening-brief
+    Schedule:  30 17 * * *
+    Repeat:    ∞
+    Next run:  2026-05-11T17:30:00+07:00
+    Deliver:   origin
+    Skills:    notion, blogwatcher, low-noise-ai-watch-alerts, signal-daily-ai-intel-report
+    Last run:  2026-05-10T17:36:57.832447+07:00  ok
+
+  f64fa63e9bc7 [active]
+    Name:      signal-high-signal-ai-watch
+    Schedule:  0 5,9,13,17,21,23 * * *
+    Repeat:    ∞
+    Next run:  2026-05-15T21:00:00+07:00
+    Deliver:   origin
+    Skills:    low-noise-ai-watch-alerts, notion, blogwatcher, signal-daily-ai-intel-report
+    Last run:  2026-05-15T17:05:27.597659+07:00  ok
+
+  88d1ac455e7b [active]
+    Name:      signal-x-twitter-high-alert-scan
+    Schedule:  every 120m
+    Repeat:    ∞
+    Next run:  2026-05-15T22:00:56.038359+07:00
+    Deliver:   origin
+    Skills:    grok-curated-x-monitoring, low-noise-ai-watch-alerts, notion, signal-daily-ai-intel-report
+    Last run:  2026-05-15T20:00:56.038359+07:00  ok
+
+  d86de7da7f30 [paused]
+    Name:      signal-daily-x-posts-to-notion-9pm
+    Schedule:  0 21 * * *
+    Repeat:    ∞
+    Next run:  2026-05-11T21:00:00+07:00
+    Deliver:   origin
+    Skills:    notion, grok-curated-x-monitoring, signal-daily-ai-intel-report
+    Last run:  2026-05-10T21:06:01.699920+07:00  ok
+
+  6c5ac6a19886 [active]
+    Name:      signal-daily-ai-intel-report-9pm
+    Schedule:  0 21 * * *
+    Repeat:    ∞
+    Next run:  2026-05-15T21:00:00+07:00
+    Deliver:   origin
+    Skills:    notion, grok-curated-x-monitoring, arxiv, blogwatcher, low-noise-ai-watch-alerts, signal-daily-ai-intel-report
+    Last run:  2026-05-14T21:02:35.730733+07:00  ok
+
+  cea9aafced77 [active]
+    Name:      signal-daily-x-bookmarks-research-5am
+    Schedule:  0 5 * * *
+    Repeat:    ∞
+    Next run:  2026-05-16T05:00:00+07:00
+    Deliver:   origin
+    Skills:    xurl, obsidian, signal-daily-ai-intel-report, notion
+    Last run:  2026-05-15T05:04:39.084078+07:00  ok
+
+  28f1f5d64725 [paused]
+    Name:      Signal daily Notion work wrap
+    Schedule:  55 23 * * *
+    Repeat:    ∞
+    Next run:  2026-05-11T23:55:00+07:00
+    Deliver:   local
+    Last run:  2026-05-10T23:59:54.922078+07:00  ok
+
+===== zegna =====
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         Scheduled Jobs                                  │
+└─────────────────────────────────────────────────────────────────────────┘
+
+  bf357896fa4a [active]
+    Name:      Daily Zegna curation page refresh → Notion archive
+    Schedule:  0 8 * * *
+    Repeat:    ∞
+    Next run:  2026-05-16T08:00:00+07:00
+    Deliver:   local
+    Skills:    notion
+    Last run:  2026-05-15T08:01:39.728435+07:00  ok
+
+  00522937bc83 [active]
+    Name:      Daily Zegna cool-stuff scout → Telegram + Notion archive
+    Schedule:  0 9 * * *
+    Repeat:    ∞
+    Next run:  2026-05-16T09:00:00+07:00
+    Deliver:   origin
+    Skills:    blogwatcher, notion
+    Last run:  2026-05-15T09:03:51.989122+07:00  ok
+

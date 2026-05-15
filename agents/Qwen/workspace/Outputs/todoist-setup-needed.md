@@ -1,50 +1,24 @@
-# Todoist Setup Needed for Qwen Agent
+# Todoist API Not Configured
 
-**Last checked:** 2026-05-15  
-**Status:** `TODOIST_NOT_CONFIGURED`
-
-Qwen's automated Todoist scan is not configured. The agent cannot fetch or process tasks until API access is set up.
+**Checked:** 2026-05-16 03:11 +07  
+**Status:** API token missing
 
 ## What's needed
+Add a Todoist API token so the Qwen cron worker can read tasks.
 
-Store your Todoist API token at one of:
-
-```
-~/.config/todoist/api_key
-```
-
-or export the environment variable:
-
-```
-export TODOIST_API_TOKEN=[REDACTED]
+```bash
+# Option 1: file-based (recommended)
+mkdir -p ~/.config/todoist
+echo '<your-token>' > ~/.config/todoist/api_key
+chmod 600 ~/.config/todoist/api_key
 ```
 
-## How to get a Todoist API token
+## Selection rule (once configured)
+This worker reads tasks matching:
 
-1. Go to https://todoist.com/prefs/integrations
-2. Scroll to **API** section
-3. Copy the **API token** (appears as `xxxxxxxxxx.xxxxxxxxxxxxxxx`)
-4. Save it: `echo '<token>' > ~/.config/todoist/api_key`
+- **Labels:** `qwen`, `ai`, `agent`, or `delegate`
+- **Prefixes:** `Qwen:`, `AI:`, or `Agent:`
+- **Inbox candidates:** set `TODOIST_QWEN_INCLUDE_INBOX=1` as needed
 
 ## After setup
-
-Qwen will automatically:
-
-- Fetch tasks labelled `qwen`, `ai`, `agent`, or `delegate`
-- Fetch tasks starting with `Qwen:`, `AI:`, or `Agent:`
-- Process safe local/draft/summarization work
-- Write outputs under `Agents/Qwen/Outputs/Todoist/`
-- Append daily status notes under `Agents/Qwen/Daily/`
-
-## Optional: scan Inbox too
-
-If you want Qwen to also consider Inbox items as candidates, set:
-
-```
-export TODOIST_QWEN_INCLUDE_INBOX=1
-```
-
-## Reference
-
-- Todoist API docs: https://developer.todoist.com/
-- Token should never be committed to git or shared publicly.
+The next cron run will automatically detect the token and begin processing. No manual restart is required.

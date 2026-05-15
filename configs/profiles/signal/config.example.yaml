@@ -386,3 +386,11 @@ custom_providers:
 onboarding:
   seen:
     busy_input_prompt: true
+mcp_servers:
+  context7:
+    command: npx
+    args:
+    - -y
+    - '@upstash/context7-mcp'
+    timeout: 120
+    connect_timeout: 60
