@@ -1,24 +1,21 @@
-# Todoist API Not Configured
+# Todoist API — Setup Needed
 
-**Checked:** 2026-05-16 03:11 +07  
-**Status:** API token missing
+**Last checked:** 2026-05-17T02:58+07:00
+**Status:** Not configured
 
-## What's needed
-Add a Todoist API token so the Qwen cron worker can read tasks.
+## What to do
 
-```bash
-# Option 1: file-based (recommended)
-mkdir -p ~/.config/todoist
-echo '<your-token>' > ~/.config/todoist/api_key
-chmod 600 ~/.config/todoist/api_key
-```
+1. Create or get a Todoist API token at https://todoist.com/app/settings/api
+2. Save it to `~/.config/todoist/api_key` (one line, no print/export of the raw value in logs)
+3. Set the environment variable `TODOIST_API_TOKEN` in your shell or Hermes gateway config
 
-## Selection rule (once configured)
-This worker reads tasks matching:
+## Once configured
 
-- **Labels:** `qwen`, `ai`, `agent`, or `delegate`
-- **Prefixes:** `Qwen:`, `AI:`, or `Agent:`
-- **Inbox candidates:** set `TODOIST_QWEN_INCLUDE_INBOX=1` as needed
+Qwen will automatically scan for tasks with labels `qwen`, `ai`, `agent`, or `delegate`,
+or tasks starting with `Qwen:`, `AI:`, or `Agent:`.
 
-## After setup
-The next cron run will automatically detect the token and begin processing. No manual restart is required.
+Set `TODOIST_QWEN_INCLUDE_INBOX=1` if you also want Qwen to scan Inbox candidates.
+
+## Next step
+
+Just add your token and tell Qwen to rescan. No other setup required.

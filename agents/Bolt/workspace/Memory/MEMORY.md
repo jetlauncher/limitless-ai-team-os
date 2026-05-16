@@ -26,6 +26,13 @@
 - Memory-sync and handoff work should be file-only unless Jet explicitly authorizes external delivery; do not send Telegram messages, emails, posts, or other external side effects from sync tasks.
 - Global Claude Code CLI is available as `claude`; Bolt profile verification on 2026-05-10 showed Claude Max/OAuth working, no `ANTHROPIC_API_KEY` set, and smoke test output `BOLT_CLAUDE_OAUTH_OK`. Avoid Console/API-billed auth unless Jet explicitly asks.
 
+## OpenClaw troubleshooting durable notes
+
+- OpenClaw setup on this machine uses `~/.openclaw/openclaw.json`; after the 2026-05-16 repair, the default model remains `openai/gpt-5.5` with `agentRuntime.id = codex`, so `plugins.entries.codex.enabled` must stay `true` or agent turns fail with `Requested agent harness "codex" is not registered`.
+- If OpenClaw gateway becomes unstable and logs show `ready` followed by repeated `SIGTERM` every ~20-30 seconds, check for a stale/broken `ai.openclaw.self-update` LaunchAgent before changing model config. On 2026-05-16 that LaunchAgent was killing the gateway and failing due launchd PATH/binary-path issues.
+- OpenClaw stable verified on 2026-05-16 was `2026.5.12`; beta existed as `2026.5.14-beta.2`. Prefer stable unless Jet explicitly asks to test beta.
+- Bolt's local OpenClaw troubleshooting skill is `~/.hermes/profiles/bolt/skills/autonomous-ai-agents/openclaw-troubleshooting/SKILL.md`.
+
 ## Agent boundaries
 
 - Kelly/Hermes owns ops, agent orchestration, revenue, dashboards, and chief-of-staff work.

@@ -43,3 +43,13 @@
 | Date | Event |
 |---|---|
 | 2026-05-13 | First cron run — detected missing Todoist token, wrote setup note |
+| 2026-05-16 | Memory/log pass — Todoist still NOT_CONFIGURED, setup note already written, no new blockers |
+## Local AI connection
+
+- Qwen local model: `qwen3.6:35b` via Ollama.
+- Native Ollama endpoint: `http://127.0.0.1:11434`.
+- OpenAI-compatible endpoint: `http://127.0.0.1:11434/v1`.
+- Placeholder API key for compatible clients: `no-key-required`.
+- Hermes profile path: `/Users/ultrafriday/.hermes/profiles/qwen/`.
+- Qwen profile model config: provider `custom`, base URL `http://127.0.0.1:11434/v1`, model `qwen3.6:35b`, context length `8192`.
+- Operational preference: keep one Ollama server on `127.0.0.1:11434`; duplicate Homebrew + GUI Ollama servers can cause generation calls to hang.

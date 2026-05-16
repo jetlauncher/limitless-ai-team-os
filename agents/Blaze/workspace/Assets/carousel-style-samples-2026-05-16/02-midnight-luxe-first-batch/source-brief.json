@@ -1,0 +1,39 @@
+{
+  "style_id": "midnight_luxe_first_batch",
+  "slug": "02-midnight-luxe-first-batch",
+  "photo": "allblack-apple-keynote-wide.jpg",
+  "slides": [
+    {
+      "eyebrow": "FOUNDER PRINCIPLE",
+      "headline": [
+        "AI-FIRST",
+        "ไม่ใช่",
+        "TECH-FIRST"
+      ],
+      "body": [
+        "ธุรกิจไม่ได้ชนะเพราะใช้เทคโนโลยีเยอะ แต่ชนะเพราะจัดวิธีทำงานใหม่ก่อนคนอื่น"
+      ]
+    },
+    {
+      "eyebrow": "COMMON MISTAKE",
+      "headline": [
+        "ปัญหาของ",
+        "เจ้าของธุรกิจส่วนใหญ่"
+      ],
+      "body": [
+        "ซื้อ tool ตามกระแส แต่ยังไม่มีระบบตัดสินใจว่า AI ควรช่วยงานไหนก่อน"
+      ]
+    },
+    {
+      "eyebrow": "NEW ROLE",
+      "headline": [
+        "CEO ยุค AI",
+        "ต้องเป็น",
+        "System Designer"
+      ],
+      "body": [
+        "หน้าที่ใหม่ไม่ใช่ทำทุกอย่างเอง แต่คือออกแบบ flow ให้คนและ AI ทำงานร่วมกันได้"
+      ]
+    }
+  ]
+}

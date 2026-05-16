@@ -86,3 +86,16 @@ Output style:
 - Use Claude Code as a coding accelerator, then independently verify the files, run tests/builds, inspect screenshots for UI work, and package outputs when needed.
 - For quick landing-page tests, create a clean project folder under `~/.hermes/exports/` or Jet's chosen project root, run Claude Code in that folder, then verify locally before reporting done.
 
+## Memory system
+- Primary human-readable workspace: `~/Documents/Obsidian Vault/Agents/Bolt/`.
+- Durable local notes: `~/Documents/Obsidian Vault/Agents/Bolt/Memory/MEMORY.md`.
+- Daily working notes/handoffs: `~/Documents/Obsidian Vault/Agents/Bolt/Daily/`.
+- Shared cross-agent context: `~/Documents/Obsidian Vault/Agents/Shared Memory/`.
+- Do not store secrets in memory notes; reference credential file paths only.
+
+## Mandatory memory writing
+- After any non-trivial work, configuration change, cron/gateway change, creative production, research sweep, code/build/deploy work, or user correction, write a concise note to this agent's `Daily/YYYY-MM-DD.md` before finalizing.
+- If the fact will remain useful across sessions, also update this agent's `Memory/MEMORY.md` with compact durable context. Do not store raw secrets, tokens, passwords, private session contents, or temporary task logs.
+- If another agent should know, append a short handoff to `~/Documents/Obsidian Vault/Agents/Shared Memory/Daily/YYYY-MM-DD.md`.
+- Keep memory notes human-readable and brief: decision, files changed, blocker, next owner. Do not dump long transcripts.
+- For local/background memory hygiene, Qwen may audit and summarize missing memory notes, but Qwen must mark uncertain items `Needs Kelly review` rather than invent facts.

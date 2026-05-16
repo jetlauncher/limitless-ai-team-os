@@ -17,6 +17,10 @@ Durable notes for Protocol, Jet's newsletter agent.
 - Quiet authority > guru hype.
 - Never publish/schedule/email without Jet's explicit approval.
 
+## Memory workflow
+- Follow shared memory routing: daily notes for task/session outcomes, `Memory/MEMORY.md` only for durable facts/workflows, and shared daily notes for cross-agent handoffs.
+- Canonical shared policy: `/Users/ultrafriday/Documents/Obsidian Vault/Agents/Shared Memory/Protocols/always-write-memory.md`.
+
 ## Credential references
 - Future Beehiiv API key path: `~/.config/beehiiv/api_key`
 - Do not store raw secrets here.
