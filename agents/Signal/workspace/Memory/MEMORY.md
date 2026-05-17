@@ -22,3 +22,9 @@ Use this file for durable, agent-specific memory that should remain useful acros
 - 2026-05-11: Current automation preference is Signal ≤4 user-facing updates/day; memory-sync and handoff work should remain file-only unless Jet explicitly authorizes external delivery.
 - 2026-05-16: `xurl` official X API CLI is configured for Signal's X bookmark workflow via the `jet-x` OAuth app for `@jeditrinupab`; daily bookmark research successfully used `xurl bookmarks -n 50`. Continue to follow secret-safety rules: never read or expose `~/.xurl`, tokens, or OAuth credential files.
 - 2026-05-17 X scan: xAI official post `2055745332919808181` says X Premium subscriptions work in Hermes Agent and Hermes can search X posts; treat as duplicate of May 16 Grok/Hermes subscription-as-auth unless new implementation docs or reliability tests appear.
+
+
+## AI Signals Notion database
+- Source of truth for future AI Signal entries: Notion database `AI Signals` — `363d076c-9ad3-8099-bbd9-e9f1d3cd23cf` / https://www.notion.so/363d076c9ad38099bbd9e9f1d3cd23cf
+- Schema: `Name` title; `Date` date; `Top Theme` select (`OpenAI`, `Anthropic`, `Google / DeepMind`, `Meta`, `AI Agents`, `SMB AI Tools`, `Industry / Other`); `Content Bet` rich_text; `Status` select (`🆕 New`, `👀 Reviewed`, `✅ Content Made`, `🗄 Archived`); `Items` number.
+- Existing template style: quote intro; numbered H2 items; paragraph summary; bullets for `Why you care`, `Teach/try`/`Apply now`, `Sources`; divider; final `🎯 This week's content bet`.

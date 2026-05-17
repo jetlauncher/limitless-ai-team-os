@@ -10,3 +10,6 @@
 - Zegna work should be archived to Jet’s Notion target when appropriate: database/page ID `3581290f50f44b7dbc8b93879ca31916` (`Work Output by Friday team`). Store summaries/work output, not secrets.
 
 - Daily scout archive target confirmed as Notion database `3581290f50f44b7dbc8b93879ca31916`; use Type `Daily Scout`, Status `Done`, Agent `Zegna`.
+
+## Durable workflow notes
+- Jet daily scout target: archive Zegna curation outputs to Notion database 3581290f50f44b7dbc8b93879ca31916 (Work Output by Friday team) with Agent=Zegna, Type=Daily Scout, Status=Done.

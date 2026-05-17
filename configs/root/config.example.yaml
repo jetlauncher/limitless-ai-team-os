@@ -1,7 +1,6 @@
 model:
   default: gpt-5.5
   provider: openai-codex
-  base_url: ''
 providers: {}
 fallback_providers:
 - provider: openai-codex
@@ -17,6 +16,7 @@ agent:
   service_tier: ''
   tool_use_enforcement: auto
   gateway_timeout_warning: 900
+  clarify_timeout: 600
   gateway_notify_interval: 600
   gateway_auto_continue_freshness: 3600
   image_input_mode: auto
@@ -81,6 +81,7 @@ terminal:
   container_persistent: true
   docker_volumes: []
   docker_mount_cwd_to_workspace: false
+  docker_extra_args: []
   docker_run_as_host_user: false
   persistent_shell: true
   lifetime_seconds: 300
@@ -100,6 +101,9 @@ browser:
   dialog_timeout_s: 300
   camofox:
     managed_persistence: false
+    user_id: ''
+    session_key: ''
+    adopt_existing_tab: false
 checkpoints:
   enabled: true
   max_snapshots: 50
@@ -131,11 +135,13 @@ compression:
   target_ratio: 0.2
   protect_last_n: 20
   hygiene_hard_message_limit: 400
+  protect_first_n: 3
 prompt_caching:
   cache_ttl: 5m
 openrouter:
   response_cache: true
   response_cache_ttl: 300
+  min_coding_score: 0.65
 bedrock:
   region: ''
   discovery:
@@ -236,10 +242,12 @@ display:
   bell_on_complete: false
   show_reasoning: false
   streaming: true
+  timestamps: false
   final_response_markdown: strip
   persistent_output: true
   persistent_output_max_lines: 200
   inline_diffs: true
+  file_mutation_verifier: true
   show_cost: false
   skin: default
   language: en
@@ -264,6 +272,7 @@ display:
   background_process_notifications: all
 dashboard:
   theme: default
+  show_token_analytics: false
 privacy:
   redact_pii: false
 tts:
@@ -327,6 +336,7 @@ delegation:
   provider: ''
   base_url: ''
   api_key: ''
+  api_mode: ''
   inherit_mcp_toolsets: true
   max_iterations: 50
   child_timeout_seconds: 600
@@ -370,10 +380,15 @@ discord:
   free_response_channels: ''
   allowed_channels: ''
   auto_thread: true
+  thread_require_mention: false
+  history_backfill: true
+  history_backfill_limit: 50
   reactions: true
   channel_prompts: {}
   dm_role_auth_guild: ''
   server_actions: ''
+  allow_any_attachment: false
+  max_attachment_bytes: 33554432
 whatsapp: {}
 telegram:
   reactions: false
@@ -393,6 +408,7 @@ approvals:
   timeout: 60
   cron_mode: deny
   mcp_reload_confirm: true
+  destructive_slash_confirm: true
 command_allowlist:
 - git force push (rewrites remote history)
 - stop/restart hermes gateway (kills running agents)
@@ -415,6 +431,8 @@ security:
     enabled: false
     domains: []
     shared_files: []
+  acked_advisories: []
+  allow_lazy_installs: true
 cron:
   wrap_response: true
   max_parallel_jobs: null
@@ -430,6 +448,9 @@ logging:
   level: INFO
   max_size_mb: 5
   backup_count: 3
+  memory_monitor:
+    enabled: true
+    interval_seconds: 300
 model_catalog:
   enabled: true
   url: https://hermes-agent.nousresearch.com/docs/api/model-catalog.json
@@ -448,6 +469,16 @@ onboarding:
 updates:
   pre_update_backup: false
   backup_keep: 5
+lsp:
+  enabled: true
+  wait_mode: document
+  wait_timeout: 5.0
+  install_strategy: auto
+  servers: {}
+x_search:
+  model: grok-4.20-reasoning
+  timeout_seconds: 180
+  retries: 2
 _config_version: 23
 session_reset:
   mode: both
@@ -485,6 +516,12 @@ mcp_servers:
     args:
     - -y
     - '@upstash/context7-mcp'
+    timeout: 120
+    connect_timeout: 60
+  cua-driver:
+    command: /Users/ultrafriday/.local/bin/cua-driver
+    args:
+    - mcp
     timeout: 120
     connect_timeout: 60
 custom_providers:

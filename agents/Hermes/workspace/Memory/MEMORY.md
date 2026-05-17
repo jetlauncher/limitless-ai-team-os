@@ -24,3 +24,9 @@ Use this file for durable, agent-specific memory that should remain useful acros
 - 2026-05-16: All active agents should follow the shared always-write memory protocol at `Agents/Shared Memory/Protocols/always-write-memory.md`: daily note after meaningful work, durable facts only in each agent's `Memory/MEMORY.md`, cross-agent handoffs in Shared Memory, no secrets/raw transcripts. Qwen/local `qwen3.6:35b` owns low-cost memory hygiene checks; all-agent memory sync script includes Pixel.
 
 - Qwen Hermes profile fix: local Ollama `qwen3.6:35b` must keep `model.context_length: 131072` in `~/.hermes/profiles/qwen/config.yaml`; Hermes rejects the profile if it falls back to 8192. Qwen no-agent scripts resolve under `~/.hermes/profiles/qwen/scripts/`, not only `~/.hermes/scripts/`.
+
+- 2026-05-17: Jet Brain v0 installed: Shared Memory protocol/evals/templates under `Agents/Shared Memory/`; Hermes skill `jet-brain-retrieval`; GBrain CLI 0.35.1.1 via Bun at `~/.bun/bin/gbrain` from `~/gbrain`. Do not import broad vaults or secrets; sidecar is optional until GBrain health/source boundaries are cleaned.
+
+- Oracle Telegram: bot username `@oraclejedihermesbot`; token lives in `~/.hermes/profiles/oracle/.env`; gateway service `ai.hermes.gateway-oracle`.
+
+- Cua Driver installed for local macOS GUI control: `/Applications/CuaDriver.app`, CLI `~/.local/bin/cua-driver`, Hermes MCP server `cua-driver` in default config. Needs Accessibility permission if not already granted.

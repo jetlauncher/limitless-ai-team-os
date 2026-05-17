@@ -1,21 +1,29 @@
-# Todoist API — Setup Needed
+# Todoist API Setup Needed
 
-**Last checked:** 2026-05-17T02:58+07:00
-**Status:** Not configured
+**Last checked:** 2026-05-18 01:56 AM
+
+A valid API token is not configured in `~/.config/todoist/api_key` or the `TODOIST_API_TOKEN` environment variable. This cron job can currently see or fetch no tasks.
 
 ## What to do
 
-1. Create or get a Todoist API token at https://todoist.com/app/settings/api
-2. Save it to `~/.config/todoist/api_key` (one line, no print/export of the raw value in logs)
-3. Set the environment variable `TODOIST_API_TOKEN` in your shell or Hermes gateway config
+1. Open your **Personal Access Tokens** page at: https://todoist.com/app/settings/api
+2. Generate or copy a token (scope: `tasks:read` is sufficient).
+3. Place it in `~/.config/todoist/api_key`:
 
-## Once configured
+   ```bash
+   mkdir -p ~/.config/todoist
+   # Paste only the token value (no spaces, no quotes)
+   ```
 
-Qwen will automatically scan for tasks with labels `qwen`, `ai`, `agent`, or `delegate`,
-or tasks starting with `Qwen:`, `AI:`, or `Agent:`.
+4. If you want inbox items included in future scans, also set:
 
-Set `TODOIST_QWEN_INCLUDE_INBOX=1` if you also want Qwen to scan Inbox candidates.
+   ```bash
+   export TODOIST_QWEN_INCLUDE_INBOX=1
+   ```
 
-## Next step
+## Selection rule (once configured)
 
-Just add your token and tell Qwen to rescan. No other setup required.
+- Tasks labelled `qwen`, `ai`, `agent`, or `delegate`
+- Tasks whose title starts with `Qwen:`, `AI:`, or `Agent:`
+
+No tasks were processed this run.
