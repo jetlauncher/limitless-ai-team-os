@@ -1,29 +1,44 @@
-# Todoist API Setup Needed
+# Todoist API Configuration Needed
 
-**Last checked:** 2026-05-18 01:56 AM
+**Status:** Not configured  
+**Detected:** 2026-05-19  
 
-A valid API token is not configured in `~/.config/todoist/api_key` or the `TODOIST_API_TOKEN` environment variable. This cron job can currently see or fetch no tasks.
+## What's needed
 
-## What to do
+Qwen's automated Todoist fetch script (`qwen_todoist_fetch.py`) cannot read tasks because no API token is configured.
 
-1. Open your **Personal Access Tokens** page at: https://todoist.com/app/settings/api
-2. Generate or copy a token (scope: `tasks:read` is sufficient).
-3. Place it in `~/.config/todoist/api_key`:
+## Setup steps
 
-   ```bash
-   mkdir -p ~/.config/todoist
-   # Paste only the token value (no spaces, no quotes)
-   ```
+1. Get a Todoist Personal Access Token:  
+   [REDACTED] → Generate new token (scopes: `write:tasks`, `read:tasks`)
 
-4. If you want inbox items included in future scans, also set:
+2. Store the token securely:
 
-   ```bash
-   export TODOIST_QWEN_INCLUDE_INBOX=1
-   ```
+```bash
+mkdir -p ~/.config/todoist
+# Token goes here — never print or share it
+echo '<YOUR_TOKEN>' > ~/.config/todoist/api_key
+chmod 600 ~/.config/todoist/api_key
+```
 
-## Selection rule (once configured)
+3. Export the environment variable for automated runs:
 
-- Tasks labelled `qwen`, `ai`, `agent`, or `delegate`
-- Tasks whose title starts with `Qwen:`, `AI:`, or `Agent:`
+```bash
+export TODOIST_API_TOKEN='<YOUR_TOKEN>'
+```
 
-No tasks were processed this run.
+4. Optionally include Inbox candidates:
+
+```bash
+export TODOIST_QWEN_INCLUDE_INBOX=1
+```
+
+## Selection rule (already configured)
+
+Qwen picks up tasks matching:
+- Label: `qwen`, `ai`, `agent`, `delegate`  
+- OR Title prefix: `Qwen:`, `AI:`, `Agent:`
+
+## Next time this triggers
+
+Once configured, the fetch script will return a JSON payload of selected tasks. Qwen will then process safe local/draft/summarization tasks and write outputs under `Agents/Qwen/Outputs/Todoist/`.

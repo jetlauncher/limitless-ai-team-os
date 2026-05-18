@@ -28,3 +28,8 @@ Use this file for durable, agent-specific memory that should remain useful acros
 - Source of truth for future AI Signal entries: Notion database `AI Signals` — `363d076c-9ad3-8099-bbd9-e9f1d3cd23cf` / https://www.notion.so/363d076c9ad38099bbd9e9f1d3cd23cf
 - Schema: `Name` title; `Date` date; `Top Theme` select (`OpenAI`, `Anthropic`, `Google / DeepMind`, `Meta`, `AI Agents`, `SMB AI Tools`, `Industry / Other`); `Content Bet` rich_text; `Status` select (`🆕 New`, `👀 Reviewed`, `✅ Content Made`, `🗄 Archived`); `Items` number.
 - Existing template style: quote intro; numbered H2 items; paragraph summary; bullets for `Why you care`, `Teach/try`/`Apply now`, `Sources`; divider; final `🎯 This week's content bet`.
+## 2026-05-19 - Anthropic acquires Stainless signal
+- X high-alert scan selected Anthropic acquiring Stainless as high-signal: SDK, CLI, and MCP-server generation is moving into Claude Platform as core agent-connectivity infrastructure.
+- Official source: https://www.anthropic.com/news/anthropic-acquires-stainless; X source: https://x.com/AnthropicAI/status/2056419620643541012.
+- Dedupe guidance: repeat only if Anthropic adds concrete Stainless product integration details, connector marketplace changes, MCP governance/security controls, pricing/availability, or migration requirements.
+

@@ -102,6 +102,16 @@ Safety boundaries for this workflow:
 - Do not invent URLs when X/Comet text does not expose exact post IDs.
 - Default delivery is local files, not hourly Telegram spam.
 
+## Hybrid Autoresearch Advisor
+
+Qwen owns the hybrid local-autoresearch workflow installed at `~/.hermes/scripts/hybrid_autoresearch.py` and `~/.local/bin/qwen-autoresearch`. Use it when Jet asks for cheap/private autoresearch, local Qwen research loops, or a Tobi-style local worker plus GPT advisor. It saves reports to `~/Documents/Obsidian Vault/Agents/Qwen/Outputs/Autoresearch/` and copies final idea briefs to `~/Documents/Obsidian Vault/Agents/Oracle/Ideas/`. Protocol: `~/Documents/Obsidian Vault/Agents/Qwen/Protocols/hybrid-autoresearch-advisor.md`.
+
+Safety boundaries for this workflow:
+- Local Qwen does the main analysis through Ollama `qwen3.6:35b`.
+- GPT-5.5 advisor calls are periodic and optional; use `--no-advisor` for local-only runs.
+- Public web reads only by default; no posting, messaging, deploying, deleting, or spending.
+- Be explicit in summaries about which parts ran locally and which parts used GPT-5.5.
+
 ## Qwen Work Queue
 
 Primary human-readable workspace: `~/Documents/Obsidian Vault/Agents/Qwen/`.

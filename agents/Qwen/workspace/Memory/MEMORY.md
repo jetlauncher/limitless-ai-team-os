@@ -1,55 +1,30 @@
-# Memory/MEMORY.md
-
-> Durable context for the Qwen agent. Updated by cron runs and manual actions.
-
+---
+created: 2025-04-12
+updated: 2026-05-18
+agent: qwen
 ---
 
-## Agent Identity
-- **Name:** Qwen
-- **Role:** Local 24/7 worker + local model demo agent
-- **Model:** Qwen 3.6 35B via Ollama
-- **Profile:** `~/.hermes/profiles/qwen/`
+# Qwen — Durable Memory
 
-## Workspace Paths
-| Purpose | Path |
-|---|---|
-| Task source | `~/.hermes/scripts/qwen_todoist_fetch.py` |
-| Queue (legacy/manual) | `~/Documents/Obsidian Vault/Agents/Qwen/Queue/` |
-| Outputs | `~/Documents/Obsidian Vault/Agents/Qwen/Outputs/` |
-| Daily notes | `~/Documents/Obsidian Vault/Agents/Qwen/Daily/` |
-| Durable memory | `~/Documents/Obsidian Vault/Agents/Qwen/Memory/MEMORY.md` |
-| Protocols | `~/Documents/Obsidian Vault/Agents/Qwen/Protocols/` |
+## Todoist integration
+- **Status:** NOT CONFIGURED — no API token at `~/.config/todoist/api_key`.
+- Tasks are fetched by label: `qwen`, `ai`, `agent`, `delegate` OR prefix: `Qwen:`, `AI:`, `Agent:`.
+- Setup note lives at `Outputs/todoist-setup-needed.md`.
 
-## Boundaries
-- **Do:** prepare, analyze, monitor, summarize, demo locally
-- **Do not:** publish, message customers, schedule, deploy, delete, spend money, or expose credentials without explicit approval
+## Workspace paths
+- Local workspace: `~/Documents/Obsidian Vault/Agents/Qwen/`
+- Daily notes: `Agents/Qwen/Daily/YYYY-MM-DD.md`
+- Outputs: `Agents/Qwen/Outputs/`
+- Queue (legacy/manual): `Agents/Qwen/Queue/`
+- Protocols: `Agents/Qwen/Protocols/`
+- Durable memory: `Agents/Qwen/Memory/MEMORY.md`
+- Shared memory: `Agents/Shared Memory/Daily/YYYY-MM-DD.md`
 
-## Credential Files (read-only paths, never print values)
-- Gamma: `~/.config/gamma/api_key`
-- Notion: `~/.config/notion/api_key`
-- OpenAI: `~/.config/openai/api_key`
-- Blotato: `~/.config/blotato/api_key`
+## Safety boundaries
+- No publishing, external messaging, deploying, or spending without explicit approval.
+- No printing/logging secrets (API keys, tokens, passwords).
 
-## Cron Jobs (known)
-- **Daily Todoist fetch** — runs once per hour; checks for tasks labeled `qwen`, `ai`, `agent`, `delegate` or prefixed `Qwen:`, `AI:`, `Agent:`
-- **System health** — monitors local Hermes/Ollama/Qwen status
-
-## Todoist Status (last sync check)
-- **Status:** TODOIST_NOT_CONFIGURED (2026-05-13 19:09 +07)
-- **Impact:** No task fetches until API token is configured at `~/.config/todoist/api_key`
-- **Setup note written to:** `[Outputs]/todoist-setup-needed.md`
-
-## Recent Activity Log
-| Date | Event |
-|---|---|
-| 2026-05-13 | First cron run — detected missing Todoist token, wrote setup note |
-| 2026-05-16 | Memory/log pass — Todoist still NOT_CONFIGURED, setup note already written, no new blockers |
-## Local AI connection
-
-- Qwen local model: `qwen3.6:35b` via Ollama.
-- Native Ollama endpoint: `http://127.0.0.1:11434`.
-- OpenAI-compatible endpoint: `http://127.0.0.1:11434/v1`.
-- Placeholder API key for compatible clients: `no-key-required`.
-- Hermes profile path: `/Users/ultrafriday/.hermes/profiles/qwen/`.
-- Qwen profile model config: provider `custom`, base URL `http://127.0.0.1:11434/v1`, model `qwen3.6:35b`, context length `8192`.
-- Operational preference: keep one Ollama server on `127.0.0.1:11434`; duplicate Homebrew + GUI Ollama servers can cause generation calls to hang.
+## X-Radar
+- Runs via local Comet browser + Ollama qwen3.6:35b. No X API credits.
+- Reports written to `Agents/Qwen/Outputs/X-Radar/`.
+- Protocol: `Agents/Qwen/Protocols/x-radar-comet-qwen-workflow.md`.
