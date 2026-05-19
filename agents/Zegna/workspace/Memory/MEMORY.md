@@ -15,3 +15,5 @@
 - Jet daily scout target: archive Zegna curation outputs to Notion database 3581290f50f44b7dbc8b93879ca31916 (Work Output by Friday team) with Agent=Zegna, Type=Daily Scout, Status=Done.
 
 - Jet taste anchors for daily scout: Kamakura Shirts, Ring Jacket tailoring, Saint Laurent/Dior/Goyard/Golden Goose, occasional Prada, Brunello Cucinelli as aspirational/value-watch; likes complete looks and quiet luxury/Japanese-European minimal/tactical-refined references.
+
+- 2026-05-19: Blogwatcher feeds tracked for daily scouts include Acquire, Design Milk, Dezeen, Highsnobiety, Hypebeast, The Verge, Uncrate. Some feeds may fail: Acquire/Uncrate 403, Highsnobiety 404.

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "17756913-eeed-4afc-9ef2-a6ec04961305",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260519_140658_17756913-eeed-4afc-9ef2-a6ec04961305.png",
+    "created_at": 1779199618.373698,
+    "params": {
+      "width": 1856,
+      "height": 2304,
+      "aspect_ratio": "4:5",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Create a unique 4:5 collectible art piece: a hand-drawn map of a local AI brain living inside a founder’s computer.\n\nConcept: “A private AI brain map.”\nVisual: cross-section of a laptop as a tiny city/map: RAM highway, model library, prompt workshop, data vault, offline cabin, cloud bridge in the distance. Use whimsical but premium map-making details, tiny icons, dotted routes, coordinates, compass rose, small stamps.\n\nStyle: Morandi Journal + antique field map + premium founder-media illustration. Cream paper, sage teal waterways/paths, terracotta highlights, charcoal ink, pale yellow sticky notes, subtle paper grain, hand lettering but mostly visual symbols.\n\nComposition: iconic and unique, like a poster someone would save. No dense body copy. Use tiny labels sparingly: “RAM”, “MODEL”, “DATA VAULT”, “OFFLINE”, “CLOUD BRIDGE”. Include tiny “Limitless Club” and @jeditrinupab only if clean.\n\nAvoid: corporate UI mockups, sci-fi neon, generic robots, too much text, Thai text mistakes, religious/temple imagery."
+    }
+  }
+]

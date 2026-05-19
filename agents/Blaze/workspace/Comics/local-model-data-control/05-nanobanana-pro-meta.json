@@ -1,0 +1,22 @@
+[
+  {
+    "id": "35cf2f00-ec6e-498b-aae2-df727f250ade",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260519_095938_35cf2f00-ec6e-498b-aae2-df727f250ade.png",
+    "created_at": 1779184778.253015,
+    "params": {
+      "width": 2400,
+      "height": 1792,
+      "aspect_ratio": "4:3",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Create a premium four-panel Thai knowledge comic in a strict 2×2 grid layout, landscape 4:3 aspect ratio.\n\nVisual style:\n- Midnight Luxe editorial comic: black charcoal background, warm ivory text, graphite panels, bronze/gold #94764A accents, elegant negative space.\n- Minimalist but cooler and more cinematic than a normal line-art comic.\n- Use clean thin line art, subtle gridlines, UI crosshair marks, premium founder-media feel.\n- Thai text must be crisp, large, and readable on mobile.\n- No random filler words. No extra panels. No watermark.\n\nTitle above the panel grid:\n“ข้อมูลบางอย่างไม่ควรขึ้น Cloud”\n\nPanel 1 — Top Left:\nA Thai founder/operator silhouette with round glasses is about to upload a folder labeled “ลูกค้า / ยอดขาย / ไอเดียใหม่” into a glowing cloud labeled “Cloud AI”. The cloud floats outside a thin boundary line.\nThai speech bubble:\n“Local Model ไม่ใช่แค่ AI ฟรี…”\n\nPanel 2 — Top Right:\nThe upload freezes mid-air. A bronze alert line appears around the folder, like a premium security scanner. The founder looks at a clean warning card.\nThai speech bubble:\n“แต่คือคำถามว่า ข้อมูลนี้ควรอยู่ที่ไหน?”\n\nPanel 3 — Bottom Left, strongest visual twist:\nA dramatic split-screen decision map. Left: “Public → Cloud” with open bright cloud path. Right: “Private → Local” with a bronze locked laptop/vault containing a small glowing AI brain. Make the bronze lock and Local side visually dominant.\nLabels exactly:\n“Public → Cloud”\n“Private → Local”\n\nPanel 4 — Bottom Right:\nA premium black dashboard titled “AI Strategy” with exactly four bronze/ivory tiles: “ความเก่ง”, “ต้นทุน”, “ความเป็นส่วนตัว”, “การควบคุม”. The founder stands calm, holding the folder safely inside a local secure zone.\nThai speech bubble:\n“เลือก AI จากข้อมูล ไม่ใช่แค่ความเก่ง”\n\nCaption below the grid:\n“Cloud เพื่อความเร็ว Local เพื่อการควบคุม”\n\nComposition requirements:\n- Exactly 4 panels, 2×2 grid.\n- Make this look cooler, more premium, more founder-media, less childish.\n- Maintain clear storytelling and large Thai text."
+    }
+  }
+]

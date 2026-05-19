@@ -30,3 +30,9 @@ Use this file for durable, agent-specific memory that should remain useful acros
 - Oracle Telegram: bot username `@oraclejedihermesbot`; token lives in `~/.hermes/profiles/oracle/.env`; gateway service `ai.hermes.gateway-oracle`.
 
 - Cua Driver installed for local macOS GUI control: `/Applications/CuaDriver.app`, CLI `~/.local/bin/cua-driver`, Hermes MCP server `cua-driver` in default config. Needs Accessibility permission if not already granted.
+
+- J.E.K. Jack (`jekjack`) is Jet's wife's Telegram-only investment research assistant. Bot username: `@Jek_hermesninngai_bot`; gateway service `ai.hermes.gateway-jekjack`; allowed/home Telegram user ID `7657191200`; inherited crons cleared. Token lives in profile `.env` and must never be printed.
+
+## J.E.K. Jack
+- JEK Jack profile `~/.hermes/profiles/jekjack` is configured as wife-only Telegram access (`7657191200`), LINE disabled.
+- Jack has all built-in Hermes toolsets enabled plus Higgsfield, Context7, and CUA driver MCP tools. Never expose Telegram bot tokens or secret values.

@@ -1,44 +1,22 @@
-# Todoist API Configuration Needed
+# Todoist Setup Needed
 
-**Status:** Not configured  
-**Detected:** 2026-05-19  
+**Checked:** 2026-05-20 02:14 AM ICT
 
-## What's needed
+Todoist API is not configured for Qwen. No tasks can be fetched or processed.
 
-Qwen's automated Todoist fetch script (`qwen_todoist_fetch.py`) cannot read tasks because no API token is configured.
+## What's missing
+- No API token found in `~/.config/todoist/api_key` or `TODOIST_API_TOKEN`.
 
-## Setup steps
+## To enable
+1. Get a Todoist Personal Access Token from [Todoist Settings > Developer](https://todoist.com/app/settings/integrations).
+2. Store it safely:
+   ```
+   mkdir -p ~/.config/todoist
+   echo '<your-token>' > ~/.config/todoist/api_key
+   ```
+3. Set `TODOIST_QWEN_INCLUDE_INBOX=1` if you want Inbox candidates included.
+4. Restart the Qwen cron or run `~/.hermes/scripts/qwen_todoist_fetch.py` manually.
 
-1. Get a Todoist Personal Access Token:  
-   [REDACTED] → Generate new token (scopes: `write:tasks`, `read:tasks`)
-
-2. Store the token securely:
-
-```bash
-mkdir -p ~/.config/todoist
-# Token goes here — never print or share it
-echo '<YOUR_TOKEN>' > ~/.config/todoist/api_key
-chmod 600 ~/.config/todoist/api_key
-```
-
-3. Export the environment variable for automated runs:
-
-```bash
-export TODOIST_API_TOKEN='<YOUR_TOKEN>'
-```
-
-4. Optionally include Inbox candidates:
-
-```bash
-export TODOIST_QWEN_INCLUDE_INBOX=1
-```
-
-## Selection rule (already configured)
-
-Qwen picks up tasks matching:
-- Label: `qwen`, `ai`, `agent`, `delegate`  
-- OR Title prefix: `Qwen:`, `AI:`, `Agent:`
-
-## Next time this triggers
-
-Once configured, the fetch script will return a JSON payload of selected tasks. Qwen will then process safe local/draft/summarization tasks and write outputs under `Agents/Qwen/Outputs/Todoist/`.
+## Safety reminder
+- Qwen only reads/summarizes tasks; it never completes, modifies, or deletes Todoist tasks.
+- Tasks are filtered by label (`qwen`, `ai`, `agent`, `delegate`) or prefix (`Qwen:`, `AI:`, `Agent:`).
