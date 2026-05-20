@@ -1,0 +1,22 @@
+[
+  {
+    "id": "566080a3-093d-41cd-9d9d-9878f85a790e",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260519_233450_566080a3-093d-41cd-9d9d-9878f85a790e.png",
+    "created_at": 1779233690.779492,
+    "params": {
+      "width": 1856,
+      "height": 2304,
+      "aspect_ratio": "4:5",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Bao Yu knowledge comic style sampler.\n\nCreate a single manga-inspired educational comic page in Ohmsha-style.\nTopic: “Your business has 3 brains: human judgment, AI execution, and memory.”\nVisual format: educational manga page with strong visual metaphors, gadget reveals, diagrams inside panels, no boring talking heads.\nScene: founder in a small command room discovers three glowing engines labeled Judgment, Execution, Memory. The three engines connect into one operating system.\nStyle: crisp manga linework, clean screentones, premium black/white/bronze palette, energetic but intelligent. Short English labels only.\nAspect: portrait.\n"
+    }
+  }
+]

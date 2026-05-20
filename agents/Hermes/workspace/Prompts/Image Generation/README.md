@@ -23,3 +23,4 @@ Each render saves its prompt here so we can reuse, remix, and audit.
 - **No** robots / neon / glowing brains / generic AI tropes
 - Footer handle on social: `@jeditrinupab`
 - Brand lockup: `LIMITLESS CLUB · AI TEAM OS`
+| 2026-05-20 | [[2026-05-20-grok-jet-voice-xurl-carousel]] | grok-imagine-image-quality | X/Hermes carousel grounded in Jet voice |

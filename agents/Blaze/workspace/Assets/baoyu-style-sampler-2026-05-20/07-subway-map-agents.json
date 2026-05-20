@@ -1,0 +1,22 @@
+[
+  {
+    "id": "49a3d635-dafb-420a-ae89-2f4e056c17f6",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260519_233850_49a3d635-dafb-420a-ae89-2f4e056c17f6.png",
+    "created_at": 1779233930.166254,
+    "params": {
+      "width": 2752,
+      "height": 1536,
+      "aspect_ratio": "16:9",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Bao Yu infographic style sampler.\n\nCreate a subway map infographic.\nTopic: “Where AI agents plug into your business.”\nLayout: subway-map.\nStyle: subway-map.\nLines: Lead Gen, Sales, Content, Delivery, Support, Finance, Strategy.\nStations: brief touchpoints such as capture, qualify, draft, approve, deliver, follow-up, report.\nVisual style: premium transit map on charcoal background, ivory labels, bronze interchange nodes, elegant geometry, highly distinctive and organized.\nText: short English labels only, readable.\nAspect: landscape.\n"
+    }
+  }
+]

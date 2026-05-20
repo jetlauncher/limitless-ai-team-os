@@ -222,6 +222,20 @@ auxiliary:
     api_key: ''
     timeout: 120
     extra_body: {}
+  kanban_decomposer:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: ''
+    timeout: 180
+    extra_body: {}
+  profile_describer:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: ''
+    timeout: 60
+    extra_body: {}
   curator:
     provider: auto
     model: ''
@@ -443,6 +457,10 @@ kanban:
   dispatch_in_gateway: true
   dispatch_interval_seconds: 60
   failure_limit: 2
+  orchestrator_profile: ''
+  default_assignee: ''
+  auto_decompose: true
+  auto_decompose_per_tick: 3
 code_execution:
   mode: project
   timeout: 300
@@ -492,7 +510,26 @@ streaming:
   enabled: false
 platform_toolsets:
   cli:
-  - hermes-cli
+  - browser
+  - clarify
+  - code_execution
+  - computer_use
+  - cronjob
+  - delegation
+  - file
+  - image_gen
+  - kanban
+  - memory
+  - messaging
+  - session_search
+  - skills
+  - terminal
+  - todo
+  - tts
+  - video_gen
+  - vision
+  - web
+  - x_search
   telegram:
   - hermes-telegram
   discord:
@@ -565,3 +602,14 @@ custom_providers:
   model: qwen/qwen3.6-plus
   default_model: qwen/qwen3.6-plus
   context_length: 262144
+known_plugin_toolsets:
+  cli:
+  - spotify
+image_gen:
+  provider: xai
+  xai:
+    model: grok-imagine-image-quality
+    resolution: 2k
+video_gen:
+  provider: xai
+  model: grok-imagine-video

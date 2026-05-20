@@ -1,22 +1,29 @@
-# Todoist Setup Needed
+# Qwen Todoist Integration — Setup Needed
 
-**Checked:** 2026-05-20 02:14 AM ICT
-
-Todoist API is not configured for Qwen. No tasks can be fetched or processed.
+**Status:** Not configured  
+**Checked:** 2026-05-21T01:20:23+07:00
 
 ## What's missing
-- No API token found in `~/.config/todoist/api_key` or `TODOIST_API_TOKEN`.
+No Todoist API token is configured. Qwen cannot fetch tasks.
 
-## To enable
-1. Get a Todoist Personal Access Token from [Todoist Settings > Developer](https://todoist.com/app/settings/integrations).
-2. Store it safely:
-   ```
-   mkdir -p ~/.config/todoist
+## How to set up
+
+1. Get a Todoist API token: [REDACTED]
+2. Place it safely:
+   ```bash
    echo '<your-token>' > ~/.config/todoist/api_key
    ```
-3. Set `TODOIST_QWEN_INCLUDE_INBOX=1` if you want Inbox candidates included.
-4. Restart the Qwen cron or run `~/.hermes/scripts/qwen_todoist_fetch.py` manually.
+3. Ensure the directory exists first:
+   ```bash
+   mkdir -p ~/.config/todoist
+   ```
 
-## Safety reminder
-- Qwen only reads/summarizes tasks; it never completes, modifies, or deletes Todoist tasks.
-- Tasks are filtered by label (`qwen`, `ai`, `agent`, `delegate`) or prefix (`Qwen:`, `AI:`, `Agent:`).
+## After setup
+- Qwen will automatically fetch tasks on its scheduled cron runs.
+- Selection rule: tasks labelled `qwen`, `ai`, `agent`, or `delegate`, OR tasks with prefix `Qwen:`, `AI:`, or `Agent:`.
+- To also scan Inbox candidates: set `TODOIST_QWEN_INCLUDE_INBOX=1`.
+
+## Notes
+- Qwen does NOT complete, modify, or delete Todoist tasks.
+- Output is written to `Agents/Qwen/Outputs/Todoist/` in Obsidian.
+- No Telegram, email, posting, or external side effects are sent.

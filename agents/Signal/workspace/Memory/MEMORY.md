@@ -33,3 +33,6 @@ Use this file for durable, agent-specific memory that should remain useful acros
 - Official source: https://www.anthropic.com/news/anthropic-acquires-stainless; X source: https://x.com/AnthropicAI/status/2056419620643541012.
 - Dedupe guidance: repeat only if Anthropic adds concrete Stainless product integration details, connector marketplace changes, MCP governance/security controls, pricing/availability, or migration requirements.
 
+
+- 2026-05-20 watch/dedupe: OpenAI Guaranteed Capacity verified via official X + sitemap (`/business/guaranteed-capacity/`, `/form/guaranteed-capacity/` lastmod 2026-05-19) and Sam Altman stated discounted tokens for 1-3 year commits. Future repeats should add terms/eligibility/pricing/body details before re-alerting.
+- 2026-05-20 watch/dedupe: Google I/O follow-up verified Managed Agents API on Google Cloud blog and @GoogleAIStudio: Google-hosted secure agent environments, Markdown instructions/skills/tools, Antigravity through Agent Platform, Antigravity 2.0 desktop app, and CLI. Future repeats need docs/API pricing/security/logging details before re-alerting.

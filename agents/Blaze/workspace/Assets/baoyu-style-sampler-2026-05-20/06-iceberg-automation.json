@@ -1,0 +1,22 @@
+[
+  {
+    "id": "ea7db0ff-1b4a-4cad-b482-8f2b36e38f44",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260519_233806_ea7db0ff-1b4a-4cad-b482-8f2b36e38f44.png",
+    "created_at": 1779233886.884729,
+    "params": {
+      "width": 1856,
+      "height": 2304,
+      "aspect_ratio": "4:5",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Bao Yu infographic style sampler.\n\nCreate an iceberg infographic.\nTopic: “What people think AI automation is vs what actually makes it work.”\nLayout: iceberg.\nStyle: technical-schematic.\nTop of iceberg: prompts, tools, chatbots, quick wins.\nBelow surface: context design, data hygiene, workflow ownership, QA loop, human judgment, memory, permissions.\nVisual style: dark premium blueprint, thin schematic lines, subtle grids, labels, bronze accent glow, elegant and serious.\nText: short English labels only, readable.\nAspect: portrait.\n"
+    }
+  }
+]

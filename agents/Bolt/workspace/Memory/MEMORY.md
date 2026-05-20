@@ -41,3 +41,7 @@
 - Signal owns AI/business research.
 - Zegna owns taste, brands, and gadgets.
 - Bolt owns apps, websites, landing pages, QA, and technical implementation.
+
+- 2026-05-20: YouTube blog workflow note: the scheduled script’s legacy Gemini key returned `API_KEY_INVALID`; transcript for `RW22pCShhuA` was obtained via YouTube captions, then article `best-ai-tools-for-business-2026` was manually generated, verified in clean clone, and pushed as commit `7798d8b`. Local `/Users/ultrafriday/clawd/builds/limitless-club-website` resolves to an iCloud path and can hit git/node read errors; clean clone/worktree is safer for verification/deploy.
+
+- AccRevo X pilot uses Airtable base appCHNE0e3KonDAHd with stable table ID tblPf7AFTtCSEGBN0 for review drafts; Vercel env should use the table ID, not a rename-prone table name.

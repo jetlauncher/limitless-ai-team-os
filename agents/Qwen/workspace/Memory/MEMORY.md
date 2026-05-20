@@ -1,6 +1,6 @@
 ---
 created: 2025-04-12
-updated: 2026-05-18
+updated: 2026-05-20
 agent: qwen
 ---
 
@@ -28,3 +28,6 @@ agent: qwen
 - Runs via local Comet browser + Ollama qwen3.6:35b. No X API credits.
 - Reports written to `Agents/Qwen/Outputs/X-Radar/`.
 - Protocol: `Agents/Qwen/Protocols/x-radar-comet-qwen-workflow.md`.
+
+## Hygiene notes
+- 2026-05-20: Audit ran on all 9 agent agents + Shared Memory. Pixel daily note 2026-05-20 missing (last: 05-16, 4-day gap). Protocol active but sporadic (6/14 days in last 2 weeks; appears intentional). All other agents' daily notes present. Agent MEMORY.md files have no human-readable updated field — staleness determined by size only.
