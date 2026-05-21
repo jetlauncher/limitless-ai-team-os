@@ -36,3 +36,5 @@ Use this file for durable, agent-specific memory that should remain useful acros
 ## J.E.K. Jack
 - JEK Jack profile `~/.hermes/profiles/jekjack` is configured as wife-only Telegram access (`7657191200`), LINE disabled.
 - Jack has all built-in Hermes toolsets enabled plus Higgsfield, Context7, and CUA driver MCP tools. Never expose Telegram bot tokens or secret values.
+
+- 2026-05-21: Limitless Club+ crossed 1,000 members; Skool dashboard screenshot showed 1,005 members and 28% engagement.
