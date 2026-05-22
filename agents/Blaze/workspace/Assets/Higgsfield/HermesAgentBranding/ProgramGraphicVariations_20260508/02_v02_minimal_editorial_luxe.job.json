@@ -1,0 +1,22 @@
+[
+  {
+    "id": "2a7c990b-0e5c-45ee-a75c-9fe12cc8b73e",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260508_150749_2a7c990b-0e5c-45ee-a75c-9fe12cc8b73e.png",
+    "created_at": 1778252869.586568,
+    "params": {
+      "width": 1856,
+      "height": 2304,
+      "aspect_ratio": "4:5",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Create a premium 4:5 Instagram PROGRAM GRAPHIC for Limitless Club, minimal luxury editorial style. Course title: HERMES AGENT. Subtitle: Multi-Agent AI Masterclass. Palette: deep black, graphite, silver white, tiny electric blue accents. Very high negative space, elegant serif title, modern sans body, subtle thin borders and crop marks. Text: LIMITLESS CLUB at top; HERMES AGENT as large central headline; Multi-Agent AI Masterclass; Build the team that never sleeps.; คอร์สที่จะเปลี่ยน AI ให้เป็น “ทีมงาน” ของคุณ; three small refined chips: Chief of Staff Agent / Content Agent / Vibe Coding Agent; bottom CTA: สร้างทีม AI Agent ที่ทำงาน 24/7; footer: By Jedi Trinupab · @jeditrinupab. Visual: no large robot, only abstract chrome AI orb / agent network diagram. Extremely clean, premium, mobile readable, no clutter, no extra logos, no misspelled duplicate text."
+    }
+  }
+]

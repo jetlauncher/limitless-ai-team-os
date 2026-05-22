@@ -1,0 +1,28 @@
+[
+  {
+    "id": "9999b442-c419-443b-bfb4-41189db6c8e9",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260508_154744_9999b442-c419-443b-bfb4-41189db6c8e9.png",
+    "created_at": 1778255264.956852,
+    "params": {
+      "width": 1856,
+      "height": 2304,
+      "aspect_ratio": "4:5",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "31105f0a-1cc4-4bd2-aef7-592da25770a1",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/31105f0a-1cc4-4bd2-aef7-592da25770a1.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Use the attached reference photo for founder likeness. Create a premium 4:5 Limitless Club PROGRAM GRAPHIC. Concept: Founder AI System Blueprint. Show a realistic human founder in light gray blazer and black shirt, slightly smiling, with a dark graphite AI blueprint/interface behind him. The design should communicate that he teaches founders how to build a team of AI agents. Required text: LIMITLESS CLUB; HERMES AGENT; Multi-Agent AI Masterclass; Build the team that never sleeps.; คอร์สที่จะเปลี่ยน AI ให้เป็น “ทีมงาน” ของคุณ; Chief of Staff Agent; Content Agent; Vibe Coding Agent; สร้างทีม AI Agent ที่ทำงาน 24/7; By Jedi Trinupab · @jeditrinupab. Keep diagram elements subtle, not too dense. Premium black/silver/blue, readable title, no extra logos, no clutter, no duplicate text."
+    }
+  }
+]

@@ -1,0 +1,98 @@
+# Workspace Digest Scan - 2026-05-21
+
+Generated: 2026-05-21 06:45:46
+
+- Classified files/assets: **16170**
+- Changed/new since previous scan: **1280**
+- Skipped risky/noisy entries: **173**
+- Revenue/Ops: **37**
+- Dashboard: **62**
+- Agent Protocol: **9949**
+- Teaching Asset: **297**
+- Content Asset: **98**
+- Code/App: **3043**
+- Archive: **921**
+- Unclassified: **1763**
+
+## Top changed/new files
+
+- **Agent Protocol** — `~/.hermes/profiles/blaze/channel_directory.json` — 2026-05-21 06:44
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/manifest.json` — 2026-05-21 06:43
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-09 — Content Research Sweep — 2026-05-10 02-00 +07.md` — 2026-05-21 06:43
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-09 — Content Research Sweep — 2026-05-10 04-00 +07.md` — 2026-05-21 06:43
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-09 — Content Research Sweep — 2026-05-10 06-00 +07.md` — 2026-05-21 06:43
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-10 — Content Research Sweep — 2026-05-10 08-00 +07.md` — 2026-05-21 06:43
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Content/2026-05-10 — Daily Content Engine — Full Documents Archive — 2026-05-10.md` — 2026-05-21 06:43
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-10 — Content Research Sweep — 2026-05-10 10-02 +07.md` — 2026-05-21 06:43
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-10 — Content Research Sweep — 2026-05-10 12-03 +07.md` — 2026-05-21 06:43
+- **Content Asset** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Content/2026-05-10 — Midday Content Burst — 2026-05-10.md` — 2026-05-21 06:43
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-10 — Content Research Sweep — 2026-05-10 14-04 +07.md` — 2026-05-21 06:43
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-10 — Content Research Sweep — 2026-05-10 16-04 +07.md` — 2026-05-21 06:43
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-10 — Content Research Sweep — 2026-05-10 18-02 +07.md` — 2026-05-21 06:42
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-10 — Content Research Sweep — 2026-05-10 20-05 +07.md` — 2026-05-21 06:42
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-10 — Content Research Sweep — 2026-05-10 22-04 +07.md` — 2026-05-21 06:42
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-10 — Content Research Sweep — 2026-05-11 00-01 +07.md` — 2026-05-21 06:42
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-10 — Content Research Sweep — 2026-05-11 02-00 +07.md` — 2026-05-21 06:42
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-10 — Content Research Sweep — 2026-05-11 04-00 +07.md` — 2026-05-21 06:42
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-11 — Content Research Sweep — 2026-05-11 08-05 +07.md` — 2026-05-21 06:42
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-10 — Content Research Sweep — 2026-05-11 06-02 +07.md` — 2026-05-21 06:42
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Content/2026-05-11 — Daily Content Engine — Full Documents Archive — 2026-05-11.md` — 2026-05-21 06:42
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-11 — Content Research Sweep — 2026-05-11 10-00 +07.md` — 2026-05-21 06:42
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-11 — Content Research Sweep — 2026-05-11 12-04 +07.md` — 2026-05-21 06:42
+- **Content Asset** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Content/2026-05-11 — Midday Content Burst — 2026-05-11.md` — 2026-05-21 06:42
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-11 — Content Research Sweep — 2026-05-11 14-03 +07.md` — 2026-05-21 06:42
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Content/2026-05-12 — Daily Content Engine — Full Documents Archive — 2026-05-12.md` — 2026-05-21 06:42
+- **Content Asset** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Content/2026-05-12 — Midday Content Burst — 2026-05-12.md` — 2026-05-21 06:42
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Document/2026-05-13 — Client Onboarding Playbook — 7-Day AI Employee Setup Sprint.md` — 2026-05-21 06:42
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-20 — Signal X AI Training Radar — 2026-05-20 07-58 +07.md` — 2026-05-21 06:42
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-20 — Signal X AI Training Radar — 2026-05-20 12-00 +07.md` — 2026-05-21 06:42
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-20 — Signal X AI Training Radar — 2026-05-20 16-04 +07.md` — 2026-05-21 06:42
+- **Archive** — `~/Documents/Obsidian Vault/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-20 — Signal X AI Training Radar — 2026-05-20 20-03 +07.md` — 2026-05-21 06:42
+- **Unclassified** — `~/.hermes/channel_directory.json` — 2026-05-21 06:39
+- **Revenue/Ops** — `~/.hermes/limitless/payment_alert_state.json` — 2026-05-21 06:34
+- **Revenue/Ops** — `~/.hermes/limitless/payment_alert_state.json` — 2026-05-21 06:34
+- **Revenue/Ops** — `~/.hermes/email_inbox_state.json` — 2026-05-21 06:32
+- **Agent Protocol** — `~/Documents/Obsidian Vault/Agents/Signal/Daily/2026-05-21.md` — 2026-05-21 06:11
+- **Agent Protocol** — `~/.hermes/limitless/signal_reports_backfill_result.json` — 2026-05-21 06:11
+- **Agent Protocol** — `~/.hermes/limitless/signal_reports_backfill_result.json` — 2026-05-21 06:11
+- **Agent Protocol** — `~/Documents/Obsidian Vault/Agents/Signal/Daily/2026-05-21 Signal X High-Alert Scan.md` — 2026-05-21 06:11
+- **Revenue/Ops** — `~/.hermes/exports/airtable_snapshot_local.json` — 2026-05-21 06:06
+- **Unclassified** — `~/.hermes/limitless/hourly_snapshot_state.json` — 2026-05-21 06:06
+- **Unclassified** — `~/.hermes/limitless/hourly_snapshot_state.json` — 2026-05-21 06:06
+- **Revenue/Ops** — `~/.hermes/limitlessclub_email_alert_state.json` — 2026-05-21 06:00
+- **Agent Protocol** — `~/Documents/Obsidian Vault/Agents/Qwen/Daily/2026-05-21.md` — 2026-05-21 05:56
+- **Agent Protocol** — `~/Documents/Obsidian Vault/Agents/Qwen/Outputs/todoist-setup-needed.md` — 2026-05-21 05:56
+- **Agent Protocol** — `~/Documents/Obsidian Vault/Agents/Qwen/Outputs/X-Radar/2026-05-21-0552-qwen-comet-x-radar.md` — 2026-05-21 05:52
+- **Revenue/Ops** — `~/.hermes/limitless/x_monitor_state.json` — 2026-05-21 05:44
+- **Content Asset** — `~/.hermes/exports/x_posts_local.md` — 2026-05-21 05:44
+- **Revenue/Ops** — `~/.hermes/limitless/x_monitor_state.json` — 2026-05-21 05:44
+- **Agent Protocol** — `~/Documents/Obsidian Vault/Agents/Hermes/Daily/X-Monitor/2026-05-21.md` — 2026-05-21 05:43
+- **Agent Protocol** — `~/Documents/Obsidian Vault/Agents/Signal/Daily/2026-05-21 Signal High-Signal AI Watch.md` — 2026-05-21 05:07
+- **Agent Protocol** — `~/.hermes/limitless/x_bookmarks_signal_research_2026-05-21.json` — 2026-05-21 05:05
+- **Agent Protocol** — `~/.hermes/limitless/x_bookmarks_signal_research_2026-05-21.json` — 2026-05-21 05:05
+- **Agent Protocol** — `~/Documents/Obsidian Vault/Agents/Signal/Daily/2026-05-21 X Bookmarks + Signal Research.md` — 2026-05-21 05:05
+- **Unclassified** — `~/.hermes/limitless/x_bookmarks_raw_2026-05-21.json` — 2026-05-21 05:04
+- **Unclassified** — `~/.hermes/limitless/x_bookmarks_raw_2026-05-21.json` — 2026-05-21 05:04
+- **Agent Protocol** — `~/Documents/Obsidian Vault/Agents/Qwen/Outputs/X-Radar/2026-05-21-0449-qwen-comet-x-radar.md` — 2026-05-21 04:49
+- **Agent Protocol** — `~/.hermes/profiles/blaze/sessions/session_20260521_044719_e11a3d.json` — 2026-05-21 04:48
+- **Agent Protocol** — `~/.hermes/profiles/blaze/sessions/sessions.json` — 2026-05-21 04:47
+- **Agent Protocol** — `~/.hermes/profiles/blaze/sessions/session_20260521_043437_bc8820ef.json` — 2026-05-21 04:47
+- **Agent Protocol** — `~/Documents/Obsidian Vault/Agents/Blaze/Daily/2026-05-21.md` — 2026-05-21 04:47
+- **Agent Protocol** — `~/Documents/Obsidian Vault/Agents/Blaze/Assets/clipify/RW22pCShhuA/rendered/05_manus_virtual_employee.mp4` — 2026-05-21 04:46
+- **Agent Protocol** — `~/Documents/Obsidian Vault/Agents/Qwen/Outputs/Memory-Hygiene/memory-hygiene-2026-05-21-0443.md` — 2026-05-21 04:46
+- **Agent Protocol** — `~/Documents/Obsidian Vault/Agents/Blaze/Assets/clipify/RW22pCShhuA/rendered/04_ai_ads_vs_trust.mp4` — 2026-05-21 04:46
+- **Agent Protocol** — `~/Documents/Obsidian Vault/Agents/Blaze/Assets/clipify/RW22pCShhuA/rendered/03_words_are_gold.mp4` — 2026-05-21 04:46
+- **Agent Protocol** — `~/Documents/Obsidian Vault/Agents/Blaze/Assets/clipify/RW22pCShhuA/rendered/02_marketing_team_700_baht.mp4` — 2026-05-21 04:46
+- **Agent Protocol** — `~/Documents/Obsidian Vault/Agents/Blaze/Assets/clipify/RW22pCShhuA/rendered/01_chatgpt_one_ai.mp4` — 2026-05-21 04:45
+- **Agent Protocol** — `~/.hermes/profiles/blaze/models_dev_cache.json` — 2026-05-21 04:43
+- **Agent Protocol** — `~/Documents/Obsidian Vault/Agents/Hermes/Daily/2026-05-21.md` — 2026-05-21 04:37
+- **Agent Protocol** — `~/Documents/Obsidian Vault/Agents/Blaze/Assets/clipify/RW22pCShhuA/clip_candidates.md` — 2026-05-21 04:36
+- **Agent Protocol** — `~/.hermes/profiles/blaze/processes.json` — 2026-05-21 04:36
+- **Unclassified** — `~/.hermes/sessions/sessions.json` — 2026-05-21 04:03
+- **Agent Protocol** — `~/Documents/Obsidian Vault/Agents/Qwen/Outputs/X-Radar/2026-05-21-0348-qwen-comet-x-radar.md` — 2026-05-21 03:48
+- **Agent Protocol** — `~/Projects/limitless-ai-team-os/agent-registry.json` — 2026-05-21 03:36
+- **Agent Protocol** — `~/Projects/limitless-ai-team-os/agents/Zegna/SOUL.md` — 2026-05-21 03:36
+- **Agent Protocol** — `~/Projects/limitless-ai-team-os/agents/Zegna/workspace/README.md` — 2026-05-21 03:36
+- **Agent Protocol** — `~/Projects/limitless-ai-team-os/agents/Zegna/workspace/Memory/MEMORY.md` — 2026-05-21 03:36
+- **Agent Protocol** — `~/Projects/limitless-ai-team-os/agents/Zegna/workspace/Scratchpad/inbox.md` — 2026-05-21 03:36
+- **Agent Protocol** — `~/Projects/limitless-ai-team-os/agents/Zegna/workspace/Daily/2026-05-17.md` — 2026-05-21 03:36

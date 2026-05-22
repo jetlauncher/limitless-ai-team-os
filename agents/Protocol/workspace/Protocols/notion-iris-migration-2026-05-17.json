@@ -1,0 +1,99 @@
+{
+  "run_at": "2026-05-17T10:00:00+07:00",
+  "database_id": "043dad6e-20c0-43fb-bb4f-35f545d2d4b9",
+  "appended_full_drafts": [
+    {
+      "hook": "AI Operating System เริ่มจาก Context ไม่ใช่ Tool (Longform Draft)",
+      "page": "https://www.notion.so/AI-Operating-System-Context-Tool-Longform-Draft-363d076c9ad381d3adf1d860329afdf0",
+      "blocks_added": 112
+    },
+    {
+      "hook": "AI Automation ไม่ใช่เรื่องเทค แต่คือวิธีซื้อเวลาคืนให้เจ้าของธุรกิจ (Longform Draft)",
+      "page": "https://www.notion.so/AI-Automation-Longform-Draft-363d076c9ad3819c9eebd88807444c03",
+      "blocks_added": 95
+    },
+    {
+      "hook": "จาก AI Tools สู่ AI Operating System สำหรับเจ้าของธุรกิจ (Longform Draft)",
+      "page": "https://www.notion.so/AI-Tools-AI-Operating-System-Longform-Draft-363d076c9ad381fbaabbf0ccca211b67",
+      "blocks_added": 89
+    },
+    {
+      "hook": "สูตร 10/80/10 — และทำไม Workshop สุดสัปดาห์นี้เปลี่ยนใจผมเรื่องการสร้างทีม",
+      "page": "https://www.notion.so/10-80-10-Workshop-363d076c9ad381fdb068c3d846f4bb28",
+      "blocks_added": 86
+    }
+  ],
+  "created_archive_pages": [],
+  "skipped": [],
+  "errors": [
+    {
+      "file": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Protocol/Drafts/2026-04-29-the-protocol-issue-001-ai-operating-memo-english.md",
+      "error": {
+        "status": 400,
+        "error": "{\"object\":\"error\",\"status\":400,\"code\":\"validation_error\",\"message\":\"Workshop is expected to be select.\",\"request_id\":\"0a2a33a8-3f6b-4ed2-8de4-be10f59f209a\"}"
+      }
+    },
+    {
+      "file": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Protocol/Drafts/2026-04-29-the-protocol-issue-001-ai-operating-memo-v2-jet-voice.md",
+      "error": {
+        "status": 400,
+        "error": "{\"object\":\"error\",\"status\":400,\"code\":\"validation_error\",\"message\":\"Workshop is expected to be select.\",\"request_id\":\"5355bb36-a2a5-4c7f-8f28-a4f2de822bf6\"}"
+      }
+    },
+    {
+      "file": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Protocol/Drafts/2026-04-29-the-protocol-issue-001-ai-operating-memo.md",
+      "error": {
+        "status": 400,
+        "error": "{\"object\":\"error\",\"status\":400,\"code\":\"validation_error\",\"message\":\"Workshop is expected to be select.\",\"request_id\":\"31aaa88c-fc37-4edb-879c-042d1f78a268\"}"
+      }
+    },
+    {
+      "file": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Protocol/Drafts/2026-05-16-automation-cannot-solve-lazy-problems.md",
+      "error": {
+        "status": 400,
+        "error": "{\"object\":\"error\",\"status\":400,\"code\":\"validation_error\",\"message\":\"Workshop is expected to be select.\",\"request_id\":\"2bc1d060-db21-43c4-8220-2936a97a516c\"}"
+      }
+    },
+    {
+      "file": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Protocol/Drafts/2026-05-16-vibe-coding-owner-as-product-spec-writer.md",
+      "error": {
+        "status": 400,
+        "error": "{\"object\":\"error\",\"status\":400,\"code\":\"validation_error\",\"message\":\"Workshop is expected to be select.\",\"request_id\":\"9bd4ef01-ff3e-4f99-b2b0-95db068b03ff\"}"
+      }
+    }
+  ],
+  "created_archive_pages_retry": [
+    {
+      "file": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Protocol/Drafts/2026-04-29-the-protocol-issue-001-ai-operating-memo-english.md",
+      "hook": "[Protocol Archive] The Protocol Issue 001 — AI Is No Longer an IT Project",
+      "page": "https://www.notion.so/Protocol-Archive-The-Protocol-Issue-001-AI-Is-No-Longer-an-IT-Project-363d076c9ad381158609f890d415d3fb",
+      "blocks_added": 164
+    },
+    {
+      "file": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Protocol/Drafts/2026-04-29-the-protocol-issue-001-ai-operating-memo-v2-jet-voice.md",
+      "hook": "[Protocol Archive] The Protocol Issue 001 — AI ไม่ใช่โปรเจกต์ IT อีกต่อไป",
+      "page": "https://www.notion.so/Protocol-Archive-The-Protocol-Issue-001-AI-IT-363d076c9ad3810eb680c4d858144197",
+      "blocks_added": 240
+    },
+    {
+      "file": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Protocol/Drafts/2026-04-29-the-protocol-issue-001-ai-operating-memo.md",
+      "hook": "[Protocol Archive] The Protocol Issue 001 — AI ไม่ใช่โปรเจกต์ IT",
+      "page": "https://www.notion.so/Protocol-Archive-The-Protocol-Issue-001-AI-IT-363d076c9ad381fca602c77291c3463d",
+      "blocks_added": 166
+    },
+    {
+      "file": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Protocol/Drafts/2026-05-16-automation-cannot-solve-lazy-problems.md",
+      "hook": "[Protocol Archive] The Protocol Draft — Automation Cannot Solve Lazy Problems",
+      "page": "https://www.notion.so/Protocol-Archive-The-Protocol-Draft-Automation-Cannot-Solve-Lazy-Problems-363d076c9ad381ff88c9d3742321f42f",
+      "blocks_added": 236
+    },
+    {
+      "file": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Protocol/Drafts/2026-05-16-vibe-coding-owner-as-product-spec-writer.md",
+      "hook": "[Protocol Archive] The Protocol Draft — Vibe Coding: เจ้าของธุรกิจต้องเขียนโจทย์ให้เป็น",
+      "page": "https://www.notion.so/Protocol-Archive-The-Protocol-Draft-Vibe-Coding-363d076c9ad381a190d5c532d0632f14",
+      "blocks_added": 176
+    }
+  ],
+  "skipped_retry": [],
+  "errors_retry": []
+}

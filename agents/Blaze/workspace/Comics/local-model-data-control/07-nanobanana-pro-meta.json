@@ -1,0 +1,22 @@
+[
+  {
+    "id": "5b17c574-439b-436c-ae14-3ca014a93a88",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260519_100129_5b17c574-439b-436c-ae14-3ca014a93a88.png",
+    "created_at": 1779184889.842016,
+    "params": {
+      "width": 2400,
+      "height": 1792,
+      "aspect_ratio": "4:3",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Create a cinematic premium four-panel Thai knowledge comic in a strict 2×2 grid, landscape 4:3 aspect ratio.\n\nVisual style:\n- Founder noir / cyber strategy room: dark graphite, warm ivory highlights, bronze/gold #94764A accents.\n- More cinematic, cooler, and more dramatic than a simple explainer.\n- Clean comic illustration with deep shadows, spotlighting, strategic UI overlays, premium founder-media aesthetic.\n- Thai text must be readable, large, and minimal.\n- No extra panels. No watermark. No random filler text.\n\nTitle above the panel grid:\n“คำถามที่ Founder ต้องถามก่อนใช้ AI”\n\nPanel 1 — Top Left, Setup:\nLate night. Founder stands before a giant glowing cloud doorway. He holds a confidential folder labeled “ข้อมูลบริษัท”. The doorway looks powerful but outside his control.\nThai speech bubble:\n“โมเดลไหนเก่งที่สุด?”\n\nPanel 2 — Top Right, Development:\nA spotlight reveals the real question written on a bronze strategy card. The founder turns away from the cloud and looks at the folder.\nThai speech bubble:\n“ไม่ใช่… คำถามคือข้อมูลนี้ควรอยู่ที่ไหน”\n\nPanel 3 — Bottom Left, Turn:\nCinematic split scene. Left: cloud city skyline labeled “Cloud = เร็ว”. Right: secure local vault room with a glowing AI core labeled “Local = คุมได้”. Bronze accent on the vault and AI core.\nLabels exactly:\n“Cloud = เร็ว”\n“Local = คุมได้”\n\nPanel 4 — Bottom Right, Conclusion:\nFounder in a premium strategy room chooses from a clean map: public data flows to Cloud, private data flows to Local. Two systems cooperate under one founder decision layer.\nThai speech bubble:\n“กลยุทธ์ AI เริ่มจากการแยกข้อมูลให้ถูก”\n\nCaption below the grid:\n“ความเก่งสำคัญ แต่การควบคุมสำคัญกว่า”\n\nComposition requirements:\n- Exactly 4 panels, 2×2 grid.\n- Make it dramatic and cool, like a premium founder strategy comic.\n- Use bronze/gold only for decision/control elements.\n- Keep the message instantly understandable."
+    }
+  }
+]

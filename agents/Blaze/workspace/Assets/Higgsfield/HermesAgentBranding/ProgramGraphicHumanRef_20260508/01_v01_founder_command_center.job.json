@@ -1,0 +1,28 @@
+[
+  {
+    "id": "e932d696-1177-4c88-898f-c58b8c49c4ed",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260508_154328_e932d696-1177-4c88-898f-c58b8c49c4ed.png",
+    "created_at": 1778255008.734926,
+    "params": {
+      "width": 1856,
+      "height": 2304,
+      "aspect_ratio": "4:5",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "c0c7da39-18e0-435d-a3ca-9bfcd4bae62e",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/c0c7da39-18e0-435d-a3ca-9bfcd4bae62e.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Use the attached reference photo as the human founder/speaker likeness reference. Create a premium 4:5 Instagram PROGRAM GRAPHIC for Limitless Club. Make the person look like the reference: Thai male founder, smiling/confident, short dark hair, light gray blazer over black shirt, premium speaker/educator presence. Preserve human realism; do not turn him into a robot. Course: HERMES AGENT. Subtitle: Multi-Agent AI Masterclass. Style: Midnight Luxe Editorial, black/charcoal/graphite, silver-white typography, electric royal blue accents, elegant serif headline, clean sans body, high negative space, subtle gridlines/crosshair marks/system UI. Layout: LIMITLESS CLUB top; HERMES AGENT large; Multi-Agent AI Masterclass; quote card: Build the team that never sleeps.; Thai line: คอร์สที่จะเปลี่ยน AI ให้เป็น “ทีมงาน” ของคุณ; three chips: Chief of Staff Agent, Content Agent, Vibe Coding Agent; bottom CTA: สร้างทีม AI Agent ที่ทำงาน 24/7; footer: By Jedi Trinupab · @jeditrinupab. Visual: founder standing inside a premium AI command center with holographic blue dashboards. Clean mobile hierarchy, safe margins, no clutter, no extra logos, no duplicate text."
+    }
+  }
+]

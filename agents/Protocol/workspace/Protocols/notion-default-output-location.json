@@ -1,0 +1,9 @@
+{
+  "default_output_location": "Iris Content Pipeline",
+  "database_id": "043dad6e-20c0-43fb-bb4f-35f545d2d4b9",
+  "database_url": "https://www.notion.so/043dad6e20c043fbbb4f35f545d2d4b9",
+  "set_default_on": "2026-05-17",
+  "requested_by": "Jet via Telegram",
+  "purpose": "Default Notion output destination for Protocol newsletter drafts and migrated previous drafts.",
+  "schema_notes": "Use Hook as title; Type=📧 Newsletter; Stage=📝 Draft or 👀 Audit; Channel @jeditrinupab (TH) unless English."
+}

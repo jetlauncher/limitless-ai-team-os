@@ -1,0 +1,20 @@
+Create a premium 4:5 Instagram course poster for Limitless Club.
+
+Style: Midnight Luxe Editorial. Black / charcoal / graphite background, silver-white typography, subtle electric royal blue accents, elegant editorial serif headline, clean modern sans body text, lots of negative space, refined gridlines, crosshair marks, faint circuit/system UI lines, luxury tech founder-media aesthetic. Beautiful, premium, not busy.
+
+Goal: cleaner mobile-optimized version of a course poster. Fewer text blocks. Large readable headline. Strong hierarchy. Exact typography should feel like a luxury masterclass ad.
+
+Layout:
+- Top small header: LIMITLESS CLUB
+- Main headline: HERMES AGENT
+- Subtitle below: Multi-Agent AI Masterclass
+- Hero phrase in a premium quote card: Build the team that never sleeps.
+- Thai positioning line: คอร์สที่จะเปลี่ยน AI ให้เป็น “ทีมงาน” ของคุณ
+- Three compact benefit chips/cards near lower third:
+  1) Chief of Staff Agent
+  2) Content Agent
+  3) Vibe Coding Agent
+- Bottom CTA: สร้างทีม AI Agent ที่ทำงาน 24/7
+- Footer: By Jedi Trinupab · @jeditrinupab
+
+Visual: futuristic AI command center, subtle metallic chrome details, premium black-blue lighting. Include a tasteful AI agent / android / holographic assistant element on the right side, but keep face and details refined and not distracting. Keep all text inside safe margins. No clutter. No extra logos. No misspelled duplicate text. Make it look like a finished premium paid course ad.

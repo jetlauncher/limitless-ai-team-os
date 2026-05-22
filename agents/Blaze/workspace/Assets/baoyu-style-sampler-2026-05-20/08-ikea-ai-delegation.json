@@ -1,0 +1,22 @@
+[
+  {
+    "id": "061c909e-3016-4ba6-9da0-716d8ec31be9",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260519_233943_061c909e-3016-4ba6-9da0-716d8ec31be9.png",
+    "created_at": 1779233983.296789,
+    "params": {
+      "width": 1856,
+      "height": 2304,
+      "aspect_ratio": "4:5",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Bao Yu infographic style sampler.\n\nCreate an IKEA manual style infographic.\nTopic: “How to delegate one task to AI without creating chaos.”\nLayout: linear-progression.\nStyle: ikea-manual.\nSteps: 1 define outcome, 2 give context, 3 set constraints, 4 request draft, 5 review, 6 save the workflow.\nVisual style: minimal line art instruction manual, exploded-view diagrams, arrows, numbered callouts, white/ivory paper with black linework and bronze accent, witty but premium.\nText: short English labels only.\nAspect: portrait.\n"
+    }
+  }
+]

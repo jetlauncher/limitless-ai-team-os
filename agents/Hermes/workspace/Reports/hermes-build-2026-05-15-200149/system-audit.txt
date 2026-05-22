@@ -1,0 +1,259 @@
+# system
+Darwin Ultras-Mac-Studio.local 25.4.0 Darwin Kernel Version 25.4.0: Thu Mar 19 19:26:07 PDT 2026; root:xnu-12377.101.15~1/RELEASE_ARM64_T6031 arm64
+ProductName:		macOS
+ProductVersion:		26.4.1
+BuildVersion:		25E253
+# disk
+Filesystem        Size    Used   Avail Capacity iused ifree %iused  Mounted on
+/dev/disk3s1s1   926Gi    12Gi   143Gi     8%    458k  1.5G    0%   /
+/dev/disk3s5     926Gi   760Gi   143Gi    85%     12M  1.5G    1%   /System/Volumes/Data
+# memory
+Mach Virtual Memory Statistics: (page size of 16384 bytes)
+Pages free:                             2326380.
+Pages active:                           1556065.
+Pages inactive:                         1104862.
+Pages speculative:                       713350.
+Pages throttled:                              0.
+Pages wired down:                        286948.
+Pages purgeable:                          32323.
+"Translation faults":               25059711989.
+Pages copy-on-write:                  928012210.
+Pages zero filled:                  15119671474.
+Pages reactivated:                    125769863.
+Pages purged:                         100611640.
+File-backed pages:                      2053215.
+Anonymous pages:                        1321062.
+Pages stored in compressor:              689403.
+Pages occupied by compressor:            246956.
+Decompressions:                        74034713.
+Compressions:                         107755214.
+Pageins:                              514725077.
+Pageouts:                                945272.
+Swapins:                                1104885.
+Swapouts:                               1948615.
+# top cpu
+ultrafriday      92747 100.5  0.8 461290224 841248   ??  R     8:01PM   0:16.46 /Users/ultrafriday/.brv-cli/bin/node /Users/ultrafriday/.npm-global/lib/node_modules/openclaw/dist/index.js gateway --port 18789
+_windowserver      604  24.3  0.4 247000056880 354752   ??  Ss   27Apr26 2080:59.60 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer -daemon
+ultrafriday        926  18.9  0.1 492785328  68912   ??  S    27Apr26 1314:11.93 /System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd
+ultrafriday        929  15.7  0.0 448387024  43328   ??  S    27Apr26  85:28.53 /usr/libexec/nsurlsessiond
+ultrafriday       1206  15.6  0.7 624734704 671456   ??  R    27Apr26 1143:54.59 /System/Library/CoreServices/Finder.app/Contents/MacOS/Finder
+ultrafriday        982  14.4  0.1 461631488  76544   ??  U    27Apr26 3439:36.99 /System/Library/PrivateFrameworks/FileProvider.framework/Support/fileproviderd
+_mds_stores        884   9.5  1.3 752537872 1308640   ??  Rs   27Apr26 17568:53.37 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mds_stores
+ultrafriday        976   7.4  0.1 477841840 147344   ??  S    27Apr26 1273:01.20 /System/Library/PrivateFrameworks/iCloudDriveCore.framework/Versions/A/Support/bird
+root             86004   5.7  0.4 442892848 395040   ??  S     7:35PM   2:20.59 /Applications/Jump Desktop Connect.app/Contents/MacOS/JumpConnect --rtcproxy /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T//jdtemp.6BC5E7D6-0F7B-4D86-AA87-F37C6CE45158.sock
+ultrafriday      86720   4.3  0.2 442639728 226880   ??  S     7:38PM   0:12.59 /Users/ultrafriday/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main --profile signal gateway run --replace
+ultrafriday        942   4.3  0.0 442326928  19440   ??  S    27Apr26  34:56.72 /usr/libexec/trustd --agent
+ultrafriday      86012   3.3  0.1 442834416 126208   ??  S     7:35PM   1:09.36 /Applications/Jump Desktop Connect.app/Contents/MacOS/JumpConnect --desktopproxy /var/run/com.p5sys.jump.connect.desktop-server.FA02FFCC-7CBE-4A3A-B65D-BA2483150894.sock
+root               582   2.9  0.0 442119392  29520   ??  Ss   27Apr26  49:53.23 /usr/libexec/dasd
+root               559   2.4  0.1 456886464  56608   ??  Ss   27Apr26 533:48.15 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mds
+ultrafriday      29464   2.1  0.3 1921658608 319616   ??  S     9:15AM  18:38.75 /Applications/Wispr Flow.app/Contents/Frameworks/Wispr Flow Helper (Renderer).app/Contents/MacOS/Wispr Flow Helper (Renderer) --type=renderer --user-data-dir=/Users/ultrafriday/Library/Application Support/Wispr Flow --standard-schemes=wispr-extension --secure-schemes=wispr-extension,sentry-ipc --bypasscsp-schemes=sentry-ipc --cors-schemes=wispr-extension,sentry-ipc --fetch-schemes=wispr-extension,sentry-ipc --app-path=/Applications/Wispr Flow.app/Contents/Resources/app.asar --no-sandbox --no-zygote --disable-blink-features=Auxclick --lang=en-US --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=6 --time-ticks-at-unix-epoch=-1777250587202170 --launch-time-ticks=1560742569624 --shared-files --field-trial-handle=1718379636,r,1722971851433759995,4385285979367659504,262144 --enable-features=MacCatapSystemAudioLoopbackCapture,MacLoopbackAudioForScreenShare,PdfUseShowSaveFilePicker,ScreenCaptureKitPickerScreen,ScreenCaptureKitStreamPickerSonoma --disable-features=LocalNetworkAccessChecks,MacWebContentsOcclusion,ScreenAIOCREnabled,SpareRendererForSitePerProcess,TimeoutHangingVideoCaptureStarts,TraceSiteInstanceGetProcessCreation --variations-seed-version --trace-process-track-uuid=3190708991934122588
+# top mem
+ultrafriday       1022   0.0  2.7 883215312 2689856   ??  S    27Apr26 7118:06.18 /System/Library/PrivateFrameworks/MediaAnalysis.framework/Versions/A/mediaanalysisd
+_mds_stores        884  10.3  1.3 752537872 1308640   ??  Ss   27Apr26 17568:53.37 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/mds_stores
+ultrafriday      92747  98.8  0.8 461292112 843136   ??  R     8:01PM   0:16.52 /Users/ultrafriday/.brv-cli/bin/node /Users/ultrafriday/.npm-global/lib/node_modules/openclaw/dist/index.js gateway --port 18789
+ultrafriday      29699   0.0  0.7 573118800 712192   ??  S     4:10PM  15:15.10 /Applications/Comet.app/Contents/MacOS/Comet
+ultrafriday       1206  10.9  0.7 624734704 671456   ??  S    27Apr26 1143:54.59 /System/Library/CoreServices/Finder.app/Contents/MacOS/Finder
+ultrafriday      91972   0.8  0.6 490366176 557328   ??  S    29Apr26 700:17.50 /Applications/Telegram.app/Contents/MacOS/Telegram
+ultrafriday      69594   0.0  0.5 443562880 484272   ??  S     6:37PM   0:12.12 /System/Applications/Notes.app/Contents/MacOS/Notes
+ultrafriday      29781   0.0  0.5 1900572704 550608   ??  S     4:10PM   0:18.57 /Applications/Comet.app/Contents/Frameworks/Comet Framework.framework/Versions/147.0.7727.1858/Helpers/Comet Helper (Renderer).app/Contents/MacOS/Comet Helper (Renderer) --type=renderer --extension-process --perplexity-backend-url=https://www.perplexity.ai/ --perplexity-comet-plus-partners=washingtonpost.com,.washingtonpost.com --lang=en-US --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=61 --time-ticks-at-unix-epoch=-1777250587244650 --launch-time-ticks=1585651883937 --shared-files --metrics-shmem-handle=1752395122,r,5031325752179825015,2034339128575782556,2097152 --field-trial-handle=1718379636,r,9260255959292485851,9824520062313013466,262144 --disable-features=Allow-external-extensions-scripting-on-NTP --variations-seed-version --pseudonymization-salt-handle=1935764596,r,6176985068230395062,13252045040653708734,4 --trace-process-track-uuid=3190709043471424283 --seatbelt-client=388
+ultrafriday      28805   0.0  0.5 444025952 540576 s001  S+    9:13AM   0:17.48 openclaw-tui   
+ultrafriday        946   0.0  0.5 453136304 524816   ??  S    27Apr26 288:02.51 /System/Library/PrivateFrameworks/PhotoLibraryServices.framework/Versions/A/Support/photolibraryd
+ultrafriday      14227   0.0  0.4 482619296 369840   ??  S    30Apr26  39:29.43 /System/Library/Frameworks/QuickLookThumbnailing.framework/Support/com.apple.quicklook.ThumbnailsAgent
+ultrafriday       1041   0.0  0.4 492971232 378416   ??  S    27Apr26 474:10.92 /System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Support/corespotlightd
+root             86004   5.9  0.4 442892848 395040   ??  S     7:35PM   2:20.60 /Applications/Jump Desktop Connect.app/Contents/MacOS/JumpConnect --rtcproxy /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T//jdtemp.6BC5E7D6-0F7B-4D86-AA87-F37C6CE45158.sock
+_windowserver      604  24.9  0.4 247000056880 354752   ??  Ss   27Apr26 2080:59.61 /System/Library/PrivateFrameworks/SkyLight.framework/Resources/WindowServer -daemon
+ultrafriday      29746   0.0  0.3 1900203472 280880   ??  S     4:10PM   0:06.98 /Applications/Comet.app/Contents/Frameworks/Comet Framework.framework/Versions/147.0.7727.1858/Helpers/Comet Helper (Renderer).app/Contents/MacOS/Comet Helper (Renderer) --type=renderer --extension-process --perplexity-backend-url=https://www.perplexity.ai/ --perplexity-comet-plus-partners=washingtonpost.com,.washingtonpost.com --lang=en-US --num-raster-threads=4 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --enable-main-frame-before-activation --renderer-client-id=39 --time-ticks-at-unix-epoch=-1777250587244650 --launch-time-ticks=1585648234294 --shared-files --metrics-shmem-handle=1752395122,r,3057005559317657486,8331187210399640637,2097152 --field-trial-handle=1718379636,r,9260255959292485851,9824520062313013466,262144 --disable-features=Allow-external-extensions-scripting-on-NTP --variations-seed-version --pseudonymization-salt-handle=1935764596,r,6176985068230395062,13252045040653708734,4 --trace-process-track-uuid=3190709022856503605 --seatbelt-client=163
+# key dirs
+109G	/Users/ultrafriday/.hermes
+  0B	/Users/ultrafriday/Documents/Obsidian Vault
+ 88M	/Users/ultrafriday/Projects
+# recent gateway errors
+===== /Users/ultrafriday/.hermes =====
+==> /Users/ultrafriday/.hermes/logs/gateway.error.log <==
+    with map_exceptions(exc_map):
+    self.gen.throw(typ, value, traceback)
+  File "/Users/ultrafriday/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+    with map_httpcore_exceptions():
+    self.gen.throw(typ, value, traceback)
+  File "/Users/ultrafriday/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+telegram.error.TimedOut: Timed out
+WARNING gateway.platforms.telegram: [Telegram] Telegram polling reconnect failed: Timed out
+WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 2/10), reconnecting in 10s. Error: Timed out
+WARNING agent.auxiliary_client: Auxiliary compression: connection error on auto and no fallback available (tried: openrouter, nous, local/custom, api-key)
+WARNING root: Failed to generate context summary: Codex auxiliary Responses stream exceeded 120.0s total timeout. Further summary attempts paused for 60 seconds.
+WARNING agent.auxiliary_client: Auxiliary compression: connection error on auto and no fallback available (tried: openrouter, nous, local/custom, api-key)
+WARNING root: Failed to generate context summary: Codex auxiliary Responses stream exceeded 120.0s total timeout. Further summary attempts paused for 60 seconds.
+⚠ Compression summary failed: Codex auxiliary Responses stream exceeded 120.0s total timeout. Inserted a fallback context marker.
+===== /Users/ultrafriday/.hermes/profiles/blaze =====
+==> /Users/ultrafriday/.hermes/profiles/blaze/logs/gateway.error.log <==
+    raise last_error
+    with map_httpcore_exceptions():
+    self.gen.throw(typ, value, traceback)
+  File "/Users/ultrafriday/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+httpx.ConnectError: All connection attempts failed
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ConnectError: All connection attempts failed
+WARNING gateway.platforms.telegram: [Telegram] Telegram polling reconnect failed: httpx.ConnectError: All connection attempts failed
+WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 2/10), reconnecting in 10s. Error: httpx.ConnectError: All connection attempts failed
+  ultrafriday      80867   0.0  0.2 442931344 235072   ??  S    Tue07PM  16:22.19 /Users/ultrafriday/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main --profile signal gateway run --replace
+  ultrafriday      80867   0.0  0.2 442931344 235072   ??  S    Tue07PM  16:22.19 /Users/ultrafriday/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main --profile signal gateway run --replace
+2026-05-15 19:35:13,429 INFO gateway.run: Gateway stopped
+===== /Users/ultrafriday/.hermes/profiles/bolt =====
+==> /Users/ultrafriday/.hermes/profiles/bolt/logs/gateway.error.log <==
+Traceback (most recent call last):
+    with map_httpcore_exceptions():
+    self.gen.throw(typ, value, traceback)
+  File "/Users/ultrafriday/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+telegram.error.TimedOut: Timed out
+WARNING gateway.platforms.telegram: [Telegram] Telegram polling reconnect failed: Timed out
+WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 3/10), reconnecting in 20s. Error: Timed out
+2026-05-14 22:58:10,571 WARNING gateway.platforms.telegram_network: [Telegram] Primary api.telegram.org connection failed (All connection attempts failed); trying fallback IPs 149.154.166.110
+2026-05-15 08:10:47,482 WARNING gateway.platforms.telegram: [Telegram] Telegram network error, scheduling reconnect: Bad Gateway
+2026-05-15 08:10:47,486 WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: Bad Gateway
+2026-05-15 08:11:33,319 WARNING gateway.platforms.telegram: [Telegram] Telegram polling reconnect failed: Timed out
+2026-05-15 08:11:33,320 WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 2/10), reconnecting in 10s. Error: Timed out
+2026-05-15 08:12:03,746 WARNING gateway.platforms.telegram: [Telegram] Telegram polling reconnect failed: Timed out
+2026-05-15 08:12:03,747 WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 3/10), reconnecting in 20s. Error: Timed out
+2026-05-15 08:12:24,539 INFO gateway.platforms.telegram: [Telegram] Telegram polling resumed after network error (attempt 3)
+===== /Users/ultrafriday/.hermes/profiles/kaijeaw =====
+==> /Users/ultrafriday/.hermes/profiles/kaijeaw/logs/gateway.error.log <==
+    raise last_error
+    with map_httpcore_exceptions():
+    self.gen.throw(typ, value, traceback)
+  File "/Users/ultrafriday/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+httpx.ConnectError: All connection attempts failed
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ConnectError: All connection attempts failed
+WARNING gateway.platforms.telegram: [Telegram] Telegram polling reconnect failed: httpx.ConnectError: All connection attempts failed
+WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 2/10), reconnecting in 10s. Error: httpx.ConnectError: All connection attempts failed
+  ultrafriday      80867   0.0  0.2 442931344 235072   ??  S    Tue07PM  16:22.20 /Users/ultrafriday/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main --profile signal gateway run --replace
+  ultrafriday      80867   0.0  0.2 442931344 235072   ??  S    Tue07PM  16:22.20 /Users/ultrafriday/.hermes/hermes-agent/venv/bin/python -m hermes_cli.main --profile signal gateway run --replace
+===== /Users/ultrafriday/.hermes/profiles/pixel =====
+==> /Users/ultrafriday/.hermes/profiles/pixel/logs/gateway.error.log <==
+    with map_httpcore_exceptions():
+    self.gen.throw(typ, value, traceback)
+  File "/Users/ultrafriday/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+telegram.error.TimedOut: Timed out
+WARNING gateway.platforms.telegram: [Telegram] Telegram polling reconnect failed: Timed out
+WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 2/10), reconnecting in 10s. Error: Timed out
+WARNING agent.auxiliary_client: Auxiliary compression: connection error on auto and no fallback available (tried: openrouter, nous, local/custom, api-key)
+WARNING root: Failed to generate context summary: Codex auxiliary Responses stream exceeded 120.0s total timeout. Further summary attempts paused for 60 seconds.
+ERROR tools.image_generation_tool: Error generating image: FAL_KEY environment variable not set
+Traceback (most recent call last):
+    raise ValueError(message)
+ValueError: FAL_KEY environment variable not set
+WARNING agent.auxiliary_client: Auxiliary compression: connection error on auto and no fallback available (tried: openrouter, nous, local/custom, api-key)
+WARNING root: Failed to generate context summary: Codex auxiliary Responses stream exceeded 120.0s total timeout. Further summary attempts paused for 60 seconds.
+===== /Users/ultrafriday/.hermes/profiles/protocol =====
+==> /Users/ultrafriday/.hermes/profiles/protocol/logs/gateway.error.log <==
+telegram.error.TimedOut: Timed out
+WARNING tools.mcp_tool: MCP server 'higgsfield' keepalive failed, triggering reconnect: 
+WARNING tools.mcp_tool: MCP server 'higgsfield' connection lost (attempt 1/5), reconnecting in 1s: unhandled errors in a TaskGroup (1 sub-exception)
+ERROR mcp.client.streamable_http: Error in post_writer
+Traceback (most recent call last):
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '502 Bad Gateway' for url 'https://mcp.higgsfield.ai/mcp'
+WARNING tools.mcp_tool: MCP server 'higgsfield' connection lost (attempt 2/5), reconnecting in 2s: unhandled errors in a TaskGroup (1 sub-exception)
+WARNING tools.mcp_tool: MCP server 'higgsfield' connection lost (attempt 3/5), reconnecting in 4s: unhandled errors in a TaskGroup (1 sub-exception)
+ERROR mcp.client.streamable_http: Error in post_writer
+Traceback (most recent call last):
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Server error '503 Service Unavailable' for url 'https://mcp.higgsfield.ai/mcp'
+WARNING tools.mcp_tool: MCP server 'higgsfield' connection lost (attempt 4/5), reconnecting in 8s: unhandled errors in a TaskGroup (1 sub-exception)
+WARNING tools.mcp_tool: MCP server 'higgsfield' connection lost (attempt 5/5), reconnecting in 16s: unhandled errors in a TaskGroup (1 sub-exception)
+WARNING gateway.platforms.telegram_network: [Telegram] Primary api.telegram.org connection failed (All connection attempts failed); trying fallback IPs 149.154.166.110
+WARNING gateway.platforms.telegram_network: [Telegram] Fallback IP 149.154.166.110 failed: All connection attempts failed
+WARNING gateway.platforms.telegram: [Telegram] Telegram network error, scheduling reconnect: httpx.ConnectError: All connection attempts failed
+WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ConnectError: All connection attempts failed
+WARNING gateway.platforms.telegram_network: [Telegram] Primary api.telegram.org connection failed (All connection attempts failed); trying fallback IPs 149.154.166.110
+WARNING gateway.platforms.telegram_network: [Telegram] Fallback IP 149.154.166.110 failed: All connection attempts failed
+WARNING gateway.platforms.telegram_network: [Telegram] Primary api.telegram.org connection failed (All connection attempts failed); trying fallback IPs 149.154.166.110
+WARNING gateway.platforms.telegram_network: [Telegram] Primary api.telegram.org connection failed (All connection attempts failed); trying fallback IPs 149.154.166.110
+2026-05-15 19:35:36,429 INFO gateway.run: Cron ticker started (interval=60s)
+===== /Users/ultrafriday/.hermes/profiles/qwen =====
+==> /Users/ultrafriday/.hermes/profiles/qwen/logs/gateway.error.log <==
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+    with map_httpcore_exceptions():
+    self.gen.throw(typ, value, traceback)
+  File "/Users/ultrafriday/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+    raise APITimeoutError(request=request) from err
+openai.APITimeoutError: Request timed out.
+WARNING gateway.platforms.telegram: [Telegram] Telegram network error, scheduling reconnect: httpx.RemoteProtocolError: Server disconnected without sending a response.
+WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.RemoteProtocolError: Server disconnected without sending a response.
+WARNING gateway.platforms.telegram: [Telegram] Telegram network error, scheduling reconnect: httpx.RemoteProtocolError: Server disconnected without sending a response.
+WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.RemoteProtocolError: Server disconnected without sending a response.
+WARNING gateway.platforms.telegram_network: [Telegram] Primary api.telegram.org connection failed (All connection attempts failed); trying fallback IPs 149.154.166.110
+WARNING gateway.platforms.telegram_network: [Telegram] Fallback IP 149.154.166.110 failed: All connection attempts failed
+WARNING gateway.platforms.telegram: [Telegram] Telegram network error, scheduling reconnect: httpx.ConnectError: All connection attempts failed
+WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ConnectError: All connection attempts failed
+2026-05-14 22:26:41,465 WARNING gateway.platforms.telegram: [Telegram] Telegram network error, scheduling reconnect: httpx.RemoteProtocolError: Server disconnected without sending a response.
+2026-05-14 22:26:41,469 WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.RemoteProtocolError: Server disconnected without sending a response.
+2026-05-14 22:26:47,616 INFO gateway.platforms.telegram: [Telegram] Telegram polling resumed after network error (attempt 1)
+2026-05-14 22:58:11,708 WARNING gateway.platforms.telegram: [Telegram] Telegram network error, scheduling reconnect: httpx.RemoteProtocolError: Server disconnected without sending a response.
+2026-05-14 22:58:11,713 WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.RemoteProtocolError: Server disconnected without sending a response.
+2026-05-14 22:58:21,247 INFO gateway.platforms.telegram: [Telegram] Telegram polling resumed after network error (attempt 1)
+2026-05-14 22:58:21,635 WARNING gateway.platforms.telegram_network: [Telegram] Primary api.telegram.org connection failed (All connection attempts failed); trying fallback IPs 149.154.166.110
+2026-05-14 22:58:21,825 WARNING gateway.platforms.telegram_network: [Telegram] Fallback IP 149.154.166.110 failed: All connection attempts failed
+2026-05-14 22:58:21,825 WARNING gateway.platforms.telegram: [Telegram] Telegram network error, scheduling reconnect: httpx.ConnectError: All connection attempts failed
+2026-05-14 22:58:21,826 WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ConnectError: All connection attempts failed
+2026-05-14 22:58:28,153 INFO gateway.platforms.telegram: [Telegram] Telegram polling resumed after network error (attempt 1)
+===== /Users/ultrafriday/.hermes/profiles/signal =====
+==> /Users/ultrafriday/.hermes/profiles/signal/logs/gateway.error.log <==
+    with map_httpcore_exceptions():
+    self.gen.throw(typ, value, traceback)
+  File "/Users/ultrafriday/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+ERROR root: Non-retryable client error: Error code: 401 - {'status': 401, 'message': 'Your API key is invalid, blocked or out of funds. Please go visit the portal to sort that out: https://portal.nousresearch.com '}
+ERROR cron.scheduler: Job 'signal-x-twitter-high-alert-scan' failed: RuntimeError: Error code: 401 - {'status': 401, 'message': 'Your API key is invalid, blocked or out of funds. Please go visit the portal to sort that out: https://portal.nousresearch.com '}
+Traceback (most recent call last):
+    raise RuntimeError(_err_text)
+RuntimeError: Error code: 401 - {'status': 401, 'message': 'Your API key is invalid, blocked or out of funds. Please go visit the portal to sort that out: https://portal.nousresearch.com '}
+ERROR root: Non-retryable client error: Error code: 401 - {'status': 401, 'message': 'Your API key is invalid, blocked or out of funds. Please go visit the portal to sort that out: https://portal.nousresearch.com '}
+ERROR cron.scheduler: Job 'signal-x-twitter-high-alert-scan' failed: RuntimeError: Error code: 401 - {'status': 401, 'message': 'Your API key is invalid, blocked or out of funds. Please go visit the portal to sort that out: https://portal.nousresearch.com '}
+Traceback (most recent call last):
+    raise RuntimeError(_err_text)
+RuntimeError: Error code: 401 - {'status': 401, 'message': 'Your API key is invalid, blocked or out of funds. Please go visit the portal to sort that out: https://portal.nousresearch.com '}
+ERROR cron.scheduler: Job '88d1ac455e7b': delivery error: Telegram send failed: Unknown error in HTTP implementation: RuntimeError('cannot schedule new futures after interpreter shutdown')
+⚠️ Non-retryable error (HTTP 401) — trying fallback...
+❌ Non-retryable error (HTTP 401): HTTP 401: Your API key is invalid, blocked or out of funds. Please go visit the portal to sort that out: https://portal.nousresearch.com 
+❌ Non-retryable client error (HTTP 401). Aborting.
+===== /Users/ultrafriday/.hermes/profiles/zegna =====
+==> /Users/ultrafriday/.hermes/profiles/zegna/logs/gateway.error.log <==
+    raise last_error
+    with map_httpcore_exceptions():
+    self.gen.throw(typ, value, traceback)
+  File "/Users/ultrafriday/.hermes/hermes-agent/venv/lib/python3.11/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+httpx.ConnectError: All connection attempts failed
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+    raise NetworkError(f"httpx.{err.__class__.__name__}: {err}") from err
+telegram.error.NetworkError: httpx.ConnectError: All connection attempts failed
+WARNING gateway.platforms.telegram: [Telegram] Telegram polling reconnect failed: httpx.ConnectError: All connection attempts failed
+WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 2/10), reconnecting in 10s. Error: httpx.ConnectError: All connection attempts failed
+2026-05-14 22:58:07,858 WARNING gateway.platforms.telegram_network: [Telegram] Primary api.telegram.org connection failed (All connection attempts failed); trying fallback IPs 149.154.166.110
+2026-05-14 22:58:08,051 WARNING gateway.platforms.telegram_network: [Telegram] Fallback IP 149.154.166.110 failed: All connection attempts failed
+2026-05-14 22:58:08,053 WARNING gateway.platforms.telegram: [Telegram] Telegram network error, scheduling reconnect: httpx.ConnectError: All connection attempts failed
+2026-05-14 22:58:08,054 WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ConnectError: All connection attempts failed
+2026-05-14 22:58:09,434 WARNING gateway.platforms.telegram_network: [Telegram] Primary api.telegram.org connection failed (All connection attempts failed); trying fallback IPs 149.154.166.110
+2026-05-14 22:58:09,623 WARNING gateway.platforms.telegram_network: [Telegram] Fallback IP 149.154.166.110 failed: All connection attempts failed
+2026-05-14 22:58:13,437 WARNING gateway.platforms.telegram_network: [Telegram] Primary api.telegram.org connection failed (All connection attempts failed); trying fallback IPs 149.154.166.110
+2026-05-14 22:58:13,631 WARNING gateway.platforms.telegram_network: [Telegram] Fallback IP 149.154.166.110 failed: All connection attempts failed
+2026-05-14 22:58:14,041 WARNING gateway.platforms.telegram_network: [Telegram] Primary api.telegram.org connection failed (All connection attempts failed); trying fallback IPs 149.154.166.110
+2026-05-14 22:58:14,231 WARNING gateway.platforms.telegram_network: [Telegram] Fallback IP 149.154.166.110 failed: All connection attempts failed
+2026-05-14 22:58:14,256 WARNING gateway.platforms.telegram: [Telegram] Telegram polling reconnect failed: httpx.ConnectError: All connection attempts failed
+2026-05-14 22:58:14,257 WARNING gateway.platforms.telegram: [Telegram] Telegram network error (attempt 2/10), reconnecting in 10s. Error: httpx.ConnectError: All connection attempts failed
+2026-05-14 22:58:25,013 INFO gateway.platforms.telegram: [Telegram] Telegram polling resumed after network error (attempt 2)

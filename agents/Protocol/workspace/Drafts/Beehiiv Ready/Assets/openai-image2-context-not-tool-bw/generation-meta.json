@@ -1,0 +1,27 @@
+{
+  "created_at_epoch": 1779011472.1469572,
+  "variations": [
+    {
+      "name": "01-minimal-line-art-system-map",
+      "prompt": "\nCreate a premium 16:9 black-and-white editorial art image for a Thai business newsletter about AI operations.\nCore idea: AI Operating System starts from CONTEXT, not tools.\nVisual metaphor: customer conversations, SOPs, sales scripts, workflow notes, and company memory converge into one calm operating hub. Tools should feel secondary and peripheral.\nNo readable text, no letters, no numbers, no logos, no fake brand names, no robot mascot, no glowing cyberpunk, no app-icon clutter, no stock photo realism. High negative space. Suitable as a Beehiiv newsletter hero. Elegant, mature, quiet confidence.\n\nStyle: museum-quality minimal black ink line art on warm off-white paper. Sparse executive systems diagram drawn by hand: one central calm circular context hub, delicate lines flowing from abstract paper stacks, speech bubbles, checklist shapes, and notebook forms. Tools appear only as faint tiny peripheral squares. Japanese/Swiss editorial restraint, premium business magazine illustration, no text."
+    },
+    {
+      "name": "02-charcoal-ink-founder-wall",
+      "prompt": "\nCreate a premium 16:9 black-and-white editorial art image for a Thai business newsletter about AI operations.\nCore idea: AI Operating System starts from CONTEXT, not tools.\nVisual metaphor: customer conversations, SOPs, sales scripts, workflow notes, and company memory converge into one calm operating hub. Tools should feel secondary and peripheral.\nNo readable text, no letters, no numbers, no logos, no fake brand names, no robot mascot, no glowing cyberpunk, no app-icon clutter, no stock photo realism. High negative space. Suitable as a Beehiiv newsletter hero. Elegant, mature, quiet confidence.\n\nStyle: black-and-white charcoal and graphite editorial drawing. A founder silhouette stands before a large abstract wall diagram, but the scene is artistic and non-photorealistic. The wall shows flowing context streams converging into a central hub. Use expressive graphite texture, soft shadows, confident negative space, premium New Yorker / Monocle business illustration feel, no text."
+    },
+    {
+      "name": "03-abstract-architectural-context-hub",
+      "prompt": "\nCreate a premium 16:9 black-and-white editorial art image for a Thai business newsletter about AI operations.\nCore idea: AI Operating System starts from CONTEXT, not tools.\nVisual metaphor: customer conversations, SOPs, sales scripts, workflow notes, and company memory converge into one calm operating hub. Tools should feel secondary and peripheral.\nNo readable text, no letters, no numbers, no logos, no fake brand names, no robot mascot, no glowing cyberpunk, no app-icon clutter, no stock photo realism. High negative space. Suitable as a Beehiiv newsletter hero. Elegant, mature, quiet confidence.\n\nStyle: abstract architectural line drawing, black ink on ivory, like a gallery print. A central operating hub represented as a quiet circular atrium, with thin paths from business artifacts: conversations, documents, checklists, process cards. Peripheral tool modules are small and blurred/minimal. Elegant composition, lots of breathing room, no human figure, no text."
+    },
+    {
+      "name": "04-woodcut-editorial-operating-room",
+      "prompt": "\nCreate a premium 16:9 black-and-white editorial art image for a Thai business newsletter about AI operations.\nCore idea: AI Operating System starts from CONTEXT, not tools.\nVisual metaphor: customer conversations, SOPs, sales scripts, workflow notes, and company memory converge into one calm operating hub. Tools should feel secondary and peripheral.\nNo readable text, no letters, no numbers, no logos, no fake brand names, no robot mascot, no glowing cyberpunk, no app-icon clutter, no stock photo realism. High negative space. Suitable as a Beehiiv newsletter hero. Elegant, mature, quiet confidence.\n\nStyle: refined black-and-white woodcut / linocut editorial illustration, not cartoon. An owner-operator at a desk organizes many business context threads into a single operating system map above the desk. Strong contrast, handcrafted texture, mature business-art feel, timeless printmaking aesthetic, no text, no logos."
+    }
+  ],
+  "results": [
+    "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Protocol/Drafts/Beehiiv Ready/Assets/openai-image2-context-not-tool-bw/01-minimal-line-art-system-map-1920x1080.png",
+    "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Protocol/Drafts/Beehiiv Ready/Assets/openai-image2-context-not-tool-bw/02-charcoal-ink-founder-wall-1920x1080.png",
+    "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Protocol/Drafts/Beehiiv Ready/Assets/openai-image2-context-not-tool-bw/03-abstract-architectural-context-hub-1920x1080.png",
+    "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Protocol/Drafts/Beehiiv Ready/Assets/openai-image2-context-not-tool-bw/04-woodcut-editorial-operating-room-1920x1080.png"
+  ]
+}

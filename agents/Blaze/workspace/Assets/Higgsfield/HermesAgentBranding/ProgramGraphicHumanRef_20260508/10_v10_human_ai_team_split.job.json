@@ -1,0 +1,28 @@
+[
+  {
+    "id": "9621b4e5-fe07-48ac-b535-2fbeead785b8",
+    "status": "completed",
+    "display_name": "Nano Banana Pro",
+    "job_set_type": "nano_banana_2",
+    "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260508_155053_9621b4e5-fe07-48ac-b535-2fbeead785b8.png",
+    "created_at": 1778255453.316236,
+    "params": {
+      "width": 1856,
+      "height": 2304,
+      "aspect_ratio": "4:5",
+      "resolution": "2k",
+      "batch_size": 1,
+      "input_images": [
+        {
+          "id": "6dad5300-88a8-4fcf-9e10-bae6619ce2fc",
+          "url": "https://d2ol7oe51mr4n9.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/6dad5300-88a8-4fcf-9e10-bae6619ce2fc.png",
+          "type": "media_input"
+        }
+      ],
+      "input_image": null,
+      "application": null,
+      "surface": null,
+      "prompt": "Use the attached reference photo as the founder likeness reference. Create a premium 4:5 Instagram PROGRAM GRAPHIC for Limitless Club. Composition: left side realistic human founder in light gray blazer and black shirt, right side elegant AI team interface with three agents. The human should feel like a credible Thai founder/educator, warm smile, professional posture. Style: Midnight Luxe Editorial, black graphite background, silver typography, electric blue highlights, subtle premium UI. Required text: LIMITLESS CLUB; HERMES AGENT; Multi-Agent AI Masterclass; Build the team that never sleeps.; คอร์สที่จะเปลี่ยน AI ให้เป็น “ทีมงาน” ของคุณ; Chief of Staff Agent; Content Agent; Vibe Coding Agent; สร้างทีม AI Agent ที่ทำงาน 24/7; By Jedi Trinupab · @jeditrinupab. Clean, premium, mobile readable, safe margins, no extra logos, no misspelled duplicate text."
+    }
+  }
+]
