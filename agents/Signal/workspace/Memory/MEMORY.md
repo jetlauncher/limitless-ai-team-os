@@ -40,3 +40,7 @@ Use this file for durable, agent-specific memory that should remain useful acros
 
 - 2026-05-21: `signal_reports_db_backfill.py` can fail on Obsidian/iCloud transient file locks with `OSError: [Errno 11] Resource deadlock avoided` during `collect_obsidian()`. Current script was patched to `try/except OSError` around markdown `read_text`, log `skip unreadable obsidian file ...`, continue, and then complete backfill successfully.
 - 2026-05-22: X API `xurl --app jet-x bookmarks -n 50` and search can return `CreditsDepleted` even though `whoami` works. For bookmark cron runs, fall back to newest durable bookmark JSON under `~/.hermes/limitless/`, label the live-bookmark limitation, refresh via official sources, and still write Obsidian/JSON plus run Signal Reports DB backfill.
+
+
+- 2026-05-23 watch note: Hugging Face feed surfaced NVIDIA Nemotron-Labs Diffusion (`https://huggingface.co/blog/nvidia/nemotron-labs-diffusion`) as a fresh official-source model/runtime item: 3B/8B/14B text diffusion models under NVIDIA Nemotron Open Model License, AR/diffusion/self-spec generation modes, self-spec reported ~865 tok/s on B200 (~4x AR baseline). Useful future framing: inference throughput/model-architecture option for operator cost/latency, not generic benchmark hype.
+- 2026-05-23 watch note: Databricks feed surfaced `Observability for any agent, anywhere` and open-source-model prompt caching; useful under-covered agent-ops sources when same-day briefs are saturated with Google/OpenAI/AWS.

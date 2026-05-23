@@ -38,3 +38,5 @@ Use this file for durable, agent-specific memory that should remain useful acros
 - Jack has all built-in Hermes toolsets enabled plus Higgsfield, Context7, and CUA driver MCP tools. Never expose Telegram bot tokens or secret values.
 
 - 2026-05-21: Limitless Club+ crossed 1,000 members; Skool dashboard screenshot showed 1,005 members and 28% engagement.
+
+- 2026-05-23: Main Hermes Discord `#kelly-command` channel ID `1506557603579166830` is configured as `discord.free_response_channels` so Jet can message there without tagging Friday/Kelly; other Discord channels still require mention.

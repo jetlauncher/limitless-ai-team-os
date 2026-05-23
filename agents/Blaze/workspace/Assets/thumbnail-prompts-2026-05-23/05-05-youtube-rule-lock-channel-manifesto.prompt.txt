@@ -1,0 +1,16 @@
+Generate a finished YouTube thumbnail in 16:9 landscape. Target final use: 1280x720.
+Use exact readable Thai text as written. Do not misspell Thai. Do not replace Thai with boxes, gibberish, or pseudo-text.
+Premium Limitless Club aesthetic: dark teal / charcoal #17181A background, warm gold #94764A accents, warm ivory #E2D7C8 text, red #C76B6B badges.
+Huge high-contrast thumbnail typography on the LEFT 60%, realistic Thai male creator coach Jedi Trinupab on the RIGHT 40%: short black hair, clear-rim glasses, navy-blue collared shirt, photorealistic, sharp studio lighting, crisp edge cutout.
+Keep composition clean, cinematic, educational, authoritative, not salesy. Max 2 fonts, Sarabun Black look for Thai.
+
+Create a YouTube thumbnail, 16:9 aspect ratio, 1280x720.
+BACKGROUND: Dark teal #17181A, very minimal, with a subtle warm gold spotlight only on the headline. Dot-grid faint in corners.
+LEFT SIDE: Huge bold Thai headline, Sarabun Black, stacked exactly 3 lines:
+Line 1: "ทำไม" (ivory #E2D7C8, 110pt)
+Line 2: "YouTube" (warm gold #94764A, 140pt)
+Line 3: "ไม่ดัน?" (ivory #E2D7C8, 150pt, with bold red question mark)
+Below: "3 ข้อพลาดที่ Creator ไทยทำซ้ำๆ" (50pt, ivory dim)
+RIGHT SIDE: Jedi shrugging with both hands open, slightly frustrated-but-friendly expression, head tilted. Sharp cutout, dramatic side lighting.
+ACCENTS: Top-left: small YouTube logo red at 80px. Top-right: red "ต้องดู" badge. Behind Jedi: faint downward trend line in red, subtle, suggesting channel decline.
+STYLE: confessional, educational, peer-to-peer. Like a creator coach explaining the rules. Not salesy. Authoritative-honest.

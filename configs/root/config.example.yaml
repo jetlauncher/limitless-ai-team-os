@@ -161,7 +161,7 @@ auxiliary:
     provider: auto
     model: ''
     base_url: ''
-    api_key: ''
+    api_key: [REDACTED]
     timeout: 120
     extra_body: {}
     download_timeout: 30
@@ -169,21 +169,21 @@ auxiliary:
     provider: auto
     model: ''
     base_url: ''
-    api_key: ''
+    api_key: [REDACTED]
     timeout: 360
     extra_body: {}
   compression:
     provider: auto
     model: ''
     base_url: ''
-    api_key: ''
+    api_key: [REDACTED]
     timeout: 120
     extra_body: {}
   session_search:
     provider: auto
     model: ''
     base_url: ''
-    api_key: ''
+    api_key: [REDACTED]
     timeout: 30
     extra_body: {}
     max_concurrency: 3
@@ -191,63 +191,63 @@ auxiliary:
     provider: auto
     model: ''
     base_url: ''
-    api_key: ''
+    api_key: [REDACTED]
     timeout: 30
     extra_body: {}
   approval:
     provider: auto
     model: ''
     base_url: ''
-    api_key: ''
+    api_key: [REDACTED]
     timeout: 30
     extra_body: {}
   mcp:
     provider: auto
     model: ''
     base_url: ''
-    api_key: ''
+    api_key: [REDACTED]
     timeout: 30
     extra_body: {}
   title_generation:
     provider: auto
     model: ''
     base_url: ''
-    api_key: ''
+    api_key: [REDACTED]
     timeout: 30
     extra_body: {}
   triage_specifier:
     provider: auto
     model: ''
     base_url: ''
-    api_key: ''
+    api_key: [REDACTED]
     timeout: 120
     extra_body: {}
   kanban_decomposer:
     provider: auto
     model: ''
     base_url: ''
-    api_key: ''
+    api_key: [REDACTED]
     timeout: 180
     extra_body: {}
   profile_describer:
     provider: auto
     model: ''
     base_url: ''
-    api_key: ''
+    api_key: [REDACTED]
     timeout: 60
     extra_body: {}
   curator:
     provider: auto
     model: ''
     base_url: ''
-    api_key: ''
+    api_key: [REDACTED]
     timeout: 600
     extra_body: {}
   flush_memories:
     provider: auto
     model: ''
     base_url: ''
-    api_key: ''
+    api_key: [REDACTED]
     timeout: 30
     extra_body: {}
 display:
@@ -352,7 +352,7 @@ delegation:
   model: ''
   provider: ''
   base_url: ''
-  api_key: ''
+  api_key: [REDACTED]
   api_mode: ''
   inherit_mcp_toolsets: true
   max_iterations: 50
@@ -394,7 +394,7 @@ slack:
   channel_prompts: {}
 discord:
   require_mention: true
-  free_response_channels: ''
+  free_response_channels: 1506557603579166830,1507737897569091584,1506557626069028885,1506557630041161772,1506557634986377256,1506557639121702953,1506557642930258000,1506557651696226425,1506557647627747328,1506557655899050014
   allowed_channels: ''
   auto_thread: true
   thread_require_mention: false
@@ -487,6 +487,8 @@ sessions:
 onboarding:
   seen:
     busy_input_prompt: true
+    openclaw_residue_cleanup: true
+    tool_progress_prompt: true
 updates:
   pre_update_backup: false
   backup_keep: 5

@@ -1,0 +1,62 @@
+{
+  "model": "gpt-image-2",
+  "size": "1536x1024",
+  "quality": "high",
+  "items": [
+    {
+      "index": 1,
+      "title": "Codex vs Cowork Trilogy",
+      "stem": "01-codex-vs-cowork-trilogy",
+      "status": "skipped",
+      "prompt": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Assets/thumbnail-prompts-2026-05-23/01-01-codex-vs-cowork-trilogy.prompt.txt",
+      "raw": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Assets/thumbnail-prompts-2026-05-23/01-01-codex-vs-cowork-trilogy-raw.png",
+      "png": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Assets/thumbnail-prompts-2026-05-23/01-01-codex-vs-cowork-trilogy-1280x720.png",
+      "jpg": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Assets/thumbnail-prompts-2026-05-23/01-01-codex-vs-cowork-trilogy-1280x720.jpg",
+      "error": null
+    },
+    {
+      "index": 2,
+      "title": "AI Agent 24/7 ภาค 2",
+      "stem": "02-ai-agent-24-7-part-2",
+      "status": "skipped",
+      "prompt": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Assets/thumbnail-prompts-2026-05-23/02-02-ai-agent-24-7-part-2.prompt.txt",
+      "raw": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Assets/thumbnail-prompts-2026-05-23/02-02-ai-agent-24-7-part-2-raw.png",
+      "png": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Assets/thumbnail-prompts-2026-05-23/02-02-ai-agent-24-7-part-2-1280x720.png",
+      "jpg": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Assets/thumbnail-prompts-2026-05-23/02-02-ai-agent-24-7-part-2-1280x720.jpg",
+      "error": null
+    },
+    {
+      "index": 3,
+      "title": "Claude Cowork EP2",
+      "stem": "03-claude-cowork-ep2-secret-skills",
+      "status": "skipped",
+      "prompt": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Assets/thumbnail-prompts-2026-05-23/03-03-claude-cowork-ep2-secret-skills.prompt.txt",
+      "raw": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Assets/thumbnail-prompts-2026-05-23/03-03-claude-cowork-ep2-secret-skills-raw.png",
+      "png": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Assets/thumbnail-prompts-2026-05-23/03-03-claude-cowork-ep2-secret-skills-1280x720.png",
+      "jpg": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Assets/thumbnail-prompts-2026-05-23/03-03-claude-cowork-ep2-secret-skills-1280x720.jpg",
+      "error": null
+    },
+    {
+      "index": 4,
+      "title": "NotebookLM Executive Workflow",
+      "stem": "04-notebooklm-executive-workflow",
+      "status": "skipped",
+      "prompt": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Assets/thumbnail-prompts-2026-05-23/04-04-notebooklm-executive-workflow.prompt.txt",
+      "raw": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Assets/thumbnail-prompts-2026-05-23/04-04-notebooklm-executive-workflow-raw.png",
+      "png": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Assets/thumbnail-prompts-2026-05-23/04-04-notebooklm-executive-workflow-1280x720.png",
+      "jpg": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Assets/thumbnail-prompts-2026-05-23/04-04-notebooklm-executive-workflow-1280x720.jpg",
+      "error": null
+    },
+    {
+      "index": 5,
+      "title": "Rule Lock Channel Manifesto",
+      "stem": "05-youtube-rule-lock-channel-manifesto",
+      "status": "generated",
+      "prompt": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Assets/thumbnail-prompts-2026-05-23/05-05-youtube-rule-lock-channel-manifesto.prompt.txt",
+      "raw": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Assets/thumbnail-prompts-2026-05-23/05-05-youtube-rule-lock-channel-manifesto-raw.png",
+      "png": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Assets/thumbnail-prompts-2026-05-23/05-05-youtube-rule-lock-channel-manifesto-1280x720.png",
+      "jpg": "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Blaze/Assets/thumbnail-prompts-2026-05-23/05-05-youtube-rule-lock-channel-manifesto-1280x720.jpg",
+      "error": null
+    }
+  ]
+}
