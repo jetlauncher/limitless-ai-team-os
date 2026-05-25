@@ -40,3 +40,8 @@ Use this file for durable, agent-specific memory that should remain useful acros
 - 2026-05-21: Limitless Club+ crossed 1,000 members; Skool dashboard screenshot showed 1,005 members and 28% engagement.
 
 - 2026-05-23: Main Hermes Discord `#kelly-command` channel ID `1506557603579166830` is configured as `discord.free_response_channels` so Jet can message there without tagging Friday/Kelly; other Discord channels still require mention.
+
+- Skill available: `karpathy-agentic-engineering` (`~/.hermes/skills/software-development/karpathy-agentic-engineering/SKILL.md`) turns Karpathy's Software 3.0 / agentic engineering talk into Jet's reusable build workflow; source transcript is at `/Users/ultrafriday/clawd/youtube-transcripts/karpathy-agentic-engineering-96jN2OCOfLs/transcript.md`.
+
+## Hermes Ops
+- Cron health digest script: `~/.hermes/scripts/hermes_cron_health_digest.py`; reports: `Agents/Shared Memory/Ops/Cron Health/`; default cron: `hermes-cron-health-digest` daily 08:10 Bangkok, origin delivery.

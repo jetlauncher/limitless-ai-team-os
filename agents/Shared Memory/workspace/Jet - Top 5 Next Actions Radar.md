@@ -1,32 +1,32 @@
 # Jet - Top 5 Next Actions Radar
 
-Updated: 2026-05-23 08:20 +07
+Updated: 2026-05-25 08:18 +07
 Owner: Kelly / Hermes
 
-## Current Top 5 — 2026-05-23
+## Current Top 5 — 2026-05-25
 
-1. **Revenue:** Keep pushing B3M gap: MTD is THB 2,046,727.71 / 3M, today is THB 0 at 08:18; latest paid sale was THB 14,900 on 2026-05-22 from LINE OA.
-2. **Chief-of-staff automation:** Investigate Signal’s 08:00 radar status and cron status lag; Good Morning produced a 2026-05-23 note, but Signal’s scheduled 08:00 run still looks stale in cron.
-3. **Content approvals:** Review the 4 new LinkedIn/X drafts in Mission Control; Blaze created 3 video + 10 shorts ideas today, but publishing is still gated and safe.
-4. **System hygiene blocker:** Fix iCloud/Obsidian `Resource deadlock avoided` errors affecting workspace digest, personal artifact scan, and newer Blaze backup reads.
-5. **Agent health:** Decide whether Pixel, Protocol, Jekjack, and Muse are active or paused; active gateways are running, but these workspaces have no non-empty 2026-05-23 daily note.
+1. **Revenue:** Keep the B3M push active: today is THB 0 at 08:15, MTD THB 2,052,627.71 / 3M, gap THB 947,372.29; latest paid sale was THB 5,900 on 2026-05-24 from FB.
+2. **Teaching/content assets:** Turn Signal’s 08:00 radar into one class/content asset: best angles are Codex Goal Mode, Anthropic Glasswing security audits, and SynthID/content provenance SOP.
+3. **Approval queue cleanup:** Mission Control is healthy, but the queue grew to 168 items with 139 `ready_for_review`; clear/approve a small batch before it becomes unusable.
+4. **Memory/workspace hygiene:** Fix the iCloud `Resource deadlock avoided` blocker: workspace digest + personal artifact scans failed again, and Qwen flagged 4 agent `MEMORY.md` files as uncat-able.
+5. **System blockers:** Re-auth Google Search Console before the 09:00 weekly visibility job, and free disk soon: root has ~15 GB available; Notion sync also had 5 path-write failures to clean up later.
 
 ## Needs Jet
 
-- Review/approve the 4 content drafts when convenient; nothing has been posted.
-- Decide whether Pixel/Protocol/Jekjack/Muse should stay active or be marked paused.
+- Choose today’s content direction: Codex employee workflows, AI security audit for SMEs, or SynthID/provenance SOP.
+- Approve a quick system-maintenance block for GSC OAuth + iCloud deadlock cleanup.
 
 ## Quietly watching
 
-- Airtable revenue scripts, payment alerts, Mission Control local health, and daily revenue report are OK; revenue report runs at 09:00.
-- GSC weekly visibility job still has a revoked/expired Google token and failed last Monday; next run is 2026-05-25.
-- Qwen X-Radar/Comet outputs are still effectively empty; low-risk but not usable for intelligence until debugged.
+- Revenue snapshot, payment alerts, email alerts, Good Morning briefing, Mission Control health, Signal radar, and Vercel watchdog all show OK.
+- X tooling is partially degraded (`x_search` 400 / X credits depleted), but Signal had a good RSS fallback this morning.
+- Agent gateways are all running; Qwen flagged early-day missing daily notes for several agents, likely before they had done meaningful work.
 
 ## Evidence checked
 
-- `date`: 2026-05-23 08:18 +07.
-- `hermes cron list --all`: revenue/payment jobs OK; workspace/personal scans error with iCloud deadlock; Signal 08:00 appears stale/missed today. Hermes daily note later showed Good Morning content was prepared at 08:18.
-- `limitless_daily_revenue.py`: MTD THB 2,046,727.71, 83 MTD transactions, latest sale 2026-05-22 THB 14,900.
+- `date`: 2026-05-25 08:16 +07.
+- `limitless_daily_revenue.py`: today THB 0, MTD THB 2,052,627.71, 84 MTD transactions, latest sale 2026-05-24 THB 5,900.
+- `hermes cron list --all`: core briefing/revenue/payment/email/mission jobs OK; GSC token revoked; workspace and personal artifact scans failed with iCloud `Resource deadlock avoided`.
 - `hermes profile list`: default, Blaze, Bolt, Jekjack, Kaijeaw, Muse, Oracle, Pixel, Protocol, Qwen, Signal, Uncle Chris, and Zegna gateways running.
-- Daily note check: Hermes, Blaze, Bolt, Kaijeaw, Qwen, Signal, Zegna, Oracle, Uncle Chris present; Pixel, Protocol, Jekjack, Muse missing/empty for 2026-05-23.
-- Mission Control health OK; approval queue has 4 today items ready for review.
+- Mission Control local `/health` OK; content queue: 168 total, 139 ready for review, 4 recent.
+- Shared/Hermes daily notes: Signal radar saved; Notion integration currently has 0 accessible pages/databases and local sync had 5 failed path writes.
