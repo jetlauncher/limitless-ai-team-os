@@ -153,7 +153,7 @@ auxiliary:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 120
     extra_body: {}
     download_timeout: 30
@@ -161,21 +161,21 @@ auxiliary:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 360
     extra_body: {}
   compression:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 120
     extra_body: {}
   session_search:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 30
     extra_body: {}
     max_concurrency: 3
@@ -183,49 +183,49 @@ auxiliary:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 30
     extra_body: {}
   approval:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 30
     extra_body: {}
   mcp:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 30
     extra_body: {}
   title_generation:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 30
     extra_body: {}
   triage_specifier:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 120
     extra_body: {}
   curator:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 600
     extra_body: {}
   flush_memories:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 30
     extra_body: {}
 display:
@@ -327,7 +327,7 @@ delegation:
   model: ''
   provider: ''
   base_url: ''
-  api_key: [REDACTED]
+  api_key: ''
   inherit_mcp_toolsets: true
   max_iterations: 50
   child_timeout_seconds: 600

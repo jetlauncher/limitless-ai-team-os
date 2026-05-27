@@ -1,0 +1,129 @@
+{
+  "generated_at": "2026-05-28T02:04",
+  "date": "2026-05-28",
+  "synced_count": 13,
+  "agents": [
+    {
+      "label": "Kelly/Hermes",
+      "folder": "Hermes",
+      "role": "Ops, cron, revenue/system monitoring, cross-agent coordination",
+      "bullets": [
+        "Maintained proactive ops radar; revenue MTD noted at THB 2,494,871.63 with B3M gap THB 505,128.37.",
+        "Watch blockers: GSC OAuth revoked, iCloud deadlock scans, and recovered openai-codex TypeError wave."
+      ]
+    },
+    {
+      "label": "Signal",
+      "folder": "Signal",
+      "role": "AI research/search and X AI training radar",
+      "bullets": [
+        "Produced X AI Training Radar outputs around Anthropic sandboxing, Grok Build, SynthID, and Gemini for Science.",
+        "Signal X pipeline was moved toward direct xAI provider after x_search/xurl issues."
+      ]
+    },
+    {
+      "label": "Blaze",
+      "folder": "Blaze",
+      "role": "Content, creative, landing-page copy, SEO drafts",
+      "bullets": [
+        "Prepared ai13900 SEO draft and CEO OS / CEO Intensive landing-page copy handoff.",
+        "Needs Jet decision on CEO Intensive offer naming/tier before further publish/rename work."
+      ]
+    },
+    {
+      "label": "Bolt",
+      "folder": "Bolt",
+      "role": "Implementation, code/builds, website patches",
+      "bullets": [
+        "Prepared review-only brand cannibalization SEO patch and deployed CEO OS SEO update after prior approval.",
+        "Production SEO page verified; Search Console UI still needs manual Request Indexing."
+      ]
+    },
+    {
+      "label": "Kaijeaw",
+      "folder": "Kaijeaw",
+      "role": "Specialist creative/content support",
+      "bullets": [
+        "Daily workspace exists; no high-confidence new action extracted for this overnight pass.",
+        "Next owner: Kaijeaw/Blaze for specialist creative review when assigned."
+      ]
+    },
+    {
+      "label": "Protocol",
+      "folder": "Protocol",
+      "role": "Protocols and operating-system documentation",
+      "bullets": [
+        "Profile active; no high-confidence new action extracted for this overnight pass.",
+        "Next owner: Protocol/Kelly for reusable SOPs and verification gates."
+      ]
+    },
+    {
+      "label": "Zegna",
+      "folder": "Zegna",
+      "role": "Style, fashion/brand specialist support",
+      "bullets": [
+        "Daily workspace exists; no high-confidence new action extracted for this overnight pass.",
+        "Next owner: Zegna/Blaze for brand/style review when assigned."
+      ]
+    },
+    {
+      "label": "Oracle",
+      "folder": "Oracle",
+      "role": "Local-first idea surfacing from knowledge network",
+      "bullets": [
+        "Oracle daily workspace exists; no high-confidence new action extracted for this overnight pass.",
+        "Next owner: Oracle/Kelly should continue local-first idea surfacing only."
+      ]
+    },
+    {
+      "label": "Qwen",
+      "folder": "Qwen",
+      "role": "Local worker, hygiene, queue processing",
+      "bullets": [
+        "Qwen workspace has recent Obsidian hygiene and morning prep outputs.",
+        "Use as local-only worker; risky recommendations require Kelly review."
+      ]
+    },
+    {
+      "label": "Pixel",
+      "folder": "Pixel",
+      "role": "Visual/design specialist support",
+      "bullets": [
+        "Workspace exists and profile is active; no high-confidence new action extracted for this overnight pass.",
+        "Next owner: Pixel/Bolt for visual artifacts when assigned."
+      ]
+    },
+    {
+      "label": "UncleChris",
+      "folder": "Uncle Chris",
+      "role": "Uncle Chris specialist workspace",
+      "bullets": [
+        "Workspace exists and profile is active; no high-confidence new action extracted for this overnight pass.",
+        "Next owner: UncleChris/Kelly when a domain-specific task appears."
+      ]
+    },
+    {
+      "label": "Tiff",
+      "folder": "Tiff",
+      "role": "Thai/LINE/content specialist workspace",
+      "bullets": [
+        "Profile active; no high-confidence new action extracted for this overnight pass.",
+        "Next owner: Tiff/Kelly for Thai/LINE workflows when assigned."
+      ]
+    },
+    {
+      "label": "JEK Jack",
+      "folder": "JEK Jack",
+      "role": "Active profile workspace discovered from Hermes profile list",
+      "bullets": [
+        "Profile and workspace discovered; not part of the original named nightly list, but included because it is active.",
+        "Next owner: JEK Jack/Kelly to define stable role if recurring."
+      ]
+    }
+  ],
+  "skipped": [],
+  "source_notes": [
+    "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Shared Memory/Daily/2026-05-28.md",
+    "/Users/ultrafriday/Documents/Obsidian Vault/Agents/Shared Memory/Daily/2026-05-27.md"
+  ]
+}

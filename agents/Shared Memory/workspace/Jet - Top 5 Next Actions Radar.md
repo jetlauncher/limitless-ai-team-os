@@ -1,32 +1,30 @@
 # Jet - Top 5 Next Actions Radar
 
-Updated: 2026-05-25 08:18 +07
+Updated: 2026-05-27 10:03 +07
 Owner: Kelly / Hermes
 
-## Current Top 5 — 2026-05-25
+## Current Top 5 — 2026-05-27
 
-1. **Revenue:** Keep the B3M push active: today is THB 0 at 08:15, MTD THB 2,052,627.71 / 3M, gap THB 947,372.29; latest paid sale was THB 5,900 on 2026-05-24 from FB.
-2. **Teaching/content assets:** Turn Signal’s 08:00 radar into one class/content asset: best angles are Codex Goal Mode, Anthropic Glasswing security audits, and SynthID/content provenance SOP.
-3. **Approval queue cleanup:** Mission Control is healthy, but the queue grew to 168 items with 139 `ready_for_review`; clear/approve a small batch before it becomes unusable.
-4. **Memory/workspace hygiene:** Fix the iCloud `Resource deadlock avoided` blocker: workspace digest + personal artifact scans failed again, and Qwen flagged 4 agent `MEMORY.md` files as uncat-able.
-5. **System blockers:** Re-auth Google Search Console before the 09:00 weekly visibility job, and free disk soon: root has ~15 GB available; Notion sync also had 5 path-write failures to clean up later.
+1. **Revenue:** Push B3M close: today THB 27,000 from 1 paid transaction; MTD THB 2,494,871.63 / 3M, gap THB 505,128.37; latest sales show upsell + corporate training momentum.
+2. **Sales/admin blockers:** Follow up the fresh paid buyer/context for Shortcut to AI Expert Day 2 and keep the 2026-05-26 corporate training lead warm while momentum is high.
+3. **Teaching asset:** Turn today’s strongest AI signal into a practical Thai lesson: “AI agent sandboxing” → permissions, approvals, and safe delegation checklist for SMEs.
+4. **Agent/system health:** Watch the recovered openai-codex `NoneType` cron hiccup; morning briefing recovered manually, but Kelly Radar and Signal radar failed in the 08:15 wave.
+5. **Memory/content hygiene:** Fix the local iCloud `Resource deadlock avoided` state-file blocker affecting workspace digest + personal artifact scans; it blocks the Jet Brain digest loop from updating cleanly.
 
 ## Needs Jet
 
-- Choose today’s content direction: Codex employee workflows, AI security audit for SMEs, or SynthID/provenance SOP.
-- Approve a quick system-maintenance block for GSC OAuth + iCloud deadlock cleanup.
+- Choose whether today’s public teaching angle is **AI agent sandboxing/safe delegation** or **AI employees for sales follow-up**.
+- Approve a short maintenance block for OAuth + iCloud-state cleanup if you want the digest/visibility loops fully clean.
 
 ## Quietly watching
 
-- Revenue snapshot, payment alerts, email alerts, Good Morning briefing, Mission Control health, Signal radar, and Vercel watchdog all show OK.
-- X tooling is partially degraded (`x_search` 400 / X credits depleted), but Signal had a good RSS fallback this morning.
-- Agent gateways are all running; Qwen flagged early-day missing daily notes for several agents, likely before they had done meaningful work.
+- Core revenue report, payment alerts, Gmail inbox-zero, Mission Control health, and Notion→Obsidian sync are running OK.
+- Degraded: GSC visibility report token is revoked/expired; workspace + personal artifact scans are hitting iCloud state-file deadlock.
+- X/bookmark tooling still shows credits depleted, but local X Monitor notes produced usable AI-signal context.
 
 ## Evidence checked
 
-- `date`: 2026-05-25 08:16 +07.
-- `limitless_daily_revenue.py`: today THB 0, MTD THB 2,052,627.71, 84 MTD transactions, latest sale 2026-05-24 THB 5,900.
-- `hermes cron list --all`: core briefing/revenue/payment/email/mission jobs OK; GSC token revoked; workspace and personal artifact scans failed with iCloud `Resource deadlock avoided`.
-- `hermes profile list`: default, Blaze, Bolt, Jekjack, Kaijeaw, Muse, Oracle, Pixel, Protocol, Qwen, Signal, Uncle Chris, and Zegna gateways running.
-- Mission Control local `/health` OK; content queue: 168 total, 139 ready for review, 4 recent.
-- Shared/Hermes daily notes: Signal radar saved; Notion integration currently has 0 accessible pages/databases and local sync had 5 failed path writes.
+- `date`: 2026-05-27 10:03 +07.
+- `limitless_daily_revenue.py`: today THB 27,000.00, MTD THB 2,494,871.63, gap to B3M THB 505,128.37.
+- `hermes cron list --all`: core revenue/payment/Gmail/Mission Control jobs OK; GSC token revoked; workspace/personal artifact scans deadlocked; 08:15 Kelly/Signal agent jobs hit `NoneType` error.
+- `signal_x_training_context_2026-05-27.json`: X credits depleted, but X Monitor highlighted Anthropic sandboxing, Pixel media authenticity, and Grok Build usage-limit signals.

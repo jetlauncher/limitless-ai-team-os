@@ -1,6 +1,7 @@
 model:
-  default: gpt-5.5
-  provider: openai-codex
+  default: claude-opus-4-7
+  provider: anthropic
+  base_url: ''
 providers: {}
 fallback_providers:
 - provider: openai-codex
@@ -139,6 +140,7 @@ compression:
   protect_last_n: 20
   hygiene_hard_message_limit: 400
   protect_first_n: 3
+  abort_on_summary_failure: false
 prompt_caching:
   cache_ttl: 5m
 openrouter:
@@ -161,7 +163,7 @@ auxiliary:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 120
     extra_body: {}
     download_timeout: 30
@@ -169,91 +171,96 @@ auxiliary:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 360
     extra_body: {}
   compression:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 120
     extra_body: {}
-  session_search:
-    provider: auto
-    model: ''
-    base_url: ''
-    api_key: [REDACTED]
-    timeout: 30
-    extra_body: {}
-    max_concurrency: 3
   skills_hub:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 30
     extra_body: {}
   approval:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 30
     extra_body: {}
   mcp:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 30
     extra_body: {}
   title_generation:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 30
     extra_body: {}
   triage_specifier:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 120
     extra_body: {}
   kanban_decomposer:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 180
     extra_body: {}
   profile_describer:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 60
     extra_body: {}
   curator:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 600
     extra_body: {}
+  session_search:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: ''
+    timeout: 30
+    extra_body: {}
+    max_concurrency: 3
   flush_memories:
     provider: auto
     model: ''
     base_url: ''
-    api_key: [REDACTED]
+    api_key: ''
     timeout: 30
     extra_body: {}
 display:
   compact: false
   personality: kawaii
   resume_display: full
+  resume_exchanges: 10
+  resume_max_user_chars: 300
+  resume_max_assistant_chars: 200
+  resume_max_assistant_lines: 3
+  resume_skip_tool_only: true
   busy_input_mode: interrupt
   tui_auto_resume_recent: false
   bell_on_complete: false
@@ -352,7 +359,7 @@ delegation:
   model: ''
   provider: ''
   base_url: ''
-  api_key: [REDACTED]
+  api_key: ''
   api_mode: ''
   inherit_mcp_toolsets: true
   max_iterations: 50
@@ -425,7 +432,7 @@ approvals:
   timeout: 60
   cron_mode: deny
   mcp_reload_confirm: true
-  destructive_slash_confirm: true
+  destructive_slash_confirm: false
 command_allowlist:
 - stop/restart hermes gateway (kills running agents)
 - delete in root path
@@ -458,10 +465,13 @@ kanban:
   dispatch_in_gateway: true
   dispatch_interval_seconds: 60
   failure_limit: 2
+  worker_log_rotate_bytes: 2097152
+  worker_log_backup_count: 1
   orchestrator_profile: ''
   default_assignee: ''
   auto_decompose: true
   auto_decompose_per_tick: 3
+  dispatch_stale_timeout_seconds: 14400
 code_execution:
   mode: project
   timeout: 300
@@ -480,11 +490,16 @@ model_catalog:
   providers: {}
 network:
   force_ipv4: false
+gateway:
+  media_delivery_allow_dirs: []
+  trust_recent_files: true
+  trust_recent_files_seconds: 600
 sessions:
   auto_prune: false
   retention_days: 90
   vacuum_after_prune: true
   min_interval_hours: 24
+  write_json_snapshots: false
 onboarding:
   seen:
     busy_input_prompt: true
@@ -503,6 +518,18 @@ x_search:
   model: grok-4.20-reasoning
   timeout_seconds: 180
   retries: 2
+secrets:
+  bitwarden:
+    enabled: false
+    access_token_env: BWS_ACCESS_TOKEN
+    project_id: ''
+    cache_ttl_seconds: 300
+    override_existing: true
+    auto_install: true
+    server_url: ''
+paste_collapse_threshold: 5
+paste_collapse_threshold_fallback: 5
+paste_collapse_char_threshold: 2000
 _config_version: 23
 session_reset:
   mode: both
@@ -609,13 +636,20 @@ known_plugin_toolsets:
   cli:
   - spotify
 image_gen:
-  provider: xai
+  provider: openai-codex
   xai:
     model: grok-imagine-image-quality
     resolution: 2k
+  openai-codex:
+    model: gpt-image-2-medium
 video_gen:
   provider: xai
   model: grok-imagine-video
+plugins:
+  enabled:
+  - google_meet
+  - image_gen/openai-codex
+  disabled: []
 
 # ── Fallback Model ────────────────────────────────────────────────────
 # Automatic provider failover when primary is unavailable.
