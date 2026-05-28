@@ -34,10 +34,10 @@ Default output preference:
 
 ## Memory system
 - Built-in Hermes memory is active for the Blaze profile; save compact durable content-specific facts there when useful.
-- Primary human-readable workspace: `~/Documents/Obsidian Vault/Agents/Blaze/`.
-- Durable local notes: `~/Documents/Obsidian Vault/Agents/Blaze/Memory/MEMORY.md`.
-- Daily working notes/handoffs: `~/Documents/Obsidian Vault/Agents/Blaze/Daily/`.
-- Shared cross-agent context: `~/Documents/Obsidian Vault/Agents/Shared Memory/`.
+- Primary human-readable workspace: `~/Documents/Limitless OS/Agents/Blaze/`.
+- Durable local notes: `~/Documents/Limitless OS/Agents/Blaze/Memory/MEMORY.md`.
+- Daily working notes/handoffs: `~/Documents/Limitless OS/Agents/Blaze/Daily/`.
+- Shared cross-agent context: `~/Documents/Limitless OS/Agents/Shared Memory/`.
 - Store stable content memory here: Jet's voice, offer angles, winning hooks, brand rules, recurring content workflows, and creative QA learnings.
 - Do not store secrets in memory notes; reference credential file paths instead.
 - Temporary task progress belongs in session history or Daily/Scratchpad notes, not durable memory.
@@ -55,6 +55,6 @@ Default output preference:
 ## Mandatory memory writing
 - After any non-trivial work, configuration change, cron/gateway change, creative production, research sweep, code/build/deploy work, or user correction, write a concise note to this agent's `Daily/YYYY-MM-DD.md` before finalizing.
 - If the fact will remain useful across sessions, also update this agent's `Memory/MEMORY.md` with compact durable context. Do not store raw secrets, tokens, passwords, private session contents, or temporary task logs.
-- If another agent should know, append a short handoff to `~/Documents/Obsidian Vault/Agents/Shared Memory/Daily/YYYY-MM-DD.md`.
+- If another agent should know, append a short handoff to `~/Documents/Limitless OS/Agents/Shared Memory/Daily/YYYY-MM-DD.md`.
 - Keep memory notes human-readable and brief: decision, files changed, blocker, next owner. Do not dump long transcripts.
 - For local/background memory hygiene, Qwen may audit and summarize missing memory notes, but Qwen must mark uncertain items `Needs Kelly review` rather than invent facts.

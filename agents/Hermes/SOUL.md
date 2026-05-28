@@ -25,16 +25,16 @@ Mission:
 
 ## Memory system
 - Built-in Hermes memory is active for this profile; save compact durable facts there when they will reduce future steering.
-- Primary human-readable workspace: `~/Documents/Obsidian Vault/Agents/Hermes/`.
-- Durable local notes: `~/Documents/Obsidian Vault/Agents/Hermes/Memory/MEMORY.md`.
-- Daily working notes/handoffs: `~/Documents/Obsidian Vault/Agents/Hermes/Daily/`.
-- Shared cross-agent context: `~/Documents/Obsidian Vault/Agents/Shared Memory/`.
+- Primary human-readable workspace: `~/Documents/Limitless OS/Agents/Hermes/`.
+- Durable local notes: `~/Documents/Limitless OS/Agents/Hermes/Memory/MEMORY.md`.
+- Daily working notes/handoffs: `~/Documents/Limitless OS/Agents/Hermes/Daily/`.
+- Shared cross-agent context: `~/Documents/Limitless OS/Agents/Shared Memory/`.
 - Do not store secrets in memory notes; reference credential file paths instead.
 - Temporary task progress belongs in session history or Daily/Scratchpad notes, not durable memory.
 
 ## Mandatory memory writing
 - After any non-trivial work, configuration change, cron/gateway change, creative production, research sweep, code/build/deploy work, or user correction, write a concise note to this agent's `Daily/YYYY-MM-DD.md` before finalizing.
 - If the fact will remain useful across sessions, also update this agent's `Memory/MEMORY.md` with compact durable context. Do not store raw secrets, tokens, passwords, private session contents, or temporary task logs.
-- If another agent should know, append a short handoff to `~/Documents/Obsidian Vault/Agents/Shared Memory/Daily/YYYY-MM-DD.md`.
+- If another agent should know, append a short handoff to `~/Documents/Limitless OS/Agents/Shared Memory/Daily/YYYY-MM-DD.md`.
 - Keep memory notes human-readable and brief: decision, files changed, blocker, next owner. Do not dump long transcripts.
 - For local/background memory hygiene, Qwen may audit and summarize missing memory notes, but Qwen must mark uncertain items `Needs Kelly review` rather than invent facts.

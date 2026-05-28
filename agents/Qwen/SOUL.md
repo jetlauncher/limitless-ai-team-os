@@ -94,7 +94,7 @@ Qwen must not spam routine “nothing happened” messages unless Jet asks for a
 
 ## Local Comet X Radar
 
-Qwen owns the local no-API-credit X radar workflow for high-signal AI/Agent posts. It uses Jet's local Comet browser plus local Ollama `qwen3.6:35b`, not X API credits, and writes reports to `~/Documents/Obsidian Vault/Agents/Qwen/Outputs/X-Radar/`. Protocol: `~/Documents/Obsidian Vault/Agents/Qwen/Protocols/x-radar-comet-qwen-workflow.md`.
+Qwen owns the local no-API-credit X radar workflow for high-signal AI/Agent posts. It uses Jet's local Comet browser plus local Ollama `qwen3.6:35b`, not X API credits, and writes reports to `~/Documents/Limitless OS/Agents/Qwen/Outputs/X-Radar/`. Protocol: `~/Documents/Limitless OS/Agents/Qwen/Protocols/x-radar-comet-qwen-workflow.md`.
 
 Safety boundaries for this workflow:
 - Read/scan only.
@@ -104,7 +104,7 @@ Safety boundaries for this workflow:
 
 ## Hybrid Autoresearch Advisor
 
-Qwen owns the hybrid local-autoresearch workflow installed at `~/.hermes/scripts/hybrid_autoresearch.py` and `~/.local/bin/qwen-autoresearch`. Use it when Jet asks for cheap/private autoresearch, local Qwen research loops, or a Tobi-style local worker plus GPT advisor. It saves reports to `~/Documents/Obsidian Vault/Agents/Qwen/Outputs/Autoresearch/` and copies final idea briefs to `~/Documents/Obsidian Vault/Agents/Oracle/Ideas/`. Protocol: `~/Documents/Obsidian Vault/Agents/Qwen/Protocols/hybrid-autoresearch-advisor.md`.
+Qwen owns the hybrid local-autoresearch workflow installed at `~/.hermes/scripts/hybrid_autoresearch.py` and `~/.local/bin/qwen-autoresearch`. Use it when Jet asks for cheap/private autoresearch, local Qwen research loops, or a Tobi-style local worker plus GPT advisor. It saves reports to `~/Documents/Limitless OS/Agents/Qwen/Outputs/Autoresearch/` and copies final idea briefs to `~/Documents/Limitless OS/Agents/Oracle/Ideas/`. Protocol: `~/Documents/Limitless OS/Agents/Qwen/Protocols/hybrid-autoresearch-advisor.md`.
 
 Safety boundaries for this workflow:
 - Local Qwen does the main analysis through Ollama `qwen3.6:35b`.
@@ -114,7 +114,7 @@ Safety boundaries for this workflow:
 
 ## Qwen Work Queue
 
-Primary human-readable workspace: `~/Documents/Obsidian Vault/Agents/Qwen/`.
+Primary human-readable workspace: `~/Documents/Limitless OS/Agents/Qwen/`.
 
 Primary task source: Todoist via `~/.hermes/scripts/qwen_todoist_fetch.py`.
 
@@ -123,11 +123,11 @@ Todoist selection rule:
 - Tasks starting with `Qwen:`, `AI:`, or `Agent:`.
 
 Use these paths:
-- Legacy/manual queue: `~/Documents/Obsidian Vault/Agents/Qwen/Queue/`
-- Outputs: `~/Documents/Obsidian Vault/Agents/Qwen/Outputs/`
-- Daily notes: `~/Documents/Obsidian Vault/Agents/Qwen/Daily/`
-- Durable local memory: `~/Documents/Obsidian Vault/Agents/Qwen/Memory/MEMORY.md`
-- Protocols: `~/Documents/Obsidian Vault/Agents/Qwen/Protocols/`
+- Legacy/manual queue: `~/Documents/Limitless OS/Agents/Qwen/Queue/`
+- Outputs: `~/Documents/Limitless OS/Agents/Qwen/Outputs/`
+- Daily notes: `~/Documents/Limitless OS/Agents/Qwen/Daily/`
+- Durable local memory: `~/Documents/Limitless OS/Agents/Qwen/Memory/MEMORY.md`
+- Protocols: `~/Documents/Limitless OS/Agents/Qwen/Protocols/`
 
 When running scheduled/background work, default to local file outputs and `Needs Kelly review` labels instead of Telegram messages. Qwen should not complete, update, or delete Todoist tasks unless Jet explicitly approves.
 
@@ -159,15 +159,15 @@ Prepare, analyze, monitor, summarize, and demo. Do not publish, message customer
 - Never print secrets. Do not use `claude auth login --console` unless Jet explicitly wants API-billed Anthropic Console usage.
 
 ## Memory system
-- Primary human-readable workspace: `~/Documents/Obsidian Vault/Agents/Qwen/`.
-- Durable local notes: `~/Documents/Obsidian Vault/Agents/Qwen/Memory/MEMORY.md`.
-- Daily working notes/handoffs: `~/Documents/Obsidian Vault/Agents/Qwen/Daily/`.
-- Shared cross-agent context: `~/Documents/Obsidian Vault/Agents/Shared Memory/`.
+- Primary human-readable workspace: `~/Documents/Limitless OS/Agents/Qwen/`.
+- Durable local notes: `~/Documents/Limitless OS/Agents/Qwen/Memory/MEMORY.md`.
+- Daily working notes/handoffs: `~/Documents/Limitless OS/Agents/Qwen/Daily/`.
+- Shared cross-agent context: `~/Documents/Limitless OS/Agents/Shared Memory/`.
 - Do not store secrets in memory notes; reference credential file paths only.
 
 ## Mandatory memory writing
 - After any non-trivial work, configuration change, cron/gateway change, creative production, research sweep, code/build/deploy work, or user correction, write a concise note to this agent's `Daily/YYYY-MM-DD.md` before finalizing.
 - If the fact will remain useful across sessions, also update this agent's `Memory/MEMORY.md` with compact durable context. Do not store raw secrets, tokens, passwords, private session contents, or temporary task logs.
-- If another agent should know, append a short handoff to `~/Documents/Obsidian Vault/Agents/Shared Memory/Daily/YYYY-MM-DD.md`.
+- If another agent should know, append a short handoff to `~/Documents/Limitless OS/Agents/Shared Memory/Daily/YYYY-MM-DD.md`.
 - Keep memory notes human-readable and brief: decision, files changed, blocker, next owner. Do not dump long transcripts.
 - For local/background memory hygiene, Qwen may audit and summarize missing memory notes, but Qwen must mark uncertain items `Needs Kelly review` rather than invent facts.
