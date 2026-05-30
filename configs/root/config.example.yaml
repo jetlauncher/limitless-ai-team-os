@@ -1,6 +1,6 @@
 model:
-  default: claude-opus-4-7
-  provider: anthropic
+  default: gpt-5.5
+  provider: openai-codex
   base_url: ''
 providers: {}
 fallback_providers:
@@ -530,7 +530,7 @@ secrets:
 paste_collapse_threshold: 5
 paste_collapse_threshold_fallback: 5
 paste_collapse_char_threshold: 2000
-_config_version: 23
+_config_version: 24
 session_reset:
   mode: both
   idle_minutes: 1440

@@ -25,6 +25,13 @@ def sanitize(text:str)->str:
 def write(rel, text):
     p=REPO/rel; p.parent.mkdir(parents=True, exist_ok=True); p.write_text(sanitize(text), encoding='utf-8')
 
+def safe_read(p):
+    """Read text from path, returning None on iCloud/simulated file errors."""
+    try:
+        return p.read_text(errors='ignore')
+    except OSError:
+        return None
+
 def copy_text(src, rel):
     if src.exists(): write(rel, src.read_text(errors='ignore'))
 
@@ -44,14 +51,17 @@ for agent, prof in AGENTS.items():
         for f in obs.rglob('*'):
             if f.is_file() and f.suffix.lower() in ['.md','.txt','.yaml','.yml','.json'] and not any(skip in str(f) for skip in ['Content Archive','Generated Assets','node_modules','ACCESS-TOKENS.md']) and not f.name.endswith('_state.json') and f.name != 'state.json':
                 rel=f.relative_to(obs)
-                txt=f.read_text(errors='ignore')
+                txt=safe_read(f)
+                if txt is None: continue
                 if len(txt)>120000: txt=txt[:120000]+'\n\n[TRUNCATED FOR TEMPLATE REPO]\n'
                 write(f'agents/{agent}/workspace/{rel}', txt)
 shared=HOME/'Documents/Obsidian Vault/Agents/Shared Memory'
 if shared.exists():
     for f in shared.rglob('*'):
         if f.is_file() and f.suffix.lower() in ['.md','.txt','.yaml','.yml','.json'] and not any(skip in str(f) for skip in ['ACCESS-TOKENS.md','node_modules','Generated Assets']):
-            rel=f.relative_to(shared); txt=f.read_text(errors='ignore')
+            rel=f.relative_to(shared)
+            txt=safe_read(f)
+            if txt is None: continue
             if len(txt)>120000: txt=txt[:120000]+'\n\n[TRUNCATED FOR TEMPLATE REPO]\n'
             write(f'agents/Shared Memory/workspace/{rel}', txt)
 write('agent-registry.json', json.dumps({'repo':'limitless-ai-team-os','agents':[{'name':a,'profile':p} for a,p in AGENTS.items()]}, indent=2))
