@@ -1,20 +1,20 @@
 {
   "site_url": "sc-domain:jeditrinupab.com",
-  "start_date": "2026-02-23",
-  "end_date": "2026-05-24",
+  "start_date": "2026-02-28",
+  "end_date": "2026-05-29",
   "country": "tha",
-  "total_rows": 40,
-  "gap_count": 13,
+  "total_rows": 39,
+  "gap_count": 11,
   "top_gaps": [
     {
       "query": "limitless club",
       "page": "https://jeditrinupab.com/programs/ai-expert",
       "clicks": 6,
-      "impressions": 50,
-      "ctr": 0.12,
-      "position": 6.4,
+      "impressions": 51,
+      "ctr": 0.11764705882352941,
+      "position": 6.450980392156863,
       "intent": "other",
-      "score": 150.78
+      "score": 150.54
     },
     {
       "query": "เจได ai",
@@ -27,34 +27,24 @@
       "score": 144.18
     },
     {
-      "query": "jedi trinupab",
-      "page": "https://jeditrinupab.com/press",
-      "clicks": 0,
-      "impressions": 9,
-      "ctr": 0.0,
-      "position": 6.888888888888889,
-      "intent": "other",
-      "score": 139.97
-    },
-    {
       "query": "อาจารย์เจได",
       "page": "https://jeditrinupab.com/",
       "clicks": 0,
-      "impressions": 16,
+      "impressions": 25,
       "ctr": 0.0,
-      "position": 7.5625,
+      "position": 8.24,
       "intent": "other",
-      "score": 139.58
+      "score": 138.04
     },
     {
-      "query": "อาจารย์ เจได",
-      "page": "https://jeditrinupab.com/",
-      "clicks": 0,
-      "impressions": 8,
-      "ctr": 0.0,
-      "position": 7.25,
+      "query": "jedi trinupab",
+      "page": "https://jeditrinupab.com/about",
+      "clicks": 1,
+      "impressions": 55,
+      "ctr": 0.01818181818181818,
+      "position": 9.018181818181818,
       "intent": "other",
-      "score": 136.06
+      "score": 136.84
     },
     {
       "query": "เจได ai",
@@ -67,34 +57,24 @@
       "score": 135.9
     },
     {
-      "query": "jedi trinupab",
-      "page": "https://jeditrinupab.com/about",
-      "clicks": 1,
-      "impressions": 50,
-      "ctr": 0.02,
-      "position": 9.04,
-      "intent": "other",
-      "score": 135.66
-    },
-    {
       "query": "jeditrinupab",
       "page": "https://jeditrinupab.com/about",
       "clicks": 0,
-      "impressions": 11,
+      "impressions": 12,
       "ctr": 0.0,
-      "position": 7.909090909090909,
+      "position": 8.0,
       "intent": "other",
-      "score": 133.56
+      "score": 133.58
     },
     {
-      "query": "jedi trinupab",
-      "page": "https://jeditrinupab.com/resources",
-      "clicks": 0,
-      "impressions": 9,
-      "ctr": 0.0,
-      "position": 8.11111111111111,
+      "query": "อาจารย์ เจได",
+      "page": "https://jeditrinupab.com/",
+      "clicks": 1,
+      "impressions": 10,
+      "ctr": 0.1,
+      "position": 6.9,
       "intent": "other",
-      "score": 130.2
+      "score": 132.8
     },
     {
       "query": "เจได ai",

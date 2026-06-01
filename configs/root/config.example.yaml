@@ -78,7 +78,6 @@ terminal:
   singularity_image: docker://nikolaik/python-nodejs:python3.11-nodejs20
   modal_image: nikolaik/python-nodejs:python3.11-nodejs20
   daytona_image: nikolaik/python-nodejs:python3.11-nodejs20
-  vercel_runtime: node24
   container_cpu: 1
   container_memory: 5120
   container_disk: 51200
@@ -88,6 +87,7 @@ terminal:
   docker_extra_args: []
   docker_run_as_host_user: false
   persistent_shell: true
+  vercel_runtime: node24
   lifetime_seconds: 300
 web:
   backend: ''
@@ -297,6 +297,10 @@ display:
 dashboard:
   theme: default
   show_token_analytics: false
+  oauth:
+    client_id: ''
+    portal_url: ''
+  public_url: ''
 privacy:
   redact_pii: false
 tts:
@@ -434,12 +438,13 @@ approvals:
   mcp_reload_confirm: true
   destructive_slash_confirm: false
 command_allowlist:
-- stop/restart hermes gateway (kills running agents)
+- shell command via -c/-lc flag
+- hermes update (restarts gateway, kills running agents)
 - delete in root path
+- git force push (rewrites remote history)
 - overwrite system file via redirection
 - script execution via -e/-c flag
-- hermes update (restarts gateway, kills running agents)
-- git force push (rewrites remote history)
+- stop/restart hermes gateway (kills running agents)
 - recursive delete
 quick_commands: {}
 hooks: {}
@@ -491,6 +496,7 @@ model_catalog:
 network:
   force_ipv4: false
 gateway:
+  strict: false
   media_delivery_allow_dirs: []
   trust_recent_files: true
   trust_recent_files_seconds: 600
