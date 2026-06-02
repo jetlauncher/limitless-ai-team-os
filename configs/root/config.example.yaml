@@ -1,7 +1,8 @@
 model:
-  default: gpt-5.5
-  provider: openai-codex
-  base_url: ''
+  default: anthropic/claude-sonnet-4.6
+  provider: openrouter
+  base_url: https://openrouter.ai/api/v1
+  api_mode: chat_completions
 providers: {}
 fallback_providers:
 - provider: openai-codex
@@ -438,14 +439,15 @@ approvals:
   mcp_reload_confirm: true
   destructive_slash_confirm: false
 command_allowlist:
-- shell command via -c/-lc flag
 - hermes update (restarts gateway, kills running agents)
-- delete in root path
-- git force push (rewrites remote history)
+- script execution via heredoc
 - overwrite system file via redirection
-- script execution via -e/-c flag
-- stop/restart hermes gateway (kills running agents)
+- delete in root path
 - recursive delete
+- shell command via -c/-lc flag
+- git force push (rewrites remote history)
+- stop/restart hermes gateway (kills running agents)
+- script execution via -e/-c flag
 quick_commands: {}
 hooks: {}
 hooks_auto_accept: false
