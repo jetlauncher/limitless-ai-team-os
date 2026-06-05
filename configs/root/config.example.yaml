@@ -1,12 +1,12 @@
 model:
-  default: anthropic/claude-sonnet-4.6
-  provider: openrouter
-  base_url: https://openrouter.ai/api/v1
-  api_mode: chat_completions
+  default: MiniMax-M3
+  provider: minimax-oauth
 providers: {}
 fallback_providers:
-- provider: openai-codex
-  model: gpt-5.5
+- provider: anthropic
+  model: anthropic/claude-opus-4.8
+- provider: custom:local-qwen3.6-(ollama)
+  model: qwen3.6:35b
 credential_pool_strategies: {}
 toolsets:
 - hermes-cli
@@ -17,6 +17,9 @@ agent:
   api_max_retries: 3
   service_tier: ''
   tool_use_enforcement: auto
+  task_completion_guidance: true
+  environment_probe: true
+  environment_hint: ''
   gateway_timeout_warning: 900
   clarify_timeout: 600
   gateway_notify_interval: 600
@@ -109,6 +112,8 @@ browser:
     user_id: ''
     session_key: ''
     adopt_existing_tab: false
+    rewrite_loopback_urls: false
+    loopback_host_alias: host.docker.internal
 checkpoints:
   enabled: true
   max_snapshots: 50
@@ -169,22 +174,22 @@ auxiliary:
     extra_body: {}
     download_timeout: 30
   web_extract:
-    provider: auto
-    model: ''
+    provider: custom:local-qwen3.6-(ollama)
+    model: qwen3.6:35b
     base_url: ''
     api_key: ''
     timeout: 360
     extra_body: {}
   compression:
-    provider: auto
-    model: ''
+    provider: custom:local-qwen3.6-(ollama)
+    model: qwen3.6:35b
     base_url: ''
     api_key: ''
     timeout: 120
     extra_body: {}
   skills_hub:
-    provider: auto
-    model: ''
+    provider: custom:local-qwen3.6-(ollama)
+    model: qwen3.6:35b
     base_url: ''
     api_key: ''
     timeout: 30
@@ -263,7 +268,9 @@ display:
   resume_max_assistant_lines: 3
   resume_skip_tool_only: true
   busy_input_mode: interrupt
+  interface: cli
   tui_auto_resume_recent: false
+  tui_agents_nudge: true
   bell_on_complete: false
   show_reasoning: false
   streaming: true
@@ -273,6 +280,7 @@ display:
   persistent_output_max_lines: 200
   inline_diffs: true
   file_mutation_verifier: true
+  turn_completion_explainer: true
   show_cost: false
   skin: default
   language: en
@@ -285,7 +293,11 @@ display:
   tool_progress_overrides: {}
   tool_preview_length: 0
   ephemeral_system_ttl: 0
-  platforms: {}
+  platforms:
+    telegram:
+      streaming: true
+    discord:
+      streaming: false
   runtime_footer:
     enabled: false
     fields:
@@ -301,6 +313,12 @@ dashboard:
   oauth:
     client_id: ''
     portal_url: ''
+  basic_auth:
+    username: ''
+    password_hash: ''
+    password: ''
+    secret: ''
+    session_ttl_seconds: 0
   public_url: ''
 privacy:
   redact_pii: false
@@ -339,13 +357,18 @@ stt:
     model: whisper-1
   mistral:
     model: voxtral-mini-latest
+  elevenlabs:
+    model_id: scribe_v2
+    language_code: ''
+    tag_audio_events: false
+    diarize: false
 voice:
   record_key: ctrl+b
   max_recording_seconds: 120
   auto_tts: false
   beep_enabled: true
   silence_threshold: 200
-  silence_duration: 3.0
+  silence_duration: 3
 human_delay:
   mode: 'off'
   min_ms: 800
@@ -394,6 +417,7 @@ curator:
   min_idle_hours: 2
   stale_after_days: 30
   archive_after_days: 90
+  prune_builtins: true
   backup:
     enabled: true
     keep: 5
@@ -433,7 +457,7 @@ matrix:
   free_response_rooms: ''
   allowed_rooms: ''
 approvals:
-  mode: manual
+  mode: smart
   timeout: 60
   cron_mode: deny
   mcp_reload_confirm: true
@@ -476,6 +500,7 @@ kanban:
   worker_log_backup_count: 1
   orchestrator_profile: ''
   default_assignee: ''
+  max_in_progress_per_profile: null
   auto_decompose: true
   auto_decompose_per_tick: 3
   dispatch_stale_timeout_seconds: 14400
@@ -483,6 +508,12 @@ code_execution:
   mode: project
   timeout: 300
   max_tool_calls: 50
+tools:
+  tool_search:
+    enabled: auto
+    threshold_pct: 10
+    search_default_limit: 5
+    max_search_limit: 20
 logging:
   level: INFO
   max_size_mb: 5
@@ -502,6 +533,13 @@ gateway:
   media_delivery_allow_dirs: []
   trust_recent_files: true
   trust_recent_files_seconds: 600
+streaming:
+  enabled: false
+  transport: auto
+  edit_interval: 0.8
+  buffer_threshold: 24
+  cursor: " \u2589"
+  fresh_final_after_seconds: 60
 sessions:
   auto_prune: false
   retention_days: 90
@@ -519,7 +557,7 @@ updates:
 lsp:
   enabled: true
   wait_mode: document
-  wait_timeout: 5.0
+  wait_timeout: 5
   install_strategy: auto
   servers: {}
 x_search:
@@ -538,14 +576,12 @@ secrets:
 paste_collapse_threshold: 5
 paste_collapse_threshold_fallback: 5
 paste_collapse_char_threshold: 2000
-_config_version: 24
+_config_version: 26
 session_reset:
   mode: both
   idle_minutes: 1440
   at_hour: 4
 group_sessions_per_user: true
-streaming:
-  enabled: false
 platform_toolsets:
   cli:
   - browser
@@ -658,6 +694,9 @@ plugins:
   - google_meet
   - image_gen/openai-codex
   disabled: []
+api_server:
+  model: qwen2.5:3b
+  provider: custom:local-qwen3.6-(ollama)
 
 # ── Fallback Model ────────────────────────────────────────────────────
 # Automatic provider failover when primary is unavailable.

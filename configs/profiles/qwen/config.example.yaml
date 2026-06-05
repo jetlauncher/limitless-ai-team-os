@@ -6,7 +6,9 @@ model:
   api_mode: chat_completions
   context_length: 131072
 providers: {}
-fallback_providers: []
+fallback_providers:
+- provider: anthropic
+  model: anthropic/claude-opus-4.8
 credential_pool_strategies: {}
 toolsets:
 - hermes-cli
