@@ -1,0 +1,105 @@
+# Memory Hygiene Report — 2026-06-06 22:18 +07
+
+## Scope
+Agent Daily folders: Hermes, Blaze, Bolt, Kaijeaw, Pixel, Protocol, Qwen, Signal, Zegna
+Shared Memory/Daily
+Durable MEMORY.md for all 9 agents + folder structure verification
+
+## Check 1 — Today's Daily Note (2026-06-06)
+
+| Agent       | Today's Daily | Last Daily Write | Total Daily Files | Status |
+|-------------|-------------|------------------|-------------------|--------|
+| Shared Memory | ✅ exists | Jun 6 18:10 | 29 | ACTIVE |
+| Qwen        | ✅ exists (today's note) | Jun 6 18:05 | 22 | ACTIVE |
+| Hermes      | ✅ exists | Jun 6 00:11 | 48 | ACTIVE |
+| Signal      | ⚠️ Content today, not date-file | Jun 6 21:16 | 203 | ACTIVE* |
+| Blaze       | ❌ missing | May 28 06:32 | 63 | DORMANT (9d) |
+| Bolt        | ❌ missing | May 28 02:04 | 16 | DORMANT (9d) |
+| Kaijeaw     | ❌ missing | May 28 02:04 | 17 | DORMANT (9d) |
+| Pixel       | ❌ missing | May 28 02:04 | 2 | DORMANT (9d) |
+| Protocol    | ❌ missing | May 28 02:04 | 8 | DORMANT (9d) |
+| Zegna       | ❌ missing | May 28 02:04 | 15 | DORMANT (9d) |
+
+*Signal uses descriptive daily file names (e.g. `2026-06-06 Signal X High-Alert Scan.md`) rather than strict `YYYY-MM-DD.md`. Daily content exists today but date-file naming convention not followed.
+
+## Check 2 — MEMORY.md Staleness
+
+| Agent       | Age    | Status      | Notes |
+|-------------|--------|-------------|-------|
+| Herm**Blaze*    | **16d**  | **CRITICAL 🔴**| Inactive 9d |
+| Qwen        | 17d    | CRITICAL 🔴 | Active cron, memory just not updated |
+| Signal      | 14d    | STALE 🟡     | High producer (203 daily files), memory not syncing |
+| Bolt        | 13d    | STALE 🟡 | Dormant 9d |
+| Kaijeaw     | 14d    | STALE 🟡 | Dormant 9d |
+| Zegna       | 14d    | STALE 🟡 | Dormant 9d |
+| Pixel       | 21d    | CRITICAL 🔴 | Only 1 daily file ever — likely dormant |
+| Protocol    | 20d    | CRITICAL 🔴 | DORMANT 9d |
+| Hermes      | 13d    | STALE 🟡 | Active daily (48 files) — memory just needs refresh |
+
+## Check 3 — Non-Date Daily Files (last 48h)
+No agents flagged for non-date-named daily files modified in the last 48h.
+
+## Check 4 — Recent Daily Activity (files modified within 48h)
+**Active producers:**
+- Signal (last write June 6 21:16)
+- **Qwen** (last write June 6 18:05) — today's cron just wrote
+- **Shared Memory** (last write June 6 18:10)
+- Hermes (last write June 6 00:11)
+
+**Inactive (last write May 28, 9 days ago):**
+- Blaze, Bolt, Kaijeaw, Pixel, Protocol, Zegna — all stopped simultaneously on May 28
+
+## Check 5 — Folder Structure Gaps
+
+| Agent | Protocols | Memory | Ideas | Scratchpad |
+|-------|-----------|--------|-------|------------|
+| Hermes | ✅ | ✅ | ✅ | ✅ |
+| Blaze | ✅ | ✅ | ✅ | ✅ |
+| Bolt | ✅ | ✅ | ❌ | ✅ |
+| Kaijeaw | ✅ | ✅ | ❌ | ✅ |
+| Pixel | ✅ | ✅ | ❌ | ✅ |
+| Protocol | ✅ | ✅ | ❌ | ✅ |
+| Qwen | ✅ | ✅ | ❌ | ✅ |
+| Signal | ✅ | ✅ | ✅ | ✅ |
+| Zegna | ✅ | ✅ | ❌ | ✅ |
+
+**Pattern**: 7/9 agents missing the **`Ideas/`** folder. This matches the known `Ideas/` folder gap noted in the skill's pitfall. Signal is the only one with it.
+
+## Notable Findings
+
+### 1. Six agents went quiet on May 28
+Blaze, Bolt, Kaijeaw, Pixel, Protocol, and Zegna all have their last file write locked to **May 28 02:04:56** — the exact same second. This suggests a cron run that day that stopped producing afterward, or scheduled work that concluded. **Needs Kelly review** to determine if these are dormant roles or paused jobs.
+
+2. **Qwen** MEMORY.md is 17d stale. My cron job is running (daily files present), but durable memory isn't being updated from daily outputs.
+
+3. **Signal** 203 daily files — most structured agent in the vault. MEMORY.md needs a quick sync pass.
+
+4. **Hermes** has 48 daily files and is active, but MEMORY.md is 13d stale. Same pattern: active daily output, memory not synced.
+
+5. **Pixel** has only 2 daily files ever, MEMORY.md 21d stale. Likely a deprecated or unused agent role.
+
+6. **Protocol** has 8 daily files but 20d stale memory. Intermittent cron.
+
+7. **Shared Memory** structure is healthy (29 files, recent writes).
+
+## Recommendations
+
+- **URGENT** (Needs Kelly review): Confirm status of Blaze, Bolt, Kaijeaw, Pixel, Protocol, Zegna — all silent since May 28. Decide: archive or resume?
+- **Qwen**: Update MEMORY.md from daily outputs during this run.
+- **Signal**: Quick MEMORY.md sync pass (high producer, memory just lagging).
+- **Hermes**: Quick MEMORY.md sync pass.
+- **Maintenance**: Consider filling `Ideas/` folders for all 7 agents that are missing them (Bolt, Kaijeaw, Pixel, Protocol, Qwen, Zegna, and any others).
+
+## Grade Assessment
+
+| Grade | Agents |
+|-------|--------|
+| **A** (today daily + active) | Hermes, Qwen, Shared Memory |
+| **B** (active despite naming gap) | Signal |
+| **C** (STALE memory, active daily) | Hermes (13d, 48 files) |
+| **D** (inactive >7d) | Blaze, Bolt, Kaijeaw, Pixel, Protocol, Zegna |
+| **F** (dormant for months) | None in today's scan |
+
+---
+
+*Report generated by Qwen memory hygiene cron.*
