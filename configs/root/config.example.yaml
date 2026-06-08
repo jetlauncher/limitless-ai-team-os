@@ -463,15 +463,16 @@ approvals:
   mcp_reload_confirm: true
   destructive_slash_confirm: false
 command_allowlist:
-- hermes update (restarts gateway, kills running agents)
-- script execution via heredoc
-- overwrite system file via redirection
-- delete in root path
-- recursive delete
 - shell command via -c/-lc flag
-- git force push (rewrites remote history)
 - stop/restart hermes gateway (kills running agents)
+- script execution via heredoc
 - script execution via -e/-c flag
+- git force push (rewrites remote history)
+- sudo with combined-flag privilege escalation
+- recursive delete
+- delete in root path
+- hermes update (restarts gateway, kills running agents)
+- overwrite system file via redirection
 quick_commands: {}
 hooks: {}
 hooks_auto_accept: false
