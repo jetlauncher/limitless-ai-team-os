@@ -35,6 +35,29 @@ def safe_read(p):
 def copy_text(src, rel):
     if src.exists(): write(rel, src.read_text(errors='ignore'))
 
+
+def rglob_safe(base_dir: Path):
+    """Walk directory tree, catching OSError on individual dirs (iCloud Content Drops, etc.)."""
+    results = []
+    for root, dirs, files in os.walk(base_dir):
+        # Skip problematic dirs silently
+        for d in dirs[:]:
+            dp = os.path.join(root, d)
+            try:
+                os.scandir(dp)
+            except OSError:
+                dirs.remove(d)
+        for fn in files:
+            fp = os.path.join(root, fn)
+            try:
+                p = Path(fp)
+                if p.is_file():
+                    results.append(p)
+            except OSError:
+                pass
+    return results
+
+
 AGENTS={'Hermes':'default','Blaze':'blaze','Bolt':'bolt','Kaijeaw':'kaijeaw','Protocol':'protocol','Qwen':'qwen','Signal':'signal','Zegna':'zegna'}
 for d in ['agents','configs']:
     p=REPO/d
@@ -48,8 +71,8 @@ for agent, prof in AGENTS.items():
     copy_text(soul, f'agents/{agent}/SOUL.md')
     obs=HOME/f'Documents/Obsidian Vault/Agents/{agent}'
     if obs.exists():
-        for f in obs.rglob('*'):
-            if f.is_file() and f.suffix.lower() in ['.md','.txt','.yaml','.yml','.json'] and not any(skip in str(f) for skip in ['Content Archive','Generated Assets','node_modules','ACCESS-TOKENS.md']) and not f.name.endswith('_state.json') and f.name != 'state.json':
+        for f in rglob_safe(obs):
+            if f.is_file() and f.suffix.lower() in ['.md','.txt','.yaml','.yml','.json'] and not any(skip in str(f) for skip in ['Content Archive','Content Drops','Generated Assets','node_modules','ACCESS-TOKENS.md']) and not f.name.endswith('_state.json') and f.name != 'state.json':
                 rel=f.relative_to(obs)
                 txt=safe_read(f)
                 if txt is None: continue
@@ -57,7 +80,7 @@ for agent, prof in AGENTS.items():
                 write(f'agents/{agent}/workspace/{rel}', txt)
 shared=HOME/'Documents/Obsidian Vault/Agents/Shared Memory'
 if shared.exists():
-    for f in shared.rglob('*'):
+    for f in rglob_safe(shared):
         if f.is_file() and f.suffix.lower() in ['.md','.txt','.yaml','.yml','.json'] and not any(skip in str(f) for skip in ['ACCESS-TOKENS.md','node_modules','Generated Assets']):
             rel=f.relative_to(shared)
             txt=safe_read(f)
