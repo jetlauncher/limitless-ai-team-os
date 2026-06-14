@@ -8,54 +8,56 @@
 
 ## CURRENT WEEK PATTERNS
 
-**Week of:** 2026-05-24 to 2026-05-31
-**Posts analyzed:** 12 X + 1 LinkedIn
-**Published successfully:** 13 (12 X via Blotato, 1 LinkedIn)
+**Week of:** 2026-06-07 to 2026-06-14
+**Posts analyzed:** 24 X + 5 LinkedIn (29 published via Blotato)
+**Published successfully:** 29 (24 X, 5 LinkedIn)
 **Failed:** 0
-**Metrics availability:** partial — X full (12/12); LinkedIn unavailable (Apify LI actor errored + the published LI post predates this DB's tracking)
-**Avg Engagement Rate %:** X 2.55% (simple) / 2.77% (weighted) | LinkedIn n/a
+**Metrics availability:** partial — X full (24/24); LinkedIn unavailable (Apify actor `apimaestro/linkedin-profile-posts` returned "Wrong input or unknown error" on both attempts; LI impressions aren't publicly scrapeable without owner login)
+**Avg Engagement Rate %:** X 1.92% (simple) / 2.09% (weighted) | LinkedIn n/a
 
-> ⚠️ **LOW-SIGNAL WEEK — READ THIS FIRST.** X reach is currently tiny (8–39 impressions per post, 289 total). Only 4 of 12 posts drew any engagement at all, and those were 1–2 actions each. Differences between themes/hooks this week are statistical noise, not signal. The bottleneck is **distribution/reach on X, not content quality or theme selection.** Apply the biases below only as gentle leans; do not hard-cut anything on this sample.
+> ⚠️ **STILL A LOW-REACH WEEK — READ THIS FIRST.** X reach remains tiny (19–115 impressions/post, 1,148 total, median 42). Engagement is 0–3 actions per post. Theme/hook ER deltas are second-order noise on these denominators. **The bottleneck is still distribution/reach on X, not theme selection.** Reach did grow ~4x vs last week (1,148 vs 289 total impressions) — partly more posts (24 vs 12), partly bigger top posts (115/103/101 views). Apply biases below as gentle leans only.
 
-### Top-performing themes (use more — LOW confidence, n≈1–2 each)
-1. Tool vs Workflow — avg ER ~8.9% | posts X-2 (8.70%), X-4 (9.09%)
-2. Operating System — avg ER ~8.2% | posts X-1 (7.69%), X-2 (8.70%)
-3. Knowledge Loop — avg ER ~7.1% | posts X-4 (9.09%), X-11 (5.13%)
+> 🔁 **BIGGEST REAL SIGNAL THIS WEEK: EN overtook TH.** EN 2.46% / TH 1.38% (12 vs 12 posts), and all three top-reach posts were EN (115, 103, 101 views). This reverses last week's slight TH edge. Direction is consistent across the full EN set, so treat as a soft real signal, not pure noise: English news-reaction posts are currently pulling more reach on X.
+
+### Top-performing themes (use more — LOW/MED confidence)
+1. Tool vs Workflow — avg ER 3.16% (n=4) | best: Cloudflare MiniMax gateway 4.92%, Vercel Conductor 3.92%. Consistent top theme 2 weeks running.
+2. Operating System — avg ER 3.02% (n=3) | best: "company memory ที่ไหน" 5.13%, JetBrains Mellum2 3.92%. Also top-3 last week.
+3. Authority vs Volume — 5.26% (n=1) | "AI content ราคาถูกลง authority". Single post, high ER but tiny reach (19) — watch, don't over-weight.
 
 ### Top-performing hook patterns (use more — LOW confidence)
-1. Direct Address — 9.09% | example X-4 (n=1)
-2. Question Swap — avg 6.9% | examples X-2 (8.70%), X-11 (5.13%) (n=2)
-3. Contrarian Claim — 7.69% | example X-1 (n=1)
+1. Question Swap — avg 2.17% (n=7) — reliable workhorse, highest-volume winning hook.
+2. Contrarian Claim — avg 1.96% (n=9) — the default hook this week; steady, not spiky.
+3. Hidden Feature — 3.92% (n=1) — only one post, promising, needs more samples.
 
 ### Underperforming patterns (deprioritize — LOW confidence)
-- Shock Stat hook — 0% on both posts that used it (X-5, X-12), n=2
-- Governance + Shock Stat combo — the two known 0-ER posts (X-5, X-12) share this combo. Note: Permission Design alone is NOT a flag (it also appears in top post X-1).
+- Knowledge Loop theme — 0% across 3 posts (100 views, 0 eng) this week. Was a top-3 theme LAST week → likely noise/reversal, but stop over-indexing on it.
+- Human Skills theme — 0% (n=1, 54 views). One data point.
+- Governance theme — heavy volume (n=6) but low (1.45% avg). Over-produced relative to payoff; trim the count, not the theme.
+- Comparison + Direct Address hooks — 0% but n=1 each; ignore as noise.
 
 ### Format winners
-- **LinkedIn:** only 1 LI post fired (2026-05-24 "$200/month agent"); metrics unavailable this run — no read.
-- **X singles:** all 12 X posts were singles. ER 2.55% avg on micro-reach.
-- **X threads:** none ran this week — no data. Recommend running 1 thread next week to start a baseline.
-- **EN vs TH:** TH 2.97% (simple) vs EN 2.14%. TH edges EN, but on tiny denominators — noise.
+- **LinkedIn:** 5 LI posts fired (strong cadence) but metrics unavailable this run — fix the Apify LI actor input or add an owner-login impressions pull. No read again this week.
+- **X singles:** 23 singles, ER ~1.9% on micro-reach.
+- **X threads:** 1 thread ran ("Five questions every CEO", head = 115 views/2.61%). ⚠️ Thread TAILS died — 4/5 and 5/5 tweets got only 12–13 views vs 115 on the head. Thread format is leaking reach on the tail. Either tighten threads to 2–3 tweets or keep value front-loaded in the head.
+- **EN vs TH:** EN 2.46% > TH 1.38%. EN carrying reach this week (see signal box).
 
 ### Source folder winners
-- **Oracle** (hourly shortform) sourced 3 of the 4 engaged posts (X-1, X-2, X-11), avg ER ~7.2% on its winners.
-- **Signal** mixed: sourced one winner (X-4, 9.09%) but also both 0-ER posts (X-5, X-12).
-- Soft lean: Oracle slightly ahead this week.
+- **Signal** 2.16% (n=8) edged **Oracle** 1.80% (n=16) this week — reverses last week's Oracle lean. Signal sourced the top-reach EN posts (DeepMind Co-Scientist 101v, the CEO thread head 115v). Both folders are within noise; lean Signal very slightly.
 
 ### Posting time observations (recency-caveated)
-- **Best day:** Friday 2026-05-29 — aggregate ER 6.74% (all 4 engaged posts landed Friday).
-- **Worst day:** Saturday 2026-05-30 — 0% across all 4 posts.
-- **Sunday 2026-05-31** ER is depressed partly by **recency** (posts still accumulating impressions at scrape time; X-12 had only ~9h and 8 impressions). Do not read Sunday as a quality signal.
-- Best individual slots: Fri 02:00, 06:00, 14:00.
+- **Best day:** Sunday 2026-06-07 — ER 2.85% (4 posts, 216 views).
+- **Worst day:** Friday 2026-06-12 — ER 1.25%, BUT Friday holds the freshest posts (still accumulating at scrape time) plus the dead thread tails. Recency-depressed, not a quality signal.
+- Midweek (Mon–Wed) steady ~2%. Best individual reach landed Sun 14:00 and Fri 14:00 (EN posts).
 
 ### Scoring bias for next week (applied by daily 2 AM task — GENTLE, low confidence)
-- **Boost themes (+soft):** Tool vs Workflow, Operating System, Knowledge Loop
-- **Cut themes:** none hard. Watch the Shock-Stat × Governance combo only.
-- **Boost hooks (+soft):** Question Swap, Direct Address, Contrarian Claim
-- **Cut hooks (−soft):** Shock Stat
-- **Format adjustment:** keep X singles; ADD 1 X thread next week to begin a thread baseline (0 ran this week). Keep 1 LinkedIn/week but fix the metrics pull.
-- **Source weighting:** lean Oracle (hourly shortform) slightly over Signal.
-- **Overarching priority (strategy flag, not a scoring bias):** reach is the constraint. Theme/hook tuning is second-order until X distribution grows. Next week's real lever is reach: posting consistency, reply engagement, threads, cross-channel pull — not theme mining.
+- **Boost themes (+soft):** Tool vs Workflow, Operating System. (These are now 2-week-consistent winners.)
+- **Cut themes (−soft):** trim Governance volume (over-produced, n=6, low payoff). No hard cuts.
+- **Boost hooks (+soft):** Question Swap, Contrarian Claim.
+- **Cut hooks:** none hard. Comparison/Direct Address inconclusive (n=1).
+- **Language mix:** shift toward EN slightly — bump EN ratio to ~55–60% on X next week and re-test, since EN is pulling reach. Keep TH strong on LinkedIn (Jedi's TH LI posts are long-form authority and likely his real conversion engine even if unmeasured).
+- **Format adjustment:** keep X singles dominant; keep ~1 thread/week BUT cap at 2–3 tweets and front-load the payoff (tails are invisible). Keep 5 LinkedIn/week — cadence is good.
+- **Source weighting:** Signal ≈ Oracle; lean Signal a hair.
+- **Overarching priority (strategy flag, not a scoring bias):** REACH is still the #1 constraint. Total X impressions are ~1.1k/week. Until distribution grows, theme/hook mining is second-order. Real levers: the EN reach advantage, reply/engagement activity, cross-channel pull from LinkedIn/IG to X, and getting LinkedIn metrics measurable.
 
 ---
 
@@ -91,6 +93,17 @@ When the daily mining task scores candidate posts, apply these biases (default =
 ## HISTORICAL ARCHIVE
 
 *Each week's snapshot appended below by the self-improve loop. Latest at top.*
+
+### Week of 2026-05-24 to 2026-05-31
+- **Posts:** 12 X + 1 LinkedIn. Published 13, failed 0. Metrics: X full, LI unavailable.
+- **Avg ER:** X 2.55% simple / 2.77% weighted. Reach tiny (289 total impressions, 8–39/post). Only 4/12 posts drew engagement.
+- **Top themes (low conf):** Tool vs Workflow (~8.9%), Operating System (~8.2%), Knowledge Loop (~7.1%).
+- **Top hooks:** Direct Address (9.09%, n=1), Question Swap (~6.9%), Contrarian Claim (7.69%, n=1).
+- **Underperformers:** Shock Stat hook (0% on 2 posts), Governance×Shock-Stat combo.
+- **EN vs TH:** TH 2.97% > EN 2.14% (edge, noise). **→ reversed the next week (EN took the lead).**
+- **Source:** Oracle slightly ahead of Signal. **→ also reversed next week (Signal edged Oracle).**
+- **Format:** all singles; 0 threads (recommended starting a thread baseline → done in 06-07 week).
+- **Verdict:** reach is the constraint; theme/hook deltas = noise. Same conclusion held in the 06-07 week.
 
 ### Week of pre-2026-05-24 (pre-loop)
 *No snapshot — CURRENT WEEK PATTERNS was an empty placeholder before the first self-improve run. The week of 2026-05-24 → 05-31 is the first real data capture.*
