@@ -1,8 +1,0 @@
-# 2026-06-05 14:07 BKK — Signal X high-signal scan
-
-- Method: checked current Bangkok time; tailed same-day Signal Morning Brief / High-Signal Watch / X note context; authenticated `xurl --app jet-x whoami` succeeded but all 27 per-account searches returned JSON CreditsDepleted, so used Nitter RSS curated-account fallback.
-- Candidate set: 180 Nitter items, 94 recent items from OpenAI/OpenAIDevs/ChatGPTapp/AnthropicAI/GoogleCloudTech/GoogleCloud/xAI/NVIDIAAI/nvidia/Vercel/CloudflareDev/Cursor/Replit/Databricks/HuggingFace/AWS/Perplexity/GoogleForEdu/etc.
-- Dedupe: same-day notes already covered many dominant clusters, but this job requested a useful `10 key news + sources` digest, so repeats were allowed when source-grounded and current; weak commentary/event posts were suppressed.
-- Final selected clusters: ChatGPT memory; OpenAI moderation scores; Anthropic self-improvement/coding-productivity signal; NVIDIA Nemotron 3 Ultra; NVIDIA Cosmos 3; xAI/Grok model-router availability on Cloudflare/Vercel; Cursor canvases; Runway Aleph 2.0/Edit Studio; Replit plus Shopify; Databricks Unity Catalog open APIs.
-- Verification highlights: OpenAI RSS verified ChatGPT memory when direct OpenAI page 403ed; OpenAI Developers docs verified moderation; NVIDIA Technical Blog and Newsroom verified Nemotron/Cosmos; Vercel `/v1/models` verified exact Nemotron and Grok Imagine IDs; Cloudflare AI Gateway docs verified xAI/Grok provider routing; Cursor/Replit/Databricks/Google Blog pages were fetchable; Runway official page intermittently returned 500, so final uses official X plus known official research page.
-- Final delivery kept Telegram simple: `## Signal — 10 Key AI News`, one line per item, no storage paths.

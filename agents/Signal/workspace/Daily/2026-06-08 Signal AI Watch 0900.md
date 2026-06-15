@@ -1,5 +1,0 @@
-
-## Simple AI news watch - 2026-06-08 09:00 BKK
-- Method: checked Bangkok date, confirmed Blogwatcher feeds are mostly off-topic, pulled official RSS/sitemaps/Google News RSS for OpenAI, Anthropic, Google/DeepMind, Microsoft/GitHub, NVIDIA, AWS, Hugging Face, Cursor, Databricks and related agent/security sources. Used session/local same-day notes to suppress exact repeats from 06:29 X digest and prior 2026-06-07 scans.
-- Final Telegram selection favored under-covered official/source-rich operator items: NVIDIA/NAVER AI factory expansion; NHS England Microsoft 365 Copilot rollout; OpenAI Dreaming ChatGPT memory; Anthropic Claude Partner Network Services Track; Anthropic Project Glasswing expansion; Anthropic AI-enabled cyber threats mapped to MITRE ATT&CK; GitHub enterprise-managed Copilot plugins in VS Code; GitHub Copilot 1M context and reasoning controls; Cursor Teams pricing/spend controls; Databricks Instructed-Retriever-1 3x faster search.
-- Notion/backfill: skipped for speed; local Daily note only.
