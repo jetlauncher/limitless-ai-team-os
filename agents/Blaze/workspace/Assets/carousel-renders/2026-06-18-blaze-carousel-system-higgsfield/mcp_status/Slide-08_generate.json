@@ -1,0 +1,27 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "Submitted 1 job. If a widget is visible, it polls automatically — do not call job_status or show_generations as a follow-up poll. In text-only clients, use job_status with sync:true to poll for completion.\n- 59ffb44d-54c9-4dae-873f-6b2e924b800e  \"Create ONE premium Instagram carousel slide in 4:5 portrait.\nStyle: Midnight Luxe Editorial for Limitless Club: black/charcoal graphite background, warm ivory + subtle bronze/silver accents, beautiful editorial typography, high negative space, subtle gridlines/crosshair/system marks. No photos of people. Luxurious founder-media, strategic, clean, not hypey.\nUse Thai-safe typography. Make the exact Thai/English text readable and accurate.\n\nHeader text: LIMITLESS CLUB\nSmall system label: PRE-FLIGHT\nMain headline text exactly:\nก่อนโพสต์\nเช็ก 6 ข้อนี้\nSupporting text exactly:\nCover หยุดนิ้วไหม?\nSlide 2 ทำให้อยากอ่านต่อไหม?\nแต่ละสไลด์แคปเดี่ยวได้ไหม?\nมีสไลด์ที่ควรเซฟไหม?\nหนึ่งสไลด์มีหนึ่ง idea ไหม?\nCaption มี CTA ชัดไหม?\nSmall tag text: OPERATING CHECKLIST\nFooter handle: @jeditrinupab\nSlide number: 08 / 10\n\nDo not add other words, fake logos, watermarks, extra random Thai/English text, or misspell Thai. Keep text inside safe margins.\"",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structuredContent": {
+    "results": [
+      {
+        "id": "59ffb44d-54c9-4dae-873f-6b2e924b800e",
+        "type": "image",
+        "status": "pending",
+        "model": "nano_banana_2",
+        "params": {
+          "prompt": "Create ONE premium Instagram carousel slide in 4:5 portrait.\nStyle: Midnight Luxe Editorial for Limitless Club: black/charcoal graphite background, warm ivory + subtle bronze/silver accents, beautiful editorial typography, high negative space, subtle gridlines/crosshair/system marks. No photos of people. Luxurious founder-media, strategic, clean, not hypey.\nUse Thai-safe typography. Make the exact Thai/English text readable and accurate.\n\nHeader text: LIMITLESS CLUB\nSmall system label: PRE-FLIGHT\nMain headline text exactly:\nก่อนโพสต์\nเช็ก 6 ข้อนี้\nSupporting text exactly:\nCover หยุดนิ้วไหม?\nSlide 2 ทำให้อยากอ่านต่อไหม?\nแต่ละสไลด์แคปเดี่ยวได้ไหม?\nมีสไลด์ที่ควรเซฟไหม?\nหนึ่งสไลด์มีหนึ่ง idea ไหม?\nCaption มี CTA ชัดไหม?\nSmall tag text: OPERATING CHECKLIST\nFooter handle: @jeditrinupab\nSlide number: 08 / 10\n\nDo not add other words, fake logos, watermarks, extra random Thai/English text, or misspell Thai. Keep text inside safe margins.",
+          "aspect_ratio": "4:5",
+          "resolution": "2k"
+        }
+      }
+    ]
+  },
+  "isError": false
+}
