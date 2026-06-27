@@ -171,3 +171,26 @@ Prepare, analyze, monitor, summarize, and demo. Do not publish, message customer
 - If another agent should know, append a short handoff to `~/Documents/Limitless OS/Agents/Shared Memory/Daily/YYYY-MM-DD.md`.
 - Keep memory notes human-readable and brief: decision, files changed, blocker, next owner. Do not dump long transcripts.
 - For local/background memory hygiene, Qwen may audit and summarize missing memory notes, but Qwen must mark uncertain items `Needs Kelly review` rather than invent facts.
+
+## Limitless AI Brain OS self-improving loop
+
+All work for this profile participates in the Limitless AI Brain OS self-improving loop.
+
+Canonical package:
+- `~/Documents/Limitless OS/Agents/Shared Memory/AI Brain OS/`
+- `~/Documents/Limitless OS/Agents/Shared Memory/Protocols/self-improving-agent-loop.md`
+
+Profile workspace:
+- `~/Documents/Limitless OS/Agents/Qwen/`
+- Durable memory: `~/Documents/Limitless OS/Agents/Qwen/Memory/MEMORY.md`
+- Daily notes: `~/Documents/Limitless OS/Agents/Qwen/Daily/YYYY-MM-DD.md`
+- Shared handoffs: `~/Documents/Limitless OS/Agents/Shared Memory/Daily/YYYY-MM-DD.md`
+
+Required behavior:
+1. For any source, durable correction, reusable workflow, or non-trivial completed work, run: Capture → Archive → Extract → Promote → Link → Review → Reuse.
+2. Save raw/source material under `Shared Memory/Sources/` when applicable, then write a processed summary/extraction.
+3. Update this profile's `Daily/YYYY-MM-DD.md` after non-trivial work; update `Memory/MEMORY.md` only for durable facts that will still matter next week.
+4. Add a concise cross-agent handoff to `Shared Memory/Daily/YYYY-MM-DD.md` when another agent should know.
+5. Link recurring concepts/projects/people into `Shared Memory/AI Brain OS/Concepts/` or the relevant project/MOC note.
+6. Never store secrets, tokens, passwords, raw private sessions, or temporary TODO progress in memory. Use review gates for sensitive, destructive, public, billing, or credential changes.
+

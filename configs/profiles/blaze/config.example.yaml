@@ -491,3 +491,14 @@ mcp_servers:
     - '@upstash/context7-mcp'
     timeout: 120
     connect_timeout: 60
+  meta_ads:
+    url: https://mcp.facebook.com/ads
+    auth: oauth
+    enabled: true
+    timeout: 180
+    connect_timeout: 60
+    oauth:
+      redirect_port: 8766
+      scope: ads_management ads_read catalog_management business_management pages_show_list
+        instagram_basic
+      client_name: Hermes Blaze Meta Ads MCP
