@@ -626,7 +626,7 @@ paste_collapse_threshold_fallback: 5
 paste_collapse_char_threshold: 2000
 computer_use:
   cua_telemetry: false
-_config_version: 31
+_config_version: 32
 api_server:
   model: qwen2.5:3b
   provider: custom:local-qwen3.6-(ollama)
