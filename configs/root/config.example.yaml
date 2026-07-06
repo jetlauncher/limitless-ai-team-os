@@ -1,6 +1,6 @@
 model:
-  default: z-ai/glm-5.2
-  provider: custom:openrouter-glm-5.2
+  default: gpt-5.5
+  provider: openai-codex
 fallback_providers:
   - model: anthropic/claude-opus-4.8
     provider: anthropic
