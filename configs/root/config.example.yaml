@@ -1,11 +1,10 @@
 model:
-  default: gpt-5.5
-  provider: openai-codex
+  default: anthropic/claude-sonnet-5
+  provider: custom:nous-qwen3.6-plus
+  context_length: 262144
 fallback_providers:
-  - model: anthropic/claude-opus-4.8
-    provider: anthropic
-  - model: qwen3.6:35b
-    provider: custom:local-qwen3.6-(ollama)
+  - provider: custom:Local Qwen3.6 (Ollama)
+    model: qwen3.6:35b
 toolsets:
   - hermes-cli
 agent:
@@ -647,26 +646,6 @@ custom_providers:
     context_length: 262144
     default_model: qwen/qwen3.6-plus
     model: qwen/qwen3.6-plus
-    models:
-      minimax/minimax-m2.7:
-        context_length: 262144
-      nousresearch/hermes-4-405b:
-        context_length: 131072
-      nousresearch/hermes-4-70b:
-        context_length: 131072
-      qwen/qwen3.6-35b-a3b:
-        context_length: 131072
-      qwen/qwen3.6-max-preview:
-        context_length: 262144
-      qwen/qwen3.6-plus:
-        context_length: 262144
-    name: Nous API
-  - api_key_env: NOUS_API_KEY
-    api_mode: chat_completions
-    base_url: https://inference-api.nousresearch.com/v1
-    context_length: 262144
-    default_model: qwen/qwen3.6-plus
-    model: qwen/qwen3.6-plus
     name: Nous Qwen3.6 Plus
   - api_key_env: OPENROUTER_API_KEY
     api_mode: chat_completions
@@ -680,6 +659,24 @@ custom_providers:
       z-ai/glm-5.2:
         context_length: 1048576
     name: OpenRouter GLM 5.2
+  - name: Nous API
+    base_url: https://inference-api.nousresearch.com/v1
+    api_key_env: NOUS_API_KEY
+    api_mode: chat_completions
+    default_model: qwen/qwen3.6-plus
+    model: qwen/qwen3.6-plus
+    context_length: 262144
+    models:
+      qwen/qwen3.6-plus:
+        context_length: 262144
+      qwen/qwen3.6-max-preview:
+        context_length: 262144
+      nousresearch/hermes-4-405b:
+        context_length: 131072
+      nousresearch/hermes-4-70b:
+        context_length: 131072
+      minimax/minimax-m2.7:
+        context_length: 262144
 group_sessions_per_user: true
 image_gen:
   openai-codex:

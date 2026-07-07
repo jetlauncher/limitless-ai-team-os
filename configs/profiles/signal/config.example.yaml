@@ -1,11 +1,10 @@
 model:
-  default: gpt-5.5
-  provider: openai-codex
+  default: qwen/qwen3.6-plus
+  provider: custom:Nous API
+  context_length: 262144
 providers: {}
 fallback_providers:
-- provider: anthropic
-  model: anthropic/claude-opus-4.8
-- provider: custom:local-qwen3.6-(ollama)
+- provider: custom:Local Qwen3.6 (Ollama)
   model: qwen3.6:35b
 credential_pool_strategies: {}
 toolsets:
@@ -483,26 +482,6 @@ custom_providers:
   models:
     qwen3.6:35b:
       context_length: 131072
-- name: Nous API
-  base_url: https://inference-api.nousresearch.com/v1
-  api_key_env: NOUS_API_KEY
-  api_mode: chat_completions
-  model: qwen/qwen3.6-plus
-  default_model: qwen/qwen3.6-plus
-  context_length: 262144
-  models:
-    qwen/qwen3.6-plus:
-      context_length: 262144
-    qwen/qwen3.6-max-preview:
-      context_length: 262144
-    qwen/qwen3.6-35b-a3b:
-      context_length: 131072
-    minimax/minimax-m2.7:
-      context_length: 262144
-    nousresearch/hermes-4-405b:
-      context_length: 131072
-    nousresearch/hermes-4-70b:
-      context_length: 131072
 - name: Nous Qwen3.6 Plus
   base_url: https://inference-api.nousresearch.com/v1
   api_key_env: NOUS_API_KEY
@@ -510,6 +489,24 @@ custom_providers:
   model: qwen/qwen3.6-plus
   default_model: qwen/qwen3.6-plus
   context_length: 262144
+- name: Nous API
+  base_url: https://inference-api.nousresearch.com/v1
+  api_key_env: NOUS_API_KEY
+  api_mode: chat_completions
+  default_model: qwen/qwen3.6-plus
+  model: qwen/qwen3.6-plus
+  context_length: 262144
+  models:
+    qwen/qwen3.6-plus:
+      context_length: 262144
+    qwen/qwen3.6-max-preview:
+      context_length: 262144
+    nousresearch/hermes-4-405b:
+      context_length: 131072
+    nousresearch/hermes-4-70b:
+      context_length: 131072
+    minimax/minimax-m2.7:
+      context_length: 262144
 mcp_servers:
   context7:
     command: npx
