@@ -1,16 +1,13 @@
 model:
   default: z-ai/glm-5.2
   provider: openrouter
-providers: {}
 fallback_providers:
-- provider: anthropic
-  model: anthropic/claude-opus-4.8
-- provider: custom:local-qwen3.6-(ollama)
-  model: qwen3.6:35b
-credential_pool_strategies: {}
+  - provider: anthropic
+    model: anthropic/claude-opus-4.8
+  - provider: custom:local-qwen3.6-(ollama)
+    model: qwen3.6:35b
 toolsets:
-- hermes-cli
-max_concurrent_sessions: null
+  - hermes-cli
 agent:
   max_turns: 90
   gateway_timeout: 1800
@@ -68,6 +65,7 @@ agent:
     hype: YOOO LET'S GOOOO!!! 🔥🔥🔥 I am SO PUMPED to help you today! Every question
       is AMAZING and we're gonna CRUSH IT together! This is gonna be LEGENDARY! ARE
       YOU READY?! LET'S DO THIS! 💪😤🚀
+  verify_on_stop: false
 terminal:
   backend: local
   modal_mode: auto
@@ -80,7 +78,6 @@ terminal:
   auto_source_bashrc: true
   docker_image: nikolaik/python-nodejs:python3.11-nodejs20
   docker_forward_env: []
-  docker_env: {}
   singularity_image: docker://nikolaik/python-nodejs:python3.11-nodejs20
   modal_image: nikolaik/python-nodejs:python3.11-nodejs20
   daytona_image: nikolaik/python-nodejs:python3.11-nodejs20
@@ -125,7 +122,6 @@ checkpoints:
   retention_days: 7
   delete_orphans: true
   min_interval_hours: 24
-context_file_max_chars: null
 file_read_max_chars: 100000
 mcp_discovery_timeout: 1.5
 tool_output:
@@ -161,7 +157,6 @@ kanban:
   worker_log_backup_count: 1
   orchestrator_profile: ''
   default_assignee: ''
-  max_in_progress_per_profile: null
   auto_decompose: true
   auto_decompose_per_tick: 3
   dispatch_stale_timeout_seconds: 14400
@@ -189,7 +184,6 @@ auxiliary:
     base_url: ''
     api_key: ''
     timeout: 120
-    extra_body: {}
     download_timeout: 30
   web_extract:
     provider: auto
@@ -197,42 +191,36 @@ auxiliary:
     base_url: ''
     api_key: ''
     timeout: 360
-    extra_body: {}
   compression:
     provider: auto
     model: ''
     base_url: ''
     api_key: ''
     timeout: 120
-    extra_body: {}
   skills_hub:
     provider: auto
     model: ''
     base_url: ''
     api_key: ''
     timeout: 30
-    extra_body: {}
   approval:
     provider: auto
     model: ''
     base_url: ''
     api_key: ''
     timeout: 30
-    extra_body: {}
   mcp:
     provider: auto
     model: ''
     base_url: ''
     api_key: ''
     timeout: 30
-    extra_body: {}
   title_generation:
     provider: auto
     model: ''
     base_url: ''
     api_key: ''
     timeout: 30
-    extra_body: {}
     language: ''
   tts_audio_tags:
     provider: auto
@@ -240,49 +228,42 @@ auxiliary:
     base_url: ''
     api_key: ''
     timeout: 30
-    extra_body: {}
   triage_specifier:
     provider: auto
     model: ''
     base_url: ''
     api_key: ''
     timeout: 120
-    extra_body: {}
   kanban_decomposer:
     provider: auto
     model: ''
     base_url: ''
     api_key: ''
     timeout: 180
-    extra_body: {}
   profile_describer:
     provider: auto
     model: ''
     base_url: ''
     api_key: ''
     timeout: 60
-    extra_body: {}
   curator:
     provider: auto
     model: ''
     base_url: ''
     api_key: ''
     timeout: 600
-    extra_body: {}
   monitor:
     provider: auto
     model: ''
     base_url: ''
     api_key: ''
     timeout: 60
-    extra_body: {}
   background_review:
     provider: auto
     model: ''
     base_url: ''
     api_key: ''
     timeout: 120
-    extra_body: {}
   session_search:
     provider: auto
     model: ''
@@ -335,7 +316,6 @@ display:
     last_lines: 2
   interim_assistant_messages: true
   tool_progress_command: false
-  tool_progress_overrides: {}
   tool_preview_length: 0
   tool_progress_grouping: accumulate
   reasoning_style: code
@@ -348,9 +328,9 @@ display:
   runtime_footer:
     enabled: false
     fields:
-    - model
-    - context_pct
-    - cwd
+      - model
+      - context_pct
+      - cwd
   copy_shortcut: auto
   pet:
     enabled: false
@@ -453,14 +433,13 @@ delegation:
   child_timeout_seconds: 600
   reasoning_effort: ''
   max_concurrent_children: 3
-  max_async_children: 3
   max_spawn_depth: 1
   orchestrator_enabled: true
   subagent_auto_approve: false
   default_toolsets:
-  - terminal
-  - file
-  - web
+    - terminal
+    - file
+    - web
 prefill_messages_file: ''
 goals:
   max_turns: 20
@@ -483,13 +462,11 @@ curator:
   backup:
     enabled: true
     keep: 5
-honcho: {}
 timezone: ''
 slack:
   require_mention: true
   free_response_channels: ''
   allowed_channels: ''
-  channel_prompts: {}
 discord:
   require_mention: true
   free_response_channels: ''
@@ -499,7 +476,6 @@ discord:
   history_backfill: true
   history_backfill_limit: 50
   reactions: true
-  channel_prompts: {}
   dm_role_auth_guild: ''
   server_actions: ''
   allow_any_attachment: false
@@ -513,15 +489,13 @@ discord:
     speech_gain: 1.0
     ack_enabled: true
     ack_phrases:
-    - Let me look into that.
-    - One moment.
-    - Checking on that now.
-    - Give me a sec.
-    - On it.
-whatsapp: {}
+      - Let me look into that.
+      - One moment.
+      - Checking on that now.
+      - Give me a sec.
+      - On it.
 telegram:
   reactions: false
-  channel_prompts: {}
   allowed_chats: ''
   extra:
     rich_messages: false
@@ -529,7 +503,6 @@ mattermost:
   require_mention: true
   free_response_channels: ''
   allowed_channels: ''
-  channel_prompts: {}
 matrix:
   require_mention: true
   free_response_rooms: ''
@@ -541,20 +514,16 @@ approvals:
   mcp_reload_confirm: true
   destructive_slash_confirm: true
 command_allowlist:
-- shell command via -c/-lc flag
-- recursive delete
-- stop/restart hermes gateway (kills running agents)
-- script execution via heredoc
-- delete in root path
-- script execution via -e/-c flag
-- SQL DROP
-- SQL TRUNCATE
-- hermes update (restarts gateway, kills running agents)
-quick_commands: {}
-platform_hints: {}
-hooks: {}
+  - shell command via -c/-lc flag
+  - recursive delete
+  - stop/restart hermes gateway (kills running agents)
+  - script execution via heredoc
+  - delete in root path
+  - script execution via -e/-c flag
+  - SQL DROP
+  - SQL TRUNCATE
+  - hermes update (restarts gateway, kills running agents)
 hooks_auto_accept: false
-personalities: {}
 security:
   allow_private_urls: false
   redact_secrets: true
@@ -576,7 +545,6 @@ cron:
     expected_audience: ''
     nas_jwks_url: ''
   wrap_response: true
-  max_parallel_jobs: null
 code_execution:
   mode: project
   timeout: 300
@@ -597,8 +565,7 @@ logging:
 model_catalog:
   enabled: true
   url: https://hermes-agent.nousresearch.com/docs/api/model-catalog.json
-  ttl_hours: 24
-  providers: {}
+  ttl_hours: 1
 network:
   force_ipv4: false
 gateway:
@@ -639,7 +606,6 @@ lsp:
   wait_mode: document
   wait_timeout: 5.0
   install_strategy: auto
-  servers: {}
 x_search:
   model: grok-4.20-reasoning
   timeout_seconds: 180
@@ -658,7 +624,7 @@ paste_collapse_threshold_fallback: 5
 paste_collapse_char_threshold: 2000
 computer_use:
   cua_telemetry: false
-_config_version: 22
+_config_version: 33
 session_reset:
   mode: both
   idle_minutes: 1440
@@ -666,65 +632,65 @@ session_reset:
 group_sessions_per_user: true
 platform_toolsets:
   cli:
-  - hermes-cli
+    - hermes-cli
   telegram:
-  - hermes-telegram
+    - hermes-telegram
   discord:
-  - hermes-discord
+    - hermes-discord
   whatsapp:
-  - hermes-whatsapp
+    - hermes-whatsapp
   slack:
-  - hermes-slack
+    - hermes-slack
   signal:
-  - hermes-signal
+    - hermes-signal
   homeassistant:
-  - hermes-homeassistant
+    - hermes-homeassistant
   qqbot:
-  - hermes-qqbot
+    - hermes-qqbot
 custom_providers:
-- name: Local Qwen3.6 (Ollama)
-  base_url: http://127.0.0.1:11434/v1
-  api_key: [REDACTED]
-  api_mode: chat_completions
-  model: qwen3.6:35b
-  default_model: qwen3.6:35b
-  context_length: 131072
-  models:
-    qwen3.6:35b:
-      context_length: 131072
-- name: Nous API
-  base_url: https://inference-api.nousresearch.com/v1
-  api_key_env: NOUS_API_KEY
-  api_mode: chat_completions
-  model: qwen/qwen3.6-plus
-  default_model: qwen/qwen3.6-plus
-  context_length: 262144
-  models:
-    qwen/qwen3.6-plus:
-      context_length: 262144
-    qwen/qwen3.6-max-preview:
-      context_length: 262144
-    qwen/qwen3.6-35b-a3b:
-      context_length: 131072
-    minimax/minimax-m2.7:
-      context_length: 262144
-    nousresearch/hermes-4-405b:
-      context_length: 131072
-    nousresearch/hermes-4-70b:
-      context_length: 131072
-- name: Nous Qwen3.6 Plus
-  base_url: https://inference-api.nousresearch.com/v1
-  api_key_env: NOUS_API_KEY
-  api_mode: chat_completions
-  model: qwen/qwen3.6-plus
-  default_model: qwen/qwen3.6-plus
-  context_length: 262144
+  - name: Local Qwen3.6 (Ollama)
+    base_url: http://127.0.0.1:11434/v1
+    api_key: [REDACTED]
+    api_mode: chat_completions
+    model: qwen3.6:35b
+    default_model: qwen3.6:35b
+    context_length: 131072
+    models:
+      qwen3.6:35b:
+        context_length: 131072
+  - name: Nous API
+    base_url: https://inference-api.nousresearch.com/v1
+    api_key_env: NOUS_API_KEY
+    api_mode: chat_completions
+    model: qwen/qwen3.6-plus
+    default_model: qwen/qwen3.6-plus
+    context_length: 262144
+    models:
+      qwen/qwen3.6-plus:
+        context_length: 262144
+      qwen/qwen3.6-max-preview:
+        context_length: 262144
+      qwen/qwen3.6-35b-a3b:
+        context_length: 131072
+      minimax/minimax-m2.7:
+        context_length: 262144
+      nousresearch/hermes-4-405b:
+        context_length: 131072
+      nousresearch/hermes-4-70b:
+        context_length: 131072
+  - name: Nous Qwen3.6 Plus
+    base_url: https://inference-api.nousresearch.com/v1
+    api_key_env: NOUS_API_KEY
+    api_mode: chat_completions
+    model: qwen/qwen3.6-plus
+    default_model: qwen/qwen3.6-plus
+    context_length: 262144
 mcp_servers:
   context7:
     command: npx
     args:
-    - -y
-    - '@upstash/context7-mcp'
+      - -y
+      - '@upstash/context7-mcp'
     timeout: 120
     connect_timeout: 60
   ahrefs:
@@ -740,15 +706,37 @@ moa:
     blog-team:
       enabled: true
       reference_models:
-      - provider: openrouter
-        model: z-ai/glm-5.2
-      - provider: openrouter
-        model: deepseek/deepseek-v4-pro
-      - provider: openai-codex
-        model: gpt-5.5
+        - provider: openrouter
+          model: z-ai/glm-5.2
+        - provider: openrouter
+          model: deepseek/deepseek-v4-pro
+        - provider: openai-codex
+          model: gpt-5.5
       aggregator:
         provider: openrouter
         model: anthropic/claude-sonnet-5
       reference_temperature: 0.6
       aggregator_temperature: 0.4
       max_tokens: 4096
+
+# ── Fallback Model ────────────────────────────────────────────────────
+# Automatic provider failover when primary is unavailable.
+# Uncomment and configure to enable. Triggers on rate limits (429),
+# overload (529), service errors (503), or connection failures.
+#
+# Supported providers:
+#   openrouter   (OPENROUTER_API_KEY)  — routes to any model
+#   openai-codex (OAuth — hermes auth) — OpenAI Codex
+#   nous         (OAuth — hermes auth) — Nous Portal
+#   zai          (ZAI_API_KEY)         — Z.AI / GLM
+#   kimi-coding  (KIMI_API_KEY)        — Kimi / Moonshot
+#   kimi-coding-cn (KIMI_CN_API_KEY)   — Kimi / Moonshot (China)
+#   minimax      (MINIMAX_API_KEY)     — MiniMax
+#   minimax-cn   (MINIMAX_CN_API_KEY)  — MiniMax (China)
+#   bedrock      (AWS IAM / boto3)     — AWS Bedrock (Converse API)
+#
+# For custom OpenAI-compatible endpoints, add base_url and key_env.
+#
+# fallback_model:
+#   provider: openrouter
+#   model: anthropic/claude-sonnet-4
