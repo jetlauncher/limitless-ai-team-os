@@ -1,0 +1,49 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "Job 1a7b6722-a2e9-45a7-8f21-5ca81fcf9d4d — completed\nhttps://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260618_020315_1a7b6722-a2e9-45a7-8f21-5ca81fcf9d4d.png",
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "1a7b6722-a2e9-45a7-8f21-5ca81fcf9d4d.png",
+      "title": null,
+      "uri": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260618_020315_1a7b6722-a2e9-45a7-8f21-5ca81fcf9d4d.png",
+      "description": "Create ONE premium Instagram carousel slide in 4:5 portrait.\nStyle: Midnight Luxe Editorial for Limitless Club: black/charcoal graphite background, warm ivory + subtle bronze/silver accents, beautiful editorial typography, high negative space, subtle gridlines/crosshair/system marks. No photos of people. Luxurious founder-media, strategic, clean, not hypey.\nUse Thai-safe typography. Make the exact Thai/English text readable and accurate.\n\nHeader text: LIMITLESS CLUB\nSmall system label: SAVE THIS\nMain headline text exactly:\nสไลด์ที่ต้องมี\nทุกครั้ง\nSupporting text exactly:\n1. Framework\n2. Checklist\n3. Prompt\n4. Decision lens\n5. ประโยคที่คนอยาก quote\nถ้าไม่มีสไลด์ที่ควรเซฟ\nโพสต์นั้นก็ยากที่จะถูกเซฟ\nSmall tag text: KEEPER SLIDE\nFooter handle: @jeditrinupab\nSlide number: 05 / 10\n\nDo not add other words, fake logos, watermarks, extra random Thai/English text, or misspell Thai. Keep text inside safe margins.",
+      "mimeType": "image/png",
+      "size": null,
+      "icons": null,
+      "annotations": null,
+      "meta": null,
+      "type": "resource_link"
+    }
+  ],
+  "structuredContent": {
+    "generation": {
+      "id": "1a7b6722-a2e9-45a7-8f21-5ca81fcf9d4d",
+      "type": "image",
+      "status": "completed",
+      "model": "nano_banana_2",
+      "params": {
+        "prompt": "Create ONE premium Instagram carousel slide in 4:5 portrait.\nStyle: Midnight Luxe Editorial for Limitless Club: black/charcoal graphite background, warm ivory + subtle bronze/silver accents, beautiful editorial typography, high negative space, subtle gridlines/crosshair/system marks. No photos of people. Luxurious founder-media, strategic, clean, not hypey.\nUse Thai-safe typography. Make the exact Thai/English text readable and accurate.\n\nHeader text: LIMITLESS CLUB\nSmall system label: SAVE THIS\nMain headline text exactly:\nสไลด์ที่ต้องมี\nทุกครั้ง\nSupporting text exactly:\n1. Framework\n2. Checklist\n3. Prompt\n4. Decision lens\n5. ประโยคที่คนอยาก quote\nถ้าไม่มีสไลด์ที่ควรเซฟ\nโพสต์นั้นก็ยากที่จะถูกเซฟ\nSmall tag text: KEEPER SLIDE\nFooter handle: @jeditrinupab\nSlide number: 05 / 10\n\nDo not add other words, fake logos, watermarks, extra random Thai/English text, or misspell Thai. Keep text inside safe margins.",
+        "aspect_ratio": "4:5",
+        "input_images": [],
+        "width": 1856,
+        "height": 2304,
+        "resolution": "2k",
+        "batch_size": 1,
+        "input_image": null,
+        "application": null,
+        "surface": null
+      },
+      "results": {
+        "rawUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260618_020315_1a7b6722-a2e9-45a7-8f21-5ca81fcf9d4d.png",
+        "minUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260618_020315_1a7b6722-a2e9-45a7-8f21-5ca81fcf9d4d_min.webp"
+      },
+      "createdAt": 1781748195.166162
+    }
+  },
+  "isError": false
+}
