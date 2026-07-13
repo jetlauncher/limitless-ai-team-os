@@ -24,4 +24,19 @@ Durable human-readable memory for Signal. Do not store secrets here.
 
 
 - 2026-05-23 watch note: Hugging Face feed surfaced NVIDIA Nemotron-Labs Diffusion (`https://huggingface.co/blog/nvidia/nemotron-labs-diffusion`) as a fresh official-source model/runtime item: 3B/8B/14B text diffusion models under NVIDIA Nemotron Open Model License, AR/diffusion/self-spec generation modes, self-spec reported ~865 tok/s on B200 (~4x AR baseline). Useful future framing: inference throughput/model-architecture option for operator cost/latency, not generic benchmark hype.
-- 2026-05-23 watch note: Databricks feed surfaced `Observability for any agent, anywhere` and open-source-model prompt caching; useful under-covered agent-ops sources when same-day briefs are saturated with Google/OpenAI/AWS.
+|- 2026-05-23 watch note: Databricks feed surfaced `Observability for any agent, anywhere` and open-source-model prompt caching; useful under-covered agent-ops sources when same-day briefs are saturated with Google/OpenAI/AWS.
+
+## Durable facts — Jul 13, 2026 (scan run)
+- **GPT-5.6 family GA (Jul 9):** Sol/Terra/Luna are now production models across ChatGPT, Codex, and OpenAI API. Sol: flagship multi-agent reasoning. Terra: daily ops at ~1/3 cost of Fable 5. Luna: cost-efficient baseline. Pricing tier mapping is the practical student hook.
+- **GPT-Live global (Jul 11):** AI voice interaction is now mainstream product feature for all ChatGPT users — doubled voice limits, no longer beta. Thai business use cases: customer service bots, meeting summaries, quick phone status check-ins.
+- **Post-training > pretraining economics** confirmed as industry-wide shift at frontier labs (Cursor 1.5 quantified disclosure, SpaceX/Cursor RL infrastructure deal, OpenAI o-series scaling curves). Moat is now in RL loop quality + task distribution, not base model size.
+- **Synthetic data becoming non-negotiable** for future training per Stanford AI Index 2026. Real human text approaching scarcity as bottleneck. Long-term implication: training data pipelines are the new competitive infrastructure.
+- **GPT-5.6 Sol Ultra:** First public demo of 64-subagent coordination achieving frontier reasoning (Cycle Double Cover Conjecture proof in <1hr). Framework for teaching agentic ops planning → execution → verification workflows.
+- **ARC-AGI-3 results persistently low** across all models (~7% for Sol at max reasoning). Novel/abstract reasoning remains the hardest frontier — not incremental benchmark gains.
+
+## Blocked tools (ongoing)
+- `xurl` credits depleted → HTTP 402
+- x_search Responses tool → HTTP 400  
+- `signal_x_training_context.py` not found at expected path
+- Nitter JS-blocked (historical blocker)
+- **Workaround:** web search provides adequate signal coverage for Thai business operator audience needs

@@ -71,3 +71,13 @@ Durable human-readable memory for Kelly/Hermes. Do not store secrets here.
 - 2026-07-09: Kelly's 2:00 AM cron built a local `Nightly Workflow Radar` dashboard under `Agents/Bolt/Builds/YYYY-MM-DD/notion-sync-triage-dashboard/` and a Bolt queue note. Use this pattern for future nightly runs: sync agent daily notes, choose one blocker, build a local artifact, verify, then report concisely.
 
 - Limitless Club AI Content Production System project path: `Shared Memory/AI Brain OS/Projects/Limitless Club AI Content Production System/`; operationalizes `agents.pdf` into Long-form Director, Short-form Agent, and Clipping Agent workflows.
+
+- Content positioning: Jet wants to talk only about what he has actually done; avoid generic/niche trend claims unless tied to his real workflows, agents, student cases, numbers, or implemented systems.
+
+- Current planning target: ฿1.5M/month revenue, framed as freedom-aligned rather than maximizing delivery load; avoid defaulting to older ฿2M/month assumption.
+
+## Jedi Personal Brand Strategy — active alignment
+- Canonical brand mission: empower builders to create without limits using AI as leverage so they win at business without losing family, faith, or soul.
+- Master filter for writing/building: does this move the reader/customer from trapped/body-bound/calendar-owned to free/limitless? If not, kill or reframe.
+- Content mix: AI-First Business 50%, Life Design & Leverage 30%, Leadership & Fatherhood 20%. Proof-led only: built/tested/done/taught/broken/measured/lived/student-client cases.
+- Sources: processed `{processed}`; project guide `{project}`.
