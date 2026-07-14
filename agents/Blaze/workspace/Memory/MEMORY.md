@@ -6,3 +6,17 @@
 - Mandatory memory-writing policy (shared): log session/task outcomes to `Daily/`, keep this `Memory/MEMORY.md` for durable facts only, and post cross-agent handoffs to `Agents/Shared Memory/Daily/<date>.md`. Shared protocol: `Agents/Shared Memory/Protocols/always-write-memory.md`.
 - Spiral CLI is connected for Jet’s writing workflow. Before generative writing/editing tasks, run `npx @every-env/spiral-cli@latest prime`; then use `write` for new prose, `personalize` for Jet-voice rewrites, and `humanize` for cleanup/AI-tell removal. Pairing codes are one-time and must not be stored.
 - Jet likes PP Neue Montreal; use it as a preferred Latin/English headline and UI font direction for premium visual work when license/font files are available. Pair with a Thai-safe font for Thai copy.
+
+## Brand Colors (confirmed)
+- Background: #17181A
+- Bronze accent: #94764A
+- Warm ivory text: #E2D7C8
+
+## Midnight Luxe Editorial system
+- For IG carousels: black/charcoal/graphite/white/silver palette, editorial serif headlines, clean sans supporting text, high negative space, subtle gridlines/crosshairs/system marks
+- Header "Limitless Club", CTA "@jeditrinupab"
+
+## Cross-platform display name alignment (recommended)
+- YouTube: "Jedi Trinupab | Limitless Club" (07-13 audit)
+- Instagram: "Jedi Trinupab | Limitless Club" (07-14 audit)
+- Both pending Jet approval

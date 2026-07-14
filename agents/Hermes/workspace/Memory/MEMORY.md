@@ -69,6 +69,7 @@ Durable human-readable memory for Kelly/Hermes. Do not store secrets here.
 
 ## Nightly workflow artifact pattern
 - 2026-07-09: Kelly's 2:00 AM cron built a local `Nightly Workflow Radar` dashboard under `Agents/Bolt/Builds/YYYY-MM-DD/notion-sync-triage-dashboard/` and a Bolt queue note. Use this pattern for future nightly runs: sync agent daily notes, choose one blocker, build a local artifact, verify, then report concisely.
+- 2026-07-14: Nightly cron built `Agents/Bolt/Builds/2026-07-14/nightly-agent-sync-dashboard/index.html`, a local HTML control-room page summarizing active profile daily-note sync status from `hermes profile list`; companion Bolt queue note lives under `Agents/Bolt/Queue/2026-07-14 - Nightly Workflow Build - nightly-agent-sync-dashboard.md`.
 
 - Limitless Club AI Content Production System project path: `Shared Memory/AI Brain OS/Projects/Limitless Club AI Content Production System/`; operationalizes `agents.pdf` into Long-form Director, Short-form Agent, and Clipping Agent workflows.
 

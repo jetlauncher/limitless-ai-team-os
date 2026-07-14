@@ -17,3 +17,9 @@ Durable human-readable memory for Kaijeaw. Do not store secrets here.
 - Source: /Users/ultrafriday/clawd/builds/limitless-club-website/client/public/blog/articles.json
 - Blotato API endpoint: https://backend.blotato.com/v2/posts — payload requires: post.content.text, post.content.mediaUrls[], post.content.platform, post.target.targetType, scheduledTime at root
 - Notion property types: Hook=title, Type=select, Stage=select, Channel=select, Topic Category=select, Priority=select, Heat=select, Hook Type=select, Urgency=select, Scheduled=date, Notes=rich_text, Related Long-form=rich_text, SEO Tags=rich_text, Target Length=rich_text (was select in old spec — now rich_text!)
+
+
+## Blotato/Notion payload format fixes (2026-07-14)
+- Blotato `accountId` must be at `post.accountId` level (root of post object)
+- Notion: use `POST /v1/pages` with `parent.database_id`, NOT `/v1/databases/{id}/pages`
+- Notion URL: `https://www.notion.so/{id_without_dashes}`
