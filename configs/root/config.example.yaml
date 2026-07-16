@@ -1,12 +1,12 @@
 model:
-  default: gpt-5.5
+  default: gpt-5.6
   provider: openai-codex
   context_length: 262144
 fallback_providers:
-- provider: custom:Local Qwen3.6 (Ollama)
-  model: qwen3.6:35b
+  - provider: custom:Local Qwen3.6 (Ollama)
+    model: qwen3.6:35b
 toolsets:
-- hermes-cli
+  - hermes-cli
 agent:
   max_turns: 90
   gateway_timeout: 1800
@@ -327,9 +327,9 @@ display:
   runtime_footer:
     enabled: false
     fields:
-    - model
-    - context_pct
-    - cwd
+      - model
+      - context_pct
+      - cwd
   copy_shortcut: auto
   pet:
     enabled: false
@@ -437,9 +437,9 @@ delegation:
   orchestrator_enabled: true
   subagent_auto_approve: false
   default_toolsets:
-  - terminal
-  - file
-  - web
+    - terminal
+    - file
+    - web
 prefill_messages_file: ''
 goals:
   max_turns: 20
@@ -489,11 +489,11 @@ discord:
     speech_gain: 1.0
     ack_enabled: true
     ack_phrases:
-    - Let me look into that.
-    - One moment.
-    - Checking on that now.
-    - Give me a sec.
-    - On it.
+      - Let me look into that.
+      - One moment.
+      - Checking on that now.
+      - Give me a sec.
+      - On it.
 telegram:
   reactions: false
   allowed_chats: ''
@@ -514,16 +514,16 @@ approvals:
   mcp_reload_confirm: true
   destructive_slash_confirm: false
 command_allowlist:
-- shell command via -c/-lc flag
-- stop/restart hermes gateway (kills running agents)
-- script execution via heredoc
-- script execution via -e/-c flag
-- git force push (rewrites remote history)
-- sudo with combined-flag privilege escalation
-- recursive delete
-- delete in root path
-- hermes update (restarts gateway, kills running agents)
-- overwrite system file via redirection
+  - shell command via -c/-lc flag
+  - stop/restart hermes gateway (kills running agents)
+  - script execution via heredoc
+  - script execution via -e/-c flag
+  - git force push (rewrites remote history)
+  - sudo with combined-flag privilege escalation
+  - recursive delete
+  - delete in root path
+  - hermes update (restarts gateway, kills running agents)
+  - overwrite system file via redirection
 hooks_auto_accept: false
 security:
   allow_private_urls: false
@@ -630,53 +630,53 @@ api_server:
   model: qwen2.5:3b
   provider: custom:local-qwen3.6-(ollama)
 custom_providers:
-- api_key: [REDACTED]
-  api_mode: chat_completions
-  base_url: http://127.0.0.1:11434/v1
-  context_length: 131072
-  default_model: qwen3.6:35b
-  model: qwen3.6:35b
-  models:
-    qwen3.6:35b:
-      context_length: 131072
-  name: Local Qwen3.6 (Ollama)
-- api_key_env: NOUS_API_KEY
-  api_mode: chat_completions
-  base_url: https://inference-api.nousresearch.com/v1
-  context_length: 262144
-  default_model: qwen/qwen3.6-plus
-  model: qwen/qwen3.6-plus
-  name: Nous Qwen3.6 Plus
-- api_key_env: OPENROUTER_API_KEY
-  api_mode: chat_completions
-  base_url: https://openrouter.ai/api/v1
-  context_length: 1048576
-  default_model: z-ai/glm-5.2
-  discover_models: false
-  key_env: OPENROUTER_API_KEY
-  model: z-ai/glm-5.2
-  models:
-    z-ai/glm-5.2:
-      context_length: 1048576
-  name: OpenRouter GLM 5.2
-- name: Nous API
-  base_url: https://inference-api.nousresearch.com/v1
-  api_key_env: NOUS_API_KEY
-  api_mode: chat_completions
-  default_model: qwen/qwen3.6-plus
-  model: qwen/qwen3.6-plus
-  context_length: 262144
-  models:
-    qwen/qwen3.6-plus:
-      context_length: 262144
-    qwen/qwen3.6-max-preview:
-      context_length: 262144
-    nousresearch/hermes-4-405b:
-      context_length: 131072
-    nousresearch/hermes-4-70b:
-      context_length: 131072
-    minimax/minimax-m2.7:
-      context_length: 262144
+  - api_key: [REDACTED]
+    api_mode: chat_completions
+    base_url: http://127.0.0.1:11434/v1
+    context_length: 131072
+    default_model: qwen3.6:35b
+    model: qwen3.6:35b
+    models:
+      qwen3.6:35b:
+        context_length: 131072
+    name: Local Qwen3.6 (Ollama)
+  - api_key_env: NOUS_API_KEY
+    api_mode: chat_completions
+    base_url: https://inference-api.nousresearch.com/v1
+    context_length: 262144
+    default_model: qwen/qwen3.6-plus
+    model: qwen/qwen3.6-plus
+    name: Nous Qwen3.6 Plus
+  - api_key_env: OPENROUTER_API_KEY
+    api_mode: chat_completions
+    base_url: https://openrouter.ai/api/v1
+    context_length: 1048576
+    default_model: z-ai/glm-5.2
+    discover_models: false
+    key_env: OPENROUTER_API_KEY
+    model: z-ai/glm-5.2
+    models:
+      z-ai/glm-5.2:
+        context_length: 1048576
+    name: OpenRouter GLM 5.2
+  - name: Nous API
+    base_url: https://inference-api.nousresearch.com/v1
+    api_key_env: NOUS_API_KEY
+    api_mode: chat_completions
+    default_model: qwen/qwen3.6-plus
+    model: qwen/qwen3.6-plus
+    context_length: 262144
+    models:
+      qwen/qwen3.6-plus:
+        context_length: 262144
+      qwen/qwen3.6-max-preview:
+        context_length: 262144
+      nousresearch/hermes-4-405b:
+        context_length: 131072
+      nousresearch/hermes-4-70b:
+        context_length: 131072
+      minimax/minimax-m2.7:
+        context_length: 262144
 group_sessions_per_user: true
 image_gen:
   openai-codex:
@@ -687,18 +687,18 @@ image_gen:
     resolution: 2k
 known_plugin_toolsets:
   cli:
-  - spotify
+    - spotify
 mcp_servers:
   context7:
     args:
-    - -y
-    - '@upstash/context7-mcp'
+      - -y
+      - '@upstash/context7-mcp'
     command: npx
     connect_timeout: 60
     timeout: 120
   cua-driver:
     args:
-    - mcp
+      - mcp
     command: /Users/ultrafriday/.local/bin/cua-driver
     connect_timeout: 60
     timeout: 120
@@ -717,53 +717,53 @@ mcp_servers:
   firecrawl:
     command: npx
     args:
-    - -y
-    - firecrawl-mcp
+      - -y
+      - firecrawl-mcp
     env:
       FIRECRAWL_API_KEY: [REDACTED]
     connect_timeout: 60
     timeout: 180
 platform_toolsets:
   cli:
-  - browser
-  - clarify
-  - code_execution
-  - computer_use
-  - cronjob
-  - delegation
-  - file
-  - image_gen
-  - kanban
-  - memory
-  - messaging
-  - session_search
-  - skills
-  - terminal
-  - todo
-  - tts
-  - video_gen
-  - vision
-  - web
-  - x_search
+    - browser
+    - clarify
+    - code_execution
+    - computer_use
+    - cronjob
+    - delegation
+    - file
+    - image_gen
+    - kanban
+    - memory
+    - messaging
+    - session_search
+    - skills
+    - terminal
+    - todo
+    - tts
+    - video_gen
+    - vision
+    - web
+    - x_search
   discord:
-  - hermes-discord
+    - hermes-discord
   homeassistant:
-  - hermes-homeassistant
+    - hermes-homeassistant
   qqbot:
-  - hermes-qqbot
+    - hermes-qqbot
   signal:
-  - hermes-signal
+    - hermes-signal
   slack:
-  - hermes-slack
+    - hermes-slack
   telegram:
-  - hermes-telegram
+    - hermes-telegram
   whatsapp:
-  - hermes-whatsapp
+    - hermes-whatsapp
 plugins:
   disabled: []
   enabled:
-  - google_meet
-  - image_gen/openai-codex
+    - google_meet
+    - image_gen/openai-codex
 session_reset:
   at_hour: 4
   idle_minutes: 1440

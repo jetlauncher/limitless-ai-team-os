@@ -7,11 +7,11 @@ model:
   context_length: 131072
 providers: {}
 fallback_providers:
-- provider: anthropic
-  model: anthropic/claude-opus-4.8
+  - provider: anthropic
+    model: anthropic/claude-opus-4.8
 credential_pool_strategies: {}
 toolsets:
-- hermes-cli
+  - hermes-cli
 agent:
   max_turns: 90
   gateway_timeout: 1800
@@ -259,9 +259,9 @@ display:
   runtime_footer:
     enabled: false
     fields:
-    - model
-    - context_pct
-    - cwd
+      - model
+      - context_pct
+      - cwd
   copy_shortcut: auto
   tool_progress: all
   background_process_notifications: all
@@ -339,9 +339,9 @@ delegation:
   orchestrator_enabled: true
   subagent_auto_approve: false
   default_toolsets:
-  - terminal
-  - file
-  - web
+    - terminal
+    - file
+    - web
 prefill_messages_file: ''
 goals:
   max_turns: 20
@@ -397,12 +397,12 @@ approvals:
   cron_mode: deny
   mcp_reload_confirm: true
 command_allowlist:
-- stop/restart hermes gateway (kills running agents)
-- delete in root path
-- script execution via -e/-c flag
-- recursive delete
-- script execution via heredoc
-- hermes update (restarts gateway, kills running agents)
+  - stop/restart hermes gateway (kills running agents)
+  - delete in root path
+  - script execution via -e/-c flag
+  - recursive delete
+  - script execution via heredoc
+  - hermes update (restarts gateway, kills running agents)
 quick_commands: {}
 hooks: {}
 hooks_auto_accept: false
@@ -448,6 +448,7 @@ sessions:
 onboarding:
   seen:
     busy_input_prompt: true
+    openclaw_residue_cleanup: true
 updates:
   pre_update_backup: false
   backup_keep: 5
@@ -461,37 +462,37 @@ streaming:
   enabled: false
 platform_toolsets:
   cli:
-  - hermes-cli
+    - hermes-cli
   telegram:
-  - hermes-telegram
+    - hermes-telegram
   discord:
-  - hermes-discord
+    - hermes-discord
   whatsapp:
-  - hermes-whatsapp
+    - hermes-whatsapp
   slack:
-  - hermes-slack
+    - hermes-slack
   signal:
-  - hermes-signal
+    - hermes-signal
   homeassistant:
-  - hermes-homeassistant
+    - hermes-homeassistant
   qqbot:
-  - hermes-qqbot
+    - hermes-qqbot
 custom_providers:
-- name: Local Qwen3.6 (Ollama)
-  base_url: http://127.0.0.1:11434/v1
-  api_key: [REDACTED]
-  api_mode: chat_completions
-  model: qwen3.6:35b
-  default_model: qwen3.6:35b
-  context_length: 131072
-  models:
-    qwen3.6:35b:
-      context_length: 131072
+  - name: Local Qwen3.6 (Ollama)
+    base_url: http://127.0.0.1:11434/v1
+    api_key: [REDACTED]
+    api_mode: chat_completions
+    model: qwen3.6:35b
+    default_model: qwen3.6:35b
+    context_length: 131072
+    models:
+      qwen3.6:35b:
+        context_length: 131072
 mcp_servers:
   context7:
     command: npx
     args:
-    - -y
-    - '@upstash/context7-mcp'
+      - -y
+      - '@upstash/context7-mcp'
     timeout: 120
     connect_timeout: 60
