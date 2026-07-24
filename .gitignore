@@ -6,6 +6,8 @@ logs/
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.coverage
+htmlcov/
 .venv/
 venv/
 *.sqlite
