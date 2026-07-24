@@ -457,13 +457,7 @@ approvals:
   cron_mode: deny
   mcp_reload_confirm: true
   destructive_slash_confirm: true
-command_allowlist:
-  - delete in root path
-  - stop/restart hermes gateway (kills running agents)
-  - hermes update (restarts gateway, kills running agents)
-  - execute_code
-  - recursive delete
-  - script execution via -e/-c flag
+command_allowlist: []
 quick_commands: {}
 hooks: {}
 hooks_auto_accept: false
@@ -474,7 +468,7 @@ security:
   tirith_enabled: true
   tirith_path: tirith
   tirith_timeout: 5
-  tirith_fail_open: true
+  tirith_fail_open: false
   website_blocklist:
     enabled: false
     domains: []
@@ -590,7 +584,7 @@ mcp_servers:
   higgsfield:
     url: https://mcp.higgsfield.ai/mcp
     headers:
-      Authorization: Bearer [REDACTED]
+      Authorization: Bearer ${YOUR_MCP_TOKEN}
     timeout: 180
     connect_timeout: 60
   context7:
@@ -603,7 +597,7 @@ mcp_servers:
 custom_providers:
   - name: Local Qwen3.6 (Ollama)
     base_url: http://127.0.0.1:11434/v1
-    api_key: [REDACTED]
+    api_key: ''
     api_mode: chat_completions
     model: qwen3.6:35b
     default_model: qwen3.6:35b

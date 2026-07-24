@@ -1,29 +1,16 @@
 #!/usr/bin/env python3
 """Refresh this repo from a live Hermes/Obsidian agent setup, with secret redaction."""
 from pathlib import Path
-import re, shutil, json, os, subprocess
+import shutil, json, os
+
+from sanitize_lib import harden_config, sanitize
+
 REPO = Path(__file__).resolve().parents[1]
 HOME = Path.home()
-SECRET_PATTERNS = [
-    (re.compile(r'\b\d{8,12}:[A-Za-z0-9_-]{30,}\b'), '[REDACTED_TELEGRAM_BOT_TOKEN]'),
-    (re.compile(r'\bgh[opsru]_[A-Za-z0-9_]{20,}\b'), '[REDACTED_GITHUB_TOKEN]'),
-    (re.compile(r'\bsk-[A-Za-z0-9_-]{20,}\b'), '[REDACTED_OPENAI_KEY]'),
-    (re.compile(r'\bsk-or-v1-[A-Za-z0-9_-]{20,}\b'), '[REDACTED_OPENROUTER_KEY]'),
-    (re.compile(r'\bntn_[A-Za-z0-9_-]{20,}\b'), '[REDACTED_NOTION_TOKEN]'),
-    (re.compile(r'\bsecret_[A-Za-z0-9_-]{20,}\b'), '[REDACTED_SECRET]'),
-    (re.compile(r'\bpat[A-Za-z0-9]{10,}\.[A-Za-z0-9]{10,}\b'), '[REDACTED_AIRTABLE_PAT]'),
-    (re.compile(r'Bearer\s+[A-Za-z0-9._-]{20,}', re.I), 'Bearer [REDACTED]'),
-    (re.compile(r'(api[_-]?key\s*[:=]\s*)([^\s\n\"\']+)', re.I), r'\1[REDACTED]'),
-    (re.compile(r'(token\s*[:=]\s*)([^\s\n\"\']+)', re.I), r'\1[REDACTED]'),
-    (re.compile(r'(password\s*[:=]\s*)([^\s\n\"\']+)', re.I), r'\1[REDACTED]'),
-]
-def sanitize(text:str)->str:
-    for pat,repl in SECRET_PATTERNS:
-        text=pat.sub(repl,text)
-    return text
 
-def write(rel, text):
-    p=REPO/rel; p.parent.mkdir(parents=True, exist_ok=True); p.write_text(sanitize(text), encoding='utf-8')
+def write(rel, text, config=False):
+    p=REPO/rel; p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(harden_config(text) if config else sanitize(text), encoding='utf-8')
 
 def safe_read(p):
     """Read text from path, returning None on iCloud/simulated file errors."""
@@ -32,8 +19,8 @@ def safe_read(p):
     except OSError:
         return None
 
-def copy_text(src, rel):
-    if src.exists(): write(rel, src.read_text(errors='ignore'))
+def copy_text(src, rel, config=False):
+    if src.exists(): write(rel, src.read_text(errors='ignore'), config=config)
 
 
 def rglob_safe(base_dir: Path):
@@ -63,10 +50,10 @@ for d in ['agents','configs']:
     p=REPO/d
     if p.exists(): shutil.rmtree(p)
 # configs
-copy_text(HOME/'.hermes/config.yaml','configs/root/config.example.yaml')
+copy_text(HOME/'.hermes/config.yaml','configs/root/config.example.yaml', config=True)
 for agent, prof in AGENTS.items():
     cfg=HOME/f'.hermes/profiles/{prof}/config.yaml'
-    if prof!='default': copy_text(cfg, f'configs/profiles/{prof}/config.example.yaml')
+    if prof!='default': copy_text(cfg, f'configs/profiles/{prof}/config.example.yaml', config=True)
     soul=HOME/('.hermes/SOUL.md' if prof=='default' else f'.hermes/profiles/{prof}/SOUL.md')
     copy_text(soul, f'agents/{agent}/SOUL.md')
     obs=HOME/f'Documents/Obsidian Vault/Agents/{agent}'

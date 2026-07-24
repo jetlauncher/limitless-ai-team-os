@@ -6,7 +6,7 @@ This guide helps a student clone the system and replace Jet's credentials with t
 
 - macOS or Linux
 - Git
-- Python 3.11+
+- Python 3.11+ with PyYAML (`pip install pyyaml`, needed by the export scripts)
 - Telegram account
 - GitHub account
 - Optional: Ollama for local models
@@ -14,9 +14,11 @@ This guide helps a student clone the system and replace Jet's credentials with t
 ## 2. Install Hermes Agent
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
-hermes doctor
+bash scripts/install-hermes.sh
 ```
+
+The script downloads the installer, prints its SHA-256 and asks for confirmation so you
+can review the code before it runs. Do not pipe `curl` straight into `bash`.
 
 ## 3. Clone this repository
 
@@ -41,6 +43,10 @@ Then edit:
 ```bash
 nano ~/.hermes/.env
 ```
+
+The example configs ship locked down: an empty `command_allowlist`, `approvals.mode:
+manual` and `security.tirith_fail_open: false`. Loosen them only for commands you are
+willing to have run without a prompt.
 
 ## 5. Required API keys
 
@@ -85,12 +91,17 @@ hermes profile create signal --clone-all
 hermes profile alias signal --name signal
 mkdir -p ~/.hermes/profiles/signal
 cp examples/env/profile.env.example ~/.hermes/profiles/signal/.env
+chmod 600 ~/.hermes/profiles/signal/.env
 nano ~/.hermes/profiles/signal/.env
 signal gateway start
 signal gateway status
 ```
 
 Use the matching SOUL file from `agents/<AgentName>/SOUL.md`.
+
+Before starting a gateway, set `telegram.allowed_chats` in that profile's `config.yaml`
+to your own Telegram chat IDs. The templates leave it empty, which lets anyone who finds
+the bot talk to your agent.
 
 ## 7. Set up Obsidian memory
 

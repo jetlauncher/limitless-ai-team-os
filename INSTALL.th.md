@@ -6,7 +6,7 @@
 
 - macOS หรือ Linux
 - Git
-- Python 3.11+
+- Python 3.11+ พร้อม PyYAML (`pip install pyyaml` สำหรับสคริปต์ export)
 - Telegram account
 - GitHub account
 - Optional: Ollama สำหรับ local model
@@ -14,9 +14,11 @@
 ## 2. ติดตั้ง Hermes Agent
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash
-hermes doctor
+bash scripts/install-hermes.sh
 ```
+
+สคริปต์จะดาวน์โหลด installer, แสดง SHA-256 และถามยืนยันก่อนรัน เพื่อให้ตรวจโค้ดได้ก่อน
+อย่า pipe `curl` เข้า `bash` ตรง ๆ
 
 ## 3. Clone repo
 
@@ -85,6 +87,7 @@ hermes profile create signal --clone-all
 hermes profile alias signal --name signal
 mkdir -p ~/.hermes/profiles/signal
 cp examples/env/profile.env.example ~/.hermes/profiles/signal/.env
+chmod 600 ~/.hermes/profiles/signal/.env
 nano ~/.hermes/profiles/signal/.env
 signal gateway start
 signal gateway status

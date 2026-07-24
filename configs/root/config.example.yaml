@@ -469,7 +469,7 @@ slack:
   allowed_channels: ''
 discord:
   require_mention: true
-  free_response_channels: 1506557603579166830,1507737897569091584,1506557626069028885,1506557630041161772,1506557634986377256,1506557639121702953,1506557642930258000,1506557651696226425,1506557647627747328,1506557655899050014
+  free_response_channels: ''
   allowed_channels: ''
   auto_thread: true
   thread_require_mention: false
@@ -508,22 +508,12 @@ matrix:
   free_response_rooms: ''
   allowed_rooms: ''
 approvals:
-  mode: smart
+  mode: manual
   timeout: 60
   cron_mode: deny
   mcp_reload_confirm: true
-  destructive_slash_confirm: false
-command_allowlist:
-  - shell command via -c/-lc flag
-  - stop/restart hermes gateway (kills running agents)
-  - script execution via heredoc
-  - script execution via -e/-c flag
-  - git force push (rewrites remote history)
-  - sudo with combined-flag privilege escalation
-  - recursive delete
-  - delete in root path
-  - hermes update (restarts gateway, kills running agents)
-  - overwrite system file via redirection
+  destructive_slash_confirm: true
+command_allowlist: []
 hooks_auto_accept: false
 security:
   allow_private_urls: false
@@ -531,7 +521,7 @@ security:
   tirith_enabled: true
   tirith_path: tirith
   tirith_timeout: 5
-  tirith_fail_open: true
+  tirith_fail_open: false
   website_blocklist:
     enabled: false
     domains: []
@@ -630,7 +620,7 @@ api_server:
   model: qwen2.5:3b
   provider: custom:local-qwen3.6-(ollama)
 custom_providers:
-  - api_key: [REDACTED]
+  - api_key: ''
     api_mode: chat_completions
     base_url: http://127.0.0.1:11434/v1
     context_length: 131072
@@ -720,7 +710,7 @@ mcp_servers:
       - -y
       - firecrawl-mcp
     env:
-      FIRECRAWL_API_KEY: [REDACTED]
+      FIRECRAWL_API_KEY: ${FIRECRAWL_API_KEY}
     connect_timeout: 60
     timeout: 180
 platform_toolsets:
