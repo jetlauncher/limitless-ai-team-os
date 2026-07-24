@@ -71,6 +71,8 @@ git commit && git push
 
 Students should not run the daily mirror job unless they understand what paths it reads and have reviewed the sanitizer.
 
+The redaction rules, agent/profile map and export path layout live in `scripts/agent_export_lib.py`, shared by both export scripts and the secret scanner.
+
 ## License
 
 Private educational/internal use unless Jet changes the repo visibility or licensing.
