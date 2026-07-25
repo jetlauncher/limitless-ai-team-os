@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
 """Refresh this repo from a live Hermes/Obsidian agent setup, with secret redaction."""
 from pathlib import Path
-import re, shutil, json, os, subprocess
+import re, shutil, json, os, subprocess, sys
 REPO = Path(__file__).resolve().parents[1]
 HOME = Path.home()
+
+failures = []
+
+
+def record_failure(message):
+    failures.append(message)
+    print(f'WARNING: {message}', file=sys.stderr)
 SECRET_PATTERNS = [
     (re.compile(r'\b\d{8,12}:[A-Za-z0-9_-]{30,}\b'), '[REDACTED_TELEGRAM_BOT_TOKEN]'),
     (re.compile(r'\bgh[opsru]_[A-Za-z0-9_]{20,}\b'), '[REDACTED_GITHUB_TOKEN]'),
@@ -29,23 +36,29 @@ def safe_read(p):
     """Read text from path, returning None on iCloud/simulated file errors."""
     try:
         return p.read_text(errors='ignore')
-    except OSError:
+    except OSError as exc:
+        record_failure(f'could not read {p}: {exc}')
         return None
 
 def copy_text(src, rel):
-    if src.exists(): write(rel, src.read_text(errors='ignore'))
+    if not src.exists():
+        return
+    txt = safe_read(src)
+    if txt is None:
+        return
+    write(rel, txt)
 
 
 def rglob_safe(base_dir: Path):
-    """Walk directory tree, catching OSError on individual dirs (iCloud Content Drops, etc.)."""
+    """Walk directory tree, reporting OSError on individual dirs (iCloud Content Drops, etc.)."""
     results = []
-    for root, dirs, files in os.walk(base_dir):
-        # Skip problematic dirs silently
+    for root, dirs, files in os.walk(base_dir, onerror=lambda exc: record_failure(f'could not list {exc.filename}: {exc}')):
         for d in dirs[:]:
             dp = os.path.join(root, d)
             try:
-                os.scandir(dp)
-            except OSError:
+                os.scandir(dp).close()
+            except OSError as exc:
+                record_failure(f'skipping unreadable directory {dp}: {exc}')
                 dirs.remove(d)
         for fn in files:
             fp = os.path.join(root, fn)
@@ -53,8 +66,8 @@ def rglob_safe(base_dir: Path):
                 p = Path(fp)
                 if p.is_file():
                     results.append(p)
-            except OSError:
-                pass
+            except OSError as exc:
+                record_failure(f'could not stat {fp}: {exc}')
     return results
 
 
@@ -88,4 +101,11 @@ if shared.exists():
             if len(txt)>120000: txt=txt[:120000]+'\n\n[TRUNCATED FOR TEMPLATE REPO]\n'
             write(f'agents/Shared Memory/workspace/{rel}', txt)
 write('agent-registry.json', json.dumps({'repo':'limitless-ai-team-os','agents':[{'name':a,'profile':p} for a,p in AGENTS.items()]}, indent=2))
+
+if failures:
+    print(f'\nExport finished with {len(failures)} unreadable path(s):', file=sys.stderr)
+    for message in failures:
+        print(f' - {message}', file=sys.stderr)
+    sys.exit(1)
+
 print('Export complete:', REPO)

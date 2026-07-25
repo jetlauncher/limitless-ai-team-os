@@ -3,7 +3,7 @@
 import json, os, re, shutil, subprocess, sys, time
 from pathlib import Path
 
-REPO = Path('/Users/ultrafriday/Projects/limitless-ai-team-os').resolve()
+REPO = Path(os.environ.get('LIMITLESS_REPO', Path(__file__).resolve().parents[1])).resolve()
 HOME = Path.home()
 
 SECRET_PATTERNS = [
@@ -19,6 +19,21 @@ SECRET_PATTERNS = [
     (re.compile(r'(token\s*[:=]\s*)([^\s\n"]+)'), r'\1[REDACTED]'),
     (re.compile(r'(password\s*[:=]\s*)([^\s\n"]+)'), r'\1[REDACTED]'),
 ]
+
+READ_TIMEOUT_SECONDS = 30
+
+
+class FileReadError(Exception):
+    """A source file could not be read."""
+
+
+failures = []
+
+
+def record_failure(message):
+    failures.append(message)
+    print(f'WARNING: {message}', file=sys.stderr)
+
 
 def sanitize(text):
     for pat, repl in SECRET_PATTERNS:
@@ -36,19 +51,31 @@ def cat_file(path):
         result = subprocess.run(
             ['cat', str(path)],
             capture_output=True,
-            timeout=30,
+            timeout=READ_TIMEOUT_SECONDS,
             text=True,
             errors='ignore'
         )
-        return result.stdout
-    except subprocess.TimeoutExpired:
-        return ''
-    except Exception:
-        return ''
+    except subprocess.TimeoutExpired as exc:
+        raise FileReadError(f'timed out after {READ_TIMEOUT_SECONDS}s reading {path}') from exc
+    except OSError as exc:
+        raise FileReadError(f'could not run cat on {path}: {exc}') from exc
+    if result.returncode != 0:
+        detail = (result.stderr or '').strip() or f'exit code {result.returncode}'
+        raise FileReadError(f'cat failed for {path}: {detail}')
+    return result.stdout
+
+def walk_files(root):
+    """Yield files under root, reporting directories that cannot be listed."""
+    for dirpath, _dirnames, filenames in os.walk(
+        root, onerror=lambda exc: record_failure(f'could not list {exc.filename}: {exc}')
+    ):
+        for name in sorted(filenames):
+            yield Path(dirpath) / name
+
 
 def collect(root, exts, skip_names, skip_dirs):
     results = []
-    for f in sorted(root.rglob('*')):
+    for f in sorted(walk_files(root)):
         if not f.is_file():
             continue
         if f.suffix.lower() not in exts:
@@ -60,9 +87,11 @@ def collect(root, exts, skip_names, skip_dirs):
             continue
         if f.name.endswith('_state.json') or f.name == 'state.json':
             continue
-        txt = cat_file(f)
-        if not txt:
-            continue  # Skipped unreadable
+        try:
+            txt = cat_file(f)
+        except FileReadError as exc:
+            record_failure(str(exc))
+            continue
         if len(txt) > 120000:
             txt = txt[:120000] + '\n\n[TRUNCATED FOR TEMPLATE REPO]\n'
         results.append((f, txt))
@@ -76,13 +105,16 @@ skip_dirs = {'Content Archive', 'Generated Assets', 'node_modules'}
 for d in ['agents', 'configs']:
     p = REPO / d
     if p.exists():
-        shutil.rmtree(p, ignore_errors=True)
+        shutil.rmtree(p)
 
 # Root config
 config_dir = HOME / '.hermes/config.yaml'
 if config_dir.exists():
-    write('configs/root/config.example.yaml', cat_file(config_dir))
-    print(f'Exported configs/root/config.example.yaml')
+    try:
+        write('configs/root/config.example.yaml', cat_file(config_dir))
+        print(f'Exported configs/root/config.example.yaml')
+    except FileReadError as exc:
+        record_failure(str(exc))
 
 agents_map = {'Hermes':'default','Blaze':'blaze','Bolt':'bolt','Kaijeaw':'kaijeaw','Protocol':'protocol','Qwen':'qwen','Signal':'signal','Zegna':'zegna'}
 
@@ -91,15 +123,23 @@ total_exported = 0
 for agent, prof in agents_map.items():
     cfg = HOME / f'.hermes/profiles/{prof}/config.yaml'
     if prof != 'default' and cfg.exists():
-        write(f'configs/profiles/{prof}/config.example.yaml', cat_file(cfg))
-        print(f'Exported configs/profiles/{prof}/config.example.yaml')
-    
+        try:
+            write(f'configs/profiles/{prof}/config.example.yaml', cat_file(cfg))
+            print(f'Exported configs/profiles/{prof}/config.example.yaml')
+        except FileReadError as exc:
+            record_failure(str(exc))
+
     soul = HOME / ('.hermes/SOUL.md' if prof == 'default' else f'.hermes/profiles/{prof}/SOUL.md')
     if soul.exists():
-        write(f'agents/{agent}/SOUL.md', cat_file(soul))
-        total_exported += 1
-        print(f'Exported {agent}/SOUL.md ({len(cat_file(soul))} bytes)')
-    
+        try:
+            soul_text = cat_file(soul)
+        except FileReadError as exc:
+            record_failure(str(exc))
+        else:
+            write(f'agents/{agent}/SOUL.md', soul_text)
+            total_exported += 1
+            print(f'Exported {agent}/SOUL.md ({len(soul_text)} bytes)')
+
     obs = HOME / f'Documents/Obsidian Vault/Agents/{agent}'
     if obs.exists():
         files = collect(obs, exts, skip_names, skip_dirs)
@@ -127,4 +167,11 @@ write('agent-registry.json', json.dumps({
     'agents': [{'name': a, 'profile': p} for a, p in agents_map.items()]
 }, indent=2))
 print(f'\nTotal files exported: {total_exported}')
+
+if failures:
+    print(f'\nExport finished with {len(failures)} unreadable file(s):', file=sys.stderr)
+    for message in failures:
+        print(f' - {message}', file=sys.stderr)
+    sys.exit(1)
+
 print('Export complete.')
