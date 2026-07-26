@@ -1,0 +1,49 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "Job 1eeafbb0-7fda-4ec5-a23c-4ea695125513 — completed\nhttps://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260618_020219_1eeafbb0-7fda-4ec5-a23c-4ea695125513.png",
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "1eeafbb0-7fda-4ec5-a23c-4ea695125513.png",
+      "title": null,
+      "uri": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260618_020219_1eeafbb0-7fda-4ec5-a23c-4ea695125513.png",
+      "description": "Create ONE premium Instagram carousel slide in 4:5 portrait.\nStyle: Midnight Luxe Editorial for Limitless Club: black/charcoal graphite background, warm ivory + subtle bronze/silver accents, beautiful editorial typography, high negative space, subtle gridlines/crosshair/system marks. No photos of people. Luxurious founder-media, strategic, clean, not hypey.\nUse Thai-safe typography. Make the exact Thai/English text readable and accurate.\n\nHeader text: LIMITLESS CLUB\nSmall system label: SCREENSHOT TEST\nMain headline text exactly:\nทุกสไลด์ต้องอยู่รอด\nแม้ถูกแคปออกไปเดี่ยว ๆ\nSupporting text exactly:\nอย่าเขียนแบบต้องอ่านก่อนหน้า\nแต่ละสไลด์ควรมีหนึ่งความคิดที่จบในตัวเอง\nSmall tag text: ONE COMPLETE IDEA\nFooter handle: @jeditrinupab\nSlide number: 03 / 10\n\nDo not add other words, fake logos, watermarks, extra random Thai/English text, or misspell Thai. Keep text inside safe margins.",
+      "mimeType": "image/png",
+      "size": null,
+      "icons": null,
+      "annotations": null,
+      "meta": null,
+      "type": "resource_link"
+    }
+  ],
+  "structuredContent": {
+    "generation": {
+      "id": "1eeafbb0-7fda-4ec5-a23c-4ea695125513",
+      "type": "image",
+      "status": "completed",
+      "model": "nano_banana_2",
+      "params": {
+        "prompt": "Create ONE premium Instagram carousel slide in 4:5 portrait.\nStyle: Midnight Luxe Editorial for Limitless Club: black/charcoal graphite background, warm ivory + subtle bronze/silver accents, beautiful editorial typography, high negative space, subtle gridlines/crosshair/system marks. No photos of people. Luxurious founder-media, strategic, clean, not hypey.\nUse Thai-safe typography. Make the exact Thai/English text readable and accurate.\n\nHeader text: LIMITLESS CLUB\nSmall system label: SCREENSHOT TEST\nMain headline text exactly:\nทุกสไลด์ต้องอยู่รอด\nแม้ถูกแคปออกไปเดี่ยว ๆ\nSupporting text exactly:\nอย่าเขียนแบบต้องอ่านก่อนหน้า\nแต่ละสไลด์ควรมีหนึ่งความคิดที่จบในตัวเอง\nSmall tag text: ONE COMPLETE IDEA\nFooter handle: @jeditrinupab\nSlide number: 03 / 10\n\nDo not add other words, fake logos, watermarks, extra random Thai/English text, or misspell Thai. Keep text inside safe margins.",
+        "aspect_ratio": "4:5",
+        "input_images": [],
+        "width": 1856,
+        "height": 2304,
+        "resolution": "2k",
+        "batch_size": 1,
+        "input_image": null,
+        "application": null,
+        "surface": null
+      },
+      "results": {
+        "rawUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260618_020219_1eeafbb0-7fda-4ec5-a23c-4ea695125513.png",
+        "minUrl": "https://d8j0ntlcm91z4.cloudfront.net/user_342IL9bm4ppiGxNVyqrkLYO97a5/hf_20260618_020219_1eeafbb0-7fda-4ec5-a23c-4ea695125513_min.webp"
+      },
+      "createdAt": 1781748139.734287
+    }
+  },
+  "isError": false
+}

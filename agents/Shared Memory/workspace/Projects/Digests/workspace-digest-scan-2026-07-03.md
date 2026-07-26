@@ -1,0 +1,98 @@
+# Workspace Digest Scan - 2026-07-03
+
+Generated: 2026-07-03 06:45:57
+
+- Classified files/assets: **12950**
+- Changed/new since previous scan: **449**
+- Skipped risky/noisy entries: **170**
+- Revenue/Ops: **33**
+- Dashboard: **52**
+- Agent Protocol: **6698**
+- Teaching Asset: **165**
+- Content Asset: **158**
+- Code/App: **3940**
+- Archive: **69**
+- Unclassified: **1835**
+
+## Top changed/new files
+
+- **Revenue/Ops** — `~/.hermes/exports/airtable_snapshot_local.json` — 2026-07-03 06:45
+- **Revenue/Ops** — `~/.hermes/exports/airtable_snapshot.json` — 2026-07-03 06:45
+- **Agent Protocol** — `~/.hermes/profiles/blaze/gateway_state.json` — 2026-07-03 06:44
+- **Agent Protocol** — `~/.hermes/profiles/blaze/channel_directory.json` — 2026-07-03 06:44
+- **Unclassified** — `~/.hermes/limitless/hourly_snapshot_state.json` — 2026-07-03 06:44
+- **Unclassified** — `~/.hermes/limitless/hourly_snapshot_state.json` — 2026-07-03 06:44
+- **Unclassified** — `~/.hermes/channel_directory.json` — 2026-07-03 06:43
+- **Agent Protocol** — `~/Documents/Limitless OS/Agents/Oracle/Daily/2026-07-03.md` — 2026-07-03 06:38
+- **Agent Protocol** — `~/Documents/Limitless OS/Agents/Oracle/Ideas/Hourly Shortform/latest-hourly-shortform.md` — 2026-07-03 06:38
+- **Agent Protocol** — `~/Documents/Limitless OS/Agents/Oracle/Ideas/Hourly Shortform/2026-07-03-time-unavailable-5-hourly-shortform.md` — 2026-07-03 06:38
+- **Agent Protocol** — `~/Documents/Limitless OS/Agents/Oracle/Daily/2026-07-03.md` — 2026-07-03 06:38
+- **Agent Protocol** — `~/Documents/Limitless OS/Agents/Oracle/Ideas/Hourly Shortform/latest-hourly-shortform.md` — 2026-07-03 06:38
+- **Agent Protocol** — `~/Documents/Limitless OS/Agents/Oracle/Ideas/Hourly Shortform/2026-07-03-time-unavailable-5-hourly-shortform.md` — 2026-07-03 06:38
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-05-26 - Hermes Agent Video - Jet Own Version Package.md` — 2026-07-03 06:35
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-05-26 - Hermes Agent Video - Jet Own Version Package.md` — 2026-07-03 06:35
+- **Content Asset** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-05-31 - Content Batch From Signal Intel - 2026-05-31 - AI Team OS Needs Tests, Not More Tools.md` — 2026-07-03 06:35
+- **Content Asset** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-05-31 - Content Batch From Signal Intel - 2026-05-31 - AI Team OS Needs Tests, Not More Tools.md` — 2026-07-03 06:35
+- **Content Asset** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-05-31 - Content Batch V2 - AI QA and Approval Gates - 2026-05-31.md` — 2026-07-03 06:35
+- **Content Asset** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-05-31 - Content Batch V2 - AI QA and Approval Gates - 2026-05-31.md` — 2026-07-03 06:35
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-05-31 - YouTube Title Ideas - Outlier-Based 30 Titles - 2026-05-31.md` — 2026-07-03 06:35
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-05-31 - YouTube Title Ideas - Outlier-Based 30 Titles - 2026-05-31.md` — 2026-07-03 06:35
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-05-31 - Outside-Niche Outlier Patterns + Jet Title Angles - 2026-05-31.md` — 2026-07-03 06:34
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-05-31 - Outside-Niche Outlier Patterns + Jet Title Angles - 2026-05-31.md` — 2026-07-03 06:34
+- **Content Asset** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-05-31 - 30-Day Video Transcript Post Schedule - V2 Owner-Scene Pattern - 2026-05-31.md` — 2026-07-03 06:34
+- **Content Asset** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-05-31 - 30-Day Video Transcript Post Schedule - V2 Owner-Scene Pattern - 2026-05-31.md` — 2026-07-03 06:34
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Research/2026-06-01 - Knowledge Loop - AI-Ready Organizational Knowledge Research (2026-06-01).md` — 2026-07-03 06:34
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Research/2026-06-01 - Knowledge Loop - AI-Ready Organizational Knowledge Research (2026-06-01).md` — 2026-07-03 06:34
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Research/2026-06-04 - Zegna Daily Cool-Stuff Scout - 2026-06-04.md` — 2026-07-03 06:34
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Research/2026-06-04 - Zegna Daily Cool-Stuff Scout - 2026-06-04.md` — 2026-07-03 06:34
+- **Content Asset** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-06-13 - 🎬 Reels + Carousels - Batch 1 · YouTube (Jun 13, 2026).md` — 2026-07-03 06:34
+- **Content Asset** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-06-13 - 🎬 Reels + Carousels - Batch 1 · YouTube (Jun 13, 2026).md` — 2026-07-03 06:34
+- **Content Asset** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-06-13 - 🎬 Reels + Carousels - Batch 2 · Plaud (Jun 13, 2026).md` — 2026-07-03 06:34
+- **Content Asset** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-06-13 - 🎬 Reels + Carousels - Batch 2 · Plaud (Jun 13, 2026).md` — 2026-07-03 06:34
+- **Content Asset** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-06-14 - Usable Scripts + Reels from Saves - 2026-06-14.md` — 2026-07-03 06:34
+- **Content Asset** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-06-14 - Usable Scripts + Reels from Saves - 2026-06-14.md` — 2026-07-03 06:34
+- **Content Asset** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-06-14 - Past Week Content Batch - Reels + Carousels + Handouts.md` — 2026-07-03 06:34
+- **Content Asset** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-06-14 - Past Week Content Batch - Reels + Carousels + Handouts.md` — 2026-07-03 06:34
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-06-14 - YouTube Mine - Dan Koe - One-Person Business.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-06-14 - YouTube Mine - Dan Koe - One-Person Business.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Document/2026-06-16 - Jedi Trinupab Tone Blueprint v1.0.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Document/2026-06-16 - Jedi Trinupab Tone Blueprint v1.0.md` — 2026-07-03 06:33
+- **Content Asset** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-06-21 - Gracefully Dissatisfied - Christian Founder Post.md` — 2026-07-03 06:33
+- **Content Asset** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content/2026-06-21 - Gracefully Dissatisfied - Christian Founder Post.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Document/2026-06-28 - Sunday Content Engine - Master - 2026-06-28.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Document/2026-06-28 - Sunday Content Engine - Master - 2026-06-28.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/manifest.json` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Document/2026-05-13 - Client Onboarding Playbook - 7-Day AI Employee Setup Sprint.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/manifest.json` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Document/2026-05-13 - Client Onboarding Playbook - 7-Day AI Employee Setup Sprint.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-20 - Signal X AI Training Radar - 2026-05-20 07-58 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-20 - Signal X AI Training Radar - 2026-05-20 07-58 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-20 - Signal X AI Training Radar - 2026-05-20 12-00 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-20 - Signal X AI Training Radar - 2026-05-20 12-00 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-20 - Signal X AI Training Radar - 2026-05-20 16-04 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-20 - Signal X AI Training Radar - 2026-05-20 16-04 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-20 - Signal X AI Training Radar - 2026-05-20 20-03 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-20 - Signal X AI Training Radar - 2026-05-20 20-03 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-21 - Signal X AI Training Radar - 2026-05-21 08-13 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-21 - Signal X AI Training Radar - 2026-05-21 08-13 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-21 - Signal X AI Training Radar - 2026-05-21 12-01 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-21 - Signal X AI Training Radar - 2026-05-21 12-01 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-21 - Signal X AI Training Radar - 2026-05-21 16-00 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-21 - Signal X AI Training Radar - 2026-05-21 16-00 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-22 - Signal X AI Training Radar - 2026-05-22 08-00 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-22 - Signal X AI Training Radar - 2026-05-22 08-00 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-22 - Signal X AI Training Radar - 2026-05-22 12-04 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-22 - Signal X AI Training Radar - 2026-05-22 12-04 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-22 - Signal X AI Training Radar - 2026-05-22 16-09 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-22 - Signal X AI Training Radar - 2026-05-22 16-09 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-22 - Signal X AI Training Radar - 2026-05-22 20-06 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Content Intelligence/2026-05-22 - Signal X AI Training Radar - 2026-05-22 20-06 +07.md` — 2026-07-03 06:33
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-23 - Signal X AI Training Radar - 2026-05-23 08-18 +07.md` — 2026-07-03 06:32
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-23 - Signal X AI Training Radar - 2026-05-23 08-18 +07.md` — 2026-07-03 06:32
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-24 - Podcast Docket - AI Week Business Owners - 2026-05-24.md` — 2026-07-03 06:32
+- **Archive** — `~/Documents/Limitless OS/Agents/Hermes/Content Archive/Notion Clones/Research/2026-05-24 - Podcast Docket - AI Week Business Owners - 2026-05-24.md` — 2026-07-03 06:32
+- **Agent Protocol** — `~/Documents/Limitless OS/Agents/Oracle/Daily/2026-07-02.md` — 2026-07-03 06:31
+- **Agent Protocol** — `~/Documents/Limitless OS/Agents/Oracle/Daily/2026-07-02.md` — 2026-07-03 06:31
+- **Unclassified** — `~/Documents/Limitless OS/Pipeline/pm/route_inbox_item.json` — 2026-07-03 06:31
+- **Agent Protocol** — `~/Documents/Limitless OS/Agents/Blaze/Daily/2026-07-03.md` — 2026-07-03 06:31
+- **Agent Protocol** — `~/Documents/Limitless OS/Agents/Blaze/Daily/2026-07-03.md` — 2026-07-03 06:31
