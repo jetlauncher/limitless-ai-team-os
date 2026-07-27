@@ -114,8 +114,8 @@ checkpoints:
   max_file_size_mb: 10
   auto_prune: true
   retention_days: 7
-  delete_orphans: true
   min_interval_hours: 24
+  delete_orphans: true
 file_read_max_chars: 100000
 tool_output:
   max_bytes: 50000
@@ -580,6 +580,296 @@ custom_providers:
     default_model: qwen/qwen3.6-plus
     context_length: 262144
     key_env: NOUS_API_KEY
+    models:
+      - anthropic/claude-opus-5-fast
+      - inclusionai/ling-3.0-flash:free
+      - poolside/laguna-s-2.1
+      - poolside/laguna-s-2.1:free
+      - google/gemini-3.6-flash
+      - google/gemini-3.5-flash-lite
+      - meituan/longcat-2.0
+      - thinkingmachines/inkling
+      - moonshotai/kimi-k3
+      - kwaipilot/kat-coder-air-v2.5
+      - kwaipilot/kat-coder-pro-v2.5
+      - openai/gpt-5.6-luna-pro
+      - openai/gpt-5.6-terra-pro
+      - openai/gpt-5.6-sol-pro
+      - x-ai/grok-4.5
+      - ~x-ai/grok-latest
+      - aion-labs/aion-3.0-mini
+      - aion-labs/aion-3.0
+      - tencent/hy3
+      - poolside/laguna-xs-2.1
+      - poolside/laguna-xs-2.1:free
+      - nex-agi/nex-n2-mini
+      - sakana/fugu-ultra
+      - google/gemini-3-pro-image
+      - moonshotai/kimi-k2.7-code
+      - ~anthropic/claude-fable-latest
+      - nex-agi/nex-n2-pro
+      - nvidia/nemotron-3-ultra-550b-a55b
+      - qwen/qwen3.7-plus
+      - minimax/minimax-m3
+      - stepfun/step-3.7-flash
+      - anthropic/claude-opus-4.8-fast
+      - qwen/qwen3.7-max
+      - x-ai/grok-build-0.1
+      - google/gemini-embedding-2
+      - google/gemini-3.5-flash
+      - anthropic/claude-opus-4.7-fast
+      - inclusionai/ring-2.6-1t
+      - google/gemini-3.1-flash-lite
+      - openai/gpt-chat-latest
+      - x-ai/grok-4.3
+      - ibm-granite/granite-4.1-8b
+      - mistralai/mistral-medium-3-5
+      - poolside/laguna-m.1
+      - ~anthropic/claude-haiku-latest
+      - ~openai/gpt-mini-latest
+      - ~google/gemini-pro-latest
+      - ~moonshotai/kimi-latest
+      - ~google/gemini-flash-latest
+      - ~anthropic/claude-sonnet-latest
+      - ~openai/gpt-latest
+      - qwen/qwen3.5-plus-20260420
+      - qwen/qwen3.6-flash
+      - qwen/qwen3.6-35b-a3b
+      - qwen/qwen3.6-max-preview
+      - qwen/qwen3.6-27b
+      - openai/gpt-5.5-pro
+      - openai/gpt-5.5
+      - deepseek/deepseek-v4-pro
+      - deepseek/deepseek-v4-flash
+      - inclusionai/ling-2.6-1t
+      - tencent/hy3-preview
+      - xiaomi/mimo-v2.5-pro
+      - xiaomi/mimo-v2.5
+      - inclusionai/ling-2.6-flash
+      - ~anthropic/claude-opus-latest
+      - moonshotai/kimi-k2.6
+      - google/gemini-embedding-2-preview
+      - z-ai/glm-5.1
+      - google/gemma-4-26b-a4b-it
+      - google/gemma-4-31b-it
+      - qwen/qwen3.6-plus
+      - z-ai/glm-5v-turbo
+      - arcee-ai/trinity-large-thinking
+      - x-ai/grok-4.20
+      - kwaipilot/kat-coder-pro-v2
+      - rekaai/reka-edge
+      - minimax/minimax-m2.7
+      - openai/gpt-5.4-nano
+      - openai/gpt-5.4-mini
+      - mistralai/mistral-small-2603
+      - perplexity/pplx-embed-v1-4b
+      - perplexity/pplx-embed-v1-0.6b
+      - z-ai/glm-5-turbo
+      - nvidia/nemotron-3-super-120b-a12b
+      - bytedance-seed/seed-2.0-lite
+      - qwen/qwen3.5-9b
+      - openai/gpt-5.4-pro
+      - openai/gpt-5.4
+      - inception/mercury-2
+      - openai/gpt-5.3-chat
+      - google/gemini-3.1-flash-lite-preview
+      - bytedance-seed/seed-2.0-mini
+      - qwen/qwen3.5-35b-a3b
+      - qwen/qwen3.5-27b
+      - qwen/qwen3.5-122b-a10b
+      - qwen/qwen3.5-flash-02-23
+      - google/gemini-3.1-pro-preview-customtools
+      - openai/gpt-5.3-codex
+      - aion-labs/aion-2.0
+      - google/gemini-3.1-pro-preview
+      - qwen/qwen3.5-plus-02-15
+      - qwen/qwen3.5-397b-a17b
+      - minimax/minimax-m2.5
+      - z-ai/glm-5
+      - qwen/qwen3-max-thinking
+      - qwen/qwen3-coder-next
+      - stepfun/step-3.5-flash
+      - moonshotai/kimi-k2.5
+      - upstage/solar-pro-3
+      - openai/gpt-audio
+      - openai/gpt-audio-mini
+      - z-ai/glm-4.7-flash
+      - openai/gpt-5.2-codex
+      - bytedance-seed/seed-1.6-flash
+      - bytedance-seed/seed-1.6
+      - minimax/minimax-m2.1
+      - z-ai/glm-4.7
+      - google/gemini-3-flash-preview
+      - nvidia/nemotron-3-nano-30b-a3b
+      - openai/gpt-5.2-chat
+      - openai/gpt-5.2-pro
+      - openai/gpt-5.2
+      - mistralai/devstral-2512
+      - relace/relace-search
+      - z-ai/glm-4.6v
+      - openai/gpt-5.1-codex-max
+      - amazon/nova-2-lite-v1
+      - mistralai/ministral-14b-2512
+      - mistralai/ministral-8b-2512
+      - mistralai/ministral-3b-2512
+      - mistralai/mistral-large-2512
+      - deepseek/deepseek-v3.2
+      - anthropic/claude-opus-4.5
+      - thenlper/gte-base
+      - thenlper/gte-large
+      - intfloat/e5-large-v2
+      - intfloat/e5-base-v2
+      - intfloat/multilingual-e5-large
+      - sentence-transformers/paraphrase-minilm-l6-v2
+      - sentence-transformers/all-minilm-l12-v2
+      - baai/bge-base-en-v1.5
+      - sentence-transformers/multi-qa-mpnet-base-dot-v1
+      - baai/bge-large-en-v1.5
+      - baai/bge-m3
+      - sentence-transformers/all-mpnet-base-v2
+      - sentence-transformers/all-minilm-l6-v2
+      - openai/gpt-5.1
+      - openai/gpt-5.1-chat
+      - openai/gpt-5.1-codex
+      - openai/gpt-5.1-codex-mini
+      - moonshotai/kimi-k2-thinking
+      - amazon/nova-premier-v1
+      - mistralai/mistral-embed-2312
+      - google/gemini-embedding-001
+      - openai/text-embedding-ada-002
+      - mistralai/codestral-embed-2505
+      - openai/text-embedding-3-large
+      - openai/text-embedding-3-small
+      - mistralai/voxtral-small-24b-2507
+      - openai/gpt-oss-safeguard-20b
+      - qwen/qwen3-embedding-8b
+      - qwen/qwen3-embedding-4b
+      - minimax/minimax-m2
+      - qwen/qwen3-vl-32b-instruct
+      - qwen/qwen3-vl-8b-thinking
+      - qwen/qwen3-vl-8b-instruct
+      - openai/o3-deep-research
+      - openai/o4-mini-deep-research
+      - qwen/qwen3-vl-30b-a3b-thinking
+      - qwen/qwen3-vl-30b-a3b-instruct
+      - openai/gpt-5-pro
+      - z-ai/glm-4.6
+      - anthropic/claude-sonnet-4.5
+      - deepseek/deepseek-v3.2-exp
+      - qwen/qwen3-vl-235b-a22b-thinking
+      - qwen/qwen3-vl-235b-a22b-instruct
+      - qwen/qwen3-max
+      - qwen/qwen3-coder-plus
+      - openai/gpt-5-codex
+      - deepseek/deepseek-v3.1-terminus
+      - qwen/qwen3-coder-flash
+      - qwen/qwen3-next-80b-a3b-thinking
+      - qwen/qwen3-next-80b-a3b-instruct
+      - qwen/qwen-plus-2025-07-28
+      - qwen/qwen-plus-2025-07-28:thinking
+      - moonshotai/kimi-k2-0905
+      - qwen/qwen3-30b-a3b-thinking-2507
+      - nousresearch/hermes-4-70b
+      - nousresearch/hermes-4-405b
+      - deepseek/deepseek-chat-v3.1
+      - mistralai/mistral-medium-3.1
+      - z-ai/glm-4.5v
+      - ai21/jamba-large-1.7
+      - openai/gpt-5
+      - openai/gpt-5-mini
+      - openai/gpt-5-nano
+      - openai/gpt-oss-120b
+      - openai/gpt-oss-20b
+      - anthropic/claude-opus-4.1
+      - mistralai/codestral-2508
+      - qwen/qwen3-coder-30b-a3b-instruct
+      - qwen/qwen3-30b-a3b-instruct-2507
+      - z-ai/glm-4.5
+      - z-ai/glm-4.5-air
+      - qwen/qwen3-235b-a22b-thinking-2507
+      - qwen/qwen3-coder
+      - google/gemini-2.5-flash-lite
+      - qwen/qwen3-235b-a22b-2507
+      - moonshotai/kimi-k2
+      - mistralai/mistral-small-3.2-24b-instruct
+      - minimax/minimax-m1
+      - google/gemini-2.5-flash
+      - google/gemini-2.5-pro
+      - openai/o3-pro
+      - google/gemini-2.5-pro-preview
+      - deepseek/deepseek-r1-0528
+      - anthropic/claude-opus-4
+      - anthropic/claude-sonnet-4
+      - mistralai/mistral-medium-3
+      - google/gemini-2.5-pro-preview-05-06
+      - arcee-ai/virtuoso-large
+      - qwen/qwen3-30b-a3b
+      - qwen/qwen3-8b
+      - qwen/qwen3-14b
+      - qwen/qwen3-32b
+      - qwen/qwen3-235b-a22b
+      - openai/o4-mini-high
+      - openai/o3
+      - openai/o4-mini
+      - openai/gpt-4.1
+      - openai/gpt-4.1-mini
+      - openai/gpt-4.1-nano
+      - meta-llama/llama-4-maverick
+      - meta-llama/llama-4-scout
+      - deepseek/deepseek-chat-v3-0324
+      - google/gemma-3-12b-it
+      - google/gemma-3-27b-it
+      - mistralai/mistral-saba
+      - openai/o3-mini-high
+      - qwen/qwen-plus
+      - openai/o3-mini
+      - deepseek/deepseek-r1
+      - deepseek/deepseek-chat
+      - openai/o1
+      - meta-llama/llama-3.3-70b-instruct
+      - amazon/nova-lite-v1
+      - amazon/nova-micro-v1
+      - amazon/nova-pro-v1
+      - openai/gpt-4o-2024-11-20
+      - mistralai/mistral-large-2407
+      - thedrummer/unslopnemo-12b
+      - qwen/qwen-2.5-7b-instruct
+      - qwen/qwen-2.5-72b-instruct
+      - cohere/command-r-08-2024
+      - cohere/command-r-plus-08-2024
+      - sao10k/l3.1-euryale-70b
+      - openai/gpt-4o-2024-08-06
+      - meta-llama/llama-3.1-70b-instruct
+      - meta-llama/llama-3.1-8b-instruct
+      - mistralai/mistral-nemo
+      - openai/gpt-4o-mini
+      - openai/gpt-4o-mini-2024-07-18
+      - openai/gpt-4o
+      - openai/gpt-4o-2024-05-13
+      - mistralai/mixtral-8x22b-instruct
+      - openai/gpt-4-turbo
+      - anthropic/claude-3-haiku
+      - mistralai/mistral-large
+      - openai/gpt-3.5-turbo-0613
+      - openai/gpt-4-turbo-preview
+      - openai/gpt-3.5-turbo-16k
+      - openai/gpt-3.5-turbo
+      - openai/gpt-4
+      - stepfun/step-3.7-flash:free
+      - tencent/hy3:free
+      - z-ai/glm-5.2
+      - anthropic/claude-opus-5
+      - anthropic/claude-sonnet-5
+      - anthropic/claude-fable-5
+      - anthropic/claude-opus-4.8
+      - anthropic/claude-opus-4.7
+      - anthropic/claude-opus-4.6
+      - anthropic/claude-sonnet-4.6
+      - anthropic/claude-haiku-4.5
+      - openai/gpt-5.6-sol
+      - openai/gpt-5.6-terra
+      - openai/gpt-5.6-luna
+      - meta/muse-spark-1.1
   - name: Nous API
     base_url: https://inference-api.nousresearch.com/v1
     api_key_env: NOUS_API_KEY
@@ -607,3 +897,25 @@ mcp_servers:
       - '@upstash/context7-mcp'
     timeout: 120
     connect_timeout: 60
+
+# ── Fallback Model ────────────────────────────────────────────────────
+# Automatic provider failover when primary is unavailable.
+# Uncomment and configure to enable. Triggers on rate limits (429),
+# overload (529), service errors (503), or connection failures.
+#
+# Supported providers:
+#   openrouter   (OPENROUTER_API_KEY)  — routes to any model
+#   openai-codex (OAuth — hermes auth) — OpenAI Codex
+#   nous         (OAuth — hermes auth) — Nous Portal
+#   zai          (ZAI_API_KEY)         — Z.AI / GLM
+#   kimi-coding  (KIMI_API_KEY)        — Kimi / Moonshot
+#   kimi-coding-cn (KIMI_CN_API_KEY)   — Kimi / Moonshot (China)
+#   minimax      (MINIMAX_API_KEY)     — MiniMax
+#   minimax-cn   (MINIMAX_CN_API_KEY)  — MiniMax (China)
+#   bedrock      (AWS IAM / boto3)     — AWS Bedrock (Converse API)
+#
+# For custom OpenAI-compatible endpoints, add base_url and key_env.
+#
+# fallback_model:
+#   provider: openrouter
+#   model: anthropic/claude-sonnet-4
