@@ -448,15 +448,7 @@ approvals:
   cron_mode: deny
   mcp_reload_confirm: true
   destructive_slash_confirm: true
-command_allowlist:
-  - script execution via -e/-c flag
-  - delete in root path
-  - hermes update (restarts gateway, kills running agents)
-  - chmod +x followed by immediate execution
-  - recursive delete
-  - execute_code
-  - stop/restart hermes gateway (kills running agents)
-  - script execution via heredoc
+command_allowlist: []
 hooks_auto_accept: false
 security:
   allow_private_urls: false
@@ -464,7 +456,7 @@ security:
   tirith_enabled: true
   tirith_path: tirith
   tirith_timeout: 5
-  tirith_fail_open: true
+  tirith_fail_open: false
   website_blocklist:
     enabled: false
     domains: []
@@ -564,7 +556,7 @@ platform_toolsets:
 custom_providers:
   - name: Local Qwen3.6 (Ollama)
     base_url: http://127.0.0.1:11434/v1
-    api_key: [REDACTED]
+    api_key: ''
     api_mode: chat_completions
     model: qwen3.6:35b
     default_model: qwen3.6:35b

@@ -1,34 +1,17 @@
 #!/usr/bin/env python3
 """Export using cat (subprocess) to handle iCloud cloud-optimized files."""
-import json, os, re, shutil, subprocess, sys, time
+import json, shutil, subprocess
 from pathlib import Path
 
-REPO = Path('/Users/ultrafriday/Projects/limitless-ai-team-os').resolve()
+from sanitize_lib import harden_config, sanitize
+
+REPO = Path(__file__).resolve().parents[1]
 HOME = Path.home()
 
-SECRET_PATTERNS = [
-    (re.compile(r'\b\d{8,12}:[A-Za-z0-9_-]{30,}\b'), '[REDACTED_TELEGRAM_BOT_TOKEN]'),
-    (re.compile(r'\bgh[opsru]_[A-Za-z0-9_]{20,}\b'), '[REDACTED_GITHUB_TOKEN]'),
-    (re.compile(r'\bsk-[A-Za-z0-9_-]{20,}\b'), '[REDACTED_OPENAI_KEY]'),
-    (re.compile(r'\bsk-or-v1-[A-Za-z0-9_-]{20,}\b'), '[REDACTED_OPENROUTER_KEY]'),
-    (re.compile(r'\bntn_[A-Za-z0-9_-]{20,}\b'), '[REDACTED_NOTION_TOKEN]'),
-    (re.compile(r'\bsecret_[A-Za-z0-9_-]{20,}\b'), '[REDACTED_SECRET]'),
-    (re.compile(r'\bpat[A-Za-z0-9]{10,}\.[A-Za-z0-9]{10,}\b'), '[REDACTED_AIRTABLE_PAT]'),
-    (re.compile(r'Bearer\s+[A-Za-z0-9._-]{20,}', re.I), 'Bearer [REDACTED]'),
-    (re.compile(r'(api[_-]?key\s*[:=]\s*)([^\s\n"]+)'), r'\1[REDACTED]'),
-    (re.compile(r'(token\s*[:=]\s*)([^\s\n"]+)'), r'\1[REDACTED]'),
-    (re.compile(r'(password\s*[:=]\s*)([^\s\n"]+)'), r'\1[REDACTED]'),
-]
-
-def sanitize(text):
-    for pat, repl in SECRET_PATTERNS:
-        text = pat.sub(repl, text)
-    return text
-
-def write(rel, text):
+def write(rel, text, config=False):
     p = REPO / rel
     p.parent.mkdir(parents=True, exist_ok=True)
-    p.write_text(sanitize(text), encoding='utf-8')
+    p.write_text(harden_config(text) if config else sanitize(text), encoding='utf-8')
 
 def cat_file(path):
     """Read file using cat subprocess — works with iCloud cloud-optimized files."""
@@ -81,7 +64,7 @@ for d in ['agents', 'configs']:
 # Root config
 config_dir = HOME / '.hermes/config.yaml'
 if config_dir.exists():
-    write('configs/root/config.example.yaml', cat_file(config_dir))
+    write('configs/root/config.example.yaml', cat_file(config_dir), config=True)
     print(f'Exported configs/root/config.example.yaml')
 
 agents_map = {'Hermes':'default','Blaze':'blaze','Bolt':'bolt','Kaijeaw':'kaijeaw','Protocol':'protocol','Qwen':'qwen','Signal':'signal','Zegna':'zegna'}
@@ -91,7 +74,7 @@ total_exported = 0
 for agent, prof in agents_map.items():
     cfg = HOME / f'.hermes/profiles/{prof}/config.yaml'
     if prof != 'default' and cfg.exists():
-        write(f'configs/profiles/{prof}/config.example.yaml', cat_file(cfg))
+        write(f'configs/profiles/{prof}/config.example.yaml', cat_file(cfg), config=True)
         print(f'Exported configs/profiles/{prof}/config.example.yaml')
     
     soul = HOME / ('.hermes/SOUL.md' if prof == 'default' else f'.hermes/profiles/{prof}/SOUL.md')
