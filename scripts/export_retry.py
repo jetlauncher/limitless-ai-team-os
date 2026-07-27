@@ -72,59 +72,65 @@ exts = {'.md', '.txt', '.yaml', '.yml', '.json'}
 skip_names = {'ACCESS-TOKENS.md'}
 skip_dirs = {'Content Archive', 'Generated Assets', 'node_modules'}
 
-# Clean old outputs
-for d in ['agents', 'configs']:
-    p = REPO / d
-    if p.exists():
-        shutil.rmtree(p, ignore_errors=True)
-
-# Root config
-config_dir = HOME / '.hermes/config.yaml'
-if config_dir.exists():
-    write('configs/root/config.example.yaml', cat_file(config_dir))
-    print(f'Exported configs/root/config.example.yaml')
-
 agents_map = {'Hermes':'default','Blaze':'blaze','Bolt':'bolt','Kaijeaw':'kaijeaw','Protocol':'protocol','Qwen':'qwen','Signal':'signal','Zegna':'zegna'}
 
-total_exported = 0
 
-for agent, prof in agents_map.items():
-    cfg = HOME / f'.hermes/profiles/{prof}/config.yaml'
-    if prof != 'default' and cfg.exists():
-        write(f'configs/profiles/{prof}/config.example.yaml', cat_file(cfg))
-        print(f'Exported configs/profiles/{prof}/config.example.yaml')
-    
-    soul = HOME / ('.hermes/SOUL.md' if prof == 'default' else f'.hermes/profiles/{prof}/SOUL.md')
-    if soul.exists():
-        write(f'agents/{agent}/SOUL.md', cat_file(soul))
-        total_exported += 1
-        print(f'Exported {agent}/SOUL.md ({len(cat_file(soul))} bytes)')
-    
-    obs = HOME / f'Documents/Obsidian Vault/Agents/{agent}'
-    if obs.exists():
-        files = collect(obs, exts, skip_names, skip_dirs)
+def main():
+    # Clean old outputs
+    for d in ['agents', 'configs']:
+        p = REPO / d
+        if p.exists():
+            shutil.rmtree(p, ignore_errors=True)
+
+    # Root config
+    config_dir = HOME / '.hermes/config.yaml'
+    if config_dir.exists():
+        write('configs/root/config.example.yaml', cat_file(config_dir))
+        print(f'Exported configs/root/config.example.yaml')
+
+    total_exported = 0
+
+    for agent, prof in agents_map.items():
+        cfg = HOME / f'.hermes/profiles/{prof}/config.yaml'
+        if prof != 'default' and cfg.exists():
+            write(f'configs/profiles/{prof}/config.example.yaml', cat_file(cfg))
+            print(f'Exported configs/profiles/{prof}/config.example.yaml')
+
+        soul = HOME / ('.hermes/SOUL.md' if prof == 'default' else f'.hermes/profiles/{prof}/SOUL.md')
+        if soul.exists():
+            write(f'agents/{agent}/SOUL.md', cat_file(soul))
+            total_exported += 1
+            print(f'Exported {agent}/SOUL.md ({len(cat_file(soul))} bytes)')
+
+        obs = HOME / f'Documents/Obsidian Vault/Agents/{agent}'
+        if obs.exists():
+            files = collect(obs, exts, skip_names, skip_dirs)
+            for f, txt in files:
+                rel = f.relative_to(obs)
+                key = f'agents/{agent}/workspace/{rel}'
+                write(key, txt)
+                total_exported += 1
+            print(f'Exported {agent}: {len(files)} workspace files')
+        else:
+            print(f'Skipped {agent}: obs dir not found')
+
+    shared = HOME / 'Documents/Obsidian Vault/Agents/Shared Memory'
+    if shared.exists():
+        files = collect(shared, exts, skip_names, skip_dirs)
         for f, txt in files:
-            rel = f.relative_to(obs)
-            key = f'agents/{agent}/workspace/{rel}'
+            rel = f.relative_to(shared)
+            key = f'agents/Shared Memory/workspace/{rel}'
             write(key, txt)
             total_exported += 1
-        print(f'Exported {agent}: {len(files)} workspace files')
-    else:
-        print(f'Skipped {agent}: obs dir not found')
+        print(f'Exported Shared Memory: {len(files)} workspace files')
 
-shared = HOME / 'Documents/Obsidian Vault/Agents/Shared Memory'
-if shared.exists():
-    files = collect(shared, exts, skip_names, skip_dirs)
-    for f, txt in files:
-        rel = f.relative_to(shared)
-        key = f'agents/Shared Memory/workspace/{rel}'
-        write(key, txt)
-        total_exported += 1
-    print(f'Exported Shared Memory: {len(files)} workspace files')
+    write('agent-registry.json', json.dumps({
+        'repo': 'limitless-ai-team-os',
+        'agents': [{'name': a, 'profile': p} for a, p in agents_map.items()]
+    }, indent=2))
+    print(f'\nTotal files exported: {total_exported}')
+    print('Export complete.')
 
-write('agent-registry.json', json.dumps({
-    'repo': 'limitless-ai-team-os',
-    'agents': [{'name': a, 'profile': p} for a, p in agents_map.items()]
-}, indent=2))
-print(f'\nTotal files exported: {total_exported}')
-print('Export complete.')
+
+if __name__ == '__main__':
+    main()
