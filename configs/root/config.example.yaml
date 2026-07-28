@@ -648,6 +648,7 @@ custom_providers:
     name: Nous Qwen3.6 Plus
     key_env: NOUS_API_KEY
     models:
+      - qwen/qwen3.7-flash
       - anthropic/claude-opus-5-fast
       - inclusionai/ling-3.0-flash:free
       - poolside/laguna-s-2.1
@@ -660,7 +661,9 @@ custom_providers:
       - kwaipilot/kat-coder-air-v2.5
       - kwaipilot/kat-coder-pro-v2.5
       - openai/gpt-5.6-luna-pro
+      - openai/gpt-5.6-luna
       - openai/gpt-5.6-terra-pro
+      - openai/gpt-5.6-terra
       - openai/gpt-5.6-sol-pro
       - x-ai/grok-4.5
       - ~x-ai/grok-latest
@@ -934,8 +937,6 @@ custom_providers:
       - anthropic/claude-sonnet-4.6
       - anthropic/claude-haiku-4.5
       - openai/gpt-5.6-sol
-      - openai/gpt-5.6-terra
-      - openai/gpt-5.6-luna
       - meta/muse-spark-1.1
   - api_key_env: OPENROUTER_API_KEY
     api_mode: chat_completions
@@ -1003,15 +1004,6 @@ mcp_servers:
     url: https://mcp2.readwise.io/mcp
     headers:
       Authorization: Bearer ${READWISE_MCP_TOKEN}
-    connect_timeout: 60
-    timeout: 180
-  firecrawl:
-    command: npx
-    args:
-      - -y
-      - firecrawl-mcp
-    env:
-      FIRECRAWL_API_KEY: [REDACTED]
     connect_timeout: 60
     timeout: 180
 platform_toolsets:
@@ -1087,3 +1079,25 @@ model_aliases:
     model: moonshotai/kimi-k2.7-code
     provider: openrouter
     base_url: https://openrouter.ai/api/v1
+
+# ── Fallback Model ────────────────────────────────────────────────────
+# Automatic provider failover when primary is unavailable.
+# Uncomment and configure to enable. Triggers on rate limits (429),
+# overload (529), service errors (503), or connection failures.
+#
+# Supported providers:
+#   openrouter   (OPENROUTER_API_KEY)  — routes to any model
+#   openai-codex (OAuth — hermes auth) — OpenAI Codex
+#   nous         (OAuth — hermes auth) — Nous Portal
+#   zai          (ZAI_API_KEY)         — Z.AI / GLM
+#   kimi-coding  (KIMI_API_KEY)        — Kimi / Moonshot
+#   kimi-coding-cn (KIMI_CN_API_KEY)   — Kimi / Moonshot (China)
+#   minimax      (MINIMAX_API_KEY)     — MiniMax
+#   minimax-cn   (MINIMAX_CN_API_KEY)  — MiniMax (China)
+#   bedrock      (AWS IAM / boto3)     — AWS Bedrock (Converse API)
+#
+# For custom OpenAI-compatible endpoints, add base_url and key_env.
+#
+# fallback_model:
+#   provider: openrouter
+#   model: anthropic/claude-sonnet-4
