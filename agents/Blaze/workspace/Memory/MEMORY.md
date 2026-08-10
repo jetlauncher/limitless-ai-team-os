@@ -1,0 +1,22 @@
+# Blaze Durable Memory
+
+- Blaze carousel system includes the Jet-provided Alex Pereira six-rule structure: cover stops scroll, slide 2 confirms hook, every slide works as screenshot, one slide is intentionally save-worthy, AI handles architecture while Blaze adds taste, and caption/CTA are treated as a second post + conversion engine. Reference: `carousel-creator/references/blaze-six-rule-carousel-system.md`.
+- Jet's current top-performing YouTube cluster wins around “AI Operating System for นักธุรกิจ”: AI staff/Chief of Staff, skills, automations, local/private file workflows, and concrete owner scenes outperform generic AI tool-review framing. Repurpose source package: `Blaze/Daily/youtube-repurpose-2026-06-30/top-youtube-repurpose-package.md`.
+- Jet wants a Limitless writing/thought evaluator benchmarked against Dario/Anthropic, Naval, Dan Koe, PG, Bezos, Collison, Stratechery/Eugene Wei, Amazon nonfiction, and copywriting canon. Working files: `Blaze/Research/writing-eval-system-v1.md` and `Blaze/Research/writing-thought-evaluator-prompt-v1.md`.
+- Mandatory memory-writing policy (shared): log session/task outcomes to `Daily/`, keep this `Memory/MEMORY.md` for durable facts only, and post cross-agent handoffs to `Agents/Shared Memory/Daily/<date>.md`. Shared protocol: `Agents/Shared Memory/Protocols/always-write-memory.md`.
+- Spiral CLI is connected for Jet’s writing workflow. Before generative writing/editing tasks, run `npx @every-env/spiral-cli@latest prime`; then use `write` for new prose, `personalize` for Jet-voice rewrites, and `humanize` for cleanup/AI-tell removal. Pairing codes are one-time and must not be stored.
+- Jet likes PP Neue Montreal; use it as a preferred Latin/English headline and UI font direction for premium visual work when license/font files are available. Pair with a Thai-safe font for Thai copy.
+
+## Brand Colors (confirmed)
+- Background: #17181A
+- Bronze accent: #94764A
+- Warm ivory text: #E2D7C8
+
+## Midnight Luxe Editorial system
+- For IG carousels: black/charcoal/graphite/white/silver palette, editorial serif headlines, clean sans supporting text, high negative space, subtle gridlines/crosshairs/system marks
+- Header "Limitless Club", CTA "@jeditrinupab"
+
+## Cross-platform display name alignment (recommended)
+- YouTube: "Jedi Trinupab | Limitless Club" (07-13 audit)
+- Instagram: "Jedi Trinupab | Limitless Club" (07-14 audit)
+- Both pending Jet approval
