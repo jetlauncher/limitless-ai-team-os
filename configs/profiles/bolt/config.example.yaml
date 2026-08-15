@@ -1,11 +1,10 @@
 model:
-  default: gpt-5.6
+  default: gpt-5.6-sol
   provider: openai-codex
+  context_length: 262144
 fallback_providers:
-  - provider: anthropic
-    model: anthropic/claude-opus-4.8
-  - provider: custom:local-qwen3.6-(ollama)
-    model: qwen3.6:35b
+  - provider: custom:nous-api
+    model: openai/gpt-5.6-sol-pro
 toolsets:
   - hermes-cli
 agent:
@@ -28,7 +27,7 @@ agent:
   image_input_mode: auto
   disabled_toolsets: []
   verbose: false
-  reasoning_effort: medium
+  reasoning_effort: high
   personalities:
     helpful: You are a helpful, friendly AI assistant.
     concise: You are a concise assistant. Keep responses brief and to the point.
@@ -522,15 +521,16 @@ approvals:
   mcp_reload_confirm: true
   destructive_slash_confirm: true
 command_allowlist:
+  - delete in root path
+  - stop/restart hermes gateway (kills running agents)
+  - hermes update (restarts gateway, kills running agents)
+  - execute_code
+  - script execution via -e/-c flag
   - shell command via -c/-lc flag
   - recursive delete
-  - stop/restart hermes gateway (kills running agents)
-  - script execution via heredoc
-  - delete in root path
-  - script execution via -e/-c flag
   - SQL DROP
+  - script execution via heredoc
   - SQL TRUNCATE
-  - hermes update (restarts gateway, kills running agents)
 hooks_auto_accept: false
 security:
   allow_private_urls: false
@@ -705,6 +705,15 @@ custom_providers:
     default_model: qwen/qwen3.6-plus
     context_length: 262144
     models:
+      - bytedance-seed/seed-2-1-turbo
+      - qwen/qwen3.8-2.4t-a95b
+      - bytedance-seed/seed-2.0-code
+      - deepseek/deepseek-v4-pro-0813
+      - x-ai/grok-4.6
+      - nvidia/nemotron-3.5-lightning
+      - sakana/sakana-namazu
+      - upstage/solar-pro4
+      - meta/muse-glimmer-30b
       - meta/muse-spark-1.2
       - qwen/qwen3.8-max
       - ~deepseek/deepseek-v4-flash-latest
@@ -752,6 +761,7 @@ custom_providers:
       - nex-agi/nex-n2-mini
       - sakana/fugu-ultra
       - google/gemini-3-pro-image
+      - z-ai/glm-5.2
       - z-ai/glm-5.2:batch
       - moonshotai/kimi-k2.7-code
       - moonshotai/kimi-k2.7-code:batch
@@ -832,7 +842,6 @@ custom_providers:
       - openai/gpt-5.4
       - openai/gpt-5.4:batch
       - inception/mercury-2
-      - openai/gpt-5.3-chat
       - google/gemini-3.1-flash-lite-preview
       - bytedance-seed/seed-2.0-mini
       - qwen/qwen3.5-35b-a3b
@@ -1048,7 +1057,7 @@ custom_providers:
       - openai/gpt-4
       - tencent/hy3:free
       - stepfun/step-3.7-flash:free
-      - z-ai/glm-5.2
+      - upstage/solar-pro4:free
       - anthropic/claude-opus-5
       - anthropic/claude-sonnet-5
       - anthropic/claude-fable-5

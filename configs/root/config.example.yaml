@@ -284,6 +284,7 @@ display:
   show_reasoning: false
   reasoning_full: false
   memory_notifications: 'on'
+  background_process_notifications: concise
   streaming: true
   timestamps: false
   final_response_markdown: strip
@@ -326,7 +327,6 @@ display:
     render_mode: auto
     scale: 0.33
     unicode_cols: 0
-  background_process_notifications: all
   tool_progress: all
 dashboard:
   theme: default
@@ -624,7 +624,7 @@ paste_collapse_threshold_fallback: 5
 paste_collapse_char_threshold: 2000
 computer_use:
   cua_telemetry: false
-_config_version: 34
+_config_version: 35
 api_server:
   model: qwen2.5:3b
   provider: custom:local-qwen3.6-(ollama)
@@ -648,6 +648,18 @@ custom_providers:
     name: Nous Qwen3.6 Plus
     key_env: NOUS_API_KEY
     models:
+      - google/gemini-3.7-flash
+      - google/gemini-3.7-flash:batch
+      - voyageai/voyage-code-4
+      - bytedance-seed/seed-2-1-turbo
+      - qwen/qwen3.8-2.4t-a95b
+      - bytedance-seed/seed-2.0-code
+      - deepseek/deepseek-v4-pro-0813
+      - x-ai/grok-4.6
+      - nvidia/nemotron-3.5-lightning
+      - sakana/sakana-namazu
+      - upstage/solar-pro4
+      - meta/muse-glimmer-30b
       - meta/muse-spark-1.2
       - qwen/qwen3.8-max
       - ~deepseek/deepseek-v4-flash-latest
@@ -695,6 +707,7 @@ custom_providers:
       - nex-agi/nex-n2-mini
       - sakana/fugu-ultra
       - google/gemini-3-pro-image
+      - z-ai/glm-5.2
       - z-ai/glm-5.2:batch
       - moonshotai/kimi-k2.7-code
       - moonshotai/kimi-k2.7-code:batch
@@ -775,7 +788,6 @@ custom_providers:
       - openai/gpt-5.4
       - openai/gpt-5.4:batch
       - inception/mercury-2
-      - openai/gpt-5.3-chat
       - google/gemini-3.1-flash-lite-preview
       - bytedance-seed/seed-2.0-mini
       - qwen/qwen3.5-35b-a3b
@@ -991,7 +1003,7 @@ custom_providers:
       - openai/gpt-4
       - tencent/hy3:free
       - stepfun/step-3.7-flash:free
-      - z-ai/glm-5.2
+      - upstage/solar-pro4:free
       - anthropic/claude-opus-5
       - anthropic/claude-sonnet-5
       - anthropic/claude-fable-5
@@ -1002,6 +1014,7 @@ custom_providers:
       - anthropic/claude-haiku-4.5
       - openai/gpt-5.6-sol
       - meta/muse-spark-1.1
+      - meituan/longcat-2.0:free
   - api_key_env: OPENROUTER_API_KEY
     api_mode: chat_completions
     base_url: https://openrouter.ai/api/v1
@@ -1070,6 +1083,15 @@ mcp_servers:
       Authorization: Bearer ${READWISE_MCP_TOKEN}
     connect_timeout: 60
     timeout: 180
+  agentmail:
+    command: npx
+    args:
+      - -y
+      - agentmail-mcp
+    env:
+      AGENTMAIL_API_KEY: [REDACTED]
+    connect_timeout: 60.0
+    enabled: true
 platform_toolsets:
   cli:
     - browser
