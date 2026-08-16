@@ -3,8 +3,8 @@ model:
   provider: openai-codex
   context_length: 262144
 fallback_providers:
-  - provider: custom:Local Qwen3.6 (Ollama)
-    model: qwen3.6:35b
+  - provider: custom:nous-api
+    model: openai/gpt-5.6-sol-pro
 toolsets:
   - hermes-cli
 agent:

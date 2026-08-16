@@ -1,11 +1,11 @@
 model:
-  default: gpt-5.6
+  default: gpt-5.6-sol
   provider: openai-codex
   context_length: 262144
 providers: {}
 fallback_providers:
-  - provider: custom:Local Qwen3.6 (Ollama)
-    model: qwen3.6:35b
+  - provider: custom:nous-api
+    model: openai/gpt-5.6-sol-pro
 credential_pool_strategies: {}
 toolsets:
   - hermes-cli

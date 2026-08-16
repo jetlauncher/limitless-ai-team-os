@@ -1,0 +1,77 @@
+{
+  "title": "ถ้าธุรกิจโตขึ้น แต่ใจผมเล็กลง",
+  "style": "image2-warm-ivory-independent-editorial",
+  "originality_note": "Original Jet/Limitless stewardship angle. Uses only transferable visual mechanics from the reference, not its copy or argument.",
+  "slides": [
+    {
+      "kicker": "A PERSONAL QUESTION",
+      "title": "ถ้าธุรกิจโตขึ้น<br>แต่ใจผมเล็กลง",
+      "quote": "นั่นยังเรียกว่า<br>ความสำเร็จไหม?",
+      "type": "cover"
+    },
+    {
+      "kicker": "WHAT I USED TO BELIEVE",
+      "title": "ผมเคยคิดว่า<br>พระพร = มากขึ้น",
+      "body": "ยอดขายมากขึ้น · ทีมใหญ่ขึ้น<br>คนรู้จักมากขึ้น · โอกาสมากขึ้น",
+      "quote": "แต่การเติบโตอาจเป็นทั้ง<br><strong>พระพร</strong> และ <strong>บททดสอบ</strong>",
+      "type": "statement"
+    },
+    {
+      "kicker": "THE BETTER QUESTION",
+      "title": "คำถามไม่ใช่<br>“ผมทำให้มันใหญ่<br>ได้แค่ไหน?”",
+      "quote": "แต่คือ…<br><strong>“ผมกำลังกลายเป็นคนแบบไหน<br>ขณะที่สร้างมัน?”</strong>",
+      "type": "statement"
+    },
+    {
+      "kicker": "STEWARDSHIP, NOT IDENTITY",
+      "title": "ธุรกิจคือสิ่งที่<br>พระเจ้าฝากให้ดูแล",
+      "quote": "ไม่ใช่ตัวตนของผม<br>และไม่ควรกลายเป็น<br><strong>พระเจ้าของผม</strong>",
+      "type": "statement"
+    },
+    {
+      "kicker": "THE HIDDEN COST OF GROWTH",
+      "title": "4 สัญญาณว่า<br>การเติบโตเริ่ม<br>แพงเกินไป",
+      "items": [
+        "เวลาอธิษฐานกลายเป็นสิ่งที่รีบตัดทิ้ง",
+        "ผู้คนเริ่มกลายเป็นแค่ตัวเลข",
+        "ความจริงถูกบิดเพื่อรักษาโอกาส",
+        "ครอบครัวได้รับเพียงพลังที่เหลือ"
+      ],
+      "type": "list"
+    },
+    {
+      "kicker": "THE FAITHFUL-GROWTH FILTER",
+      "title": "ก่อนตอบรับ<br>การเติบโตครั้งต่อไป",
+      "items": [
+        "สิ่งนี้ช่วยให้ผมรักพระเจ้าและผู้คนดีขึ้นไหม?",
+        "ถ้าต้องปฏิเสธ ผมยังรู้สึกมั่นคงในตัวตนไหม?",
+        "เมื่อตัวเลขโตขึ้น คุณภาพและคำสัญญาดีขึ้นด้วยไหม?"
+      ],
+      "type": "numbered"
+    },
+    {
+      "kicker": "OBEDIENCE CAN LOOK SMALL",
+      "title": "บางครั้ง<br>การเชื่อฟัง<br>ไม่ได้แปลว่า “ขยาย”",
+      "items": [
+        "แก้ของเดิมให้ดีจริง",
+        "ดูแลทีมให้ดีขึ้น",
+        "พักก่อนร่างกายและใจพัง",
+        "ปฏิเสธดีลที่ไม่ตรงพันธกิจ"
+      ],
+      "type": "actions"
+    },
+    {
+      "kicker": "A DIFFERENT DEFINITION OF SUCCESS",
+      "title": "ธุรกิจเล็ก<br>ที่ดูแลอย่างซื่อสัตย์",
+      "quote": "อาจถวายเกียรติพระเจ้า<br>มากกว่าธุรกิจใหญ่<br>ที่สร้างจาก <strong>ความกลัว</strong>",
+      "type": "statement"
+    },
+    {
+      "kicker": "A QUESTION FOR THIS WEEK",
+      "title": "สัปดาห์นี้<br>อย่าเพิ่งถามว่า<br>“จะโตอย่างไร?”",
+      "quote": "ถามว่า…<br><strong>พระเจ้าฝากอะไรไว้ในมือผม<br>และผมจะดูแลมันให้ดีขึ้นอย่างไร?</strong>",
+      "cta": "SAVE · REFLECT · SHARE",
+      "type": "cta"
+    }
+  ]
+}
