@@ -1,0 +1,34 @@
+{
+  "meta": null,
+  "content": [
+    {
+      "type": "text",
+      "text": "Job 9108d843-1bde-45b7-997d-3b91ea2aa04a — in_progress",
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "structuredContent": {
+    "generation": {
+      "id": "9108d843-1bde-45b7-997d-3b91ea2aa04a",
+      "type": "image",
+      "status": "in_progress",
+      "model": "nano_banana_2",
+      "params": {
+        "prompt": "Create ONE premium Instagram carousel slide in 4:5 portrait.\nStyle: Midnight Luxe Editorial for Limitless Club: black/charcoal graphite background, warm ivory + subtle bronze/silver accents, beautiful editorial typography, high negative space, subtle gridlines/crosshair/system marks. No photos of people. Luxurious founder-media, not hypey.\nExact visible Thai text, must be accurate:\nคนไม่ได้เซฟโพสต์\nเขาเซฟสไลด์\nSmall supporting Thai text:\nคารูเซลที่ดีไม่ได้เริ่มจากดีไซน์\nมันเริ่มจากโครงสร้างที่ทำให้คนอยากปัดต่อ\nInclude small header: LIMITLESS CLUB\nInclude footer handle: @jeditrinupab\nInclude slide number: 01 / 10\nDo not add other words, fake logos, watermarks, random text, or misspell Thai.",
+        "aspect_ratio": "4:5",
+        "input_images": [],
+        "width": 896,
+        "height": 1152,
+        "resolution": "2k",
+        "batch_size": 1,
+        "input_image": null,
+        "application": null,
+        "surface": null
+      },
+      "createdAt": 1781747931.255707
+    },
+    "poll_after_seconds": 2
+  },
+  "isError": false
+}
