@@ -5,11 +5,9 @@ model:
   api_key: [REDACTED]
   api_mode: chat_completions
   context_length: 131072
-providers: {}
 fallback_providers:
   - provider: anthropic
     model: anthropic/claude-opus-4.8
-credential_pool_strategies: {}
 toolsets:
   - hermes-cli
 agent:
@@ -73,7 +71,6 @@ terminal:
   auto_source_bashrc: true
   docker_image: nikolaik/python-nodejs:python3.11-nodejs20
   docker_forward_env: []
-  docker_env: {}
   singularity_image: docker://nikolaik/python-nodejs:python3.11-nodejs20
   modal_image: nikolaik/python-nodejs:python3.11-nodejs20
   daytona_image: nikolaik/python-nodejs:python3.11-nodejs20
@@ -157,7 +154,6 @@ auxiliary:
     base_url: ''
     api_key: ''
     timeout: 120
-    extra_body: {}
     download_timeout: 30
   web_extract:
     provider: auto
@@ -172,7 +168,6 @@ auxiliary:
     base_url: ''
     api_key: ''
     timeout: 120
-    extra_body: {}
   session_search:
     provider: auto
     model: ''
@@ -187,42 +182,36 @@ auxiliary:
     base_url: ''
     api_key: ''
     timeout: 30
-    extra_body: {}
   approval:
     provider: auto
     model: ''
     base_url: ''
     api_key: ''
     timeout: 30
-    extra_body: {}
   mcp:
     provider: auto
     model: ''
     base_url: ''
     api_key: ''
     timeout: 30
-    extra_body: {}
   title_generation:
     provider: auto
     model: ''
     base_url: ''
     api_key: ''
     timeout: 30
-    extra_body: {}
   triage_specifier:
     provider: auto
     model: ''
     base_url: ''
     api_key: ''
     timeout: 120
-    extra_body: {}
   curator:
     provider: auto
     model: ''
     base_url: ''
     api_key: ''
     timeout: 600
-    extra_body: {}
   flush_memories:
     provider: auto
     model: ''
@@ -232,7 +221,7 @@ auxiliary:
     extra_body: {}
 display:
   compact: false
-  personality: kawaii
+  personality: ''
   resume_display: full
   busy_input_mode: interrupt
   tui_auto_resume_recent: false
@@ -264,7 +253,7 @@ display:
       - cwd
   copy_shortcut: auto
   tool_progress: all
-  background_process_notifications: all
+  background_process_notifications: concise
 dashboard:
   theme: default
 privacy:
@@ -331,10 +320,10 @@ delegation:
   base_url: ''
   api_key: ''
   inherit_mcp_toolsets: true
-  max_iterations: 50
+  max_iterations: 250
   child_timeout_seconds: 600
   reasoning_effort: ''
-  max_concurrent_children: 3
+  max_concurrent_children: 10
   max_spawn_depth: 1
   orchestrator_enabled: true
   subagent_auto_approve: false
@@ -361,32 +350,26 @@ curator:
   backup:
     enabled: true
     keep: 5
-honcho: {}
 timezone: ''
 slack:
   require_mention: true
   free_response_channels: ''
   allowed_channels: ''
-  channel_prompts: {}
 discord:
   require_mention: true
   free_response_channels: ''
   allowed_channels: ''
   auto_thread: true
   reactions: true
-  channel_prompts: {}
   dm_role_auth_guild: ''
   server_actions: ''
-whatsapp: {}
 telegram:
   reactions: false
-  channel_prompts: {}
   allowed_chats: ''
 mattermost:
   require_mention: true
   free_response_channels: ''
   allowed_channels: ''
-  channel_prompts: {}
 matrix:
   require_mention: true
   free_response_rooms: ''
@@ -403,10 +386,7 @@ command_allowlist:
   - recursive delete
   - script execution via heredoc
   - hermes update (restarts gateway, kills running agents)
-quick_commands: {}
-hooks: {}
 hooks_auto_accept: false
-personalities: {}
 security:
   allow_private_urls: false
   redact_secrets: true
@@ -420,7 +400,6 @@ security:
     shared_files: []
 cron:
   wrap_response: true
-  max_parallel_jobs: null
 kanban:
   dispatch_in_gateway: true
   dispatch_interval_seconds: 60
@@ -436,8 +415,7 @@ logging:
 model_catalog:
   enabled: true
   url: https://hermes-agent.nousresearch.com/docs/api/model-catalog.json
-  ttl_hours: 24
-  providers: {}
+  ttl_hours: 1
 network:
   force_ipv4: false
 sessions:
@@ -452,7 +430,7 @@ onboarding:
 updates:
   pre_update_backup: false
   backup_keep: 5
-_config_version: 22
+_config_version: 39
 session_reset:
   mode: both
   idle_minutes: 1440
@@ -496,3 +474,25 @@ mcp_servers:
       - '@upstash/context7-mcp'
     timeout: 120
     connect_timeout: 60
+
+# ── Fallback Model ────────────────────────────────────────────────────
+# Automatic provider failover when primary is unavailable.
+# Uncomment and configure to enable. Triggers on rate limits (429),
+# overload (529), service errors (503), or connection failures.
+#
+# Supported providers:
+#   openrouter   (OPENROUTER_API_KEY)  — routes to any model
+#   openai-codex (OAuth — hermes auth) — OpenAI Codex
+#   nous         (OAuth — hermes auth) — Nous Portal
+#   zai          (ZAI_API_KEY)         — Z.AI / GLM
+#   kimi-coding  (KIMI_API_KEY)        — Kimi / Moonshot
+#   kimi-coding-cn (KIMI_CN_API_KEY)   — Kimi / Moonshot (China)
+#   minimax      (MINIMAX_API_KEY)     — MiniMax
+#   minimax-cn   (MINIMAX_CN_API_KEY)  — MiniMax (China)
+#   bedrock      (AWS IAM / boto3)     — AWS Bedrock (Converse API)
+#
+# For custom OpenAI-compatible endpoints, add base_url and key_env.
+#
+# fallback_model:
+#   provider: openrouter
+#   model: anthropic/claude-sonnet-4

@@ -204,13 +204,13 @@ auxiliary:
     extra_body: {}
 display:
   compact: false
-  personality: kawaii
+  personality: ''
   resume_display: full
   busy_input_mode: interrupt
   tui_auto_resume_recent: false
   bell_on_complete: false
   show_reasoning: false
-  background_process_notifications: all
+  background_process_notifications: concise
   streaming: true
   final_response_markdown: strip
   inline_diffs: true
@@ -300,10 +300,10 @@ delegation:
   base_url: ''
   api_key: ''
   inherit_mcp_toolsets: true
-  max_iterations: 50
+  max_iterations: 250
   child_timeout_seconds: 600
   reasoning_effort: ''
-  max_concurrent_children: 3
+  max_concurrent_children: 10
   max_spawn_depth: 1
   orchestrator_enabled: true
   subagent_auto_approve: false
@@ -382,7 +382,7 @@ logging:
 model_catalog:
   enabled: true
   url: https://hermes-agent.nousresearch.com/docs/api/model-catalog.json
-  ttl_hours: 24
+  ttl_hours: 1
 network:
   force_ipv4: false
 streaming:
@@ -399,7 +399,7 @@ onboarding:
 updates:
   pre_update_backup: false
   backup_keep: 5
-_config_version: 22
+_config_version: 39
 session_reset:
   mode: none
   idle_minutes: 1440
