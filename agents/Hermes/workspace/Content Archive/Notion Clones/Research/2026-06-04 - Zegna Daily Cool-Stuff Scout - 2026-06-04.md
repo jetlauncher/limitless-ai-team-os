@@ -5,7 +5,7 @@ notion_url: https://app.notion.com/p/Zegna-Daily-Cool-Stuff-Scout-2026-06-04-375
 type: "Research"
 status: "Done"
 created_time: 2026-06-04T02:02:00.000Z
-synced_at: 2026-07-14T00:14:43
+synced_at: 2026-07-20T18:24:29
 source: Notion clone
 ---
 

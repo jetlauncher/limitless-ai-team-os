@@ -5,7 +5,7 @@ notion_url: https://app.notion.com/p/Jedi-Trinupab-Tone-Blueprint-v1-0-381d076c9
 type: "Document"
 status: "Ready for Review"
 created_time: 2026-06-16T16:21:00.000Z
-synced_at: 2026-07-14T00:13:51
+synced_at: 2026-07-20T18:23:24
 source: Notion clone
 ---
 

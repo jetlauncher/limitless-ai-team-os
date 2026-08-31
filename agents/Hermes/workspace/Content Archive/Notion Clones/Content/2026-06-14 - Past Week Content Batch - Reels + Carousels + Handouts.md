@@ -5,7 +5,7 @@ notion_url: https://app.notion.com/p/Past-Week-Content-Batch-Reels-Carousels-Han
 type: "Content"
 status: "Ready to Record"
 created_time: 2026-06-14T02:43:00.000Z
-synced_at: 2026-07-14T00:13:58
+synced_at: 2026-07-20T18:23:34
 source: Notion clone
 ---
 

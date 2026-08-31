@@ -5,7 +5,7 @@ notion_url: https://app.notion.com/p/30-Day-Video-Transcript-Post-Schedule-V2-Ow
 type: "Content"
 status: "Done"
 created_time: 2026-05-31T03:35:00.000Z
-synced_at: 2026-07-14T00:14:46
+synced_at: 2026-07-20T18:24:34
 source: Notion clone
 ---
 

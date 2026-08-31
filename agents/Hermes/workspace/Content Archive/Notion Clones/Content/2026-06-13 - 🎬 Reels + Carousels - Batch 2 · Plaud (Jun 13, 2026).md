@@ -5,7 +5,7 @@ notion_url: https://app.notion.com/p/Reels-Carousels-Batch-2-Plaud-Jun-13-2026-3
 type: "Content"
 status: "Ready to Record"
 created_time: 2026-06-13T08:47:00.000Z
-synced_at: 2026-07-14T00:14:04
+synced_at: 2026-07-20T18:23:40
 source: Notion clone
 ---
 

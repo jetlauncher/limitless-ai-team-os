@@ -5,7 +5,7 @@ notion_url: https://app.notion.com/p/Knowledge-Loop-AI-Ready-Organizational-Know
 type: "Research"
 status: "Done"
 created_time: 2026-06-01T01:38:00.000Z
-synced_at: 2026-07-14T00:14:44
+synced_at: 2026-07-20T18:24:33
 source: Notion clone
 ---
 

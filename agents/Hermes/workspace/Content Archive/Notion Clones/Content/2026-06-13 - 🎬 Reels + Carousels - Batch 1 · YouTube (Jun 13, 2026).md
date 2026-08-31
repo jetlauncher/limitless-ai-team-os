@@ -5,7 +5,7 @@ notion_url: https://app.notion.com/p/Reels-Carousels-Batch-1-YouTube-Jun-13-2026
 type: "Content"
 status: "Ready to Record"
 created_time: 2026-06-13T07:50:00.000Z
-synced_at: 2026-07-14T00:14:24
+synced_at: 2026-07-20T18:24:03
 source: Notion clone
 ---
 

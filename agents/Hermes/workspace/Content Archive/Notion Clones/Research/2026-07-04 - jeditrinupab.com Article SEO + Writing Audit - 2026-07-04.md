@@ -5,7 +5,7 @@ notion_url: https://app.notion.com/p/jeditrinupab-com-Article-SEO-Writing-Audit-
 type: "Research"
 status: "Done"
 created_time: 2026-07-04T05:38:00.000Z
-synced_at: 2026-07-14T00:29:36
+synced_at: 2026-07-20T18:22:52
 source: Notion clone
 ---
 

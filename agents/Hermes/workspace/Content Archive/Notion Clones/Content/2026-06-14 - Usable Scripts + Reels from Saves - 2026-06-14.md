@@ -5,7 +5,7 @@ notion_url: https://app.notion.com/p/Usable-Scripts-Reels-from-Saves-2026-06-14-
 type: "Content"
 status: "Ready to Record"
 created_time: 2026-06-14T02:07:00.000Z
-synced_at: 2026-07-14T00:14:01
+synced_at: 2026-07-20T18:23:37
 source: Notion clone
 ---
 

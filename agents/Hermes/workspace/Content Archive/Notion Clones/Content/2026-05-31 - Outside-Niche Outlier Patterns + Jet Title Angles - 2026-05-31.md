@@ -5,7 +5,7 @@ notion_url: https://app.notion.com/p/Outside-Niche-Outlier-Patterns-Jet-Title-An
 type: "Content"
 status: "Done"
 created_time: 2026-05-31T03:23:00.000Z
-synced_at: 2026-07-14T00:14:57
+synced_at: 2026-07-20T18:24:46
 source: Notion clone
 ---
 

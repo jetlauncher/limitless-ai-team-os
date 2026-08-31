@@ -5,7 +5,7 @@ notion_url: https://app.notion.com/p/YouTube-Mine-Dan-Koe-One-Person-Business-37
 type: "Content"
 status: "Ready to Record"
 created_time: 2026-06-14T17:31:00.000Z
-synced_at: 2026-07-14T00:13:56
+synced_at: 2026-07-20T18:23:31
 source: Notion clone
 ---
 

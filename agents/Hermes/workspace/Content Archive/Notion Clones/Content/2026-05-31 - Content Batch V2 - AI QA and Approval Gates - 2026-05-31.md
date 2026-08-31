@@ -5,7 +5,7 @@ notion_url: https://app.notion.com/p/Content-Batch-V2-AI-QA-and-Approval-Gates-2
 type: "Content"
 status: "Draft"
 created_time: 2026-05-31T02:49:00.000Z
-synced_at: 2026-07-14T00:14:59
+synced_at: 2026-07-20T18:24:48
 source: Notion clone
 ---
 
