@@ -1,10 +1,8 @@
 model:
-  default: gpt-5.6-sol
+  default: gpt-6-astra
   provider: openai-codex
-  context_length: 262144
-fallback_providers:
-  - provider: custom:nous-api
-    model: openai/gpt-5.6-sol-pro
+  context_length: 272000
+fallback_providers: []
 toolsets:
   - hermes-cli
 agent:
@@ -103,6 +101,7 @@ browser:
   engine: auto
   auto_local_for_private_urls: true
   cdp_url: ''
+  use_real_profile: true
   dialog_policy: must_respond
   dialog_timeout_s: 300
   camofox:
@@ -112,7 +111,6 @@ browser:
     adopt_existing_tab: false
     rewrite_loopback_urls: false
     loopback_host_alias: host.docker.internal
-  use_real_profile: true
 checkpoints:
   enabled: true
   max_snapshots: 50
@@ -174,12 +172,6 @@ auxiliary:
     api_key: ''
     timeout: 120
     download_timeout: 30
-  web_extract:
-    provider: openrouter
-    model: deepseek/deepseek-v4-pro
-    base_url: https://openrouter.ai/api/v1
-    api_key: ''
-    timeout: 360
   compression:
     provider: openrouter
     model: deepseek/deepseek-v4-pro
@@ -253,6 +245,12 @@ auxiliary:
     base_url: https://openrouter.ai/api/v1
     api_key: ''
     timeout: 120
+  web_extract:
+    provider: openrouter
+    model: deepseek/deepseek-v4-pro
+    base_url: https://openrouter.ai/api/v1
+    api_key: ''
+    timeout: 360
   flush_memories:
     api_key: ''
     base_url: https://openrouter.ai/api/v1
@@ -376,7 +374,6 @@ tts:
     voice: en_US-lessac-medium
 stt:
   enabled: true
-  provider: local
   local:
     model: base
     language: ''
@@ -389,6 +386,7 @@ stt:
     language_code: ''
     tag_audio_events: false
     diarize: false
+  provider: local
 voice:
   record_key: ctrl+b
   max_recording_seconds: 120
@@ -408,9 +406,9 @@ memory:
   write_approval: false
   memory_char_limit: 2200
   user_char_limit: 1375
+  nudge_interval: 10
   provider: ''
   flush_min_turns: 6
-  nudge_interval: 10
 delegation:
   model: deepseek/deepseek-v4-pro
   provider: openrouter
@@ -513,6 +511,11 @@ command_allowlist:
   - delete in root path
   - hermes update (restarts gateway, kills running agents)
   - overwrite system file via redirection
+plugins:
+  disabled: []
+  enabled:
+    - google_meet
+    - image_gen/openai-codex
 hooks_auto_accept: false
 security:
   allow_private_urls: false
@@ -625,7 +628,7 @@ paste_collapse_threshold_fallback: 5
 paste_collapse_char_threshold: 2000
 computer_use:
   cua_telemetry: false
-_config_version: 39
+_config_version: 40
 api_server:
   model: qwen2.5:3b
   provider: custom:local-qwen3.6-(ollama)
@@ -1093,6 +1096,11 @@ mcp_servers:
       AGENTMAIL_API_KEY: [REDACTED]
     connect_timeout: 60.0
     enabled: true
+  fathom:
+    url: https://api.fathom.ai/mcp
+    connect_timeout: 600.0
+    auth: oauth
+    enabled: true
 platform_toolsets:
   cli:
     - browser
@@ -1129,11 +1137,6 @@ platform_toolsets:
     - hermes-telegram
   whatsapp:
     - hermes-whatsapp
-plugins:
-  disabled: []
-  enabled:
-    - google_meet
-    - image_gen/openai-codex
 session_reset:
   at_hour: 4
   idle_minutes: 1440

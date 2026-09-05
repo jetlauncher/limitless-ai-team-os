@@ -415,7 +415,6 @@ logging:
 model_catalog:
   enabled: true
   url: https://hermes-agent.nousresearch.com/docs/api/model-catalog.json
-  ttl_hours: 1
 network:
   force_ipv4: false
 sessions:
@@ -430,7 +429,7 @@ onboarding:
 updates:
   pre_update_backup: false
   backup_keep: 5
-_config_version: 39
+_config_version: 40
 session_reset:
   mode: both
   idle_minutes: 1440

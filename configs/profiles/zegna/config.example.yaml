@@ -323,7 +323,7 @@ sessions:
   retention_days: 90
   vacuum_after_prune: true
   min_interval_hours: 24
-_config_version: 39
+_config_version: 40
 session_reset:
   mode: both
   idle_minutes: 1440
