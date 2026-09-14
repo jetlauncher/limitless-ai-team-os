@@ -173,12 +173,6 @@ auxiliary:
     api_key: ''
     timeout: 120
     download_timeout: 30
-  web_extract:
-    provider: auto
-    model: ''
-    base_url: ''
-    api_key: ''
-    timeout: 360
   compression:
     provider: auto
     model: ''
@@ -252,6 +246,12 @@ auxiliary:
     base_url: ''
     api_key: ''
     timeout: 120
+  web_extract:
+    provider: auto
+    model: ''
+    base_url: ''
+    api_key: ''
+    timeout: 360
   session_search:
     provider: auto
     model: ''
@@ -284,6 +284,7 @@ display:
   show_reasoning: false
   reasoning_full: false
   memory_notifications: 'on'
+  background_process_notifications: concise
   streaming: true
   timestamps: false
   final_response_markdown: strip
@@ -327,7 +328,6 @@ display:
     scale: 0.33
     unicode_cols: 0
   tool_progress: all
-  background_process_notifications: concise
 dashboard:
   theme: default
   show_token_analytics: false
@@ -375,7 +375,6 @@ tts:
     voice: en_US-lessac-medium
 stt:
   enabled: true
-  provider: local
   local:
     model: base
     language: ''
@@ -388,6 +387,7 @@ stt:
     language_code: ''
     tag_audio_events: false
     diarize: false
+  provider: local
 voice:
   record_key: ctrl+b
   max_recording_seconds: 120
@@ -407,8 +407,8 @@ memory:
   write_approval: false
   memory_char_limit: 2200
   user_char_limit: 1375
-  provider: ''
   nudge_interval: 10
+  provider: ''
   flush_min_turns: 6
 delegation:
   model: ''
@@ -522,15 +522,16 @@ approvals:
   destructive_slash_confirm: true
 command_allowlist:
   - delete in root path
-  - stop/restart hermes gateway (kills running agents)
-  - hermes update (restarts gateway, kills running agents)
-  - execute_code
-  - script execution via -e/-c flag
-  - shell command via -c/-lc flag
-  - recursive delete
   - SQL DROP
-  - script execution via heredoc
+  - stop/restart hermes gateway (kills running agents)
+  - recursive delete
+  - execute_code
+  - hermes update (restarts gateway, kills running agents)
   - SQL TRUNCATE
+  - chmod +x followed by immediate execution
+  - shell command via -c/-lc flag
+  - script execution via heredoc
+  - script execution via -e/-c flag
 hooks_auto_accept: false
 security:
   allow_private_urls: false
