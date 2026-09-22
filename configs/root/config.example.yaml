@@ -442,8 +442,8 @@ curator:
   enabled: true
   interval_hours: 168
   min_idle_hours: 2
-  stale_after_days: 30
-  archive_after_days: 90
+  stale_after_days: 14
+  archive_after_days: 30
   consolidate: false
   prune_builtins: true
   backup:
@@ -514,6 +514,7 @@ command_allowlist:
 plugins:
   disabled: []
   enabled:
+    - claude-subscription-directsdk-experimental
     - google_meet
     - image_gen/openai-codex
 hooks_auto_accept: false
@@ -628,7 +629,7 @@ paste_collapse_threshold_fallback: 5
 paste_collapse_char_threshold: 2000
 computer_use:
   cua_telemetry: false
-_config_version: 40
+_config_version: 45
 api_server:
   model: qwen2.5:3b
   provider: custom:local-qwen3.6-(ollama)
@@ -1131,6 +1132,7 @@ platform_toolsets:
     - clarify
     - code_execution
     - computer_use
+    - connections
     - cronjob
     - delegation
     - file
