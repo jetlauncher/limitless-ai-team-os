@@ -501,16 +501,19 @@ approvals:
   mcp_reload_confirm: false
   destructive_slash_confirm: false
 command_allowlist:
-  - shell command via -c/-lc flag
-  - stop/restart hermes gateway (kills running agents)
-  - script execution via heredoc
-  - script execution via -e/-c flag
-  - git force push (rewrites remote history)
-  - sudo with combined-flag privilege escalation
-  - recursive delete
+  - cua:bring_to_front:foreground
+  - cua:click:background
+  - cua:click:foreground
   - delete in root path
+  - git force push (rewrites remote history)
   - hermes update (restarts gateway, kills running agents)
   - overwrite system file via redirection
+  - recursive delete
+  - script execution via -e/-c flag
+  - script execution via heredoc
+  - shell command via -c/-lc flag
+  - stop/restart hermes gateway (kills running agents)
+  - sudo with combined-flag privilege escalation
 plugins:
   disabled: []
   enabled:
@@ -653,7 +656,47 @@ custom_providers:
     name: Nous Qwen3.6 Plus
     key_env: NOUS_API_KEY
     models:
-      openai/gpt-6-astra: {}
+      anthropic/claude-sonnet-5.5: {}
+      anthropic/claude-sonnet-5.5:batch: {}
+      perceptron/perceptron-mk1.5: {}
+      fireworks/ember-1: {}
+      z-ai/glm-5.3-prime: {}
+      qwen/qwen3.8-max-prime: {}
+      stealth/space-bunny-alpha: {}
+      aion-labs/aion-3.5-mini: {}
+      aion-labs/aion-3.5: {}
+      upstage/solar-mini4: {}
+      cohere/command-a-plus: {}
+      openai/gpt-6-luna-pro: {}
+      openai/gpt-6-luna-pro:batch: {}
+      openai/gpt-6-luna: {}
+      openai/gpt-6-luna:batch: {}
+      openai/gpt-6-sol-pro: {}
+      openai/gpt-6-sol-pro:batch: {}
+      openai/gpt-6-sol: {}
+      openai/gpt-6-sol:batch: {}
+      anthropic/claude-opus-5.5: {}
+      anthropic/claude-opus-5.5:batch: {}
+      xiaomi/mimo-v2.6-pro-ultraspeed: {}
+      xiaomi/mimo-v2.6-flash: {}
+      xiaomi/mimo-v2.6-pro: {}
+      qwen/qwen3.8-omni-flash: {}
+      prism-ml/ternary-bonsai-2-27b: {}
+      z-ai/glm-5.3-flashx: {}
+      unbiased/pareto: {}
+      ~deepseek/deepseek-pro-latest: {}
+      ~deepseek/deepseek-flash-latest: {}
+      ~openai/gpt-astra-latest: {}
+      ~openai/gpt-sol-latest: {}
+      ~openai/gpt-terra-latest: {}
+      ~openai/gpt-luna-latest: {}
+      sakana/fugu-ultra-v2: {}
+      sakana/fugu-max: {}
+      inclusionai/ling-3.0-flash-vl: {}
+      deepseek/deepseek-v4.1-flash: {}
+      deepseek/deepseek-v4.1-flash:batch: {}
+      inception/mercury-2.5: {}
+      nex-agi/nex-n2.5-pro: {}
       openai/gpt-6-astra:batch: {}
       openai/gpt-6-astra-pro: {}
       openai/gpt-6-astra-pro:batch: {}
@@ -664,43 +707,36 @@ custom_providers:
       google/gemini-3.8-flash:batch: {}
       anthropic/claude-fable-5.1: {}
       anthropic/claude-fable-5.1:batch: {}
-      inception/mercury-2.5-preview: {}
       ibm-granite/granite-4.2-8b: {}
       tencent/hy4-preview: {}
       inclusionai/ling-3.0-flash-fin: {}
-      inclusionai/ling-3.0-flash-fin:free: {}
       ~z-ai/glm-flash-latest: {}
       qwen/qwen3.8-flash: {}
       z-ai/glm-5.3-flash: {}
       z-ai/glm-5.3-flash:batch: {}
       deepseek/deepseek-v4-flash-vision-exp: {}
       ~z-ai/glm-latest: {}
-      z-ai/glm-5.3: {}
+      z-ai/glm-5.3:batch: {}
       qwen/qwen3.8-27b: {}
       google/gemini-3.7-flash: {}
       google/gemini-3.7-flash:batch: {}
       voyageai/voyage-code-4: {}
       bytedance-seed/seed-2-1-turbo: {}
       qwen/qwen3.8-2.4t-a95b: {}
-      qwen/qwen3.8-2.4t-a95b:batch: {}
       bytedance-seed/seed-2.0-code: {}
       deepseek/deepseek-v4-pro-0813: {}
-      deepseek/deepseek-v4-pro-0813:batch: {}
       nvidia/nemotron-3.5-lightning: {}
       upstage/solar-pro4: {}
       meta/muse-glimmer-30b: {}
-      meta/muse-glimmer-30b:batch: {}
       meta/muse-spark-1.2: {}
       ~deepseek/deepseek-v4-flash-latest: {}
-      deepseek/deepseek-v4-flash-0731: {}
-      deepseek/deepseek-v4-flash-0731:batch: {}
       thinkingmachines/inkling-small: {}
-      thinkingmachines/inkling-small:batch: {}
       qwen/qwen3.7-flash: {}
       voyageai/voyage-multimodal-3.5: {}
       voyageai/voyage-4-lite: {}
       voyageai/voyage-4: {}
       voyageai/voyage-4-large: {}
+      anthropic/claude-opus-5: {}
       anthropic/claude-opus-5:batch: {}
       inclusionai/ling-3.0-flash: {}
       poolside/laguna-s-2.1: {}
@@ -711,7 +747,6 @@ custom_providers:
       google/gemini-3.5-flash-lite:batch: {}
       meituan/longcat-2.0: {}
       thinkingmachines/inkling: {}
-      thinkingmachines/inkling:batch: {}
       moonshotai/kimi-k3: {}
       moonshotai/kimi-k3:batch: {}
       kwaipilot/kat-coder-pro-v2.5: {}
@@ -734,17 +769,14 @@ custom_providers:
       poolside/laguna-xs-2.1: {}
       poolside/laguna-xs-2.1:free: {}
       anthropic/claude-sonnet-5:batch: {}
-      nex-agi/nex-n2-mini: {}
       sakana/fugu-ultra: {}
       google/gemini-3-pro-image: {}
       moonshotai/kimi-k2.7-code: {}
       ~anthropic/claude-fable-latest: {}
       anthropic/claude-fable-5:batch: {}
-      nex-agi/nex-n2-pro: {}
       nvidia/nemotron-3-ultra-550b-a55b: {}
       qwen/qwen3.7-plus: {}
       minimax/minimax-m3: {}
-      minimax/minimax-m3:batch: {}
       stepfun/step-3.7-flash: {}
       anthropic/claude-opus-4.8:batch: {}
       qwen/qwen3.7-max: {}
@@ -766,7 +798,6 @@ custom_providers:
       ~moonshotai/kimi-latest: {}
       ~google/gemini-flash-latest: {}
       ~anthropic/claude-sonnet-latest: {}
-      ~openai/gpt-latest: {}
       qwen/qwen3.5-plus-20260420: {}
       qwen/qwen3.6-flash: {}
       qwen/qwen3.6-35b-a3b: {}
@@ -788,12 +819,10 @@ custom_providers:
       z-ai/glm-5.1: {}
       google/gemma-4-26b-a4b-it: {}
       google/gemma-4-31b-it: {}
-      google/gemma-4-31b-it:batch: {}
       qwen/qwen3.6-plus: {}
       z-ai/glm-5v-turbo: {}
       arcee-ai/trinity-large-thinking: {}
       x-ai/grok-4.20: {}
-      kwaipilot/kat-coder-pro-v2: {}
       rekaai/reka-edge: {}
       minimax/minimax-m2.7: {}
       openai/gpt-5.4-nano: {}
@@ -801,13 +830,13 @@ custom_providers:
       openai/gpt-5.4-mini: {}
       openai/gpt-5.4-mini:batch: {}
       mistralai/mistral-small-2603: {}
+      mistralai/mistral-small-2603:batch: {}
       perplexity/pplx-embed-v1-4b: {}
       perplexity/pplx-embed-v1-0.6b: {}
       z-ai/glm-5-turbo: {}
       nvidia/nemotron-3-super-120b-a12b: {}
       bytedance-seed/seed-2.0-lite: {}
       qwen/qwen3.5-9b: {}
-      qwen/qwen3.5-9b:batch: {}
       openai/gpt-5.4-pro: {}
       openai/gpt-5.4-pro:batch: {}
       openai/gpt-5.4: {}
@@ -858,8 +887,10 @@ custom_providers:
       amazon/nova-2-lite-v1: {}
       mistralai/ministral-14b-2512: {}
       mistralai/ministral-8b-2512: {}
+      mistralai/ministral-8b-2512:batch: {}
       mistralai/ministral-3b-2512: {}
       mistralai/mistral-large-2512: {}
+      mistralai/mistral-large-2512:batch: {}
       deepseek/deepseek-v3.2: {}
       anthropic/claude-opus-4.5: {}
       anthropic/claude-opus-4.5:batch: {}
@@ -921,6 +952,7 @@ custom_providers:
       qwen/qwen3-30b-a3b-thinking-2507: {}
       deepseek/deepseek-chat-v3.1: {}
       mistralai/mistral-medium-3.1: {}
+      mistralai/mistral-medium-3.1:batch: {}
       z-ai/glm-4.5v: {}
       openai/gpt-5: {}
       openai/gpt-5:batch: {}
@@ -931,9 +963,11 @@ custom_providers:
       openai/gpt-oss-120b: {}
       openai/gpt-oss-120b:batch: {}
       openai/gpt-oss-20b: {}
+      openai/gpt-oss-20b:batch: {}
       anthropic/claude-opus-4.1: {}
       anthropic/claude-opus-4.1:batch: {}
       mistralai/codestral-2508: {}
+      mistralai/codestral-2508:batch: {}
       qwen/qwen3-coder-30b-a3b-instruct: {}
       qwen/qwen3-30b-a3b-instruct-2507: {}
       z-ai/glm-4.5: {}
@@ -953,10 +987,8 @@ custom_providers:
       openai/o3-pro: {}
       google/gemini-2.5-pro-preview: {}
       deepseek/deepseek-r1-0528: {}
-      anthropic/claude-opus-4: {}
       anthropic/claude-sonnet-4: {}
       mistralai/mistral-medium-3: {}
-      google/gemini-2.5-pro-preview-05-06: {}
       qwen/qwen3-30b-a3b: {}
       qwen/qwen3-8b: {}
       qwen/qwen3-14b: {}
@@ -976,6 +1008,7 @@ custom_providers:
       meta-llama/llama-4-maverick: {}
       meta-llama/llama-4-scout: {}
       deepseek/deepseek-chat-v3-0324: {}
+      mistralai/mistral-small-3.1-24b-instruct: {}
       google/gemma-3-12b-it: {}
       google/gemma-3-27b-it: {}
       mistralai/mistral-saba: {}
@@ -992,7 +1025,6 @@ custom_providers:
       amazon/nova-pro-v1: {}
       openai/gpt-4o-2024-11-20: {}
       mistralai/mistral-large-2407: {}
-      thedrummer/unslopnemo-12b: {}
       qwen/qwen-2.5-7b-instruct: {}
       qwen/qwen-2.5-72b-instruct: {}
       cohere/command-r-08-2024: {}
@@ -1011,23 +1043,21 @@ custom_providers:
       mistralai/mixtral-8x22b-instruct: {}
       openai/gpt-4-turbo: {}
       openai/gpt-4-turbo:batch: {}
-      anthropic/claude-3-haiku: {}
       mistralai/mistral-large: {}
       openai/gpt-3.5-turbo-0613: {}
-      openai/gpt-4-turbo-preview: {}
       openai/gpt-3.5-turbo-16k: {}
       openai/gpt-3.5-turbo: {}
       openai/gpt-3.5-turbo:batch: {}
       openai/gpt-4: {}
+      meituan/longcat-2.0:free: {}
+      inclusionai/ling-3.0-flash-fin:free: {}
       stepfun/step-3.7-flash:free: {}
       upstage/solar-pro4:free: {}
       openai/gpt-6-astra-fast: {}
       openai/gpt-6-astra-flex: {}
       openai/gpt-6-astra-pro-fast: {}
       openai/gpt-6-astra-pro-flex: {}
-      z-ai/glm-5.2:US: {}
       z-ai/glm-5.2: {}
-      anthropic/claude-opus-5: {}
       anthropic/claude-sonnet-5: {}
       anthropic/claude-fable-5: {}
       anthropic/claude-opus-4.8: {}
@@ -1035,14 +1065,18 @@ custom_providers:
       anthropic/claude-opus-4.6: {}
       anthropic/claude-sonnet-4.6: {}
       anthropic/claude-haiku-4.5: {}
+      openai/gpt-6-astra: {}
       meta/muse-spark-1.1: {}
-      meituan/longcat-2.0:free: {}
+      meituan/longcat-2.5-preview:free: {}
       x-ai/grok-4.5: {}
       x-ai/grok-4.6: {}
+      x-ai/grok-4.7: {}
       moonshotai/kimi-k3:US: {}
       deepseek/deepseek-v4-flash-0731:US: {}
       z-ai/glm-5.3-flash:US: {}
       z-ai/glm-5.3:US: {}
+      deepseek/deepseek-v4-flash-0731: {}
+      z-ai/glm-5.3: {}
     models_discovered: true
   - api_key_env: OPENROUTER_API_KEY
     api_mode: chat_completions
