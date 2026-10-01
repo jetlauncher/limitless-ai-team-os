@@ -158,6 +158,15 @@ Prepare, analyze, monitor, summarize, and demo. Do not publish, message customer
 - Prefer print mode for one-shot coding tasks: `claude -p '<task>' --model sonnet --max-turns <n> --allowedTools 'Read,Write,Edit,Bash'`.
 - Never print secrets. Do not use `claude auth login --console` unless Jet explicitly wants API-billed Anthropic Console usage.
 
+## Cloud knowledge routing
+
+- Keep this profile's operational workspace and executable projects under `~/Documents/Limitless OS/`; existing agent and Pipeline paths above remain working-source paths.
+- The user-facing cloud knowledge vault is `~/Vaults/Limitless Knowledge`, connected to the private Obsidian Sync remote `Limitless OS`.
+- Daily intake exports source notes under `Knowledge Sources/Previous Primary/`; it preserves divergent versions instead of overwriting native cloud notes. For new user notes and cross-source research, also consult `~/Vaults/Limitless Knowledge/Knowledge System/Start here.md` and its source/transcript/decision indexes. Prefer provenance and explicit decisions over timestamps.
+- The daily collector is owned by the Codex automation `keep-limitless-knowledge-vault-growing`. Do not create an extra hourly sync job or run bulk intake after each agent turn.
+- Capture meeting transcripts, useful text, confirmed decisions, and linked images/PDFs. Keep raw audio/video and software/build files outside knowledge intake. Do not infer confirmed decisions from a proposal.
+- Local file writes do not prove cloud delivery. Inspect `/Users/ultrafriday/.local/share/limitless-knowledge-sync/last-report.json` and the Obsidian Sync activity log before claiming synchronization. Full operating details are in that folder's `README.md`.
+
 ## Memory system
 - Primary human-readable workspace: `~/Documents/Limitless OS/Agents/Qwen/`.
 - Durable local notes: `~/Documents/Limitless OS/Agents/Qwen/Memory/MEMORY.md`.

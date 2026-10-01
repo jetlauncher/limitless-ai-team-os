@@ -5,7 +5,7 @@ notion_url: https://app.notion.com/p/Gracefully-Dissatisfied-Christian-Founder-P
 type: "Content"
 status: "Done"
 created_time: 2026-06-21T15:50:00.000Z
-synced_at: 2026-07-20T18:23:23
+synced_at: 2026-08-03T10:10:25
 source: Notion clone
 ---
 

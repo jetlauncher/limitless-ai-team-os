@@ -5,7 +5,7 @@ notion_url: https://app.notion.com/p/YouTube-Title-Ideas-Outlier-Based-30-Titles
 type: "Content"
 status: "Done"
 created_time: 2026-05-31T03:14:00.000Z
-synced_at: 2026-07-20T18:24:47
+synced_at: 2026-08-03T10:11:36
 source: Notion clone
 ---
 
