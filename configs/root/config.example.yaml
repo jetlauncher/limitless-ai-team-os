@@ -1,5 +1,5 @@
 model:
-  default: gpt-6-astra
+  default: gpt-6.1-sol
   provider: openai-codex
   context_length: 272000
 fallback_providers: []

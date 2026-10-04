@@ -1,10 +1,7 @@
 model:
-  default: qwen3.6:35b
-  provider: custom
-  base_url: http://127.0.0.1:11434/v1
-  api_key: [REDACTED]
-  api_mode: chat_completions
-  context_length: 131072
+  default: gpt-6.1-sol
+  provider: openai-codex
+  context_length: 272000
 fallback_providers:
   - provider: anthropic
     model: anthropic/claude-opus-4.8

@@ -1,7 +1,7 @@
 model:
-  default: gpt-6-sol
+  default: gpt-6.1-sol
   provider: openai-codex
-  context_length: 262144
+  context_length: 272000
 fallback_providers:
   - provider: custom:nous-api
     model: openai/gpt-5.6-sol-pro
