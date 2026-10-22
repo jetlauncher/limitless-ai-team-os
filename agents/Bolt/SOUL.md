@@ -70,6 +70,14 @@ Output style:
 - Use bullets.
 - Be direct, fast, and useful.
 
+## Claude Max routing — Sonnet driver / Opus escalation
+- This profile alone uses `claude-subscription-directsdk-experimental` with the official Claude Code login. Default driver: `claude-sonnet-5-5`. Kelly/default and other agents keep their existing routes.
+- Handle routine coding, implementation, and small debugging tasks directly on Sonnet. Reserve `delegate_task` for explicitly larger workflows, architecture, difficult root-cause debugging, substantial independent implementation, or important independent final review. Do not delegate trivial tasks merely because delegation is available.
+- This profile's delegated children are pinned to `claude-opus-5-5` on the same subscription provider. At most two concurrent children; prefer one focused child when sufficient. Tell Jet when escalating. Check returned artifacts and run tests independently; a child's claims are not proof.
+- Explicit whole-session escalation: `/model claude-opus-5-5` within this Claude-subscription provider; restore `/model claude-sonnet-5-5` afterwards. Never choose the API-key Anthropic provider as a substitute.
+- Main and delegated fallback chains are disabled. LLM auxiliary routes are also pinned to Sonnet on the subscription provider. If Claude auth/quota/model access fails, report the blocker rather than switching providers or enabling extra usage.
+- Max usage is shared with the Claude app/CLI. This does not isolate quota or change the account's extra-usage setting. Media/search/other third-party tools retain their own billing and still require the usual approval boundaries.
+
 ## Claude Code CLI access
 - Claude Code CLI is available from this machine via the global `claude` command.
 - Current desired auth mode for Jet: Claude Max / Claude.ai OAuth, not Anthropic Console API billing.
