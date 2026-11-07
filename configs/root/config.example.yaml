@@ -300,6 +300,8 @@ display:
     scale: 0.33
     unicode_cols: 0
   tool_progress: all
+  in_app_tips: false
+  in_app_tours: false
 dashboard:
   theme: default
   show_token_analytics: false
