@@ -1,0 +1,12 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"file\": {\n    \"id\": \"01M6XRQH2CZAK5R1CV7CD0ZQNC\",\n    \"name\": \"Limitless Club · HOW Bangkok · AI Buys Back Time\"\n  },\n  \"contentHash\": {\n    \"tokens\": \"811c9dc5\"\n  }\n}"
+    },
+    {
+      "type": "text",
+      "text": "{\n  \"exports\": [\n    {\n      \"nodeId\": \"1-0\",\n      \"filePath\": \"/Users/ultrafriday/Downloads/01 · AI Buys Back Time@2x.png\"\n    },\n    {\n      \"nodeId\": \"I-0\",\n      \"filePath\": \"/Users/ultrafriday/Downloads/02 · Monday Morning@2x.png\"\n    },\n    {\n      \"nodeId\": \"X-0\",\n      \"filePath\": \"/Users/ultrafriday/Downloads/03 · The Hidden Cost@2x.png\"\n    },\n    {\n      \"nodeId\": \"1C-0\",\n      \"filePath\": \"/Users/ultrafriday/Downloads/04 · Start With the Work@2x.png\"\n    },\n    {\n      \"nodeId\": \"1Q-0\",\n      \"filePath\": \"/Users/ultrafriday/Downloads/05 · Three Questions to Save@2x.png\"\n    },\n    {\n      \"nodeId\": \"2H-0\",\n      \"filePath\": \"/Users/ultrafriday/Downloads/06 · One Practical Workflow@2x.png\"\n    },\n    {\n      \"nodeId\": \"38-0\",\n      \"filePath\": \"/Users/ultrafriday/Downloads/07 · Measure the Right Thing@2x.png\"\n    },\n    {\n      \"nodeId\": \"3N-0\",\n      \"filePath\": \"/Users/ultrafriday/Downloads/08 · Your Next Move@2x.png\"\n    }\n  ]\n}"
+    }
+  ]
+}

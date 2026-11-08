@@ -1143,6 +1143,10 @@ mcp_servers:
     connect_timeout: 600.0
     auth: oauth
     enabled: true
+  meta-ads:
+    url: https://mcp.facebook.com/ads
+    auth: oauth
+    enabled: false
 platform_toolsets:
   cli:
     - browser

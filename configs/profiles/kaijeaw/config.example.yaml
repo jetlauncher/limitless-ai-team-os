@@ -419,7 +419,7 @@ approvals:
   mode: manual
   timeout: 60
   cron_mode: deny
-  mcp_reload_confirm: true
+  mcp_reload_confirm: false
   destructive_slash_confirm: true
 command_allowlist:
   - script execution via -e/-c flag
@@ -865,3 +865,8 @@ mcp_servers:
       - '@upstash/context7-mcp'
     timeout: 120
     connect_timeout: 60
+  paper:
+    command: /Users/ultrafriday/.paper/bin/paper
+    args:
+      - mcp
+    enabled: true
